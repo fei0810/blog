@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://kaopubear.top/blog</id>
+    <title>思考问题的熊</title>
+    <updated>2020-05-30T04:44:57.399Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://kaopubear.top/blog"/>
+    <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
+    <subtitle>很高兴和你相遇&lt;br&gt;这里正在记录我的所思所学</subtitle>
+    <logo>https://kaopubear.top/blog/images/avatar.png</logo>
+    <icon>https://kaopubear.top/blog/favicon.ico</icon>
+    <rights>All rights reserved 2020, 思考问题的熊</rights>
+    <entry>
+        <title type="html"><![CDATA[三个 Linux 文件高频小操作]]></title>
+        <id>https://kaopubear.top/blog/2020-05-30-linuxfile3tips/</id>
+        <link href="https://kaopubear.top/blog/2020-05-30-linuxfile3tips/">
+        </link>
+        <updated>2020-05-30T04:16:51.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="去除文件名后缀">去除文件名后缀</h2>
+<p>在Linux 中跑各种任务或者循环命令的时候，有一个高频的需求是截取一部分文件名。例如有文件 XXX_aaa.bb 和 YYY_aaa.bb ，很可能我们需要提取出 XXX 和 YYY 来给后续的文件进行命名。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="去除文件名后缀">去除文件名后缀</h2>
+<p>在Linux 中跑各种任务或者循环命令的时候，有一个高频的需求是截取一部分文件名。例如有文件 XXX_aaa.bb 和 YYY_aaa.bb ，很可能我们需要提取出 XXX 和 YYY 来给后续的文件进行命名。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[VS Code 代码编辑器入门指南下篇-场景化应用介绍]]></title>
+        <id>https://kaopubear.top/blog/2020-04-21-usevscodepart2/</id>
+        <link href="https://kaopubear.top/blog/2020-04-21-usevscodepart2/">
+        </link>
+        <updated>2020-04-21T11:58:00.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/60117">少数派</a>」</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/60117">少数派</a>」</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[VS Code 编辑器入门指南上篇-核心概念与组件]]></title>
+        <id>https://kaopubear.top/blog/2020-04-21-usevscodepart1/</id>
+        <link href="https://kaopubear.top/blog/2020-04-21-usevscodepart1/">
+        </link>
+        <updated>2020-04-21T11:30:19.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文收发于「<a href="https://sspai.com/post/60116">少数派</a>」</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文收发于「<a href="https://sspai.com/post/60116">少数派</a>」</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[把 Markdown 模板做成 VSCode 插件]]></title>
+        <id>https://kaopubear.top/blog/2020-04-18-markdownnotesnippet/</id>
+        <link href="https://kaopubear.top/blog/2020-04-18-markdownnotesnippet/">
+        </link>
+        <updated>2020-04-18T07:35:20.000Z</updated>
+        <summary type="html"><![CDATA[<p>希望它能让你写笔记更方便些</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>希望它能让你写笔记更方便些</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[简书这些年]]></title>
+        <id>https://kaopubear.top/blog/2020-04-08-jianshu/</id>
+        <link href="https://kaopubear.top/blog/2020-04-08-jianshu/">
+        </link>
+        <updated>2020-04-08T11:08:58.000Z</updated>
+        <summary type="html"><![CDATA[<p>我对简书这个平台的感情很复杂。我 2015 年开始把当时自己的考研复习笔记放到网络上，那个时候意外发现了简书，当时的首页还完全是编辑推荐，需要自己给专题投稿然后如果入了编辑的法眼才有可能会被推荐到首页上。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我对简书这个平台的感情很复杂。我 2015 年开始把当时自己的考研复习笔记放到网络上，那个时候意外发现了简书，当时的首页还完全是编辑推荐，需要自己给专题投稿然后如果入了编辑的法眼才有可能会被推荐到首页上。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[靠谱熊的每周分享 第4期]]></title>
+        <id>https://kaopubear.top/blog/2020-03-22-weeklyshare4/</id>
+        <link href="https://kaopubear.top/blog/2020-03-22-weeklyshare4/">
+        </link>
+        <updated>2020-03-22T08:59:57.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>这周的刊首语随便聊聊几个工具。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>这周的刊首语随便聊聊几个工具。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[靠谱熊的每周分享 第3期]]></title>
+        <id>https://kaopubear.top/blog/2020-03-15-weeklyshare3/</id>
+        <link href="https://kaopubear.top/blog/2020-03-15-weeklyshare3/">
+        </link>
+        <updated>2020-03-15T10:22:45.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>本周想分享一个「汉隆剃刀」经验法则：<strong>能解释为愚蠢的，就不要解释为恶意。</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>本周想分享一个「汉隆剃刀」经验法则：<strong>能解释为愚蠢的，就不要解释为恶意。</strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[非蠢既坏 别这么想]]></title>
+        <id>https://kaopubear.top/blog/2020-03-07-HanlonRazor/</id>
+        <link href="https://kaopubear.top/blog/2020-03-07-HanlonRazor/">
+        </link>
+        <updated>2020-03-07T15:43:20.000Z</updated>
+        <summary type="html"><![CDATA[<p>「能解释为愚蠢的，就不要解释为恶意」</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>「能解释为愚蠢的，就不要解释为恶意」</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[靠谱熊的每周分享 第2期]]></title>
+        <id>https://kaopubear.top/blog/2020-03-06-weeklyshare2/</id>
+        <link href="https://kaopubear.top/blog/2020-03-06-weeklyshare2/">
+        </link>
+        <updated>2020-03-06T10:14:10.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>本周把自己一年多没更新的个人公众号(思考问题的熊)更新了一次，结果很快就有了五十多条留言。<br>
+很多人都在反馈自己过去三四年发生和经历的事情，很神奇的感受，看似没有交集但是却也没有断了联系。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>本周把自己一年多没更新的个人公众号(思考问题的熊)更新了一次，结果很快就有了五十多条留言。<br>
+很多人都在反馈自己过去三四年发生和经历的事情，很神奇的感受，看似没有交集但是却也没有断了联系。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[R 的 20 年]]></title>
+        <id>https://kaopubear.top/blog/2020-02-29-r20years/</id>
+        <link href="https://kaopubear.top/blog/2020-02-29-r20years/">
+        </link>
+        <updated>2020-02-28T17:02:16.000Z</updated>
+        <summary type="html"><![CDATA[<p>最近有<a href="https://jozef.io/r921-happy-birthday-r/">一篇文章</a>从三个纬度介绍了 R 这 20 年的发展。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>最近有<a href="https://jozef.io/r921-happy-birthday-r/">一篇文章</a>从三个纬度介绍了 R 这 20 年的发展。</p>
+]]></content>
+    </entry>
+</feed>
