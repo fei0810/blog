@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaopubear.top/blog</id>
     <title>思考问题的熊</title>
-    <updated>2020-06-03T06:22:15.566Z</updated>
+    <updated>2020-06-04T15:07:54.497Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaopubear.top/blog"/>
     <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://kaopubear.top/blog/images/avatar.png</logo>
     <icon>https://kaopubear.top/blog/favicon.ico</icon>
     <rights>All rights reserved 2020, 思考问题的熊</rights>
+    <entry>
+        <title type="html"><![CDATA[使用 Zotero 在 Markdown 中优雅地处理参考文献]]></title>
+        <id>https://kaopubear.top/blog/2020-06-04-markdownzotero/</id>
+        <link href="https://kaopubear.top/blog/2020-06-04-markdownzotero/">
+        </link>
+        <updated>2020-06-04T15:01:57.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="需求">需求</h2>
+<p>兵马未动粮草先行，写毕业论文需要做很多思想建设，有一个顺手的写作工具和一个方便的文献管理工具可以给人一些动力和勇气。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="需求">需求</h2>
+<p>兵马未动粮草先行，写毕业论文需要做很多思想建设，有一个顺手的写作工具和一个方便的文献管理工具可以给人一些动力和勇气。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[三个 Linux 文件高频小操作]]></title>
         <id>https://kaopubear.top/blog/2020-05-30-linuxfile3tips/</id>
@@ -125,17 +138,6 @@
         <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
 <p>本周把自己一年多没更新的个人公众号(思考问题的熊)更新了一次，结果很快就有了五十多条留言。<br>
 很多人都在反馈自己过去三四年发生和经历的事情，很神奇的感受，看似没有交集但是却也没有断了联系。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[R 的 20 年]]></title>
-        <id>https://kaopubear.top/blog/2020-02-29-r20years/</id>
-        <link href="https://kaopubear.top/blog/2020-02-29-r20years/">
-        </link>
-        <updated>2020-02-28T17:02:16.000Z</updated>
-        <summary type="html"><![CDATA[<p>最近有<a href="https://jozef.io/r921-happy-birthday-r/">一篇文章</a>从三个纬度介绍了 R 这 20 年的发展。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>最近有<a href="https://jozef.io/r921-happy-birthday-r/">一篇文章</a>从三个纬度介绍了 R 这 20 年的发展。</p>
 ]]></content>
     </entry>
 </feed>
