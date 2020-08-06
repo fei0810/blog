@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaopubear.top/blog</id>
     <title>思考问题的熊</title>
-    <updated>2020-06-15T02:05:01.807Z</updated>
+    <updated>2020-08-06T13:49:05.768Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaopubear.top/blog"/>
     <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://kaopubear.top/blog/images/avatar.png</logo>
     <icon>https://kaopubear.top/blog/favicon.ico</icon>
     <rights>All rights reserved 2020, 思考问题的熊</rights>
+    <entry>
+        <title type="html"><![CDATA[21天日记挑战-5分钟日记法]]></title>
+        <id>https://kaopubear.top/blog/21day5minjournal/</id>
+        <link href="https://kaopubear.top/blog/21day5minjournal/">
+        </link>
+        <updated>2020-08-06T13:46:06.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>很久没有记过日记了，打算来个21天日记挑战，然后录制一期播客。好吧，是不是看出来了播客选题荒。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>很久没有记过日记了，打算来个21天日记挑战，然后录制一期播客。好吧，是不是看出来了播客选题荒。</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[使用 Zotero 在 Markdown 中优雅地处理参考文献]]></title>
         <id>https://kaopubear.top/blog/2020-06-04-markdownzotero/</id>
@@ -123,21 +138,6 @@
         <summary type="html"><![CDATA[<p>「能解释为愚蠢的，就不要解释为恶意」</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>「能解释为愚蠢的，就不要解释为恶意」</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[靠谱熊的每周分享 第2期]]></title>
-        <id>https://kaopubear.top/blog/2020-03-06-weeklyshare2/</id>
-        <link href="https://kaopubear.top/blog/2020-03-06-weeklyshare2/">
-        </link>
-        <updated>2020-03-06T10:14:10.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
-<p>本周把自己一年多没更新的个人公众号(思考问题的熊)更新了一次，结果很快就有了五十多条留言。<br>
-很多人都在反馈自己过去三四年发生和经历的事情，很神奇的感受，看似没有交集但是却也没有断了联系。</p>
-]]></summary>
-        <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
-<p>本周把自己一年多没更新的个人公众号(思考问题的熊)更新了一次，结果很快就有了五十多条留言。<br>
-很多人都在反馈自己过去三四年发生和经历的事情，很神奇的感受，看似没有交集但是却也没有断了联系。</p>
 ]]></content>
     </entry>
 </feed>
