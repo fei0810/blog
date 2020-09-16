@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaopubear.top/blog</id>
     <title>思考问题的熊</title>
-    <updated>2020-09-02T03:23:13.212Z</updated>
+    <updated>2020-09-16T08:21:04.491Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaopubear.top/blog"/>
     <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://kaopubear.top/blog/images/avatar.png</logo>
     <icon>https://kaopubear.top/blog/favicon.ico</icon>
     <rights>All rights reserved 2020, 思考问题的熊</rights>
+    <entry>
+        <title type="html"><![CDATA[如何帮助别人]]></title>
+        <id>https://kaopubear.top/blog/2020-09-16-howtobehelpful/</id>
+        <link href="https://kaopubear.top/blog/2020-09-16-howtobehelpful/">
+        </link>
+        <updated>2020-09-16T08:03:05.000Z</updated>
+        <summary type="html"><![CDATA[<p>会提问也要会回答啊。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>会提问也要会回答啊。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[21天日记挑战-5分钟日记法]]></title>
         <id>https://kaopubear.top/blog/2020-08-06-21day5minjournal/</id>
@@ -127,17 +138,6 @@
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
 <p>本周想分享一个「汉隆剃刀」经验法则：<strong>能解释为愚蠢的，就不要解释为恶意。</strong></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[非蠢既坏 别这么想]]></title>
-        <id>https://kaopubear.top/blog/2020-03-07-HanlonRazor/</id>
-        <link href="https://kaopubear.top/blog/2020-03-07-HanlonRazor/">
-        </link>
-        <updated>2020-03-07T15:43:20.000Z</updated>
-        <summary type="html"><![CDATA[<p>「能解释为愚蠢的，就不要解释为恶意」</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>「能解释为愚蠢的，就不要解释为恶意」</p>
 ]]></content>
     </entry>
 </feed>
