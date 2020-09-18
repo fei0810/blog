@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaopubear.top/blog</id>
     <title>思考问题的熊</title>
-    <updated>2020-09-16T08:38:21.024Z</updated>
+    <updated>2020-09-18T11:56:03.483Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaopubear.top/blog"/>
     <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://kaopubear.top/blog/images/avatar.png</logo>
     <icon>https://kaopubear.top/blog/favicon.ico</icon>
     <rights>All rights reserved 2020, 思考问题的熊</rights>
+    <entry>
+        <title type="html"><![CDATA[你的实验伴侣摸鱼首选和通勤第一品牌]]></title>
+        <id>https://kaopubear.top/blog/2020-09-18-kaopubeartalk/</id>
+        <link href="https://kaopubear.top/blog/2020-09-18-kaopubeartalk/">
+        </link>
+        <updated>2020-09-18T11:38:12.000Z</updated>
+        <summary type="html"><![CDATA[<p>如果你有听点东西的习惯，欢迎订阅这档播客，如果没有也可以用这档播客来培养一下。订阅方式可以查看本文的结尾部分。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>如果你有听点东西的习惯，欢迎订阅这档播客，如果没有也可以用这档播客来培养一下。订阅方式可以查看本文的结尾部分。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[如何帮助别人]]></title>
         <id>https://kaopubear.top/blog/2020-09-16-howtobehelpful/</id>
@@ -125,19 +136,6 @@
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
 <p>这周的刊首语随便聊聊几个工具。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[靠谱熊的每周分享 第3期]]></title>
-        <id>https://kaopubear.top/blog/2020-03-15-weeklyshare3/</id>
-        <link href="https://kaopubear.top/blog/2020-03-15-weeklyshare3/">
-        </link>
-        <updated>2020-03-15T10:22:45.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
-<p>本周想分享一个「汉隆剃刀」经验法则：<strong>能解释为愚蠢的，就不要解释为恶意。</strong></p>
-]]></summary>
-        <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
-<p>本周想分享一个「汉隆剃刀」经验法则：<strong>能解释为愚蠢的，就不要解释为恶意。</strong></p>
 ]]></content>
     </entry>
 </feed>
