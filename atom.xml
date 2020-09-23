@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaopubear.top/blog</id>
     <title>思考问题的熊</title>
-    <updated>2020-09-23T12:20:56.593Z</updated>
+    <updated>2020-09-23T12:22:14.311Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaopubear.top/blog"/>
     <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
@@ -19,6 +19,72 @@
         <summary type="html"><![CDATA[<p>如果你有听点东西的习惯，欢迎订阅这档播客，如果没有也可以用这档播客来培养一下。订阅方式可以查看本文的结尾部分。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>如果你有听点东西的习惯，欢迎订阅这档播客，如果没有也可以用这档播客来培养一下。订阅方式可以查看本文的结尾部分。</p>
+<!-- more -->
+<p>最近半年博客的更新速度说不上快，一方面是因为事情比较多，没有太多系统可以拿出来分享的成文，另一方面是随着「熊言熊语」播客 (Podcast) 上线，很多表达的出口也转移到了这档播客中。首期节目于 2020 年 3 月 4 日上线，在双周更新的基础上力争单周更新。相比于文字，声音和对话会让我们情绪与内容的表达更加真实立体。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200917130953.png" alt="" loading="lazy"></figure>
+<p>截止目前（2020 年 9 月），通过我们自己的官网 RSS 渠道分发的播放量累计达到 2.5 万，在喜马拉雅这个单一平台的播放量累计达到 1.8 万。加上 B 站和小程序等其它平台，目前我们的播客全网累计播放量已经达到 4 万。<strong>「熊言熊语」当仁不让应该成为广大学子的实验伴侣、摸鱼首选和通勤第一品牌。</strong>(逃……</p>
+<p>以下是已经上线的节目内容盘点，可以直接到<a href="https://podcast.kaopubear.top">官网</a>查看收听</p>
+<h2 id="访谈-生信技能树创始人-jimmy-的成长与蜕变">访谈 | 生信技能树创始人 Jimmy 的成长与蜕变</h2>
+<p>小镇青年休学穷游险些丧命，转专业只为证明自己是专业前几名，靠百度答案找到第一份工作迅速进阶为高级生信工程师，换三个工作后又决定继续读博，面对他人的误解自己为何习以为常。本期节目我邀请到了 4 年好友，生信技能树的创始人 Jimmy，听他聊聊自己的经历和目前的状态。</p>
+<h2 id="访谈-出国留学的苦与乐听听萌新和老司机怎么说">访谈 | 出国留学的苦与乐听听萌新和老司机怎么说</h2>
+<p>本期「熊言熊语」邀请到了两位正在国外读博士的朋友，他们一位刚刚到德国 2 个月，一位已经在澳大利亚学习生活了 7 年时间。从两个国家目前的疫情状况开始，我们聊到了出国留学的缘由、留学生活成本、留学早期阶段的感受和问题，也聊到了国内外工作生活的差别、今后要留下还是回国，最后他们也给出了出国留学的建议。</p>
+<h2 id="闲聊-关于播客-表达和协作">闲聊 | 关于播客、表达和协作</h2>
+<p>本期「熊言熊语」是一个人的闲聊放送，前几期有听众留言问道我是谁以及播客的录制形式，那就借这期节目再聊聊我们的播客如何制作以及如何收听。最近关于如何表达和如何协作有一点小感触，也分享给各位供大家参考和讨论。</p>
+<h2 id="对话-从编程学习心得聊到线上交友技巧">对话 | 从编程学习心得聊到线上交友技巧</h2>
+<p>本期「熊言熊语」邀请到了洲更和果子两位好朋友。本着跑题的宗旨，我们从生物信息聊到了编程语言，从编程入门进阶又聊到了如何线上交友，甚至还提供了勾搭生信技能树创始人的两种思路。更奇葩的是主咖嘉宾不知不觉沦落到「补充一句」。</p>
+<h2 id="访谈-硕士工作两年又离职我有些话想说">访谈 | 硕士工作两年又离职我有些话想说</h2>
+<p>本期「熊言熊语」我们请来了一位刚从前公司离职的嘉宾。她分享了自己在本科和硕士的学习经历和两年来工作的感受，同时也总结了自己每个时间点做不同选择的原因和给准毕业生们的工作建议。</p>
+<h2 id="访谈-宝藏女孩の东瀛学医漂流记">访谈 | 宝藏女孩の东瀛学医漂流记</h2>
+<p>本期「熊言熊语」我们请到了一个宝藏女孩，正在日本京都大学攻读医学博士的斯佳。这次连线也是我们第一次详细交流，感叹她丰富的经历和各种技能。我们从医生培养制度聊到中医药大学学中医的经历，又从公派留学聊到了她在日本的生活和感受。疫情让她开始进行医学科普，也成为熊言熊语第一位正式客座主播。</p>
+<h2 id="读书-一朵后浪的深度数位大扫除">读书 | 一朵后浪的深度数位大扫除</h2>
+<p>作为一朵后浪，从节日出发聊聊最近在读的「深度数位大扫除」这本书。随着数位工具和服务越来越多，社交平台逐渐侵蚀日常生活，很多时候我发现自己被裹挟在信息的洪流中，生活和感受都被各种 APP 所支配。这种失控的感觉令人不安，于是也就有了这期读书分享和正在进行的 30 天深度数位大扫除。</p>
+<h2 id="科普-姗姗来迟的疫苗是否值得等待">科普 | 姗姗来迟的疫苗是否值得等待</h2>
+<p>本期「熊言熊语」是我们科普系列的第一期节目，听日本京都大学的医学博士斯佳聊聊疫苗那些事儿。我们从童年的记忆聊到了疫苗的类型和作用原理，从宝宝出生后为什么要打疫苗聊到了育儿建议，通过介绍疫苗的研发流程和环节引出了当前新冠疫苗研究的进展和困难，当然也谈了常见的狂犬疫苗、流感疫苗和近一两年很火的 HPV 疫苗。</p>
+<h2 id="访谈-硕士毕业-3-年-3-次转行在不确定性中野蛮成长">访谈 | 硕士毕业 3 年 3 次转行，在不确定性中野蛮成长</h2>
+<p>「熊言熊语」迎来了职场系列节目的一次随机更新。本期嘉宾毕业于一所 985 农业院校，硕士研究水果采后方向，毕业转行工作 3 年先后在 3 家不同的公司任职，如今已作为高级经理带领团队独立开展项目。她和我们分享了自己从学生到职场的转变，总结了自己关于转行和工作的思考，也给出了简历和面试的实用建议。</p>
+<h2 id="访谈-新加坡癌症中心研究员海涛平凡之路的不平凡">访谈 | 新加坡癌症中心研究员海涛，平凡之路的不平凡</h2>
+<p>「熊言熊语」本期迎来了目前在新加坡癌症中心工作的海涛，作为我的好友和生信技能树创始人健明的前同事，我们三个人进行了一次三个半小时的长谈。本想分成两集，但为了保证内容流畅还是忍痛割爱整理成一个多小时的节目和大家分享。</p>
+<p>海涛说自己是个很平凡的人，但是丰富的个人经历又让我们感受到他的不平凡。他详细介绍了自己四段或主动或被动的跳圈经历，分享了每个阶段自己的感受，更是详细总结了关于生物信息学习与科研的思考。</p>
+<h2 id="分享-像追剧一样追踪文献和前-10-期小回顾">分享 | 像追剧一样追踪文献和前 10 期小回顾</h2>
+<p>「熊言熊语」最近收到了好几个听友和文献相关的留言与提问。不少硕博新生都有文献焦虑，既然大家有问题有需求，那我们就借着节目先聊聊文献趴的第一部分：如何像追剧一样追踪文献。给大家提供几种或许用得上的思路和工具，希望对你有帮助，也期待你的评论和分享。另外，关于前 10 期节目我们做了一个小小的回顾，感谢有你。</p>
+<h2 id="访谈-小丫画图除了画图更想和你聊聊副业">访谈 | 小丫画图，除了画图更想和你聊聊副业</h2>
+<p>「熊言熊语」本期迎来了第一位妈妈身份的嘉宾，小丫画图的创始人小丫。可能有一些听友参与过小丫画图的众筹，但对小丫却鲜有了解，本期节目带你走近小丫，听她讲讲小丫画图运营两年背后的故事。如果你有意发展一项副业，还可以来听听小丫关于副业的思考和建议。小丫说自己是个后知后觉的人，但我感觉很多事情她都想的很清楚。</p>
+<h2 id="访谈-临床医生做生物信息我是认真的">访谈 | 临床医生做生物信息，我是认真的</h2>
+<p>「熊言熊语」本期请来了上海某大型三甲医院即将结束规培的临床医生 Jack Wang。他讲了自己硕博期间入门生物信息的经历与感悟，从前期漫长的冷板凳到成为香饽饽，从自己艰难摸索到给师弟师妹提供学习建议。此外，他还从临床医生的角度，介绍了生物信息在临床中的具体使用场景、研究思路和发展方向，毫无保留的分享了自己在做项目和投稿中遇到的困难与反思。</p>
+<p>无论你是想从零开始认真学习生物信息，还是想结合生物信息让自己平稳完成学业，作为一名医学生或者临床医生都不难从本期节目中获得收获。</p>
+<h2 id="科普-我还小但是肩颈和腰都不太好">科普 | 我还小但是肩颈和腰都不太好</h2>
+<p>「熊言熊语」科普系列第二期节目终于上架了，嘉宾是中山大学康复医学硕士一楠和复旦大学在读医学硕士旭东，当然还有负责科普系列节目的客座主播日本京都大学在读医学博士斯佳。</p>
+<p>本期节目整体感觉就是三位医生从各种维度为我会诊答疑。从各自的生活状态开始，我们聊到了日常学习办公不良坐姿站姿带来的危害以及科学坐站和缓解肩颈腰痛的方法。他们也解答了我关于翘二郎腿、过劳肥和肥宅如何开始运动的种种困惑。</p>
+<h2 id="分享-学习新工具的思路以及播客近况">分享 | 学习新工具的思路以及播客近况</h2>
+<p>本期节目是我一个人的单口分享，先讲讲我们的播客近况以及近期会推出的节目，然后和大家聊聊关于如何学习新工具的问题。从研究生阶段开始一直到工作，我们会碰到各种新问题，要求学习新工具去解决，但很多时候关于如何学习一个新的工具都没有相对清晰的框架。</p>
+<h2 id="对话-乘风破浪的青年中医学习工作大揭秘">对话 | 乘风破浪的青年中医，学习工作大揭秘</h2>
+<p>中医药大学在全国很多省市都存在，但中医专业对很多人来说却非常神秘。一说到中医，不知道你最先想到的是什么？本期「熊言熊语」我们请来了在某省中医院工作的青年医生，一方面帮大家揭秘中医药大学的学习生活，一方面聊聊一个中医院医生的工作日常。当然，我们也谈了一些关于中医的看法和思考。</p>
+<h2 id="对话-无惧退学与放养过来人的博士申请走心总结">对话 | 无惧退学与放养，过来人的博士申请走心总结</h2>
+<p>「熊言熊语」本期请来了即将到澳门大学再次开启博士生活的春卷和即将到美国留学但目前只能远程上课的卖萌哥。春卷曾经有过一次短暂且失败的读博经历，那一次挫折让她有了明显的成长；卖萌哥放养的研究生生活让他有机会接触到更多老师，也让他有了明确的读博申请选择标准。</p>
+<p>两位嘉宾在节目中分享了博士申请遇到的各种问题和经历，也从自身经历出发谈到了选择导师和申请博士的具体建议，当然还有关于要不要读博的思考。更多内容，欢迎收听本期节目。</p>
+<h2 id="对话-和留美博士萌新-up-主聊聊知识分享">对话 | 和留美博士萌新 up 主聊聊知识分享</h2>
+<p>「熊言熊语」本期迎来了一位反客为主的嘉宾，正在美国读化学博士的萌新 up 主担担面。当担担面提议想要对我进行采访的时候一开始我是拒绝的，不过没等我说出口她就直接发过来了若干个让我感到惊讶的问题。我惊讶于一个完全不认识的人竟然对我的分享历程一清二楚。</p>
+<p>看了她在 B 站发布的奇葩视频之后，我更惊讶于这个人分享的视频和音频教程虽然完全听不懂但还是听的挺有趣。本期内容我们聊到了自己知识分享的历程，以及和知识分享相关各种问题的看法，比如分享动机、平台和付费等等。更多内容，欢迎收听本期节目。</p>
+<h2 id="联系">联系</h2>
+<p>如果你想作为嘉宾出现在我们的节目中或者想推荐嘉宾参与我们的节目，亦或者你有任何的想法和问题都可以通过邮箱和我们联系。大家提出的问题都有机会在后续的节目中得到解答。</p>
+<p><strong>听友微信群请加小助手：kaopu_bear</strong></p>
+<p><strong>邮箱：kaopubear@aliyun.com</strong></p>
+<h2 id="如何收听">如何收听</h2>
+<p><strong>官网收听</strong></p>
+<p>如果你不想多下载一个 APP，那么通过官网收听节目是非常好的选择。目前我们的官网已经支持了倍速播放、快进快退和章节功能。</p>
+<p>https://podcast.kaopubear.top</p>
+<p><strong>苹果播客</strong></p>
+<p>苹果播客（PodCast）是 iOS 自带的一个 APP，是使用苹果手机听友最简单的收听选择。只需要在应用内搜索「熊言熊语」即可。</p>
+<p>因为它仅仅是一个播放平台，直接使用我们提交的 RSS 源，本质上目前不会对节目做任何干预或者插播广告，同时章节功能和倍速功能都可以使用。</p>
+<p><strong>小宇宙播客 APP</strong></p>
+<p>安卓用户推荐下载「小宇宙播客 app」，和苹果播客类似，它也是一个泛用型播客客户端，适合使用安卓手机的听友。目前他们不会对节目做任何干预或者插播广告，还有时间轴和评论功能。在主页也可以看到编辑推荐的优质播客节目。</p>
+<p>因为目前使用这个应用需要邀请码，小宇宙的工作人员特意给我们熊言熊语安排了 <strong>专属邀请码 XYXY</strong>，不限量，大家放心用（惊喜，有面儿）。在应用内也是直接搜索「熊言熊语」即可订阅收听。</p>
+<p><strong>其它平台</strong></p>
+<p>此外你也可以到喜马拉雅、B站和网易云音乐搜索订阅这档播客。</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20190628083754.png" alt="扫码即刻沟通" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
@@ -30,6 +96,80 @@
         <summary type="html"><![CDATA[<p>会提问也要会回答啊。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>会提问也要会回答啊。</p>
+<!-- more -->
+<p>之前我写过，很多人也都写过关于「如何提问」的相关文章，今天读到了一篇博客讲的是「如何回答提问」，这个角度确实以前没有仔细考虑过，于是我就着这篇文章整理了一个图，大概就是下面这些内容，详细的内容可以直接阅读<a href="https://nedbatchelder.com//blog/202009/how_to_be_helpful_online.html">原文</a>。配套之前整理的如何提问的思维导图，这块内容就比较完整了。</p>
+<hr>
+<p>先答问题</p>
+<ul>
+<li>只有帮助了别人才更容易和他们讨论你看到的其它问题</li>
+</ul>
+<p>专注问题</p>
+<ul>
+<li>别人的代码习惯可能和你不一样</li>
+<li>不要吐槽哪些你看不惯但是和问题无关的东西</li>
+</ul>
+<p>不要插话</p>
+<ul>
+<li>如果已经有人帮忙你不应该插话</li>
+<li>你的新思路可能会给初学者带来更多困惑</li>
+</ul>
+<p>匹配水平</p>
+<ul>
+<li>初级问题不要直接提供高级解法</li>
+<li>能理解的次优方案要好于不能理解的最佳方案</li>
+</ul>
+<p>多是少否</p>
+<ul>
+<li>尽量多说「是的」少说「不对」</li>
+<li>你的目的是为了帮助别人而不是责备别人</li>
+<li>找到问题本质并用积极的语气回答</li>
+</ul>
+<p>避免绝对</p>
+<ul>
+<li>过于绝对的语气和立场容易让人反感甚至对抗</li>
+<li>「以我的经验」是个不错的开头</li>
+</ul>
+<p>学会让步</p>
+<ul>
+<li>互动可能很糟糕，误解可能越来越深</li>
+<li>尝试解决误会或者退出讨论</li>
+</ul>
+<p>承担责任</p>
+<ul>
+<li>和预期不符通常会认为是对方没有努力</li>
+<li>把「你听不懂么」改为「也许我解释的不好」</li>
+<li>评价自己永远好过评价别人</li>
+</ul>
+<p>多说几句</p>
+<ul>
+<li>简练的回答固然好，但也容易产生误解</li>
+<li>多说几句鼓励的话</li>
+</ul>
+<p>了解动机</p>
+<ul>
+<li>帮助别人的动机有很多，其中也包括否定别人的快感</li>
+<li>不要把帮助别人作为自己负能量的出口</li>
+</ul>
+<p>尽量谦虚</p>
+<ul>
+<li>知道答案的感觉固然很好，但是你也并不是什么都知道</li>
+<li>尽量谦虚的帮助别人和回答问题</li>
+</ul>
+<p>建立联系</p>
+<ul>
+<li>与人建立联系比掌握对话技巧更重要</li>
+<li>有了融洽的关系更容易传达信息</li>
+</ul>
+<p>这些很难</p>
+<ul>
+<li>做到上面所有这些很难，但是面对一个好的提问者你要努力去做</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200916162928.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200916161146.png" alt="" loading="lazy"></figure>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20190628083754.png" alt="扫码即刻沟通" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
@@ -45,6 +185,45 @@
         <content type="html"><![CDATA[<blockquote>
 <p>很久没有记过日记了，打算来个21天日记挑战，然后录制一期播客。好吧，是不是看出来了播客选题荒。</p>
 </blockquote>
+<!-- more -->
+<h2 id="为什么要记日记呢">为什么要记日记呢</h2>
+<p>想要开始记日记的缘起来自最近听了一期播客，初看题目觉得平平无奇「<a href="https://pca.st/6yuihq6s">一年过半，我开始接受生活的随机</a>」。但是两位主播回顾的形式让我有点没有想到，她们拿出自己的手帐，随机翻到哪一页就讲那一天她们记录下的生活。</p>
+<p>于是我问自己，如果现在让我回忆过去六个月，我能记住哪些日子，在哪一天又发生了什么，很难。每天在混乱忙碌和浑浑噩噩中过去，但是又无法记住每天都经历了写什么，那么就尝试记下来吧。</p>
+<p>我其实从小就没有记日记的习惯，不都说21天可以养成一个习惯么，我用前面20多年养成了不记日记的习惯，那就趁着这次机会来个21天日记挑战吧。</p>
+<p>我希望如果哪天我想要回忆的时候，我就知道自己可以回忆些什么。如果说写博客录<a href="https://podcast.kaopubear.top">播客</a>是和别人对话是输出自己的想法，那么记日记就是和自己对话，是缓解负面情绪的一个好方法。</p>
+<p>此外，最近想比较正式的实践一下所谓的[[ Zettelkasten]]（卡片笔记法），那么每天随手记的习惯也是需要培养的。</p>
+<h2 id="日记应用-diarly">日记应用 Diarly</h2>
+<p>虽然我很喜欢随机翻开手帐回顾过去某一天经历的感觉，但我当然还是得选择电子工具啊。日记类应用最牛的应该是 Day One，在我派有不少重度用户，我很喜欢的 Hum 就是一个。</p>
+<p>Day One 提供的元数据，对图片和地理位置的处理，各种模版，以及macOS客户端都是我需要的。但是目前一年接近250的价格是我暂时无法承受的，嗯，最近换房子我感觉自己遭到了社会的毒打。</p>
+<p>如果用一直在用的Drafts或者印象笔记这些，又没有一种记日记的仪式感，如今没有仪式感的事情如果不是已经养成习惯感觉会更加降低坚持下去的可能性。</p>
+<p>好在订阅了 setapp，去里面看看有没有类似的工具，于是就发现了 <a href="https://diarly.app/">Diarly</a>，首先一年100的订阅价格能让我的 setapp 更加值回票价一些。同时 Diarly 的功能也基本满足我的需求。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200806204746.png" alt="" loading="lazy"></figure>
+<ul>
+<li>iOS+macOS同步</li>
+<li>方便的插入时间地点天气和图片</li>
+<li>markdown语法良好的支持</li>
+<li>设置日记字数目标</li>
+<li>自定义模板</li>
+<li>有日历和地图查看模式</li>
+<li>方便的导入和导出</li>
+</ul>
+<h2 id="每天记录些什么">每天记录些什么</h2>
+<p>关于每天记录什么，自然不可能要求一天一篇800字的小作文。这里计划采用[[5分钟笔记法]]也推荐给大家。</p>
+<p>所谓<a href="https://www.intelligentchange.com/products/the-five-minute-journal">5分钟笔记法</a>，在[[ 巨人的工匠]]这本书里就有所提及，其实是一套比较知名的笔记模版，每天只需要花费5-10分钟就可以完成早晨3个晚上2个共5个题目。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200806211124.png" alt="" loading="lazy"></figure>
+<p>这5个题目早上的目的是感恩以及设定目标，晚上的目的是回顾与反思总结。</p>
+<p>早晨的3个问题</p>
+<ul>
+<li>I am greatful for…（三件令我感恩的事情）：不分大小，不分人或者物，学会观察，意识到生活的美好，要有积极的心态。</li>
+<li>What would make today great？（三件会让今天更美好的事情）：本质是待办事项，要写做了会感觉美好轻松的事情。只写比较有希望完成的三件事，要具体。</li>
+<li>Daily affirmations. I am…（我是谁，三个自我设定） ：本质是想清楚自己是谁，明白自己的指责，明确身份才能明确做什么，因此身份也需要具体。身份会影响目标，目标会影响计划，计划会影响行动。</li>
+</ul>
+<p>晚上的2个问题</p>
+<ul>
+<li>Amazing things that happened today…（三件今天发生的美妙事情）：和第二题对应，也可以写一些意外的小惊喜和收获，无论大小，有一个瞬间让你开心或者触动你就可以，这里可以配一两张照片。</li>
+<li>How could I have made today even better？（我如何能让今天过的更好） ：一道温柔的反思题，一个「更好」既是对一天还不错的小总结，也是反思有哪些可以改进的地方。</li>
+</ul>
+<p>补充一个关于 <a href="https://1drv.ms/b/s!AtmKWGZhIWQvg5Ul7dcSpWSXLYVU0Q">5分钟笔记的 英文解读</a>。</p>
 ]]></content>
     </entry>
     <entry>
@@ -58,6 +237,92 @@
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="需求">需求</h2>
 <p>兵马未动粮草先行，写毕业论文需要做很多思想建设，有一个顺手的写作工具和一个方便的文献管理工具可以给人一些动力和勇气。</p>
+<!-- more -->
+<p>我目前的需求很明确，就是用自己中意的 Markdwon 编辑器来写论文初稿，使用 Zotero 来管理大量参考文献，然后论文转换成 office Word 文档让老师们查看。</p>
+<p>如果选择 office Word 来写，直接用 Zotero 插件处理参考文献没有任何问题，但作为 Markdown 的重度用户，用 Word 写上百页的文档实在是太难受。</p>
+<p>于是，这篇文章就分享一下如何尽量优雅地借助 Zotero 用纯文本方式完成论文中参考文献的引用和管理。所谓优雅是指当 Markdown 内容并转换成 Word 格式后，所有引用都需要被 Zotero 插件正确识别且可以随时在 Word 中进行修改更新，而常用的 Bibtex 加 Pandoc 方法并不能实现这个需求。</p>
+<h2 id="准备">准备</h2>
+<h3 id="工具">工具</h3>
+<p><strong>Markdown 编辑器：Ulysses</strong></p>
+<p>奔着 Ulysses 在高价位上了 setAPP 的车，如果能用它把论文写完，这车费就没有白花。当然，用 Markdown 写论文最自由的就是对写作工具的选择，这里使用任何一个你顺手的编辑器都可以，比如 Typora, MWeb 甚至是 <a href="https://kaopubear.top/blog/2020-04-21-usevscodepart2/">VSCode</a> 都么得问题。</p>
+<p><strong>文献管理工具：Zotero</strong></p>
+<p>硕博这几年时间，我先后使用了目前国内使用率最高的三款文献管理工具，从 Endnote 转向 Mendeley 是因为当时觉得 Mendeley 没有 Endnote 那么「重」；从 Mendeley 转到 Zotero 是因为后者的免费和插件。关于<a href="https://kaopubear.top/blog/2019-09-11-howtolearnzotero/">如何上手 Zotero </a>之前也有写过详细的介绍。</p>
+<h3 id="辅助">辅助</h3>
+<p>使用 Zotero 又不借助 Word 来管理参考文献，安装 <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> 插件是必选项，它为参考文献的引用和管理提供了一站式解决方案。</p>
+<p>同时，把 Markdown 格式的文本用高度可定制的方法转换为 PDF 或者 Word 格式文档，绕不开 <a href="https://pandoc.org/index.html">Pandoc</a> 这个工具。我们熟悉的大量文本编辑器在生成其他格式文档时往往调用的都是 Pandoc。</p>
+<h2 id="概念">概念</h2>
+<h3 id="citation-keys">CITATION KEYS</h3>
+<p>所谓 Citation Keys(Citekey)，可以理解为 Better BibTeX  给文献生成的一个 ID，当我们在文档中需要插入文献的位置按照一定格式输入 Citekey 后就等于告诉 Zotero 要在这里引用对应的文献了。</p>
+<p>由于 Citekey 是纯文本格式，不同编辑器对文章本身的影响可以降到最低。在 Endnote 中同样有类似的引用方式，这个概念被称作 Temporary citation。</p>
+<p>通用的 Citekey 格式为 <code>[auth:lower][year]</code>，前半部分表示文章第一作者的小写姓氏，后半部分为文献年份，如果出现了重复，就会在后面添加 <code>a b c</code> 或者数字进行区分。<br>
+下图是 Zotero 中关于 Citekey 的展示。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230109.jpg" alt="-w416" loading="lazy"></figure>
+<h3 id="cite-as-you-write">CITE AS YOU WRITE</h3>
+<p>在写作过程中，如果仅将 Zotero 对应的文献 Citekey 复制到文本并没有什么难度，无非就是方便和效率的问题，即随写随引。</p>
+<p>在 Word 插件中的 Zotero 的引用效果如下图所示。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230110.jpg" alt="-w560" loading="lazy"></figure>
+<p>类似的效果只有同时在我们使用的编辑器中实现，才能做到 CITE AS YOU WRITE。</p>
+<h3 id="自动操作">自动操作</h3>
+<p>如果你在使用 macOS，或许还不知道它也有类似于 iOS 中快捷指令的功能，叫做 Automator（自动操作）。这个应用可以设定在什么情况下进行何种操作，本文将会涉及到一个脚本自动执行的问题，就会用到 Automator。</p>
+<p>如果对它感兴趣，具体使用介绍可以查看苹果 <a href="https://support.apple.com/zh-cn/guide/automator/welcome/mac">官方说明</a>。</p>
+<h2 id="设置">设置</h2>
+<h3 id="zotero-citation-keys">Zotero CITATION KEYS</h3>
+<p>我目前的配置如下图，所示。这里主要是修改了引用格式。<br>
+<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230111.jpg" alt="-w835" loading="lazy"></p>
+<h3 id="pandoc-filter">Pandoc filter</h3>
+<p>Better BibTeX  的作者写了一个 <a href="https://retorque.re/zotero-better-bibtex/exporting/zotero.lua">lua 脚本</a><code>zotero.lua</code>，用来实现从 Markdown 到 Word 实时引用的格式转换。我们可以在 Markdown 文本中写入相关元数据，或者在 pandoc 命令行中进行相关参数设置。</p>
+<pre><code class="language-md">---
+# all the regular stuff you have here
+Zotero:
+  library: &lt;group name&gt; # omitted to use your personal library
+  scannable-cite: false # only relevant when your compiling to scannable-cite .odt
+  client: &lt;Zotero or jurism&gt; # defaults to Zotero
+  author-in-text: false # when true, enabled fake author-name-only cites by replacing it with the text of the last names of the authors
+...
+</code></pre>
+<p>如果是 Zotero 个人 library , 没有什么特殊情况使用默认参数即可，直接运行如下命令：</p>
+<pre><code class="language-bash">pandoc input.md -s --lua-filter=zotero.lua -o output.docx
+</code></pre>
+<h3 id="zotpick-applescript">zotpick-applescript</h3>
+<p>Better BibTeX  在实现随写随引的问题上给出了多种实现方法。如果你是把 Atom 或者 VSCode 作为编辑器可以直接安装它们相关的扩展插件，具体可以查看 <a href="https://retorque.re/zotero-better-bibtex/citing/cayw/">官方说明</a>。</p>
+<p>除此以外，还可以利用插件的提供的 URL 自行设置在其他编辑器内的调用。例如 <code>http://127.0.0.1:23119/better-bibtex/cayw?format=mmd&amp;clipboard=yes</code> 这个地址就表示会把选择的 Citekey 按照 MultiMarkdown 的格式 <code>[#adams2001][]</code> 进行引用，同时把内容保存在粘贴板中。<br>
+当然，无需我们自己写，已经有前人造好的轮子 <a href="https://github.com/davepwsmith/zotpick-applescript">zotpick-applescript</a>。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230112.jpg" alt="-w464" loading="lazy"></figure>
+<p>这里我们只需要下载 <code>zotpick-pandoc.applescript</code>。</p>
+<p>为了快速调用这个脚本，我们可以设置一个自动操作的 workflow，配置如下图所示。选择「没有输入」和位于「任何应用程序」，然后在左侧选择「运行 AppleScript」，在右侧弹出的编辑器中复制 <code>zotpick-pandoc.applescript</code> 的代码即可。随后保存命名并保存该 workflow。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230113.jpg" alt="-w1738" loading="lazy"></figure>
+<h3 id="快捷键">快捷键</h3>
+<p>为了快速调用这个 workflow，我们还可以在快捷键的设置中为它指定一个快捷键。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230114.jpg" alt="-w780" loading="lazy"></figure>
+<p>此外，因为 workflow 插入的格式为 <code>@adams2001</code> 而 Pandoc 转化时在 Markdown 中识别的格式为 <code>[@adams2001]</code>，所以有了另一个小需求：快速输入 <code>[]</code> 并且把光标置于两个括号间。</p>
+<p>这个需求可以利用 TextExpander 和 Keyboard Maestro 等工具实现，为了让 setAPP 只会票价，在这里我选择了和 TextExpander 同类型的应用 Rocket Typist。设置方式如下：</p>
+<figure data-type="image" tabindex="6"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230115.jpg" alt="-w389" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230116.jpg" alt="-w392" loading="lazy"></figure>
+<p>同时我给这个动作也自定义了缩写，方便快速输入。最终的实现效果如下：</p>
+<figure data-type="image" tabindex="8"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230117.jpg" alt="-w1198" loading="lazy"></figure>
+<p>如果使用 VSCode 来编辑，插件用起来非常方便，就无需上面这些设置了。</p>
+<h2 id="效果">效果</h2>
+<p>接下来展示一下 Markdown 源文档示例，和转换成 word 文档之后的样子。</p>
+<figure data-type="image" tabindex="9"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230118.jpg" alt="-w514" loading="lazy"></figure>
+<figure data-type="image" tabindex="10"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230119.jpg" alt="-w665" loading="lazy"></figure>
+<p>最后一步，就是在 Zotero 的 Word 插件中选择引用格式，点击「OK」，然后再点击「Refresh」就可以展示正常的引用格式了。如果想插入参考文献的详细信息，点击「Add Bibliography」即可。</p>
+<figure data-type="image" tabindex="11"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230120.jpg" alt="-w645" loading="lazy"></figure>
+<figure data-type="image" tabindex="12"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230121.gif" alt="-w1020" loading="lazy"></figure>
+<h2 id="扩展阅读">扩展阅读</h2>
+<p>Better BibTeX 的官方文档是非常好的学习材料，可以了解更多的相关知识，推荐阅读。</p>
+<ul>
+<li><a href="https://retorque.re/zotero-better-bibtex/exporting/pandoc/#from-markdown-to-live-citations">From Markdown to live citations</a></li>
+<li><a href="https://retorque.re/zotero-better-bibtex/citing/cayw/">CITE AS YOU WRITE</a></li>
+</ul>
+<p>此外，如果你感觉这些配置过于繁琐，可以尝试 Zettlr 这款直接支持文献管理的开源 Mardown 编辑器。我曾经使用过一小段时间，不过还是因为没有 MWeb 和 Ulysess 用起来顺手而放弃了。<br>
+如果你是 Windows 用户，则非常推荐使用 Zotero + VSCode + VSCode Zotero 插件的组合。</p>
+<hr>
+<p><strong>2009021117 更新</strong></p>
+<p>文章发表在少数派之后有不少有价值的评论。其中有朋友提到了 markdown 文本可以使用docdown来直接进行转换。关于 docdown 可以直接参考学习它的<a href="https://github.com/lowercasename/docdown/wiki/Initial-setup">GitHub主页</a>。后面有空了可以就 docdown 做一个详细的补充。</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<figure data-type="image" tabindex="13"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20190628083754.png" alt="扫码即刻沟通" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
@@ -71,6 +336,66 @@
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="去除文件名后缀">去除文件名后缀</h2>
 <p>在Linux 中跑各种任务或者循环命令的时候，有一个高频的需求是截取一部分文件名。例如有文件 XXX_aaa.bb 和 YYY_aaa.bb ，很可能我们需要提取出 XXX 和 YYY 来给后续的文件进行命名。</p>
+<!-- more -->
+<p>实现这个需求的方法有不少。</p>
+<p>利用变量中的 % 号。在 Linux 中使用百分号将变量的内容从变量的尾部删除。  一个%号可以从尾部最近位置进行匹配删除，两个%%从尾部最远位置匹配删除。同时支持使用通配符。例如<code>id=XXX_aaa.bb</code> 可以使用<code>${id％％_*}</code></p>
+<p>第二种方式是使用 cut <code>cut -d ‘_’ -f 1</code>。使用 <code>_</code> 作为分隔符，输出第一列，也是可以得到 XXX</p>
+<p>第三种是使用 awk，和 cut 类似也是指定分隔符输出第一列 <code>ls *.bb| awk -F &quot;_&quot; '{print $1 }'</code></p>
+<p>为了让脚本使用率更高一些，我通常会使用绝对路径来指定文件位置。为了更快的获取文件名，会使用命令 basename。basename 本身就有一个非常好用的功能，可以剔除指定的文件名结尾部分。如下所示，我觉得这个应该是最优雅的方式。</p>
+<pre><code class="language-shell">basename /a/b/c/XXXX_aaa.bb _aaa.bb 
+XXXX
+</code></pre>
+<h2 id="批量重命名">批量重命名</h2>
+<p>场景如下，现在有好几百个文件需要重命名。类似于 A1.txt A1.md A1.pdf B2.txt B2.md B2.pdf ...<br>
+其中 A1 要全部替换为 C3 ,B2 要全部替换为 D4 变为，即 C3.txt C3.md C3.pdf D4.txt ...<br>
+已经有一个两列的文件是对应信息。</p>
+<pre><code>A1 C3
+B2 D4
+</code></pre>
+<p>昨天在知识星球抛出这个问题之后有几个小伙伴给出了自己的建议，其中给我最大冲击的是一个小伙伴提出的 Excel 批量法，思路是用 Excel 对字符段组合出新的命令。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200530111954.png" alt="" loading="lazy"></figure>
+<p>这个需求或许可以拆解为两个问题，一个是重命名，一个是批量。</p>
+<p>重命名的方法 mv 或者 rename 都可以，批量很容易想到 for 循环，因为对应的一对变量已经在文件的一行了，所以只要把它们分别保存为两个变量就好了。这个需求更好的完成是方式是配合 while 和 read 来完成循环。<br>
+read 可以从标准输入或者管道以及文件描述符读取内容，而且非常方便的可以直接定义多个变量。</p>
+<p>因此可以写为：</p>
+<pre><code class="language-shell">while read old new
+do
+echo $old $new;
+rename &quot;s/${old}/${new}/&quot; ${old}*
+done&lt;changename.txt
+</code></pre>
+<p>如果把这个小小的命令变成一个 rename.sh 脚本，可以写成。</p>
+<pre><code class="language-shell">#!/bin/bash
+FILE=$1
+while read old new
+do
+echo $old $new;
+rename &quot;s/${old}/${new}/&quot; ${old}*
+done &lt; $FILE
+</code></pre>
+<p>多说一句，关于理解 read 的用法，有一个小的测试题。</p>
+<pre><code class="language-shell">echo '1 2 3 4 5 6' | while read a b c
+do
+  echo $c $b $a
+done
+</code></pre>
+<p>上面这个命令，请问输出的结果是什么？是 3 2 1 6 5 4 么？如果不是又会是什么呢？如果能直接说出 3 4 5 6 2 1 这个结果，应该就是理解了。</p>
+<h2 id="同文件名文件拷贝">同文件名文件拷贝</h2>
+<p>这个需求也比较常见，在 Linux 中，不能的目录下都有可能存在相同的文件名，例如有些生信分析软件跑多套数据，通常只会在目录层面进行区分，而不会在文件名层面进行区分。可能的目录结果如下：</p>
+<pre><code>a: xx.txt yy.json zz.bam
+b: xx.txt yy.json zz.bam
+</code></pre>
+<p>为了方便处理，我们通常习惯把同一个类型的文件放在一起，但是如果直接拷贝源文件，会因为文件名重复的问题带来灾难。这时就有了一个重命名再拷贝的问题。</p>
+<p>重命的一个基本思路就是把需要的目录名加到源文件名字的前面或者后面。首先拿到实际的文件名可以使用 basename 命令，如果想拿到目录名则可以使用 dirname 命令。</p>
+<pre><code class="language-shell">for i in `ls */*.bam`
+do
+cp $i ./bamfile/$(dirname $i)_$(basename $i)
+done
+</code></pre>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20190628083754.png" alt="扫码即刻沟通" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
@@ -86,6 +411,226 @@
         <content type="html"><![CDATA[<blockquote>
 <p>本文首发于「<a href="https://sspai.com/post/60117">少数派</a>」</p>
 </blockquote>
+<!-- more -->
+<h2 id="写在前面">写在前面</h2>
+<p>如果当电脑只能装一个软件还需要尽量不影响日常学习工作时，不知道你的选择会是什么。我把这个看似「荒诞」的问题理解为「All-in-One」的升级版拷问。</p>
+<p>这个问题陪伴了我很久，每用一个软件我都会想想它对我究竟有多不可代替，然后决定是否继续用下去；当决定深度使用后，我就会问自己它能在多大程度上帮助我完成日常的学习和工作。截至这篇文章完稿，如果我的电脑只能装一个软件还要做到基本不影响日常学习工作，我的选择是 <a href="https://code.visualstudio.com/">VS Code</a>。</p>
+<p>参考之前写过的 <a href="https://kaopubear.top/blog/2019-09-11-howtolearnzotero/">文献管理工具 Zotero 入门指南</a>，本入门指南将从 VS Code 特点出发，介绍入门 VS Code 必须了解的核心概念和组件（上篇）以及 5 个 VS Code 实际使用场景（下篇）。希望对想了解和学习 VS Code 的读者能有一点帮助和启发。</p>
+<p>在 <a href="https://kaopubear.top/blog/2020-04-21-usevscodepart2">VS Code 编辑器入门指南上篇</a>，我们了解了什么是代码编辑器、为什么选择 VS Code 、从 0 到 1 开始使用 VS Code 以及上手 VS Code 需要了解的核心概念与组件。提到的组件包括资源管理器、跨文件搜索、源代码管理、启动调试和扩展管理，涉及到的核心概念包括插件、命令面板、工作区和语言支持。</p>
+<p>有了这些基础的知识储备再打开 VS Code 就不会恐惧和陌生，不过，学习一个工具更好的方式是找到具体应用场景。VS Code 编辑器入门指南下篇将从五个可能会用到的实际场景出发介绍一些 VS Code 特性和好用的插件。因为文章篇幅所限很难详细展开，如果有需要可以后续再分别介绍，不过我会为每个插件附上链接和尽可能多的官方相关介绍方便大家进一步了解。</p>
+<h2 id="码字工具">码字工具</h2>
+<p>如果你是一个重度的 Markdown 写作者，VS Code 经过简单配置后作为文本编辑器其体验不会逊于市面上大部分文本编辑器。</p>
+<h3 id="图片">图片</h3>
+<p>首先通过两个插件来解决图片处理这个老大难问题，如果经常使用截图功能且喜欢直接把图片存放在本地可以使用 <a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image&amp;ssr=false#overview">Paste Image</a> 插件，如果喜欢把图片直接上传至图床则推荐使用优秀的 <a href="https://marketplace.visualstudio.com/items?itemName=Spades.vs-picgo&amp;ssr=false#overview">PicGo VS Code</a> 插件。</p>
+<p>因为我日常会把所有图都放在腾讯云中保存，这里以此为例简单介绍 PicGo 在 VS Code 的配置和使用。</p>
+<p>在设置面板中搜索 picgo 就可以看到相关的配置选项，需要的配置参数和 PicGo 客户端一致，例如使用腾讯云时需要填写 APPID、存储空间名和自定义域名等信息。因为平时使用的目录和文件名都可能包括中文，我设置为仅按照时间命名。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195649.png" alt="" loading="lazy"></figure>
+<p>在使用时，picgo 利用快捷键可以方便的将剪贴板图片（option+command+u) 或者本地图片 (option+command+e) 上传至图床，并直接在光标处插入图片链接。</p>
+<h3 id="目录功能">目录功能</h3>
+<p>打开一个 Markdown 文本后在资源管理器组件中可以通过 outline 查看文档目录，点击对应章节标题直接跳转至相应位置。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195650.png" alt="" loading="lazy"></figure>
+<p>如果你没有忘记上文提到的命令面板，我们还可以利用命令面板的<strong>符号跳转</strong>功能实现章节定位。符号跳转本身是针对代码设计的，可以快速跳转到一些函数定义和类定义，其实在 markdown 中也十分好用，只需要按下 <code>Command+shift+o</code> 或者按下<code>command+p</code>后输入<code>@</code>, 就可以看到各级标题了。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195651.png" alt="" loading="lazy"></figure>
+<p>这个操作在什么时候最有用呢？或许是按下 <code>ctrl+k z</code> 开启<strong>禅模式</strong>的时候。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195652.png" alt="" loading="lazy"></figure>
+<h3 id="编辑体验">编辑体验</h3>
+<p>如果需要获得更好的 Markdown 编辑体验可以考虑安装如下几个插件</p>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a>：基本支持了 Markdown 所需的各种操作，例如快捷键、生成 TOC 和导出 HTML 等，如果没有特殊需求无需安装下面三个插件。</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-footnotes">Markdown Footnotes</a>：让系统默认的 Markdown 支持脚注。</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=koehlma.markdown-math">Markdown+Math</a>：非常完善的数学公式支持。</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=xlthu.Pangu-Markdown">Pangu-Markdown</a>：盘古之白，在需要的时候给中文和英语数字之间增加空格。你懂的，关键时刻这个功能非常重要。</li>
+</ul>
+<h3 id="笔记模板">笔记模板</h3>
+<p>模板是所有笔记类工具的标准配置，在 VS Code 中可以通过代码片段（Snippets）针对不同类型的文档设置模板。</p>
+<p>如果想配置自己的代码片段，在命令面板中输入 <code>Configure User Snippets</code> 后会看到语言选项，这里我们以 Markdown 为例，配置内容本身为 json 格式。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195653.png" alt="" loading="lazy"></figure>
+<p>一个典型的代码片段如下所示：</p>
+<pre><code class="language-text">&quot;Print to console&quot;: {
+    &quot;prefix&quot;: &quot;log&quot;,
+    &quot;body&quot;: [
+        &quot;console.log('$1');&quot;,
+        &quot;$2&quot;
+    ],
+    &quot;description&quot;: &quot;Log output to console&quot;
+</code></pre>
+<p><code>Print to console</code> 为片段名，对象的值包含：prefix、body 和 description 三个属性。分别表示调用名、插入内容和代码描述。</p>
+<p>我把自己一些常用的 Markdown 模板做成代码片段并打包成了一个 <a href="https://marketplace.visualstudio.com/items?itemName=biotrainee-zhaofei.betternotesnippets">插件</a>。例如当我输入<code>debug</code>的时候就可以方便的调用 debug 记录模板。</p>
+<figure data-type="image" tabindex="6"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195654.gif" alt="" loading="lazy"></figure>
+<h3 id="查找替换与精确定位">查找替换与精确定位</h3>
+<p>如果你是一个每天需要处理很多稿件的编辑往往会有一些重复性工作，比如需要把十几篇投稿中的「ios」修改为「iOS」。这类涉及到搜索替换的问题，使用 VS Code 强大的搜索组件都可以轻松搞定。</p>
+<figure data-type="image" tabindex="7"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195655.png" alt="" loading="lazy"></figure>
+<p>VS Code 支持单文件和多文件的搜索替换，这里以多文件常见的需求作为介绍。</p>
+<p>搜索支持三种模式，分别是区分大小写、全字匹配和正则表达式，例如 iOS 这类大小写的替换需要选择「区分大小写」。进行多文件搜索替换时，有时只希望限制所在目录的部分文件，这时就可以设置在哪些子文件夹进行搜索或者过 <code>2020-04*</code> 会匹配所有以它开头的文件。</p>
+<p>除了使用搜索功能进行替换以外，它还可以实现「精确定位」。</p>
+<p>很多人在使用一些笔记工具时都有精确定位的需求得不到满足，即快速找到某个 tag 或者关键词所在的具体位置。VS Code 则可以帮你在所有需要的文档中进行精确定位和跳转。</p>
+<p>如下图所示，我在一个文件夹内搜索「模板」，它会在结果中显示每个文档中的搜索结果，鼠标放在某一行时会用浮窗形式展示详细内容，点击后会直接打开对应文档并定位在所在行。</p>
+<figure data-type="image" tabindex="8"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195656.png" alt="" loading="lazy"></figure>
+<h3 id="预览导出">预览导出</h3>
+<p>Markdown 文档的预览在不借助第三方插件的情况下基本可以满足需求，我们可以在配置中设置引用自己中意的 CSS 样式以达到更好的效果。如果需要非常强大的导出功能，可以借助插件 <a href="https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced">Markdown Preview Enhanced</a>。</p>
+<figure data-type="image" tabindex="9"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195657.png" alt="" loading="lazy"></figure>
+<p>该插件应该可以满足所有的 Markdown 文档的预览和导出需求，官方有详细 <a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/">中文文档</a> 可以查看了解。</p>
+<h3 id="项目管理">项目管理</h3>
+<p>如果你有很多个笔记本（文件夹）在码字的过程中需要经常切换，这里推荐的插件是 <a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager">Project Manage</a>。</p>
+<p>它支持将目录和工作区 <a href="https://code.visualstudio.com/docs/editor/multi-root-workspaces">Workspaces</a> 保存为项目并进行快速切换，很好地弥补了 VS Code 自身项目切换的不足。如果你对工作区这个概念很陌生，可以阅读<a href="https://kaopubear.top/blog/2020-04-21-usevscodepart2"> VS Code 编辑器入门指南上篇-核心概念与组件</a>。</p>
+<h2 id="管理协作">管理协作</h2>
+<p>如果你的项目需要协作，VS Code 也可以成为你不错的项目管理和协作工具。</p>
+<h3 id="从需要的地方即刻开始">从需要的地方即刻开始</h3>
+<p>从 VS Code 的搜索功能角度出发，如果我们在文档内部做一些固定的埋点并赋予特殊含义，那么就可以在需要的时候直接找到这些特殊内容。todo 类型插件就是这样的思路，我们可以设定一些特殊的标记，然后在工作目录下自动搜索匹配这些标记再以形象的方式展示在组件中。</p>
+<p>以比较常用的 TODO 插件 <a href="https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree">Todo Tree</a> 为例，在设置中我们可以指定哪些内容作为标记以及这些标记如何被展示。</p>
+<p><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195658.png" alt="2020-04-17-19-43-55" loading="lazy">2020-04-17-19-43-55</p>
+<pre><code class="language-javascript">&quot;todo-tree.highlights.customHighlight&quot;: {
+        &quot;TODO&quot;: {
+            &quot;icon&quot;: &quot;tasklist&quot;,
+            &quot;iconColour&quot;: &quot;red&quot;
+        },
+        &quot;REVIEW&quot;: {
+            &quot;icon&quot;: &quot;eye&quot;,
+            &quot;iconColour&quot;: &quot;green&quot;,
+        },
+        &quot;FIXME&quot;: {
+            &quot;icon&quot;: &quot;thumbsdown&quot;,
+            &quot;iconColour&quot;: &quot;yellow&quot;
+        }
+    }
+</code></pre>
+<p>随后当我们在任意文档的任意位置插入相关标签后，它们就会在组件中展示出来，点击标签即可直接跳转到对应位置。</p>
+<figure data-type="image" tabindex="10"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195659.gif" alt="" loading="lazy"></figure>
+<h3 id="用-kanban-管理素材">用 KanBan 管理素材</h3>
+<p>只有 TODO 功能或许不够过瘾，如果能做成看板的形式就更好了。嗯，一个插件 <a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-kanban">Kanban</a> 基本满足需求。</p>
+<p>在自己的稿件目录下添加一个「稿不完」看板，该写什么一目了然。看板内容本身会存储在 json 格式的文本文件中。</p>
+<figure data-type="image" tabindex="11"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195700.png" alt="" loading="lazy"></figure>
+<h3 id="在-vs-code-中使用-trello">在 VS Code 中使用 Trello</h3>
+<p>如果你的团队正在使用 Trello， 那么你也可以在 VS Code 借助插件 <a href="https://marketplace.visualstudio.com/items?itemName=Ho-Wan.vscode-trello-viewer">Trello Viewer</a> 及时查看大家的 Trello 动态。</p>
+<p>完成 token 配置后，在侧边栏将会出现一个 Trello Viewer 组件，Trello boards 下会显示所有看板，你还可以把某个常用的 list 添加到 favorite list。</p>
+<p>如果仅仅是想查看卡片内容只需要点击即可，这时插件会生成一个 Markdwon 格式文件并自动打开预览模式。如果你想对卡片进行简单编辑，可以在组件中右键点击某个卡片然后选择要进行的后续操作。</p>
+<figure data-type="image" tabindex="12"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195701.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="13"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195702.png" alt="" loading="lazy"></figure>
+<h3 id="让-git-更容易一些">让 Git 更容易一些</h3>
+<p>版本管理是个人和团队项目开发中非常重要的一环，源代码管理也是仅有的几个被内置到 VS Code 中组件，无需任何插件和设置即可在 VS Code 中使用 Git。很多人在学习 Git 时都会被各种各样的命令搞晕，在提交代码时也会因为要输入各种命令而烦躁。</p>
+<p>如果想更轻松使用 Git 和 GitHub，你可能会选择 GitHub 官方客户端或第三方<sub>付费</sub>客户端，实际上借助 VS Code 自身对 Git 的支持以及 <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a>、<a href="https://marketplace.visualstudio.com/items?itemName=eamodio.remotehub">Git History</a> 和 <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.remotehub">RemoteHub</a> 这三款插件，就可以获得极佳的使用体验。</p>
+<figure data-type="image" tabindex="14"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195703.png" alt="" loading="lazy"></figure>
+<p>如果你是一个经常使用 git 的人，应该可以感受到 gitlen 提供的组件非常贴心。</p>
+<p><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195704.png" alt="2020-04-17-20-45-15" loading="lazy">2020-04-17-20-45-15</p>
+<p>前两个插件的安装数基本说明它们是绝大多数 Git 用户的必选项，而 RemoteHub 是 GitLens 开发者还处在预览版的新作品。它支持在命令面板中直接搜索 GitHub 上的项目，在不需要 clone 的情况下通过 VS Code 查看项目代码。当需要编辑操作时对应的文件才会从 GitHub 按需下载。不过该插件目前需要开启一些 VS Code 默认关闭的功能，如果想尝试可以阅读插件使用说明。</p>
+<h2 id="网站开发">网站开发</h2>
+<p>说完目前最火的轻量标记语言 Markdown ，就不得不提和它对应的超文本编辑语言 HTML 和前端开发了。</p>
+<p>可能写一个小网页或者个人博客是很多人的 todo 事项，使用 VS Code 做前端开发对于初学者来说非常友好。</p>
+<h3 id="格式化与折叠">格式化与折叠</h3>
+<p>代码格式化是指让各种不规范的代码瞬间按照要求好看起来，VS Code 借助语言插件目前对绝大多数语言都有很好的支持。在设置中我们可以选择何时对代码进行格式化，包括输入粘贴和保存。此外每种语言都可以进一步进行个性化设置。</p>
+<figure data-type="image" tabindex="15"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195705.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="16"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195706.gif" alt="" loading="lazy"></figure>
+<p>关于代码格式化的插件，你也可以尝试 <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a>。</p>
+<p>除了代码格式化以外，VS Code 还可以基于语言定义进行代码折叠，即根据语言特性来自动区分哪些部分可以折叠，因此 Markdown 文档同样可以使用代码折叠功能。当鼠标位于行号旁边时，可以被折叠的位置会自动显示向下箭头。</p>
+<figure data-type="image" tabindex="17"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195707.png" alt="" loading="lazy"></figure>
+<p>使用快捷键<code>command+shift+[</code> 进行快速折叠时，会从所在位置处可折叠的最内层代码开始折叠。展开的快捷键则是<code>command+shift+]</code>。</p>
+<figure data-type="image" tabindex="18"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195708.gif" alt="" loading="lazy"></figure>
+<p>对于较长的代码，如果不习惯使用代码折叠可以开启 minimap 功能。当前页面在小地图中会呈现为灰色，光标所在位置为白色。如果进行文件内搜索时，对应位置会以黄色高亮显示。</p>
+<figure data-type="image" tabindex="19"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195709.png" alt="" loading="lazy"></figure>
+<h3 id="多光标">多光标</h3>
+<p>多光标特性是 VS Code 高效使用的必备技能，<a href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_multi-cursor-selection">官方文档</a> 有详细介绍，这里简单提一下我常用的三种方式。</p>
+<p>有时候我们需要在一个文件内多个没有明显特征的位置添加相同的内容，此时如果配合鼠标操作，只需要按住 option 键，在需要添加光标的位置单击即可。</p>
+<figure data-type="image" tabindex="20"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195710.gif" alt="" loading="lazy"></figure>
+<p>还有些时候，我们统一需要在多行的行末添加一些内容，或者需要从行末开始删除一些内容。这时只需选中要修改的内容，按 <code>option+shift+i</code> 就可以在行末添加光标。</p>
+<figure data-type="image" tabindex="21"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195711.gif" alt="" loading="lazy"></figure>
+<p>最后一个比较高频的需求有些类似于查找替换，比如我们需要把文档中一些相同的内容统一选中进行某些修改，这时可以先选中一个内容，然后按下 <code>command+d</code> 就会自动选中下一个相同的内容。</p>
+<figure data-type="image" tabindex="22"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195712.gif" alt="" loading="lazy"></figure>
+<h3 id="颜色设置">颜色设置</h3>
+<p>在编写 CSS 时常见的一个需求就是修改元素颜色，在 VS Code 中可以直接使用取色器进行修改。</p>
+<p>当遇到颜色时，我们会在编码前看到效果色块，鼠标浮于颜色上会自动显示颜色编辑器。在这个窗口中可以调整颜色的饱和度、透明度和色相，也可以切换不同的颜色代码。同时，只要点击右上角就可以轻松退回之前的颜色值。</p>
+<figure data-type="image" tabindex="23"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195713.gif" alt="" loading="lazy"></figure>
+<h3 id="emmet">Emmet</h3>
+<p><a href="https://emmet.io/">Emmet</a> 是一个可以大幅提高前端代码编写效率的工具，可以让我们用尽量简洁的输入来实现复杂的内容。借助 Emmet 可以摆脱频繁写 <code>&lt; &gt;</code> 的尴尬，而在 VS Code 中可以非常方便的调用 Emmet。</p>
+<p>当输入任意内容后，如果有可以和输入匹配的 Emmet 缩写，相关建议就会实时展示出来供选择。</p>
+<figure data-type="image" tabindex="24"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195714.gif" alt="" loading="lazy"></figure>
+<p>如果写的语法比较复杂它也可以实时帮你展示转换后的效果，非常实用。</p>
+<figure data-type="image" tabindex="25"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195715.gif" alt="" loading="lazy"></figure>
+<p>除了在编辑时进行代码展开，借助命令面板还可以是实现 Emmet 的很多其他操作，例如缩写包围、删除和更新标签等等。你可以在官方文档中查看更多信息。</p>
+<figure data-type="image" tabindex="26"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195716.png" alt="" loading="lazy"></figure>
+<h3 id="实时预览">实时预览</h3>
+<p>VS Code 本身不支持实时预览 HTML 文件，不过已经有很多插件实现了这一功能，例如 <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a>。</p>
+<figure data-type="image" tabindex="27"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195717.gif" alt="" loading="lazy"></figure>
+<h2 id="数据分析">数据分析</h2>
+<h3 id="查看-excel-和-pdf">查看 Excel 和 PDF</h3>
+<p>在日常工作中，我有很大一部分时间都在和各种格式的数据和文档打交道，其中 Excel 和 PDF 文档是最常见的两种格式。在没有使用 VS Code 之前如果一个项目中有这些文件就需要在 office 和 PDF 阅读器中打开，但是借助 <a href="https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-preview">Data Preview</a> 和 <a href="https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf">VS Code-pdf</a> 可以轻松查看这些文件，用起来挺过瘾。</p>
+<p>VS Code 中直接查看 Excel 并进行基本操作。</p>
+<figure data-type="image" tabindex="28"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195718.gif" alt="" loading="lazy"></figure>
+<p>VS Code 中直接查看 PDF 文档。</p>
+<figure data-type="image" tabindex="29"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195719.png" alt="" loading="lazy"></figure>
+<h3 id="python-与-r-语言支持">Python 与 R 语言支持</h3>
+<p>目前数据科学相关领域有 Python 和 R 两种常用编程语言。如果你习惯使用 python ,VS Code 本身对 Python 和 juypter 都有非常完善的支持，可以查看官方文档的 <a href="https://code.visualstudio.com/docs/python/jupyter-support">详细说明</a>，使用起来比较简单。</p>
+<p>如果你习惯使用 R 语言，随着 R Language Server 后端加持以及 <a href="https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r">VS Code-R</a> 插件在前端的重大迭代，现在使用 VS Code 愉快地进行 R 语言编程不仅成为了一种可能，而且还挺香。使用体验上基本不输 Rstudio，而且很多小细节上更贴心。</p>
+<p>因为 R 语言配置相对复杂，所以稍加介绍。</p>
+<ol>
+<li>安装 R，建议使用默认路径即可。</li>
+<li>安装 R 包 languageserver ，命令如下<code>install.packages(&quot;languageserver&quot;)</code></li>
+<li>在 VS Code 中安装两个和 R 相关的插件</li>
+</ol>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r">R support for Visual Studio Code</a> 这个插件是 VS Code 中 R 的核心插件，具有语法高亮，基础代码片段和代码执行等功能。例如你可以在编辑器中选择某几行内容，然后使用 <code>ctrl+enter</code> 将代码发送到终端执行。</p>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=REditorSupport.r-lsp">R LSP Client</a> 有了它就可以进行代码补全、查看函数定义以及参数预览等功能。</p>
+<p>安装插件后需要在配置文件中进行两个对应设置。通过 <code>ctrl+,</code> 进入设置页面，在搜索页面首先搜索 rterm，在对应操作系统位置处输入你的 R 路径，然后找到 rlsp path 对应设置处也输入 R 安装路径。</p>
+<p>打开一个包含 R 脚本的文件夹（单独打开一个 R 脚本无效）就可以正常使用了。</p>
+<p>一些基本特性如鼠标悬停显示函数定义和帮助文档（无论包是否加载）、鼠标悬停在变量直接展示类型信息、自动高亮文档内所有同一变量和函数自动补全等都非常好用。</p>
+<figure data-type="image" tabindex="30"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195720.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="31"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195721.png" alt="" loading="lazy"></figure>
+<h3 id="r-session-watcher">R session watcher</h3>
+<p>VS Code-R 插件近期更新中新增了 Session Watcher 功能，即便还在测试阶段这个功能也足以让人激动。它实现了在 VS Code 中实时展示各种变量图表等需求，不会再有单独弹窗。</p>
+<figure data-type="image" tabindex="32"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195722.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="33"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195723.png" alt="" loading="lazy"></figure>
+<p>如果要正确使用 session watcher 功能，首先需要在设置中开启 session watcher 选项，然后需要在 R 的 <code>.Rprofile</code> 配置文件中添加一行代码：</p>
+<pre><code class="language-text">source(file.path(Sys.getenv(if (.Platform$OS.type == &quot;windows&quot;) &quot;HOMEPATH&quot; else &quot;HOME&quot;), &quot;.VS Code-R&quot;, &quot;init.R&quot;))
+</code></pre>
+<h2 id="开发利器">开发利器</h2>
+<p>对于程序员来说，终端和服务器的使用频率极高，如果代码编辑器可以和这两者非常好的结合将会大大提高工作效率。</p>
+<h3 id="配置终端">配置终端</h3>
+<p>VS Code 的设计理念之一就是让 VS Code 和终端紧密联系在一起。</p>
+<p>例如，我们可以在终端某个目录中通过 <code>code</code> 命令以命令行的形式打开 VS Code，也可以在资源管理器中通过右键直接通过终端打开一个目录。</p>
+<figure data-type="image" tabindex="34"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195724.png" alt="" loading="lazy"></figure>
+<p>VS Code 终端放进了工作台从而避免在编辑器和终端间切换，集成终端支持同时打开多个终端操作并以多种方式排列。</p>
+<figure data-type="image" tabindex="35"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195725.png" alt="" loading="lazy"></figure>
+<p>由于把终端做到了工作台当中，所以我们能把终端的输入输出与快捷键、资源管理器和搜索等各个功能组合到一起。例如无需多次 <code>cd</code> 到某一个目录直接在资源管理器打开；在终端中点击文件直接在 VS Code 中编辑；当终端输出内容（例如报错信息）包括链接或者文档路径时，VS Code 会自动识别并可以直接点击打开链接和文件。</p>
+<figure data-type="image" tabindex="36"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195726.png" alt="" loading="lazy"></figure>
+<h3 id="远程模式">远程模式</h3>
+<p>一些小型的计算和开发可以在本机完成，如果涉及到大型计算或者部署就需要在服务器上操作。VS Code 提供的远程模式可以让我们在本机轻松连接其它开发环境，目前官方的远程模式支持包括容器、SSH 和 WSL 在内的三种方式。</p>
+<figure data-type="image" tabindex="37"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195727.png" alt="" loading="lazy"></figure>
+<p>本部分内容以 SSH 为例进行简要介绍，我们默认需要远程连接的服务器已经开通了 ssh 服务，使用 Windows 时需要首先在 PC 正确安装 Windows OpenSSH Client。</p>
+<p>安装 <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh">Remote-SSH</a> 插件后，打开命令面板搜索<code>remote ssh</code>。然后找到 Remote-SSH 相关命令，即可以直接选择链接服务器，也可以选择打开配置文件。这里，我们选择打开配置文件进行简单的配置。</p>
+<figure data-type="image" tabindex="38"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195728.png" alt="" loading="lazy"></figure>
+<p>在配置文件中可以输入相应服务器名称、 IP 地址、用户名以及端口等信息。写法如下图所示，写好保存即可。</p>
+<figure data-type="image" tabindex="39"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195729.png" alt="" loading="lazy"></figure>
+<p>需要连接终端可以在命令面板中执行命令，也可以点击状态栏左下角的连接标志。连接成功后左下角将会显示此前设置的服务器名称。</p>
+<figure data-type="image" tabindex="40"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195730.png" alt="" loading="lazy"></figure>
+<p>需要注意的是，插件组件会分别显示在本地和远程中安装的插件，两者是独立的。如果需要在服务端使用 VS Code 要重新安装需要的插件。资源管理器展示的则是服务器中的目录结构，得益于 VS Code 全平台特性，使用起来基本感受不到差异。</p>
+<h3 id="代码调试">代码调试</h3>
+<p>VS Code 内置支持 node.js ，可以对 JavaScript, TypeScript 进行调试，其它语言则通过第三方插件实现。目前对 PHP, Ruby, Go, C#, Python, C++, PowerShell 等都有很好的支持。</p>
+<p>如果想进入调试模式，首先需要点击侧边栏的调制组件打开调试视图，会看到提示打开一个需要被调试的文件。我们以简单的 Python 脚本举例，打开脚本后会自动生成一个名为 launch.json 的调试配置文件。这个文件可以随时修改，定义不同的内容应该如何加载调试。典型的配置如下图所示。</p>
+<figure data-type="image" tabindex="41"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195731.png" alt="" loading="lazy"></figure>
+<p>下图为调试界面的主要内容，其中包括当前变量、堆栈和断点等，顶部为执行控制工具栏。</p>
+<figure data-type="image" tabindex="42"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195732.png" alt="" loading="lazy"></figure>
+<p>和 IDE 相比，复杂项目的调试是 VS Code 的弱点。由于调试本身由其它插件完成，不同调试器在调试代码时需要的信息各不相同，要自行使用配置文件进行配置。如果你真的对代码调试有更高的需求，可以查阅官方更加详细的<a href="https://code.visualstudio.com/Docs/editor/debugging">说明文档</a>。</p>
+<h2 id="或许有用">或许有用</h2>
+<p>最后，列举几个可能会让 VS Code 更加顺手的设置。</p>
+<p><strong>渲染空格符制表符</strong></p>
+<p>通过设置 <code>editor.renderWhitespace: all</code> 可以将所有的空格符、制表符等全部显示出来。有时候空白的地方就是坑。</p>
+<p><strong>修改新建文件默认格式</strong></p>
+<p>默认配置时，<code>command+n</code> 快捷键可以在编辑器里创建一个新的普通文本文件。如果你是一个把 VS Code 当做文本编辑器用的人，不妨通过 <code>files.defaultLanguage</code> 把新建文档格式设置成 Markdown。</p>
+<p><strong>前后光标处跳转</strong></p>
+<p>这个功能有些向在 Linux 中快速回到之前目录的操作。<code>ctrl+-</code> 跳转回上一次光标所在位置，<code>ctrl+shift+-</code> 则相反。</p>
+<p><strong>自定义快捷键</strong></p>
+<p>如果你是从其它 IDE 迁移过来，可能会面临快捷键冲突和缺失的问题。这时可以通过自定义快捷键解决。</p>
+<p>例如 R 语言用户在 RStudio 中可以使用 <code>alt+-</code> 一气呵成输入赋值符号 <code>&lt;-</code>，在 VS Code 中必须也可以。</p>
+<p>打开 Keyboard Shortcuts 会看到这个快捷键已经被绑定，可以在 json 文件中设置不同情境下新的含义。</p>
+<p>点开快捷键配置文件之后不要管左边的内容，直接去右边设置就好，配置方法如图。以后在 R 或者 Rmd 文件里 <code>alt+-</code> 就变成了和 RStudio 一样的快捷键。</p>
+<figure data-type="image" tabindex="43"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421195733.png" alt="" loading="lazy"></figure>
+<p>关于快捷键自定义的语法，可以查看对应<a href="https://code.visualstudio.com/docs/getstarted/keybindings">官方文档</a>。</p>
+<h2 id="写在最后">写在最后</h2>
+<p>以上，结合 <a href="https://kaopubear.top/blog/2020-04-21-usevscodepart2">VS Code 编辑器入门指南上篇-核心概念与组件</a> 就是对 VS Code 这款代码编辑器的入门介绍。</p>
+<p>当我借助这篇两文章再一次梳理了 VS Code 使用场景后突然多了点感慨。在热衷于讨论和标榜 All-in-One 工具的今天，VS Code 轻量快速的软件本体加上开放丰富的插件生态代表了另一种思路，似乎正从某个层面朝着这个方向大步前进。</p>
+<p>如果本文没有涉及到你的领域，不妨去<a href="https://marketplace.visualstudio.com/">插件市场</a>探索一番，万一找到什么有趣的摸鱼神器呢？</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<figure data-type="image" tabindex="44"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20190628083754.png" alt="扫码即刻沟通" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
@@ -101,6 +646,121 @@
         <content type="html"><![CDATA[<blockquote>
 <p>本文收发于「<a href="https://sspai.com/post/60116">少数派</a>」</p>
 </blockquote>
+<!-- more -->
+<h2 id="写在前面">写在前面</h2>
+<p>如果当电脑只能装一个软件还需要尽量不影响日常学习工作时，不知道你的选择会是什么。我把这个看似「荒诞」的问题理解为「All-in-One」的升级版拷问。</p>
+<p>这个问题陪伴了我很久，每用一个软件我都会想想它对我究竟有多不可代替，然后决定是否继续用下去；当决定深度使用后，我就会问自己它能在多大程度上帮助我完成日常的学习和工作。截至这篇文章完稿，如果我的电脑只能装一个软件还要做到基本不影响日常学习工作，我的选择是  <a href="https://code.visualstudio.com/">VS Code</a>。</p>
+<p>参考之前写过的  <a href="https://kaopubear.top/blog/2019-09-11-howtolearnzotero/">文献管理工具 Zotero 入门指南</a>，本入门指南将从 VS Code 特点出发，介绍入门 VS Code 必须了解的核心概念和组件（上篇）以及 <a href="https://kaopubear.top/blog/2020-04-21-usevscodepart2">5 个 VS Code 实际使用场景</a>（下篇）。希望对想了解和学习 VS Code 的读者能有一点帮助和启发，下文是该入门指南的上篇。</p>
+<h2 id="什么是代码编辑器">什么是代码编辑器</h2>
+<p>如果此前对「代码编辑器」没有任何概念，我们可以和文本编辑器（写作工具）进行类比，就是<strong>为了更好更方便进行代码编写开发</strong>的工具。</p>
+<p>提到代码编辑器，不少「工龄」较长的程序员第一反应都会是 Notepad++，这款代码编辑器发布于 2003 年并更新至今，非常经典。因为使用惯性和轻量的特点它目前依旧很受欢迎。不过在 2020 年的今天，有更多好用的代码编辑器值得向你推荐。目前比较受欢迎的代码编辑器主要有  <a href="https://code.visualstudio.com/">VS Code</a>、<a href="https://atom.io/">Atom</a>  和  <a href="https://www.sublimetext.com/">Sublime text</a> 。它们各有特点也都有不少死忠粉，新手在初期都可以尝试。</p>
+<p>另外你或许还经常人提起 IDE(Intergreated Development Environment)，和代码编辑器相比 IDE 更关注开箱即用的体验、对代码的智能理解和对大型项目的支持，因此相对「笨重」；代码编辑器则更加轻量，侧重于文件，对于语言和工作流的支持也更自由。</p>
+<h2 id="为什么选择-vs-code">为什么选择 VS Code</h2>
+<blockquote>
+<p>Visual Studio Code（简称 VS Code）是一个由微软开发，同时支持 Windows 、 Linux 和 macOS 等操作系统且开放源代码的代码编辑器，它支持测试，并内置了 Git 版本控制功能，同时也具有开发环境功能，例如代码补全（类似于 IntelliSense）、代码片段和代码重构等。该编辑器支持用户个性化配置，例如改变主题颜色、键盘快捷方式等各种属性和参数，同时还在编辑器中内置了扩展程序管理的功能。<br>
+——维基百科</p>
+</blockquote>
+<p>瑞士计算机科学家 Erich Gamma （《设计模式》作者、 Eclipse 主要开发者之一） 2011 年从 IBM 来到微软后起初负责组建团队开发一款线上开发工具（Manaco），后来他们在这个工具的基础上开发了如今的 VS Code 并于 2015 年发布。VS Code 定位为一个  <strong>高性能轻量级的编辑器</strong>，为了保证主进程的稳定，插件系统运行在主进程之外，所有个性化功能都由插件系统完成，在 IDE 和编辑器之间找到一个比较理想的平衡。</p>
+<p>在微软所有开源项目中，VS Code 是目前最受欢迎的一个。经过不同工具之间的比较，我最终选择 VS Code 的原因包括：</p>
+<ul>
+<li>完全免费且开源，更新迭代稳定</li>
+<li>跨平台编辑器，满足日常在不同系统中的使用</li>
+<li>占用系统资源比较少，大文件打开速度快</li>
+<li>插件丰富，扩展性极强</li>
+<li>使用人数多且社区活跃，碰到问题和需求容易找到解决方案</li>
+</ul>
+<h2 id="从-0-到-1-开始使用-vs-code">从 0 到 1 开始使用 VS Code</h2>
+<h3 id="下载与安装">下载与安装</h3>
+<p>VS Code 有两个不同版本：稳定版（Stable）每月更新；预览版（Insiders）每个工作日更新。两个版本可同时安装互不影响，在  <a href="https://code.visualstudio.com/Download">官网</a>  即可选择自己需要的平台和版本，本文使用的版本为稳定版 1.44.1。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200415210853.png" alt="" loading="lazy"></figure>
+<p>客户端安装完成后，如希望通过终端启动 VS Code，可以按下  <code>shift+command+p</code>  调出命令面板，在搜索框内输入<code>shell command</code>  后找到并点击「Shell Command: Install 'code' command in PATH」即可。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200420201447.png" alt="" loading="lazy"></figure>
+<p>VS Code 默认是英文界面，这里<strong>并不建议</strong>把默认语言修改为中文，因为在学习大量英文相关教程和说明时使用英文界面或许更容易操作。另外，VS Code 绝大多数插件都没有汉化，使用起来会中英混杂。</p>
+<p>如果需要使用中文，依旧可以通过  <code>shift+command+p</code>  调取命令面板，然后在搜索框中输入  <code>display</code>  找到并点击「Configure Display Language」，这时会显示目前可以选择的语言或者安装其它语言。选择「Install additional languages...」后会跳转到相关语言插件，选择中文语言包安装并进行安装。安装完成后再次找到「Configure Display Language」后选择「zh-cn」后重启即可。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200420201824.png" alt="" loading="lazy"></figure>
+<h3 id="欢迎界面">欢迎界面</h3>
+<p>打开 VS Code 后，未修改默认配置的情况下首先会看到「欢迎页面」。如下图，欢迎页面有五部分内容。首次使用不妨先花点时间浏览「学习」部分内容，其中交互式演练场（interactive playground）是新手了解 VS Code 好资料。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200415212335.png" alt="" loading="lazy"></figure>
+<h3 id="vs-code-主题与图标">VS Code 主题与图标</h3>
+<p>在个性化设置部分点击「Color theme」可以选择一个你喜欢的主题。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200420202220.png" alt="" loading="lazy"></figure>
+<p>除了主题之外，你还可以为 VS Code 选择一套自己喜欢的文件图标。点击左下角的「设置」图标，选择「file icon theme」。</p>
+<figure data-type="image" tabindex="6"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200420202323.png" alt="" loading="lazy"></figure>
+<p>然后选择「Install additional File icon theme...」会弹出可以安装的 icon 插件列表，例如 Material Icom Theme，点击安装后选择使用即可。</p>
+<h2 id="核心概念与组件">核心概念与组件</h2>
+<figure data-type="image" tabindex="7"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200416005529.png" alt="" loading="lazy"></figure>
+<p>上面这张图展示了默认配置情况下 VS Code 的基本界面。</p>
+<ol>
+<li>编辑器：在这里码字写代码</li>
+<li>侧边栏：可以类比为 macOS 的扩展坞，姑且称为「组件坞」，这里会展示各种组件和插件图标。</li>
+<li>组件内容：击侧边栏不同的组件后这里会展示相应显示组件内容。</li>
+<li>面板：包括问题显示、输出、调试控制台和终端四个组件。问题面板会显示代码中的警告和问题，输出面板会呈现命令和插件的运行结果，调试控制台用来进行代码调试，终端则可以帮助我们直接在 VS Code 中进行命令行操作。</li>
+<li>状态栏：可以类比为 macOS 的菜单栏 + 通知中心，这里会展示和文档及项目相关的简单信息以及部分插件提供的信息。</li>
+</ol>
+<h3 id="侧边栏及常用组件">侧边栏及常用组件</h3>
+<figure data-type="image" tabindex="8"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200420202749.png" alt="" loading="lazy"></figure>
+<p>默认情况下，侧边栏显示的五个组件分别是：资源管理器、跨文件搜索、源代码管理、启动和调试和扩展管理。随着后期安装插件的增多，侧边栏可以显示的组件数量也会越来越多，不过你可以通过右击侧边栏选择隐藏那些用不到的组件还可以拖动组件图标进行排序。</p>
+<p>侧边栏显示的默认组件中「资源管理器」和「跨文件搜索」就是字面功能，分别用来浏览管理文件和进行内容查找替换，我们会在下篇中配合具体应用场景进行更详细的介绍。源代码管理和调试分别用于 git 一系列操作和 debug，如果你并非程序员，没有这方面的需求也可以选择将其隐藏。</p>
+<h3 id="扩展管理及插件">扩展管理及插件</h3>
+<p>这一部分需要详细介绍「扩展管理」组件和「插件」这个概念。</p>
+<p>如文章开头所言，VS Code 中为了保证主进程的稳定所有个性化功能的实现都将通过插件来完成，在下文的应用场景部分我们也会用到大量插件。我们可以把插件理解为 macOS 中的应用，而扩展管理则是 VS Code 的应用商店。</p>
+<figure data-type="image" tabindex="9"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200416013917.png" alt="" loading="lazy"></figure>
+<p>如上图，在组件显示部分可以看到已经安装的插件和推荐插件，所有你想找的东西都可以尝试在搜索框进行搜索。点击感兴趣的插件后会显示插件详情，其中包括详细介绍、作者和更新日志等内容。</p>
+<p>需要说明的是，由于 VS Code 的扩展插件数量实在过于庞大，在浏览插件的时候系统已提供了一些过滤操作，点击  <code>···</code>  可以选择只查看安装的插件或者流行的插件等等。</p>
+<p>更方便的是你还可以直接在插件搜索框中输入  <code>@</code>  来进行快速过滤。</p>
+<figure data-type="image" tabindex="10"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200416111309.png" alt="" loading="lazy"></figure>
+<p>为了更方便的找到需要的插件，VS Code 支持按照类别进行查找，目前支持的类别如下图所示，包括语言支持、代码片段和主题等。</p>
+<figure data-type="image" tabindex="11"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200416111254.png" alt="" loading="lazy"></figure>
+<p>目前在官方的插件商店中，我们可以看到共有 12 类 20000 余款插件。如果你想开发自己的插件，可以进一步参考<a href="https://code.visualstudio.com/api">官方插件 API</a> 。</p>
+<figure data-type="image" tabindex="12"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421122004.png" alt="" loading="lazy"></figure>
+<h3 id="命令面板">命令面板</h3>
+<p>VS Code 作为一个代码编辑器，它本身有两个比较极客的设计思想。一个是基于文本（命令）的交互界面，另一个是基于文本的系统设置。基于文本的交互界面就是这里提到的命令面板，系统设置将会稍后介绍。</p>
+<p>命令面板的存在提供了一种全新的使用逻辑，熟练使用后可以极大提高效率，因此对命令面板有基本了解是上手 VS Code 的关键。其实在上文安装命令行启动以及设置中文支持时我们都用过它，<code>shift+command+p</code>  就是调用命令面板的一种基本方式。</p>
+<p>命令面板的高效在于其<strong>可以通过输入框中的第一个字符</strong>来触发不同功能。</p>
+<p>如下图所示，当你按下  <code>shift+command+p</code>  时，命令面板的输入框会自动出现一个  <code>&gt;</code>  它意味着此时命令面板认为你想要搜索相关命令并执行。</p>
+<figure data-type="image" tabindex="13"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200416010332.png" alt="" loading="lazy"></figure>
+<p>当删除  <code>&gt;</code>  后会看到命令面板切换到了「访问最近文件」状态。如果你想在调用命令面板时直接访问最近文件，快捷键是  <code>command+p</code>。</p>
+<figure data-type="image" tabindex="14"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200420203358.png" alt="" loading="lazy"></figure>
+<p>如果此时输入  <code>?</code>  会触发命令面板的「帮助」功能，我们可以看到支持哪些操作。下图中显示的切换文件、<code>&gt;</code>执行命令、<code>@</code>符号跳转等我们在后续的应用场景中都会提及。其他单词缩写也代表了对应的操作，例如<code>edt</code>接空格可以管理打开的编辑器，<code>term</code>接空格可以打开或管理终端。</p>
+<figure data-type="image" tabindex="15"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200420203444.png" alt="" loading="lazy"></figure>
+<h3 id="修改设置">修改设置</h3>
+<p>在下篇介绍中，我们会涉及到更改默认设置的内容，因此有必要了解 VS Code 更改设置的方法。</p>
+<p>VS Code 目前已经有了比较完善的图形化设置界面，只需要使用  <code>command+,</code>  就可以调用。</p>
+<figure data-type="image" tabindex="16"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200420203540.png" alt="" loading="lazy"></figure>
+<p>如上图所示，设置面板已经列出了用户常用配置内容，你可以寻找自己想要改变的东西，但是这里更加推荐直接在搜索框里搜索。此外，VS Code 的配置分为用户（User）和工作区（workspaces）两个层级，其中用户配置会对全局生效，工作区配置只会对当前所在的项目（目录）生效且优先级更高。</p>
+<p>除了图形化界面以外，VS Code 的所有配置其实都写在 json 格式的一个文本文件中。你可以非常方便的调出该文件进行设置，只需要在命令面板中输入<code>open sett</code>  然后选择 JSON 即可。如果是针对工作区的设置，json 文件将会保存在工作区<code>.vscode</code>目录下。</p>
+<p>在 json 文件中，你可以直接编写设置，也可以点击行号前的「笔形」图标查看可以更改的内容。之所以有必要了解如何通过配置文件更改设置是因为部分插件提供的复杂设置只能通过修改 json 文件完成。</p>
+<figure data-type="image" tabindex="17"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200420203712.png" alt="" loading="lazy"></figure>
+<h3 id="工作区">工作区</h3>
+<p>工作区（workspace）是另一个需要了解的核心概念，它对应在 VS Code 中如何进行文件管理。</p>
+<p>上文我们提到相比于 IDE 着重于项目管理，代码编辑器更加侧重于文件本身，VS Code 所有操作就是基于当前目录、子目录和其中的文件进行的。在下篇内容中我们会讲到很多操作和插件都会基于所在目录生成相关的配置文件，而这些文件通常都会被保存到所在目录的<code>.vscode</code>文件夹中。<code>.vscode</code>  文件夹中的各种配置决定了不同目录被打开时 VS Code 会启动哪些插件和配置。</p>
+<p>随着项目逐渐发展，单一文件夹往往无法满足我们的开发需求，VS Code 通过工作区这个概念解决了同时操作多个文件夹的问题。简而言之，当你使用 VS Code 打开一个文件夹后可以在命令面板中搜索运行  <code>add folder to workspace</code>，然后选择想要打开的其它文件夹，此时就会显示一个尚未保存的工作区。</p>
+<figure data-type="image" tabindex="18"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421124932.png" alt="" loading="lazy"></figure>
+<p>当所有文件夹添加完成后在命令面板执行  <code>save workspace as</code>  选择我们的工作区名字和要保存的位置，就可以对该工作区进行保存。</p>
+<figure data-type="image" tabindex="19"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421125051.png" alt="" loading="lazy"></figure>
+<p>这时我们会看到一个名字后缀为<code>code-workspace</code>的文件，其本质依旧是一个 json 格式的配置文件。其中包括了文件夹的相对路径以及针对工作区的其它设置。</p>
+<figure data-type="image" tabindex="20"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421125339.png" alt="" loading="lazy"></figure>
+<p>此外，记住两个目录切换的快捷键也会大大提高效率，<code>ctrl+r</code>  可以快速查看并切换最近打开的文件夹，<code>ctrl+w</code>  则可以快速在所有打开的 VS Code 窗口中进行切换。</p>
+<h3 id="语言支持">语言支持</h3>
+<p>作为一个代码编辑器，VS Code 提供了统一的  <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a>  和  <a href="https://code.visualstudio.com/api/extension-guides/debugger-extension">Code Debugging Protocol API</a>，所有语言支持都能够借助这两个 API 在 VS Code 上得到类似 IDE 的开发和调试体验。</p>
+<p>程序员可能最关心的内容就是对编程语言的支持，但初学者最不需要担心的其实也是这部分内容。到目前为止常用的主流编程语言在 VS Code 中都得到了很不错的支持，你需要的往往只是安装对应语言插件和进行一点基本配置。这些语言包括基础的 Markdown 和 JSON，以 HTML、CSS 和 JavaScript 为代表的多种前端语言和以 Python、Java、Go、C#、PHP 等为代表的大量后端语言。对于一些在程序员群体中相对使用人数较少的编程语言，例如 R 和 Julia 等也都有插件提供支持。下图为官网展示的几个流行语言插件。</p>
+<figure data-type="image" tabindex="21"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200421121631.png" alt="" loading="lazy"></figure>
+<p>如果想查看自己使用的编程语言是否支持，可以在<a href="https://marketplace.visualstudio.com/">插件商店</a>中查找。此外，当你用 VS Code 打开一个文件时，系统会根据文件名后缀自动提示你安装与之相关的语言插件，非常方面。</p>
+<p>这一部分我们也会在下篇中结合具体的应用场景进行介绍。</p>
+<h3 id="常用快捷键">常用快捷键</h3>
+<p>提倡使用使用快捷键，主要目的是提高效率尽量让双手不离开键盘。快捷键的使用开始看似是一件更浪费时间的事情，但是随着肌肉记忆和熟练度增加效率将会大大提高。</p>
+<p>如果你是从其它编辑器切换到 VS Code 完全可以移植之前熟悉的快捷键配置，比如 Vim, Atom 或者 sublime。如果是一个新手，下图是我自己日常用到的 VS Code 高频快捷键，供参考。</p>
+<figure data-type="image" tabindex="22"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200420204446.png" alt="" loading="lazy"></figure>
+<p>如果需要查看所有快捷键，可以通过 ctrl+K ctrl+s 进入快捷键设置界面或者直接查看官方文档。</p>
+<ul>
+<li><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">windows 快捷键</a></li>
+<li><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf">macOS 快捷键</a></li>
+</ul>
+<p>以上就是 VS Code 编辑器入门指南的上篇，我们介绍了什么是代码编辑器、为什么选择 VS Code 、从 0 到 1 开始使用 VS Code 以及上手 VS Code 需要了解的核心概念与组件。有了这些知识储备，我们在下篇中将会介绍 5 个 VS Code 实际应用场景，进而更好的了解 VS Code 的特性和一些有些插件。</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<figure data-type="image" tabindex="23"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20190628083754.png" alt="扫码即刻沟通" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
@@ -112,6 +772,56 @@
         <summary type="html"><![CDATA[<p>希望它能让你写笔记更方便些</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>希望它能让你写笔记更方便些</p>
+<!-- more -->
+<h2 id="关于">关于</h2>
+<p>VS code 目前是我的主力代码编辑器，在大多数时候也是我的主力文本编辑器。为了在用 VS code 写文献阅读笔记和读书笔记时更加顺手，我根据自己的阅读和记录习惯整理了一些 markdwon 模板，所谓模板其实就是若干适用于 markdown 的 snippets。为了让有需要的朋友也能用上这些 snippets，我把它们打包成了现在的插件，方便安装与使用。</p>
+<p>目前这个插件非常简单，只引入了少数 snippet，但后期会一直升级迭代。主要目的是为了熟悉 VS code 插件的开发及发布流程。</p>
+<h2 id="使用方法">使用方法</h2>
+<p>本插件在 markdown 文本中会自动触发，目前仅有 5 个模板可以使用。</p>
+<p><strong>说明</strong>：有部分用户反馈在在 Markdown 文档中 snippet 无法触发，原因可能是 Markdown 文本在默认设置中并没有开启<code>editor.quickSuggestions</code>选项，可以尝试在配置文件中写入如下设置：</p>
+<pre><code>&quot;[markdown]&quot;: {
+  &quot;editor.quickSuggestions&quot;: {
+    &quot;other&quot;: true,
+    &quot;comments&quot;: false,
+    &quot;strings&quot;: true
+  },
+},
+</code></pre>
+<h3 id="文献精读模板">文献精读模板</h3>
+<p>在编辑器内输入 <code>intensive_reading</code> 会自动出现精读模板提示，摁下 <code>Enter</code> 即可插入模板。因为精读笔记通常一次只读一篇，所以在模板中引入了一级标题，标题为<code>文献精读+当前日期</code>，例如<code>文献精读2019-09-09</code>。</p>
+<p>随后的内容包括包括文献信息、文献概述、好词好句、文献笔记和相关文献等内容。且光标首先会定位在<code>标题</code>行后面，输入标题之后直接按下 <code>Tab</code> 键会自动定位在 DOI 处，然后依次定位在发表日期、发表杂志和关键词后，方便输入。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200417101653.gif" alt="" loading="lazy"></figure>
+<h3 id="文献泛读模板">文献泛读模板</h3>
+<p>在编辑器内输入 <code>extensive_reading</code> 会自动出现泛读模板提示，摁下 <code>Enter</code> 即可插入模板。因为泛读笔记通常一次会读两到三篇，所以在模板中并未引入一级标题，而是使用了二级标题。包括文献信息、关键点、参考意义和相关内容。光标首先会定位在<code>标题</code>行位置，输入标题之后直接按下 <code>Tab</code> 键会自动定位在 DOI 和发表日期对应位置。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200417101651.gif" alt="" loading="lazy"></figure>
+<h3 id="kpt-每日工作记录模板">KPT 每日工作记录模板</h3>
+<p>在编辑器内输入 <code>kpt_daily</code> 会自动出现 KPT 每日工作记录模板提示，摁下 <code>Enter</code> 即可插入模板。KPT 三个字母分别代表 Keep、Problem 和 Try。具体含义如下：</p>
+<ul>
+<li>Keep: 当前你正在做的事，不要过于宽泛</li>
+<li>Problem：今日所遇到的问题</li>
+<li>Try：你准备明天要尝试的解决方案</li>
+</ul>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200417101652.gif" alt="" loading="lazy"></figure>
+<h3 id="debug-过程记录模板">Debug 过程记录模板</h3>
+<p>在编辑器内输入 <code>debug_note</code> 会自动出现 Debug 过程记录模板提示，摁下 <code>Enter</code> 即可插入模板。该模板包括：报错信息、猜猜原因、我的常识、参考资料和解决方案五部分。可以比较好的记录整个 Debug 过程。</p>
+<p>建议使用方法为首先复制好报错信息，然后再插入模板，此时光标会自动定位在报错信息下的代码框内，直接复制即可保存报错信息。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200417101649.gif" alt="" loading="lazy"></figure>
+<h3 id="闪念胶囊写作素材记录模板">闪念胶囊写作素材记录模板</h3>
+<p>在编辑器内输入 <code>idea_pills</code> 会自动出现闪念胶囊写作素材记录模板提示，摁下 <code>Enter</code> 即可插入模板。该模板包括：话题、灵感来源和写作思路三部分。其中灵感来源是那些让你产生表达冲动的内容，可能是看到一篇好的文章或者和朋友的偶然闲聊。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200417101650.gif" alt="" loading="lazy"></figure>
+<h3 id="5-分钟日记模板">5 分钟日记模板</h3>
+<blockquote>
+<p>0.0.5 版本更新</p>
+</blockquote>
+<p>关于 5 分钟日记模板相关介绍可以查看文章<a href="https://kaopubear.top/blog/2020-08-06-21day5minjournal/">21 天日记挑战-5 分钟日记法</a>。</p>
+<p>在编辑器内输入 <code>5min</code> 会自动出现闪念胶囊写作素材记录模板提示，摁下 <code>Enter</code> 即可插入模板。该模版包括 5 分钟日记中涉及到的 5 个问题。</p>
+<figure data-type="image" tabindex="6"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200825092305.gif" alt="" loading="lazy"></figure>
+<h2 id="下载地址">下载地址</h2>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=biotrainee-zhaofei.betternotesnippets">Markdown Note Snippets</a></p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<figure data-type="image" tabindex="7"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20190628083754.png" alt="扫码即刻沟通" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
@@ -123,6 +833,20 @@
         <summary type="html"><![CDATA[<p>我对简书这个平台的感情很复杂。我 2015 年开始把当时自己的考研复习笔记放到网络上，那个时候意外发现了简书，当时的首页还完全是编辑推荐，需要自己给专题投稿然后如果入了编辑的法眼才有可能会被推荐到首页上。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>我对简书这个平台的感情很复杂。我 2015 年开始把当时自己的考研复习笔记放到网络上，那个时候意外发现了简书，当时的首页还完全是编辑推荐，需要自己给专题投稿然后如果入了编辑的法眼才有可能会被推荐到首页上。</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200408194655.png" alt="" loading="lazy"></figure>
+<p>2016 年我写的一篇英语学习方法的文章在那个时候体量的简书小火了一下，有 2 万多阅读。但是这篇文章在几年前已经被他们自我审核给撤掉了，这也是我开始把文章大量发在自己博客的起因。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200408195118.png" alt="" loading="lazy"></figure>
+<p>在后来那个时间段的简书捧红了几个他们平台的 KOL，就不点名了。也不知道那些人现在怎么样了。那之后我还往简书上同步文章是因为他们的在线编辑器当时是少有的使用体验不错，而且整个网站在百度上的搜索权重也不低。</p>
+<p>之后简书经历了几次大改版，弱化编辑改为智能推荐、上线各种会员疯狂铺广告，以及莫名其妙的简书币。今天别人告诉我简书崩了，我登录测试，然后看到了不少评论提醒，评论的画风就变成下图了。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200408195129.png" alt="" loading="lazy"></figure>
+<p>然后我又浏览了一下首页，各种暗示的广告和垃圾文章，那广告恨不得跳出屏幕戳你脸上。又看了看简书的官方专题，看到官方介绍还真是唏嘘。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200408195141.png" alt="" loading="lazy"></figure>
+<p>至此，我觉得应该彻底告别这个地方了，然后登陆微博，取消了当年的「简书推荐作者」身份认证。</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20190628083754.png" alt="扫码即刻沟通" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
@@ -136,6 +860,164 @@
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
 <p>这周的刊首语随便聊聊几个工具。</p>
+<!-- more -->
+<h3 id="传闻微信再次收紧第三方接入服务">传闻微信再次收紧第三方接入服务</h3>
+<p>有传闻，微信即将关闭公众号文章分享到印象笔记的接口。如果过一段时间这个事情成真了，那应该就是所有第三方服务和 app 都要被微信掐死了。<br>
+很多国内的效率类笔记类工具一开始主打功能都包括和微信的整合，比如滴答清单比如印象笔记这类。<br>
+之前写分享和教程都会特意留意一下能不能和微信联动一下，最早印象笔记可以存微信群聊天记录，滴答清单可以直接发送任务。后来这些一个一个都没了。<br>
+不止一次收到类似于「与其用这用那不如好好研究下微信怎么用」的评论，我研究啥啊，研究私域流量，研究局域网么？<br>
+微信是有提醒功能也能聊天消息收藏转笔记，怎么着，这就是未来的 All in One 工具么 🙃。</p>
+<h3 id="从移动办公工具看认知偏差">从移动办公工具看认知偏差</h3>
+<p>在「财新周刊」最新一期的杂志中，提到了最近几个远程办公工具的一组数据：</p>
+<blockquote>
+<p>今年 1 月初，钉钉的日活用户数已经在 3000 万量级，是企业微信的 5 倍左右，华为和字节跳动则仍在 10 万量级徘徊。据极光大数据，钉钉从 2 月初的数千万日活已上涨超过 2 亿；腾讯会议从 100 多万升至 1000 多万；企业微信也从将近千万升至 1500 万。飞书和 WeLink 则仍在几十万量级。</p>
+</blockquote>
+<p>原来钉钉现在已经到了这样量级，而我日常在用的飞书根本还是排不上号。但是身边接触的人使用飞书的越来越多，以至于我产生了某种程度的认知偏差。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200330165843.jpeg" alt="" loading="lazy"></figure>
+<h2 id="专业文献">专业文献</h2>
+<h3 id="projectr-an-rbioconductor-package-for-transfer-learning-via-pca-nmf-correlation-and-clustering">projectR: An R/Bioconductor package for transfer learning via PCA, NMF, correlation, and clustering.</h3>
+<p>Dimension reduction techniques are widely used to interpret high-dimensional biological data. Features learned from these methods are used to discover both technical artifacts and novel biological phenomena. Such feature discovery is critically import to large single-cell datasets, where lack of a ground truth limits validation and interpretation. Transfer learning (TL) can be used to relate the features learned from one source dataset to a new target dataset to perform biologically-driven validation by evaluating their use in or association with additional sample annotations in that independent target dataset.<br>
+RESULTS:<br>
+We developed an R/Bioconductor package, projectR, to perform TL for analyses of genomics data via TL of clustering, correlation, and factorization methods. We then demonstrate the utility TL for integrated data analysis with an example for spatial single-cell analysis.<br>
+AVAILABILITY:<br>
+projectR is available on Bioconductor and at https://github.com/genesofeve/projectR</p>
+<h3 id="genome-phenome-wide-association-in-maize-and-arabidopsis-identifies-a-common-molecular-and-evolutionary-signature">Genome-phenome wide association in maize and Arabidopsis identifies a common molecular and evolutionary signature</h3>
+<p>Zhikai Liang, Yumou Qiu, James C Schnable<br>
+<em>Molecular Plant 2020 March 11</em><br>
+Linking natural genetic variation to trait variation can help determine the functional roles of different genes play. Often variation of one or several traits are assessed separately. High throughput phenotyping and data mining can capture dozens or hundreds of traits from the same individuals. Here we test the association between markers within a gene and many traits simultaneously. This Genome-Phenome Wide Association Study (GPWAS) is both a multi-marker and multi-trait test. Genes identified using GPWAS with 260 phenotypic traits in maize were enriched for genes independently linked to phenotypic variation. Traits associated with classical mutants were consistent with reported phenotypes for mutant alleles. Genes linked to phenomic variation in maize using GPWAS shared molecular, population genetic, and evolutionary features with classical mutants in maize. Genes linked to phenomic variation in Arabidopsis using GPWAS are significantly enriched in genes with known loss of function phenotypes. GPWAS may be an effective strategy to identify genes where loss of function alleles will produce mutant phenotypes. The shared signatures present in classical mutants and genes identified using GPWAS may be markers for genes with a role in specifying plant phenotypes generally, or pleiotropy specifically.</p>
+<h3 id="rasflow-an-rna-seq-analysis-workflow-with-snakemake">RASflow: an RNA-Seq analysis workflow with Snakemake.</h3>
+<p>Abstract<br>
+BACKGROUND:<br>
+With the cost of DNA sequencing decreasing, increasing amounts of RNA-Seq data are being generated giving novel insight into gene expression and regulation. Prior to analysis of gene expression, the RNA-Seq data has to be processed through a number of steps resulting in a quantification of expression of each gene/transcript in each of the analyzed samples. A number of workflows are available to help researchers perform these steps on their own data, or on public data to take advantage of novel software or reference data in data re-analysis. However, many of the existing workflows are limited to specific types of studies. We therefore aimed to develop a maximally general workflow, applicable to a wide range of data and analysis approaches and at the same time support research on both model and non-model organisms. Furthermore, we aimed to make the workflow usable also for users with limited programming skills.<br>
+RESULTS:<br>
+Utilizing the workflow management system Snakemake and the package management system Conda, we have developed a modular, flexible and user-friendly RNA-Seq analysis workflow: RNA-Seq Analysis Snakemake Workflow (RASflow). Utilizing Snakemake and Conda alleviates challenges with library dependencies and version conflicts and also supports reproducibility. To be applicable for a wide variety of applications, RASflow supports the mapping of reads to both genomic and transcriptomic assemblies. RASflow has a broad range of potential users: it can be applied by researchers interested in any organism and since it requires no programming skills, it can be used by researchers with different backgrounds. The source code of RASflow is available on GitHub: https://github.com/zhxiaokang/RASflow.<br>
+CONCLUSIONS:<br>
+RASflow is a simple and reliable RNA-Seq analysis workflow covering many use cases.<br>
+KEYWORDS:<br>
+RNA-Seq; Snakemake; Workflow<br>
+PMID: 32183729 DOI: <a href="https://doi.org/10.1186/s12859-020-3433-x">10.1186/s12859-020-3433-x</a></p>
+<h3 id="benchmarking-of-computational-error-correction-methods-for-next-generation-sequencing-data">Benchmarking of computational error-correction methods for next-generation sequencing data</h3>
+<p>Abstract<br>
+BACKGROUND:<br>
+Recent advancements in next-generation sequencing have rapidly improved our ability to study genomic material at an unprecedented scale. Despite substantial improvements in sequencing technologies, errors present in the data still risk confounding downstream analysis and limiting the applicability of sequencing technologies in clinical tools. Computational error correction promises to eliminate sequencing errors, but the relative accuracy of error correction algorithms remains unknown.<br>
+RESULTS:<br>
+In this paper, we evaluate the ability of error correction algorithms to fix errors across different types of datasets that contain various levels of heterogeneity. We highlight the advantages and limitations of computational error correction techniques across different domains of biology, including immunogenomics and virology. To demonstrate the efficacy of our technique, we apply the UMI-based high-fidelity sequencing protocol to eliminate sequencing errors from both simulated data and the raw reads. We then perform a realistic evaluation of error-correction methods.<br>
+CONCLUSIONS:<br>
+In terms of accuracy, we find that method performance varies substantially across different types of datasets with no single method performing best on all types of examined data. Finally, we also identify the techniques that offer a good balance between precision and sensitivity.<br>
+PMID: 32183840 <br>
+DOI: <a href="https://doi.org/10.1186/s13059-020-01988-3">10.1186/s13059-020-01988-3</a></p>
+<h3 id="bandits-bayesian-differential-splicing-accounting-for-sample-to-sample-variability-and-mapping-uncertainty">BANDITS: Bayesian differential splicing accounting for sample-to-sample variability and mapping uncertainty.</h3>
+<p>Abstract<br>
+Alternative splicing is a biological process during gene expression that allows a single gene to code for multiple proteins. However, splicing patterns can be altered in some conditions or diseases. Here, we present BANDITS, a R/Bioconductor package to perform differential splicing, at both gene and transcript level, based on RNA-seq data. BANDITS uses a Bayesian hierarchical structure to explicitly model the variability between samples and treats the transcript allocation of reads as latent variables. We perform an extensive benchmark across both simulated and experimental RNA-seq datasets, where BANDITS has extremely favourable performance with respect to the competitors considered.<br>
+PMID: 32178699<br>
+DOI: <a href="https://doi.org/10.1186/s13059-020-01967-8">10.1186/s13059-020-01967-8</a></p>
+<h3 id="transcriptional-regulation-of-genes-bearing-intronic-heterochromatin-in-the-rice-genome">Transcriptional regulation of genes bearing intronic heterochromatin in the rice genome.</h3>
+<p>Abstract<br>
+Intronic regions of eukaryotic genomes accumulate many Transposable Elements (TEs). Intronic TEs often trigger the formation of transcriptionally repressive heterochromatin, even within transcription-permissive chromatin environments. Although TE-bearing introns are widely observed in eukaryotic genomes, their epigenetic states, impacts on gene regulation and function, and their contributions to genetic diversity and evolution, remain poorly understood. In this study, we investigated the genome-wide distribution of intronic TEs and their epigenetic states in the Oryza sativa genome, where TEs comprise 35% of the genome. We found that over 10% of rice genes contain intronic heterochromatin, most of which are associated with TEs and repetitive sequences. These heterochromatic introns are longer and highly enriched in promoter-proximal positions. On the other hand, introns also accumulate hypomethylated short TEs. Genes with heterochromatic introns are implicated in various biological functions. Transcription of genes bearing intronic heterochromatin is regulated by an epigenetic mechanism involving the conserved factor OsIBM2, mutation of which results in severe developmental and reproductive defects. Furthermore, we found that heterochromatic introns evolve rapidly compared to non-heterochromatic introns. Our study demonstrates that heterochromatin is a common epigenetic feature associated with actively transcribed genes in the rice genome.<br>
+PMID: 32187179 DOI: <a href="https://doi.org/10.1371/journal.pgen.1008637">10.1371/journal.pgen.1008637</a></p>
+<h2 id="数据库">数据库</h2>
+<h3 id="免费可商用插画素材">免费可商用插画素材</h3>
+<p>插画素材风格多样、质量超高，网站上提供了 80 个免费的插画，可以免费用于个人和商业项目中。<br>
+<a href="https://lab.streamlineicons.com/">https://lab.streamlineicons.com/</a></p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200330165851.svg" alt="" loading="lazy"></figure>
+<h2 id="好书好文">好书好文</h2>
+<h3 id="2010-编年史我们所爱的流行文化们">2010 编年史：我们所爱的流行文化们</h3>
+<p>Astrian  写在 2019 年底的  <a href="https://astrianzheng.cn/chronicle-for-2010s-about-popular-elements.html">2010 编年史：我们所爱的流行文化们</a>  最近因为巧合又读了一遍，很多地方都说出了我的感受，但是我并没有能力把过去的 10 年做一个个人化的梳理，因此要再次推荐一下。从一篇文章中能读懂一个人，看到一个人的知识储备。<br>
+在文章中他写到这样一段话：</p>
+<blockquote>
+<p>人们彼此相连，却又彼此成为一座座孤岛。我们无法摆脱孤独，正如我们无法摆脱与他人产生联系。</p>
+</blockquote>
+<h3 id="现代百大设计最佳产品">现代百大设计最佳产品。</h3>
+<p>The greatest designs of modern times<br>
+早在 1959 年，美国《财富》杂志就启动了旨在发掘现代 100 种设计最佳产品的行动。该榜单由伊利诺伊理工学院设计研究所所长杰伊·多布林(Jay Doblin)编制，基于对那个时代 100 名顶尖设计师、建筑师和设计教师的调查完成。其结果完美地说明了上世纪中期的设计理念，同时也反映了当代的品味，上榜产品包括保时捷的时尚跑车，甚至还有伊姆斯(Eames)、阿尔托(Alalto)和萨里宁(Saarinen)的更时尚的扶手椅等。<br>
+2019 年，为了纪念最初榜单发布 60 周年，《财富》杂志与现由丹尼斯·韦尔(Denis Weil)担任院长的 IIT 设计学院合作，重新创建了这项调查。研究人员尽可能地遵循多布林的方法，并进行了明智的现代调整，就他们认为真正伟大的发明对教育家、有影响力的人、自由设计师和公司设计团队进行民意调查。经过一年多的策划、调查和整理，为我们呈现了“<a href="https://fortune.com/longform/100-best-designs/">现代百大设计最佳</a>”产品。<br>
+<a href="https://fortune.com/longform/100-best-designs/">https://fortune.com/longform/100-best-designs/</a></p>
+<blockquote>
+<p>What does it take to become a design icon? There‘s more to it than good looks. These 100 products have made our lives simpler, better, and yes, more stylish.</p>
+</blockquote>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200330165901.gif" alt="image.gif" loading="lazy"></figure>
+<p>中文报道：<a href="http://reader.s-reader.com/article/f5/3892463.html">http://reader.s-reader.com/article/f5/3892463.html</a></p>
+<h2 id="学习素材">学习素材</h2>
+<h3 id="远程学习怎么学">远程学习怎么学</h3>
+<p>GitHub 和 juypter<br>
+<a href="https://jupyter4edu.github.io/jupyter-edu-book/">https://jupyter4edu.github.io/jupyter-edu-book/</a><br>
+<a href="http://tljh.jupyter.org/en/latest/">http://tljh.jupyter.org/en/latest/</a><br>
+<a href="https://github.blog/2020-03-18-set-up-your-digital-classroom-with-github-classroom/">https://github.blog/2020-03-18-set-up-your-digital-classroom-with-github-classroom/</a><br>
+<a href="https://education.rstudio.com/blog/2020/03/resources-for-teaching-data-science-and-statistics-remotely/">Resources and tips for teaching (with) R remotely</a></p>
+<h3 id="unix-r-and-python-tools-for-genomics-and-data-science">Unix, R and python tools for genomics and data science</h3>
+<p><a href="https://github.com/crazyhottommy/getting-started-with-genomics-tools-and-resources">https://github.com/crazyhottommy/getting-started-with-genomics-tools-and-resources</a></p>
+<h3 id="teaching-resources">Teaching resources</h3>
+<p><a href="http://rafalab.github.io/pages/teaching.html">http://rafalab.github.io/pages/teaching.html</a></p>
+<h3 id="bioinformatics-workbook">Bioinformatics Workbook</h3>
+<p><a href="https://bioinformaticsworkbook.org/">https://bioinformaticsworkbook.org/</a><br>
+<a href="https://github.com/ISUgenomics/bioinformatics-workbook">https://github.com/ISUgenomics/bioinformatics-workbook</a></p>
+<h2 id="影音推荐">影音推荐</h2>
+<h3 id="熊言熊语">熊言熊语</h3>
+<p>本周的影音类内容推荐一个私货，「熊言熊语」播客的试播正式上线了。</p>
+<p>播客 RSS 地址：https://podcast.kaopubear.top/episodes/feed.xml</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200330165907.png" alt="熊言熊语.png" loading="lazy"></figure>
+<p>「熊言熊语」是一档由 <a href="https://kaopubear.top/">思考问题的熊</a> 主持的播客（podcast）栏目，在双周更新的基础上争取单周更新。目前托管在喜马拉雅，思考问题的熊和他的朋友们一起聊学习聊工作聊生活。</p>
+<p><strong>形式</strong></p>
+<ul>
+<li>单口：由思考问题的熊一人录制，分享想法观点</li>
+<li>访谈：主播+嘉宾的形式，就嘉宾擅长的话题进行访谈</li>
+<li>对话：主播+客座主播，就大家关心的内容和话题进行讨论</li>
+</ul>
+<p><strong>内容</strong></p>
+<ul>
+<li>观点知识：对于某些问题的想法看法，针对文章书籍的学习笔记和评论</li>
+<li>专业相关：生物信息（数据分析）相关的内容</li>
+<li>学习技能：学习心得方法和生产力工具及技能的介绍</li>
+<li>工作生活：聊工作和生活碰到的各种问题和应对方法</li>
+</ul>
+<p><strong>订阅</strong></p>
+<p>「熊言熊语」目前托管在喜马拉雅平台，你可以通过苹果播客（Podcast）、Google Podcast、Spotify 以及其他泛用型播客客户端进行订阅收听，也可以在喜马拉雅、网易云音乐和 Bilibili 等国内平台搜索收听，还可以在该<a href="https://podcast.kaopubear.top/">播客首页</a>直接收听节目。</p>
+<h3 id="creating-an-r-data-package-cord19-in-rstudio">Creating an R data package (cord19) in RStudio</h3>
+<p><a href="https://www.youtube.com/watch?v=F4oUJp76KUY&amp;feature=youtu.be">https://www.youtube.com/watch?v=F4oUJp76KUY&amp;feature=youtu.be</a><br>
+介绍如何创建一个  R  的数据包。</p>
+<h2 id="工具">工具</h2>
+<h3 id="mac-端翻译软件-bob">Mac 端翻译软件  <a href="https://github.com/ripperhe/Bob">Bob</a></h3>
+<p>Bob 是一款 Mac 端翻译软件，翻译方式支持划词翻译和截图翻译，翻译引擎支持有道翻译、百度翻译和谷歌翻译。</p>
+<h3 id="rstudio-13-preview-the-little-things">RStudio 1.3 Preview: The Little Things</h3>
+<p><a href="https://blog.rstudio.com/2020/03/17/rstudio-1-3-the-little-things/">https://blog.rstudio.com/2020/03/17/rstudio-1-3-the-little-things/</a><br>
+RStudio  发布了新的预览版本，有几个比价不错的更新，其中比较重要的两个如下：</p>
+<ul>
+<li>全局替换：Ctrl_Shift_F （MacOS： Cmd_Shift_F）现在支持了全局替换</li>
+<li>Shiny  后台运行：现在可以把 Shiny 放在后台运行了</li>
+</ul>
+<h3 id="github-移动-app-正式上线">GitHub 移动 App 正式上线</h3>
+<p><a href="https://www.jiqizhixin.com/articles/2020-03-18-10">https://www.jiqizhixin.com/articles/2020-03-18-10</a><br>
+据官方介绍，移动 app 有四个主要的特性功能值得关注。有了这些功能，用户可以在手机上浏览代码、管理工作日程和任务、评价其他工作和项目、合并和管理分支等。</p>
+<h3 id="优秀的网页-markdown-写作工具">优秀的网页 Markdown 写作工具</h3>
+<p>介绍三个比较不错的在线写作网站以及他们的特点和问题</p>
+<ul>
+<li><a href="https://telegra.ph/">https://telegra.ph/</a></li>
+</ul>
+<p>访问和使用 Telegraph 不需要注册账号与下载软件，只需在网页浏览器中访问 <a href="https://telegra.ph/">http://telegra.ph/</a> 便可看到简约的界面，填入要发布的内容即可匿名发布。内容发布之后，只要清除浏览器的缓存，便无法再编辑文章。内容发布之后，不能追溯到文章作者和发布者。类似于一个匿名博客，问题是在国内无法正常访问。</p>
+<ul>
+<li><a href="https://wtdf.io/">https://wtdf.io/</a></li>
+</ul>
+<p>WTDF.io 与 Telegraph  在编辑体验上类似，编辑器本身提供了字号、字体和背景配色，国内环境可以正常访问，支持富文本导出，分享时也能保证风格和排版不会出现太大的差异。wtdf  同时支持 markdown 和富文本，和 typora 类似。</p>
+<ul>
+<li><a href="https://hackmd.io/?nav=overview">https://hackmd.io/</a></li>
+</ul>
+<p>一个台湾工程师开发的即时在线协作 markdown 编辑器，在使用上是一个相对传统的 markdown 编辑器，协作的体验非常好。</p>
+<h3 id="coda-一款主打-no-code-的工具">Coda  一款主打  No Code  的工具</h3>
+<p>最近三年 Notion 越来越火了，尤其是过去一年在国内获得了不少关注，其实和它使用体验类似甚至某些层面还更优的并不止一款工具，<a href="https://coda.io/">Coda</a>  就是一个。最近有  <a href="https://usefyi.com/coda-history/">一篇文章</a>  介绍了  Coda  的发展历史。<br>
+Coda 的核心思想是：在线文档像一块画布，在里面可以添加按钮以及各种控件，文档就变得像一个 app。他们 2014 年开始做，闭门造车做了 3 年才上线；在上线前就融资 $6 千万，估值 $4 个亿。<br>
+Coda  同   Airtable、Notion  等工具主导思想都是  <a href="https://www.nocode.tech/">No-Code</a>，我们曾经习惯的笔记终将想数据库的形式迈进，在  Coda  看来，未来的软件本质就是文档，或者说在文档里完全可以呈现出一个 APP。<br>
+关于 No-code，少数派作者整理了一个<a href="https://showmenocode.com/Show-me-nocode-caaf8dadc29641e0b6666446eefa7eba">Notion 网页</a>有不少信息资料可以参考学习。关于 Coda 的介绍也可以参考少数派中的几篇教程。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200330165914.png" alt="" loading="lazy"></figure>
+<h3 id="共享屏幕且露脸">共享屏幕且露脸</h3>
+<p>现在大多数录屏直播或者视频都没有分享者的脸，其实这个问题在游戏直播界很早就有推荐的东西了，也有不错的视频会议工具可以使用，比如 <a href="https://zoom.us/">zoom</a> 和<a href="https://www.loom.com/"> loom</a>。<br>
+不过这里要推荐的工具是<a href="https://obsproject.com/">OBS</a>，OBS 是一个全平台且开源的直播和录播工具，非常强大，可以叠加多个画面，捕捉窗口和屏幕都不是问题。</p>
+<figure data-type="image" tabindex="6"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200330165919.png" alt="" loading="lazy"></figure>
+<p>关于 OBS 的使用介绍和教程  <a href="https://obsproject.com/wiki/">https://obsproject.com/wiki/</a></p>
+<h2 id="订阅">订阅</h2>
+<p>该周刊每周末发布，可以通过 <a href="https:kaopubear.top">我的博客</a> 阅读。</p>
+<h2 id="交流">交流</h2>
+<p>想进一步交流，欢迎留言，如果你喜欢本周的「靠谱熊每周分享」不妨请我喝一本咖啡，下周见！</p>
+<figure data-type="image" tabindex="7"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200315182224.png" alt="" width="400" height="400" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
