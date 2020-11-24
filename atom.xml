@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaopubear.top/blog</id>
     <title>思考问题的熊</title>
-    <updated>2020-11-24T09:44:35.904Z</updated>
+    <updated>2020-11-24T09:53:16.478Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaopubear.top/blog"/>
     <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
@@ -36,7 +36,7 @@ loaded via a namespace (and not attached):
 [1] compiler_4.0.3
 
 </code></pre>
-<p>关于如何解决R编译的问题，自R 进入到 4.0开始，在macOS上的配置就不需要像之前那么</p>
+<p>关于如何解决R编译的问题，自R 进入到 4.0开始，在macOS上的配置就不需要像<a href="https://mac.r-project.org/tools/index-old.html">之前那么复杂</a>了。</p>
 <p>目前只需要保证两个东西可以正常在macOS对应版本运行。</p>
 <p>首先是最新版本的Xcode command-line tool，针对Big Sur 的版本是 12.3 beta，可以从<a href="https://developer.apple.com/download/more/">官网</a>下载。</p>
 <figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20201124173141.png" alt="" loading="lazy"></figure>
