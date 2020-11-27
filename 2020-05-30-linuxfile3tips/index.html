@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <title>三个 Linux 文件高频小操作 | 思考问题的熊</title>
 <link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
-<link href="https://kaopubear.top/blog/styles/main.css?v=1606481713854" rel="stylesheet">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1606492068606" rel="stylesheet">
 <link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
   href="https://kaopubear.top/blog/atom.xml">
@@ -37,9 +37,9 @@
 </script>
 
   <meta name="description" content="去除文件名后缀
-在Linux 中跑各种任务或者循环命令的时候，有一个高频的需求是截取一部分文件名。例如有文件 XXX_aaa.bb 和 YYY_aaa.bb ，很可能我们需要提取出 XXX 和 YYY 来给后续的文件进行命名。
+在 Linux 中跑各种任务或者循环命令的时候，有一个高频的需求是截取一部分文件名。例如有文件 XXX_aaa.bb 和 YYY_aaa.bb ，很可能我们需要提取出 XXX 和 YYY 来给后续的文件进行命名。
 
-实现这个需..." />
+实现这个..." />
   <meta name="keywords" content="编程,linux" />
 </head>
 
@@ -112,7 +112,7 @@
   
 
   <div class="gridea-search-div">
-    <form id="gridea-search-form" data-update="1606481713854" action="https://kaopubear.top/blog/search/">
+    <form id="gridea-search-form" data-update="1606492068606" action="https://kaopubear.top/blog/search/">
       <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
     </form>
   </div>
@@ -127,20 +127,20 @@
                 <a>
                   三个 Linux 文件高频小操作</a>
               </h2>
-              <span class="article-info">2020-05-30, 1113 words, 5 min read</span>
+              <span class="article-info">2020-05-30, 1210 words, 5 min read</span>
             </div>
             <div class="post_content markdown">
               <p class="md_block">
                 <span class="md_line md_line_start md_line_end">
                   <h2 id="去除文件名后缀">去除文件名后缀</h2>
-<p>在Linux 中跑各种任务或者循环命令的时候，有一个高频的需求是截取一部分文件名。例如有文件 XXX_aaa.bb 和 YYY_aaa.bb ，很可能我们需要提取出 XXX 和 YYY 来给后续的文件进行命名。</p>
+<p>在 Linux 中跑各种任务或者循环命令的时候，有一个高频的需求是截取一部分文件名。例如有文件 XXX_aaa.bb 和 YYY_aaa.bb ，很可能我们需要提取出 XXX 和 YYY 来给后续的文件进行命名。</p>
 <!-- more -->
 <p>实现这个需求的方法有不少。</p>
-<p>利用变量中的 % 号。在 Linux 中使用百分号将变量的内容从变量的尾部删除。  一个%号可以从尾部最近位置进行匹配删除，两个%%从尾部最远位置匹配删除。同时支持使用通配符。例如<code>id=XXX_aaa.bb</code> 可以使用<code>${id％％_*}</code></p>
+<p>利用变量中的 % 号。在 Linux 中使用百分号将变量的内容从变量的尾部删除。 一个%号可以从尾部最近位置进行匹配删除，两个%%从尾部最远位置匹配删除。同时支持使用通配符。例如<code>id=XXX_aaa.bb</code> 可以使用<code>${id％％_*}</code></p>
 <p>第二种方式是使用 cut <code>cut -d ‘_’ -f 1</code>。使用 <code>_</code> 作为分隔符，输出第一列，也是可以得到 XXX</p>
 <p>第三种是使用 awk，和 cut 类似也是指定分隔符输出第一列 <code>ls *.bb| awk -F &quot;_&quot; '{print $1 }'</code></p>
 <p>为了让脚本使用率更高一些，我通常会使用绝对路径来指定文件位置。为了更快的获取文件名，会使用命令 basename。basename 本身就有一个非常好用的功能，可以剔除指定的文件名结尾部分。如下所示，我觉得这个应该是最优雅的方式。</p>
-<pre><code class="language-shell">basename /a/b/c/XXXX_aaa.bb _aaa.bb 
+<pre><code class="language-shell">basename /a/b/c/XXXX_aaa.bb _aaa.bb
 XXXX
 </code></pre>
 <h2 id="批量重命名">批量重命名</h2>
@@ -193,7 +193,8 @@ done
 <hr>
 <p><strong>本文作者</strong>：思考问题的熊</p>
 <p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
-<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20190628083754.png" alt="扫码即刻沟通" loading="lazy"></figure>
+<p>熊言熊语会员通讯「4321X」是一个免费的订阅服务。<br>
+每周为你会推荐 4 篇生物信息或者医学相关文献，分享 3 个我过去一周的思考，介绍 2 个我喜欢的工具，同时提出 1 个问题供我们交流，而 X 则代表不固定的 one more thing。可以<a href="http://eepurl.com/hjYAaj">点击这里</a>进行订阅。</p>
 <br />
                   
                   <span class="copyright">· 分享链接 https://kaopubear.top/blog/2020-05-30-linuxfile3tips/ </span>

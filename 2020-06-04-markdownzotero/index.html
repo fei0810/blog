@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <title>使用 Zotero 在 Markdown 中优雅地处理参考文献 | 思考问题的熊</title>
 <link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
-<link href="https://kaopubear.top/blog/styles/main.css?v=1606481713854" rel="stylesheet">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1606492068606" rel="stylesheet">
 <link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
   href="https://kaopubear.top/blog/atom.xml">
@@ -112,7 +112,7 @@
   
 
   <div class="gridea-search-div">
-    <form id="gridea-search-form" data-update="1606481713854" action="https://kaopubear.top/blog/search/">
+    <form id="gridea-search-form" data-update="1606492068606" action="https://kaopubear.top/blog/search/">
       <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
     </form>
   </div>
@@ -127,7 +127,7 @@
                 <a>
                   使用 Zotero 在 Markdown 中优雅地处理参考文献</a>
               </h2>
-              <span class="article-info">2020-06-04, 1982 words, 8 min read</span>
+              <span class="article-info">2020-06-04, 2079 words, 8 min read</span>
             </div>
             <div class="post_content markdown">
               <p class="md_block">
@@ -149,7 +149,7 @@
 <p>同时，把 Markdown 格式的文本用高度可定制的方法转换为 PDF 或者 Word 格式文档，绕不开 <a href="https://pandoc.org/index.html">Pandoc</a> 这个工具。我们熟悉的大量文本编辑器在生成其他格式文档时往往调用的都是 Pandoc。</p>
 <h2 id="概念">概念</h2>
 <h3 id="citation-keys">CITATION KEYS</h3>
-<p>所谓 Citation Keys(Citekey)，可以理解为 Better BibTeX  给文献生成的一个 ID，当我们在文档中需要插入文献的位置按照一定格式输入 Citekey 后就等于告诉 Zotero 要在这里引用对应的文献了。</p>
+<p>所谓 Citation Keys(Citekey)，可以理解为 Better BibTeX 给文献生成的一个 ID，当我们在文档中需要插入文献的位置按照一定格式输入 Citekey 后就等于告诉 Zotero 要在这里引用对应的文献了。</p>
 <p>由于 Citekey 是纯文本格式，不同编辑器对文章本身的影响可以降到最低。在 Endnote 中同样有类似的引用方式，这个概念被称作 Temporary citation。</p>
 <p>通用的 Citekey 格式为 <code>[auth:lower][year]</code>，前半部分表示文章第一作者的小写姓氏，后半部分为文献年份，如果出现了重复，就会在后面添加 <code>a b c</code> 或者数字进行区分。<br>
 下图是 Zotero 中关于 Citekey 的展示。</p>
@@ -167,21 +167,23 @@
 <p>我目前的配置如下图，所示。这里主要是修改了引用格式。<br>
 <img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230111.jpg" alt="-w835" loading="lazy"></p>
 <h3 id="pandoc-filter">Pandoc filter</h3>
-<p>Better BibTeX  的作者写了一个 <a href="https://retorque.re/zotero-better-bibtex/exporting/zotero.lua">lua 脚本</a><code>zotero.lua</code>，用来实现从 Markdown 到 Word 实时引用的格式转换。我们可以在 Markdown 文本中写入相关元数据，或者在 pandoc 命令行中进行相关参数设置。</p>
+<p>Better BibTeX 的作者写了一个 <a href="https://retorque.re/zotero-better-bibtex/exporting/zotero.lua">lua 脚本</a><code>zotero.lua</code>，用来实现从 Markdown 到 Word 实时引用的格式转换。我们可以在 Markdown 文本中写入相关元数据，或者在 pandoc 命令行中进行相关参数设置。</p>
 <pre><code class="language-md">---
+
 # all the regular stuff you have here
+
 Zotero:
-  library: &lt;group name&gt; # omitted to use your personal library
-  scannable-cite: false # only relevant when your compiling to scannable-cite .odt
-  client: &lt;Zotero or jurism&gt; # defaults to Zotero
-  author-in-text: false # when true, enabled fake author-name-only cites by replacing it with the text of the last names of the authors
+library: &lt;group name&gt; # omitted to use your personal library
+scannable-cite: false # only relevant when your compiling to scannable-cite .odt
+client: &lt;Zotero or jurism&gt; # defaults to Zotero
+author-in-text: false # when true, enabled fake author-name-only cites by replacing it with the text of the last names of the authors
 ...
 </code></pre>
 <p>如果是 Zotero 个人 library , 没有什么特殊情况使用默认参数即可，直接运行如下命令：</p>
 <pre><code class="language-bash">pandoc input.md -s --lua-filter=zotero.lua -o output.docx
 </code></pre>
 <h3 id="zotpick-applescript">zotpick-applescript</h3>
-<p>Better BibTeX  在实现随写随引的问题上给出了多种实现方法。如果你是把 Atom 或者 VSCode 作为编辑器可以直接安装它们相关的扩展插件，具体可以查看 <a href="https://retorque.re/zotero-better-bibtex/citing/cayw/">官方说明</a>。</p>
+<p>Better BibTeX 在实现随写随引的问题上给出了多种实现方法。如果你是把 Atom 或者 VSCode 作为编辑器可以直接安装它们相关的扩展插件，具体可以查看 <a href="https://retorque.re/zotero-better-bibtex/citing/cayw/">官方说明</a>。</p>
 <p>除此以外，还可以利用插件的提供的 URL 自行设置在其他编辑器内的调用。例如 <code>http://127.0.0.1:23119/better-bibtex/cayw?format=mmd&amp;clipboard=yes</code> 这个地址就表示会把选择的 Citekey 按照 MultiMarkdown 的格式 <code>[#adams2001][]</code> 进行引用，同时把内容保存在粘贴板中。<br>
 当然，无需我们自己写，已经有前人造好的轮子 <a href="https://github.com/davepwsmith/zotpick-applescript">zotpick-applescript</a>。</p>
 <figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20200604230112.jpg" alt="-w464" loading="lazy"></figure>
@@ -215,11 +217,12 @@ Zotero:
 如果你是 Windows 用户，则非常推荐使用 Zotero + VSCode + VSCode Zotero 插件的组合。</p>
 <hr>
 <p><strong>2009021117 更新</strong></p>
-<p>文章发表在少数派之后有不少有价值的评论。其中有朋友提到了 markdown 文本可以使用docdown来直接进行转换。关于 docdown 可以直接参考学习它的<a href="https://github.com/lowercasename/docdown/wiki/Initial-setup">GitHub主页</a>。后面有空了可以就 docdown 做一个详细的补充。</p>
+<p>文章发表在少数派之后有不少有价值的评论。其中有朋友提到了 markdown 文本可以使用 docdown 来直接进行转换。关于 docdown 可以直接参考学习它的<a href="https://github.com/lowercasename/docdown/wiki/Initial-setup">GitHub 主页</a>。后面有空了可以就 docdown 做一个详细的补充。</p>
 <hr>
 <p><strong>本文作者</strong>：思考问题的熊</p>
 <p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
-<figure data-type="image" tabindex="13"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20190628083754.png" alt="扫码即刻沟通" loading="lazy"></figure>
+<p>熊言熊语会员通讯「4321X」是一个免费的订阅服务。<br>
+每周为你会推荐 4 篇生物信息或者医学相关文献，分享 3 个我过去一周的思考，介绍 2 个我喜欢的工具，同时提出 1 个问题供我们交流，而 X 则代表不固定的 one more thing。可以<a href="http://eepurl.com/hjYAaj">点击这里</a>进行订阅。</p>
 <br />
                   
                   <span class="copyright">· 分享链接 https://kaopubear.top/blog/2020-06-04-markdownzotero/ </span>
