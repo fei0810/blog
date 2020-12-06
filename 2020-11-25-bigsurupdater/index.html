@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <title>macOS big sur 升级后编译 R 的问题 | 思考问题的熊</title>
 <link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
-<link href="https://kaopubear.top/blog/styles/main.css?v=1606492068606" rel="stylesheet">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1607252504134" rel="stylesheet">
 <link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
   href="https://kaopubear.top/blog/atom.xml">
@@ -36,7 +36,7 @@
   })();
 </script>
 
-  <meta name="description" content="macOS发布新系统以来有一段时间虽然手痒但是不敢升级，前几天实在忍不住点了更新。目前使用下来基本一切平稳，新系统新UI，就像换了一个新电脑（并没有）。使用下来，日常用到的大多数软件都没有问题，比如 conda 和 brew 等等，虽然br..." />
+  <meta name="description" content="macOS 发布新系统以来有一段时间虽然手痒但是不敢升级，前几天实在忍不住点了更新。目前使用下来基本一切平稳，新系统新 UI，就像换了一个新电脑（并没有）。使用下来，日常用到的大多数软件都没有问题，比如 conda 和 brew 等等，虽然..." />
   <meta name="keywords" content="R,macOS" />
 </head>
 
@@ -109,7 +109,7 @@
   
 
   <div class="gridea-search-div">
-    <form id="gridea-search-form" data-update="1606492068606" action="https://kaopubear.top/blog/search/">
+    <form id="gridea-search-form" data-update="1607252504134" action="https://kaopubear.top/blog/search/">
       <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
     </form>
   </div>
@@ -124,14 +124,14 @@
                 <a>
                   macOS big sur 升级后编译 R 的问题</a>
               </h2>
-              <span class="article-info">2020-11-24, 657 words, 3 min read</span>
+              <span class="article-info">2020-11-24, 659 words, 3 min read</span>
             </div>
             <div class="post_content markdown">
               <p class="md_block">
                 <span class="md_line md_line_start md_line_end">
-                  <p>macOS发布新系统以来有一段时间虽然手痒但是不敢升级，前几天实在忍不住点了更新。目前使用下来基本一切平稳，新系统新UI，就像换了一个新电脑（并没有）。使用下来，日常用到的大多数软件都没有问题，比如 conda 和 brew 等等，虽然brew还没有正式支持。</p>
-<p>使用R和Rstudio，如果不涉及到编译也没什么问题。那如果需要编译呢？</p>
-<p>关于R的版本，目前使用的最新版4.0.3。macOS版本为 Big Sur。</p>
+                  <p>macOS 发布新系统以来有一段时间虽然手痒但是不敢升级，前几天实在忍不住点了更新。目前使用下来基本一切平稳，新系统新 UI，就像换了一个新电脑（并没有）。使用下来，日常用到的大多数软件都没有问题，比如 conda 和 brew 等等，虽然 brew 还没有正式支持。</p>
+<p>使用 R 和 Rstudio，如果不涉及到编译也没什么问题。那如果需要编译呢？</p>
+<p>关于 R 的版本，目前使用的最新版 4.0.3。macOS 版本为 Big Sur。</p>
 <pre><code>&gt; sessionInfo()
 R version 4.0.3 (2020-10-10)
 Platform: x86_64-apple-darwin17.0 (64-bit)
@@ -144,26 +144,26 @@ LAPACK: /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRlapack.dy
 locale:
 [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 </code></pre>
-<p>关于如何解决R编译的问题，自 R 进入到 4.0 开始，在 macOS 上的配置就不需要像<a href="https://mac.r-project.org/tools/index-old.html">之前那么复杂</a>了。目前只需要保证两个东西可以正常在 macOS 对应版本运行即可。</p>
-<p>首先是最新版本的 Xcode command-line tool，针对 Big Sur 目前最新版本是 12.3 beta，选择12.2正式版本亦可，可以从<a href="https://developer.apple.com/download/more/">官网</a>下载。</p>
+<p>关于如何解决 R 编译的问题，自 R 进入到 4.0 开始，在 macOS 上的配置就不需要像<a href="https://mac.r-project.org/tools/index-old.html">之前那么复杂</a>了。目前只需要保证两个东西可以正常在 macOS 对应版本运行即可。</p>
+<p>首先是最新版本的 Xcode command-line tool，针对 Big Sur 目前最新版本是 12.3 beta，选择 12.2 正式版本亦可，可以从<a href="https://developer.apple.com/download/more/">官网</a>下载。</p>
 <figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20201124173141.png" alt="" loading="lazy"></figure>
-<p>然后是安装好配套的gfortran，我是从<a href="https://github.com/fxcoudert/gfortran-for-macOS/releases">官网</a>页面下载的针对最新版系统的 gfortran 11</p>
+<p>然后是安装好配套的 gfortran，我是从<a href="https://github.com/fxcoudert/gfortran-for-macOS/releases">官网</a>页面下载的针对最新版系统的 gfortran 11</p>
 <figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20201124173513.png" alt="" loading="lazy"></figure>
 <p>然后可以在系统路径配置文件或者<code>.Renviron</code>中指定路径。</p>
 <pre><code>PATH=&quot;/usr/local/gfortran/bin:${PATH}&quot;
 </code></pre>
 <p>之前那些<a href="https://kaopubear.top/blog/2019-10-29-macos15user/">旧的配置</a>，目前应该是都不需要了，如果你参考过我以前的文章，这里需要特别注意一下。</p>
-<p>配置完之后，可以装个R包测试，比如。</p>
+<p>配置完之后，可以装个 R 包测试，比如。</p>
 <pre><code>install.packages(c(&quot;Rcpp&quot;, &quot;data.table&quot;), type = &quot;source&quot;)
 </code></pre>
-<p>比较有趣的是，虽然在电脑里显示的版本号是11 ，如果你通过R的<code>sessionInfo()</code> 查看就能看到内部版本号依旧是10.16。</p>
+<p>比较有趣的是，虽然在电脑里显示的版本号是 11 ，如果你通过 R 的<code>sessionInfo()</code> 查看就能看到内部版本号依旧是 10.16。</p>
 <figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20201124171439.png" alt="" loading="lazy"></figure>
 <figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20201124171443.png" alt="" loading="lazy"></figure>
 <hr>
 <p><strong>本文作者</strong>：思考问题的熊</p>
 <p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
 <p>熊言熊语会员通讯「4321X」是一个免费的订阅服务。<br>
-每周为你会推荐 4 篇生物信息或者医学相关文献，分享 3 个我过去一周的思考，介绍 2 个我喜欢的工具，同时提出 1 个问题供我们交流，而 X 则代表不固定的 one more thing。可以<a href="http://eepurl.com/hjYAaj">点击这里</a>进行订阅。</p>
+每期会为你推荐 4 篇生物信息或者医学相关文献，分享 3 个我过去一周的思考，介绍 2 个我喜欢的工具，同时提出 1 个问题供我们交流，而 X 则代表不固定的 one more thing。可以<a href="http://eepurl.com/hjYAaj">点击这里</a>进行订阅。</p>
 <br />
                   
                   <span class="copyright">· 分享链接 https://kaopubear.top/blog/2020-11-25-bigsurupdater/ </span>
