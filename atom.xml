@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaopubear.top/blog</id>
     <title>思考问题的熊</title>
-    <updated>2021-05-04T17:57:49.948Z</updated>
+    <updated>2021-06-05T15:55:17.174Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaopubear.top/blog"/>
     <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
@@ -10,6 +10,49 @@
     <logo>https://kaopubear.top/blog/images/avatar.png</logo>
     <icon>https://kaopubear.top/blog/favicon.ico</icon>
     <rights>All rights reserved 2021, 思考问题的熊</rights>
+    <entry>
+        <title type="html"><![CDATA[全球顶尖科学家榜单]]></title>
+        <id>https://kaopubear.top/blog/2021-06-05-topauthor/</id>
+        <link href="https://kaopubear.top/blog/2021-06-05-topauthor/">
+        </link>
+        <updated>2021-06-05T15:50:51.000Z</updated>
+        <summary type="html"><![CDATA[<p>全球前2%顶尖科学家榜单是由斯坦福大学John P. A. Ioannidis教授团队与Elsevier旗下Mendeley Data发布的一个科研人员「内卷」清单。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>全球前2%顶尖科学家榜单是由斯坦福大学John P. A. Ioannidis教授团队与Elsevier旗下Mendeley Data发布的一个科研人员「内卷」清单。</p>
+<!-- more -->
+<p>榜单以Scopus数据库为依据，基于引用次数、H因子、HM因子等综合指标，根据生涯影响力和年度影响力从近700万名科学家中遴选出世界排名前2%的科学家，分为22个领域和176个细分子领域。</p>
+<p>趁着高考的热度（并不能蹭上），如果你在考虑读研或者读博选导师，或许这个榜单可能会有一些帮助。</p>
+<p>Citation metrics are widely used and misused. We have created a publicly available database of 100,000 top-scientists that provides standardized information on citations, h-index, co-authorship adjusted hm-index, citations to papers in different authorship positions and a composite indicator. Separate data are shown for career-long and single year impact. Metrics with and without self-citations and ratio of citations to citing papers are given. Scientists are classified into 22 scientific fields and 176 sub-fields. Field- and subfield-specific percentiles are also provided for all scientists who have published at least 5 papers. Career-long data are updated to end-of-2019.</p>
+<p>数据表格下载地址<br>
+https://data.mendeley.com/datasets/btchxktzyw/2</p>
+<p>文献地址<br>
+https://doi.org/10.1371/journal.pbio.3000918</p>
+<p>附上这22个大的领域列表</p>
+<ul>
+<li>Agriculture, Fisheries &amp; Forestry</li>
+<li>Built Environment &amp; Design</li>
+<li>Enabling &amp; Strategic Technologies</li>
+<li>Engineering</li>
+<li>Information &amp; Communication Technologies</li>
+<li>Communication &amp; Textual Studies</li>
+<li>Historical Studies</li>
+<li>Philosophy &amp; Theology</li>
+<li>Visual &amp; Performing Arts</li>
+<li>Economics &amp; Business</li>
+<li>Social Sciences</li>
+<li>Biomedical Research</li>
+<li>Clinical Medicine</li>
+<li>Psychology &amp; Cognitive Sciences</li>
+<li>Public Health &amp; Health Services</li>
+<li>Biology</li>
+<li>Chemistry</li>
+<li>Earth &amp; Environmental Sciences</li>
+<li>Mathematics &amp; Statistics</li>
+<li>Physics &amp; Astronomy</li>
+</ul>
+<p>以及我把国家是中国的所有相关名单，单独拿出来做成了一个表格，如果需要可以<a href="https://www.yuque.com/docs/share/ca286442-fc6b-4bfa-b1e2-2a61e8314395?#84a6">直接访问</a>。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[构建自己的数字花园-工具篇]]></title>
         <id>https://kaopubear.top/blog/2021-04-14-digital-garden-tools/</id>
@@ -11873,140 +11916,6 @@ https://www.nature.com/articles/nsmb.2354</p>
 <li>想要找到真正的使命，首先要有职场资本，而职场资本的积累则需要耐心；其次要不断关注自己所在领域的相邻可能区间（而这个区间始终都在变化），从而找到下一项伟大的创意。</li>
 </ul>
 </li>
-</ul>
-<hr>
-<p><strong>本文作者</strong>：思考问题的熊</p>
-<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
-<p>熊言熊语会员通讯「4321X」是一个免费的订阅服务。<br>
-每期会为你推荐 4 篇生物信息或者医学相关文献，分享 3 个我过去一周的思考，介绍 2 个我喜欢的工具，同时提出 1 个问题供我们交流，而 X 则代表不固定的 one more thing。可以<a href="http://eepurl.com/hjYAaj">点击这里</a>进行订阅。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[你的灯亮着么 读书笔记]]></title>
-        <id>https://kaopubear.top/blog/2018-11-10-areyourlightson/</id>
-        <link href="https://kaopubear.top/blog/2018-11-10-areyourlightson/">
-        </link>
-        <updated>2018-11-10T02:43:23.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="基本信息">基本信息</h2>
-<ul>
-<li>原作名：Are Your Lights On? How to Figure Out what the Problem Really is</li>
-<li>作者：唐纳德·高斯；杰拉尔德·温伯格</li>
-<li>主要内容：如何能更好的解决问题，通过 20 个故事讲 6 个道理</li>
-</ul>
-]]></summary>
-        <content type="html"><![CDATA[<h2 id="基本信息">基本信息</h2>
-<ul>
-<li>原作名：Are Your Lights On? How to Figure Out what the Problem Really is</li>
-<li>作者：唐纳德·高斯；杰拉尔德·温伯格</li>
-<li>主要内容：如何能更好的解决问题，通过 20 个故事讲 6 个道理</li>
-</ul>
-<!--more-->
-<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/177622-9c7115dd760fdb49.jpg" alt="" loading="lazy"></figure>
-<h2 id="问题是什么">问题是什么</h2>
-<ul>
-<li>定义问题
-<ul>
-<li>不要在没有定义好问题时仓促给出解决方案</li>
-<li>不要在已有的定义上反复犹豫不前</li>
-</ul>
-</li>
-<li>多重思维
-<ul>
-<li>谁碰到了问题</li>
-<li>问题的本质是什么</li>
-</ul>
-</li>
-<li>问题角度
-<ul>
-<li>境遇和地位不同时同一事情认为的问题也不同</li>
-<li>你感觉的问题未必是其他人的问题</li>
-</ul>
-</li>
-<li>问题本质
-<ul>
-<li>理想状态和现实状态之间的差别</li>
-<li>你感觉到的任何不顺都是问题</li>
-</ul>
-</li>
-</ul>
-<h2 id="这次的问题是什么">这次的问题是什么</h2>
-<ul>
-<li>不要把别人的解决方法当成问题的定义
-<ul>
-<li>协助别人解决问题时要知道整个问题</li>
-<li>不是他们已经解决到自己完成不了的部分</li>
-</ul>
-</li>
-<li>如果解决问题太过神速别人根本不会相信你解决了问题</li>
-<li>面对有利可图的问题时道德考量很可能烟消云散</li>
-<li>别把自己对问题的解决方案误当作问题的定义<br>
-当这个解决方案是由你提出的时候尤其如此。不要把问题用你的解决方法来定义，因为这样会很大程度上限制你解决问题的灵活性。</li>
-<li>不要仓促下结论但也不要忽视第一印象</li>
-<li>即使问题已经解决也无法确定问题的定义是否正确，但是永远不要停下寻找正确定义的脚步</li>
-</ul>
-<h2 id="问题到底是什么">问题到底是什么</h2>
-<ul>
-<li>每一个问题的解决方案都是下一个问题的来源<br>
-因为任何一个问题都是理想状态和现实状态之间的差别，当人们通过改变状态“解决”一个问题的时候，常常会新制造出一个或几个问题来。</li>
-<li>某些问题最困难的部分在于发现问题<br>
-一旦发现问题问题就解决了</li>
-<li>任何一个问题的定义都有大量信息被忽略所以找出至少三个疑点</li>
-<li>每转换一次视角都可以发现问题的不协调之处</li>
-<li>解决某些群体问题的代价常常是引发另一个群体的灾难</li>
-<li>变换问题的表述方式可以得到不同的解决方案
-<ul>
-<li>增加不同的条件辅助思考</li>
-<li>回顾对问题的理解是否正确</li>
-</ul>
-</li>
-<li>注意表达可能产生的歧义
-<ul>
-<li>用文字表述问题时要确信在每个人的脑中都是同一个意思</li>
-</ul>
-</li>
-</ul>
-<h2 id="问题该由谁解决">问题该由谁解决</h2>
-<ul>
-<li>当别人可以妥善解决自己的问题时千万不要越俎代庖
-<ul>
-<li>问题相关方对问题了解更深入感受更真切</li>
-<li>他们更愿意参与到自己提出的解决方案中</li>
-</ul>
-</li>
-<li>如果这是别人的问题就把它当成是别人的问题</li>
-<li>如果一个人处于解决问题的位置却不受问题困扰就采取行动使他能亲身体验到问题</li>
-<li>有时对方并不是没有能力解决问题而是暂时没有意识到存在问题
-<ul>
-<li>只需要提醒而不用提供方案</li>
-<li>如果是白天，而且车灯亮着，那就把车灯关上； 如果是晚上，而且车灯关着，那就把车灯打开； 如果是白天，而且车灯关着，那就让它关着； 如果是晚上，而且车灯亮着，那就让它亮着。</li>
-<li>隧道出口，“你的灯亮着么”一个小小的提醒可能比复杂的关灯开灯方案更有效。（书名来由）</li>
-</ul>
-</li>
-</ul>
-<h2 id="问题来自哪里">问题来自哪里</h2>
-<ul>
-<li>永远不要把问题归结于人的天性</li>
-<li>大多数时候问题的根源在自己身上
-<ul>
-<li>定义错问题</li>
-<li>误判了情况</li>
-</ul>
-</li>
-<li>世界上有两种人
-<ul>
-<li>一种人做事，另一种人制造出事来让其他人做。远离那些找事让别人做的人，你就能好好过日子了。</li>
-<li>一种人做事，另一种人领赏。做第一种人吧，那里的争斗比较少。</li>
-</ul>
-</li>
-</ul>
-<h2 id="你真的想解决问题吗">你真的想解决问题吗</h2>
-<ul>
-<li>应试教育把我们培养成了一个急着去解决问题但其实并不确切知道问题是什么的人</li>
-<li>当你感觉自己有问题的时候就是真的有问题了，但这并不意味着知道问题是什么</li>
-<li>无论表面上表现得如何，在你提供别人所要求的东西之前，他们极少知道自己想要什么</li>
-<li>很多时候从最后的情况看想要真正解决问题的人并不是很多</li>
-<li>在思考问题的时候已经习以为常的事物总会被忽略，不纳入考虑范围。只有当解决方案出现、那些习惯了的因素被移除的时候，人们才会感到震惊。</li>
-<li>在为解决问题而惊叹不已的时候你可能会忽略自己是不是能在道德上支持某一解决方案。</li>
 </ul>
 <hr>
 <p><strong>本文作者</strong>：思考问题的熊</p>
