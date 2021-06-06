@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaopubear.top/blog</id>
     <title>思考问题的熊</title>
-    <updated>2021-06-05T15:56:40.696Z</updated>
+    <updated>2021-06-06T00:11:51.573Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaopubear.top/blog"/>
     <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
@@ -20,8 +20,10 @@
 ]]></summary>
         <content type="html"><![CDATA[<p>全球前2%顶尖科学家榜单是由斯坦福大学John P. A. Ioannidis教授团队与Elsevier旗下Mendeley Data发布的一个科研人员「内卷」清单。</p>
 <!-- more -->
-<p>榜单以Scopus数据库为依据，基于引用次数、H因子、HM因子等综合指标，根据生涯影响力和年度影响力从近700万名科学家中遴选出世界排名前2%的科学家，分为22个领域和176个细分子领域。</p>
-<p>趁着高考的热度（并不能蹭上），如果你在考虑读研或者读博选导师，或许这个榜单可能会有一些帮助。</p>
+<p>榜单以Scopus数据库为依据，基于引用次数、H因子、HM因子等指标，按照生涯影响力和年度影响力从近700万名科学家中选出世界排名前2%的科学家，共有22个领域和176个细分子领域。</p>
+<p>趁着高考的热度（并不能蹭上），如果你在考虑读研或者读博选导师，或许这个榜单可能会有一些帮助和参考。</p>
+<p>如果你把科研作为自己读博的目标，找到一个领域内优秀的导师非常重要，如果你只是为了要一个不错的学历，或许更重要的是考虑去一个名气更大的学校。</p>
+<p>关于这个榜单，直接放一点原文解释：</p>
 <p>Citation metrics are widely used and misused. We have created a publicly available database of 100,000 top-scientists that provides standardized information on citations, h-index, co-authorship adjusted hm-index, citations to papers in different authorship positions and a composite indicator. Separate data are shown for career-long and single year impact. Metrics with and without self-citations and ratio of citations to citing papers are given. Scientists are classified into 22 scientific fields and 176 sub-fields. Field- and subfield-specific percentiles are also provided for all scientists who have published at least 5 papers. Career-long data are updated to end-of-2019.</p>
 <p>数据表格下载地址<br>
 https://data.mendeley.com/datasets/btchxktzyw/2</p>
@@ -50,7 +52,10 @@ https://doi.org/10.1371/journal.pbio.3000918</p>
 <li>Mathematics &amp; Statistics</li>
 <li>Physics &amp; Astronomy</li>
 </ul>
-<p>以及我把国家是中国的所有相关名单，单独拿出来做成了一个表格，如果需要可以<a href="https://www.yuque.com/docs/share/ca286442-fc6b-4bfa-b1e2-2a61e8314395?#84a6">直接访问</a>。</p>
+<p>如果从生涯影响力来看，共有5272位所在单位是中国的科学家入围，如果从年度影响力来看，共有12948位所在单位是中国的科学家入围。</p>
+<p>我把所在单位是中国的所有相关详细名单拿出来做成了一个表格，如果需要可以可以<a href="https://www.yuque.com/docs/share/ca286442-fc6b-4bfa-b1e2-2a61e8314395?#84a6">直接访问</a>，通过filed和subfiled过滤你感兴趣的领域。</p>
+<p>​彩蛋：附躺平和内卷的动作示范供你学习。<br>
+<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20210606081128.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
