@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaopubear.top/blog</id>
     <title>思考问题的熊</title>
-    <updated>2021-06-08T11:14:03.293Z</updated>
+    <updated>2021-06-11T07:34:02.995Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaopubear.top/blog"/>
     <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
@@ -10,6 +10,71 @@
     <logo>https://kaopubear.top/blog/images/avatar.png</logo>
     <icon>https://kaopubear.top/blog/favicon.ico</icon>
     <rights>All rights reserved 2021, 思考问题的熊</rights>
+    <entry>
+        <title type="html"><![CDATA[面对职业教育缺失，在科研行业的我们能做什么]]></title>
+        <id>https://kaopubear.top/blog/2021-06-11-researcher-career/</id>
+        <link href="https://kaopubear.top/blog/2021-06-11-researcher-career/">
+        </link>
+        <updated>2021-06-11T07:10:34.000Z</updated>
+        <summary type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20210611153032.jpg" alt="" loading="lazy"></figure>
+<p>最近有两件事让我感触比较深，一件发生在自己身上，是之前找工作初期的迷茫与局促；另一件是公共事件，最近发生在复旦大学的教师杀人案件。关于公共事件，目前官方披露的实际细节并不全面，当事人双方我也完全不了解，这里无意讨论。但这两件事让我联想到了一个国内长久以来存在的问题：针对高校学生和科研工作者的职业教育缺失。</p>
+]]></summary>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20210611153032.jpg" alt="" loading="lazy"></figure>
+<p>最近有两件事让我感触比较深，一件发生在自己身上，是之前找工作初期的迷茫与局促；另一件是公共事件，最近发生在复旦大学的教师杀人案件。关于公共事件，目前官方披露的实际细节并不全面，当事人双方我也完全不了解，这里无意讨论。但这两件事让我联想到了一个国内长久以来存在的问题：针对高校学生和科研工作者的职业教育缺失。</p>
+<!-- more -->
+<p>职业教育（Career education/Vocational education）的目标是获得和提高从事某种职业所必需的知识以及技能。在我的理解中它应当包括毕业生的职业规划和求职相关教育，自然也应当包括对即将从事科研工作学生的职业发展指导和教育。</p>
+<p>大多数学生（硕士博士尤其如此）埋头苦读，在实验室搬砖几载。进入职场之前很多人连怎样找一份工作，如何准备一次面试和谈薪资都不清楚，更遑论保护自己打工人的权益。对于读完博士甚至是博士后想要进入学术界的人来说，辛辛苦苦当上青椒（青年教师），面对各种竞争和社会机制时无法调整好心态和无法及时融入的情况也很常见。</p>
+<p>过去一年，我因为做一个关注研究生科研生活的播客「熊言熊语」有机会接触到很多不同专业的同学。大家对于科研学习最高频的吐槽已经变成「能够在一个正常实验室过几年就已经很不错了」。有一个行为思维正常的导师和身边是一群行为思维正常的同学似乎都变得有点奢侈。也许有人说只有偏执狂才能有伟大的发现和成就伟大的事业，但绝大多数投身科研的也都是普通人而已，科学家少有，科研工作者常在。</p>
+<h2 id="可迁移技能">可迁移技能</h2>
+<p>每每聊到相关的话题，我们总喜欢把科研中的这些问题归结于某个人的「低情商」或者「心理素质不过硬」，但这个锅情商不能全背。在硕博士研究生阶段除了科研培训，重视培养学生的可迁移技能（transferable skills）同样是不可或缺的部分。无论选择留在学术领域还是转到其它领域，可迁移技能对他们未来的职业道路都至关重要，这些技能将会更好地支撑个人的研究和专业发展。</p>
+<p>明尼苏达大学职业与实习服务平台将毕业生的<a href="https://www.d.umn.edu/career-internship-services/internship-job-search/transferable-skills">可迁移技能</a>分成了5大类共60多个小类，并鼓励学生在进行职业选择和求职前先按照1到3级对自己的每一项可迁移能力进行评估。这5大类能力分别是：</p>
+<ul>
+<li>沟通能力：用来巧妙地表达、传递和解释知识与思想。</li>
+<li>研究与规划能力：寻找具体知识，以及将未来的需求和满足这些需求的解决方案进行概念化的能力。</li>
+<li>人际关系能力：使用人际交往技能来解决与人有关的冲突并帮助他人的能力。</li>
+<li>组织、管理和领导能力：监督、指导和引导个人和团体完成任务和实现目标的能力。</li>
+<li>工作生存能力：有助于促进有效生产和提高工作满意度的日常技能。</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20210611132205.png" alt="" loading="lazy"></figure>
+<p>我们现在面对的绝大多数问题都能在某类能力的严重缺失中找到身影。如果你想继续从事科研相关的工作，关注科研人员职业发展的非盈利项目 Vitae 整理了一个针对科研人员更为详细的技能说明和实例。你可以对应其中的技能找到欠缺部分，根据提供的实例有意识的提高自身能力。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20210610214937.png" alt="" loading="lazy"></figure>
+<h2 id="研究人员发展框架">研究人员发展框架</h2>
+<p>关于科研工作者的职业教育，Vitae 也提出过一个被很多高校广泛借鉴和采用 RDF <a href="https://www.vitae.ac.uk/researchers-professional-development/about-the-vitae-researcher-development-framework">研究人员发展框架</a>（Researcher Development Framework）。RDF 是一个针对科研人员的专业发展架构，旨在规划促进研究人员的个人、专业和职业发展。如果你正在攻读博士学位或是一名研究人员，正在追求自己的学术生涯或考虑将博士期间培养的技能应用到其它职业，RDF 就是你值得学习的内容。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20210611135728.png" alt="" loading="lazy"></figure>
+<p>这个框架有4个模块，包括了研究人员从事研究相关工作所需要的知识和行为能力。它规定了从事研究工作所需的知识、智力、技术和专业标准，也包括与他人合作并确保研究能够产生影响了所需的个人素质、知识和技能。</p>
+<ul>
+<li>模块A 知识和能力：从事研究需要的知识、智力和技术。</li>
+<li>模块B 个人效能：成为一名高效研究人员需要的个人素质和方法。</li>
+<li>模块C 研究管理和组织：了解做研究的专业标准和要求。</li>
+<li>模块D 参与度和影响力：与他人合作以确保研究能产生更广泛影响的知识和技能</li>
+</ul>
+<h2 id="从哪里获取更多信息和资料">从哪里获取更多信息和资料</h2>
+<p>如果你想通过网络了解一些非学术层面的职业技能介绍与资料，大致有以下三个途径。</p>
+<h3 id="国外高校的职业发展中心">国外高校的职业发展中心</h3>
+<p>The Princeton Review 每年会通过各种形式的调研对美国的高校进行排名，其中有一项叫做 <strong>Best Career Services</strong> 的评选依据是学生对于「如何评价学校的职业/就业介绍服务」的回答。在<a href="https://www.princetonreview.com/college-rankings?rankings=best-career-services">这份榜单</a>中提到的高校网站多数都可以找到不错的资料。很多针对性的课程和服务仅对本校学生开放，但资料往往可以直接浏览下载。</p>
+<p>这里列举几个内容比较丰富的访问地址，其中包括职业技能介绍和各种求职面试资料。</p>
+<ul>
+<li>本特利大學 (Bentley University)：<a href="https://careeredge.bentley.edu/resources/">Resources – Bentley CareerEdge</a></li>
+<li>东北大学 (Northeastern University)：<a href="https://phd.northeastern.edu/network/resources/career/">Career Development for PhDs</a></li>
+<li>西南大学 (Southwestern University)：<a href="https://www.southwestern.edu/center-for-career-and-professional-development/current-students/resources/">Resources Career &amp; Professional Development</a></li>
+<li>宾夕法尼亚大学 (University of Pennsylvania)： <a href="https://careerservices.upenn.edu/resources/">Resources – Career Services</a></li>
+<li>克莱门森大学 (Clemson University)：<a href="https://career.sites.clemson.edu/resources.php">Resources - Clemson Center for Career and Professional Development</a></li>
+<li>耶鲁大学 (Yale University): <a href="https://ocs.yale.edu/channels/phds-postdocs/">PhDs &amp; Postdocs – Office of Career Strategy</a></li>
+</ul>
+<p>在整理相关资料的时候，很遗憾我没有在国内几家top高校中找到类似于国外这些大学的内容。就业指导中心主要是用来发布就业手续办理通知，招聘会通知和提供各种表格的下载功能。<strong>如果你的学校有相关培训资料或者课程，欢迎留言分享给大家。</strong></p>
+<h3 id="非盈利项目">非盈利项目</h3>
+<p>上文被反复提及的<a href="https://www.vitae.ac.uk/about-us">Vitae</a>是一个关注科研人员职业发展的非盈利项目，很多大学的公开资料最后都指向了他们的网站。部分完整资料只对会员单位开放，我之前偶然从UPenn官网的跳转链接注册了一个账号，注册成功后显示 Access provided by University of Pennsylvania，如果你有这个需求不妨也试试看。</p>
+<h3 id="学术期刊的职业板块">学术期刊的职业板块</h3>
+<p>科研领域的顶级学术期刊（CNS）都有职业相关板块，这些非学术研究文章更多会关注科研人员发展现状和热门问题的讨论，作者多数来自科研一线，读完之后或许会给你些启发。</p>
+<ul>
+<li>Science: <a href="https://www.sciencemag.org/careers/articles">Science Careers</a></li>
+<li>Nature: <a href="https://www.nature.com/nature/articles?type=career-column">Career Column</a></li>
+<li>Cell: <a href="https://www.cell.com/cell-mentor">Cell Mentor:</a></li>
+</ul>
+<p>除了CNS三本顶级期刊，还有一些其它杂志非常出名的系列内容可以参考，比如来自 PLOS COMPUTATIONAL BIOLOGY 杂志的<a href="https://collections.plos.org/collection/ten-simple-rules/">Ten Simple Rules</a>系列文章。这些文章会针对一个科研问题给出10条简单建议，有一篇套娃文章很有趣 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4207461/">Ten Simple Rules for Writing a PLOS Ten Simple Rules Article</a>。如果你还知道类似杂志，也欢迎通过留言向大家推荐。</p>
+<p>以及，学术科研本质也是一份工作，任何行业存在的问题它都存在。希望围观的人可以正确看待它，也希望身处其中的人可以掌握这份工作应该具备的各种技能，提升自己保护自己。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[全球顶尖科学家榜单]]></title>
         <id>https://kaopubear.top/blog/2021-06-05-topauthor/</id>
@@ -11559,367 +11624,6 @@ https://www.nature.com/articles/nsmb.2354</p>
 </li>
 <li>
 <p>ELENA: Seo, J. S. et al. ELF18-INDUCED LONG-NONCODING RNA associates with mediator to enhance expression of innate immune response genes in Arabidopsis. Plant Cell 29, 1024–1038 (2017).</p>
-</li>
-</ul>
-<hr>
-<p><strong>本文作者</strong>：思考问题的熊</p>
-<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
-<p>熊言熊语会员通讯「4321X」是一个免费的订阅服务。<br>
-每期会为你推荐 4 篇生物信息或者医学相关文献，分享 3 个我过去一周的思考，介绍 2 个我喜欢的工具，同时提出 1 个问题供我们交流，而 X 则代表不固定的 one more thing。可以<a href="http://eepurl.com/hjYAaj">点击这里</a>进行订阅。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[优秀到不能被忽视 读书笔记]]></title>
-        <id>https://kaopubear.top/blog/2018-11-13-sogoogtheycantignoreyou/</id>
-        <link href="https://kaopubear.top/blog/2018-11-13-sogoogtheycantignoreyou/">
-        </link>
-        <updated>2018-11-13T02:43:47.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="基本信息">基本信息</h2>
-<ul>
-<li>原作名：So Good They Can't Ignore You</li>
-<li>作者：卡尔·纽波特</li>
-<li>页数：226</li>
-<li>整理：思考问题的熊</li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/177622-4005c5dcec9161cb.jpg" alt="" loading="lazy"></figure>
-]]></summary>
-        <content type="html"><![CDATA[<h2 id="基本信息">基本信息</h2>
-<ul>
-<li>原作名：So Good They Can't Ignore You</li>
-<li>作者：卡尔·纽波特</li>
-<li>页数：226</li>
-<li>整理：思考问题的熊</li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/177622-4005c5dcec9161cb.jpg" alt="" loading="lazy"></figure>
-<!--more-->
-<h2 id="规则一不要追随自己的激情">规则一：不要追随自己的激情</h2>
-<ul>
-<li>乔布斯漏掉了什么<br>
-以乔布斯为例引出激情假设的错误
-<ul>
-<li>乔布斯
-<ul>
-<li>年轻时追求心灵启迪，喜欢西方历史和舞蹈，涉猎东方神秘主义</li>
-<li>接触电子行业不过是为了赚点快钱</li>
-<li>只做热爱的工作应该是一位禅修中心老师</li>
-<li>苹果诞生不是出于激情而是出于一个「赚快钱」中的幸运转机</li>
-<li>「追随自己的激情」对他自己并没有用</li>
-</ul>
-</li>
-<li>职场建议现状
-<ul>
-<li>职场书籍和自称职场大师的人都宣称：要想幸福，你必须追随自己的激情</li>
-<li>职业咨询座右铭：做自己爱做的事，钱就来了</li>
-</ul>
-</li>
-<li>激情假设（The passion hypothesis）
-<ul>
-<li>要获得职业幸福，关键是首先搞清楚自己的激情所在，然后找到一份与这种激情相匹配的职业。这种假设既是错误的，也是有潜在危害的。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>激情是精通的副产品<br>
-结合访谈和科学研究说明激情并不重要 - 访谈总结 - 强迫自己完成工作和强迫技能形成是最难的 - 有吸引力的职业通常有错综复杂的起源，不是只要追随自己的激情可以 - 科学研究 - 职业激情是稀缺的 - 2002 年，Robert J.Vallerand - 在确认出的所有激情中，只有不到 4% 与工作或教育有关，96% 都是某种爱好或兴趣，如运动和艺术 - 激情需要时间 - 耶鲁大学 瑞斯奈斯基 - 最快乐最有激情的员工不是将激情化为工作的人，是做得足够久从而擅长于所做事情的人 - 「自我决定理论」（Self- Determination Theory, SDT）<br>
-激情是精通的副产品 - 不管是在工作场合还是其他场合，如果想要获得动机都要满足三种基本心理需求<br>
-这些需求是个人在工作中感受到内在动机所必需的「营养物质」 - 自主：感觉对生活拥有控制力且自己的所作所为是重要的 - 胜任：感觉自己擅长于所做的事情 - 归属：感觉自己能与他人建立联系 - 「正确地工作」胜过「找到正确的工作」</li>
-<li>激情会带来困扰
-<ul>
-<li>美国
-<ul>
-<li>过去 20 年无论经济是增长还是衰退职业满意度均持续下降</li>
-<li>两代人「以激情为中心」的职业规划实验表明：越注重于热爱自己所做的事情，最后越不喜欢去做</li>
-</ul>
-</li>
-<li>激情假设
-<ul>
-<li>盲目的乐观主义</li>
-<li>让人饱受困惑和忧虑之苦的职业的开始</li>
-</ul>
-</li>
-<li>激情有效条件
-<ul>
-<li>更常见于有天赋的人身上比如职业运动员</li>
-<li>个别成功案例不能说明普遍有效的</li>
-<li>稀缺性说明对于大多数人「追随自己的激情」是糟糕的建议</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>思考
-<ul>
-<li>在做所有事情之前总是试图抽象地作出评判是一个可悲的错误</li>
-<li>对于自己想做什么，我真的很困惑，困惑到连自己付出了什么代价都没有意识到</li>
-<li>人们总是急于开始生活，但这是个悲哀</li>
-<li>要在某方面有所擅长，但这需要时间</li>
-</ul>
-</li>
-</ul>
-<h2 id="规则二工匠思维胜过激情思维">规则二：工匠思维胜过激情思维</h2>
-<ul>
-<li>没人欠你一份好工作 - 人物事例 - 蓝草乐手 Jordan Tice：为练习设置「技术关注点」（technical focus），用高强度和稍快于舒适点的速度连续弹两三个小时，大致重复一个月 - 喜剧演员 Steve Martin：用 10 年时间形成自己的表演体系后便获得了巨大成功。要是你一直在琢磨「我如何才能变得真正优秀」这个问题别人就会找上门来。 - 录音棚乐师 Mark Casstevens）：执着于作品的质量是专业音乐圈的规则，它比你的外貌、乐器、个性以及关系网都重要。录音带不会说谎，录完音后马上就会回放，你的能力一览无遗。 - 不要太注重自我介绍 - 不要注重自我介绍这些小细节而要注重让自己更加优秀 - 注意力从个人网站转移到追踪每月花在对所研究问题进行专门思考的小时数 - 对待职业生涯的两种方式 - 工匠思维（ The craftsman mindset） - 以产出为中心的职业观，关注自己给世界（工作）带来的价值 - 对从事的工作类型持不可知论的立场 - 对于打造自己所热爱的事业至关重要<br>
-不必对是不是找到了自己的使命而感到焦虑，几乎任何工作都可发展成为一份有吸引力的工作。 - 激情思维（The passion mindset） - 关注世界（工作）给自己带来的价值 - 会导致长期的不满并让人不切实际地幻想还有更好的工作 - 工匠思维具体内容 - 不要以自我为中心，不要去担心工作是不是「刚好合适」 - 要俯下身子努力让自己真正优秀起来 - 没人欠你一份好工作，要自己去努力争取，而这个过程不会一帆风顺</li>
-<li>技能胜过激情
-<ul>
-<li>成就大事的特质
-<ul>
-<li>创造力：格拉斯拓展广播领域的界限</li>
-<li>影响力：乔布斯改变数字时代生活方式</li>
-<li>自主力：梅里克经常去海滩冲浪</li>
-</ul>
-</li>
-<li>职场资本（ Career capital）
-<ul>
-<li>对个人所拥有的、在职场中属于稀缺而宝贵的技能的描述，是创建自己热爱的工作的关键通货。</li>
-</ul>
-</li>
-<li>职场资本理论（The career capital theory of great work）
-<ul>
-<li>来源于经济学供给与需求理论（ Supply and Demand）</li>
-<li>成就大事的特质稀缺而宝贵，需要提供稀缺而宝贵的技能作为交换。</li>
-<li>工匠思维不断专注于让自己「优秀到不能被忽视」是一种非常适合于获取职场资本的策略</li>
-</ul>
-</li>
-<li>勇气文化（Courage culture）
-<ul>
-<li>只要鼓起勇气脱离预期的职业轨道就能找到梦寐以求的工作</li>
-<li>低估了以职场资本来支撑职业抱负的重要性</li>
-</ul>
-</li>
-<li>工匠精神不适用条件
-<ul>
-<li>该工作无法让你有机会通过发展稀缺宝贵的相关技能与他人区别开</li>
-<li>你认为该工作所关注的内容是无用的或者可能对世界有害</li>
-<li>该工作迫使你与自己非常不喜欢的人一起工作</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>刻意练习做好工匠 - 走出舒适区 - Jordan Tice：我练得越苦，弹得就越轻松，听起来也越好 - 专注于持续拓展能力范围的并获取即时的反馈 - 在任何领域都是成功获取职场资本的关键 - 一万小时定律 - 要在某项复杂任务上表现卓越，就需要进行时长至少达到最低限度的关键练习。造就真正专家的神奇数字是 10,000 小时。 - 有效和无效练习 - 有效：注重进行经过挑选的有难度的活动且可以拓展最需要改善的能力并能提供即时反馈 - 无效：有趣且令人兴奋但并不一定提高水平 - 刻意练习（Deliberate practice） - 正确的时间正确的地点积累大量练习 - 一项通常由一位老师所设计的、以有效改善某一个体的某方面表现为唯一目的的活动。它要求将自身能力拓展到舒适范围以外，然后不断接收反馈。 - 刻意练习也许是快速让自己变得“优秀到不能被忽视”的关键所在。 - 绩效高原（Performance plateau） - 大多数一开始就活跃于专业领域的个体都会在有限时间内改变自己的行为并且提升自己的绩效，直到达到某种可以接受的水平。然而在此之后进一步的改善似乎无法预知，工作年数不足以预测一个人所能达成的绩效。 - 时间花在重要的事情上 - 把时间花在重要的事情上，而不是花在紧急的事情上 - 每周结束时统计时长然后以此作为下一周的参考。 - 刻意练习的 5 个步骤 - 判断身处哪种职场资本市场（Career capital markets） - 赢者通吃型：只有一种职场资本可以获取，并且有很多不同的人在争夺这种资本<br>
-例如个人技术博客 - 拍卖型：有很多不同类型的职场资本，并且每个人可以生成他们自己独有的资本 - 识别自己的资本类型 - 处在拍卖型市场要寻找窗口：已经敞开的积累资本的机会<br>
-比如毕业做博后，更容易进入角色 - 学会定义优秀 - 有明确的目标，没有目标就没有措施 - 拉伸与摧毁 - 刻意练习通常是令人愉悦的对立面，感觉就像是做「拉伸运动」 - 积极接受真诚甚至犀利的反馈，「摧毁」自认为的优秀 - 要有耐性 - 职场资本的获取需要时间</li>
-<li>思考
-<ul>
-<li>别转身逃离自己目前工作的桎梏，而是开始获取必需的职场资本，从而将自己从桎梏下解放出来。</li>
-<li>伟大的成就不在于天赋，而在于在正确的时间、正确的地点积累到如此大量的练习。</li>
-</ul>
-</li>
-</ul>
-<h2 id="规则三幸福来自于自主力">规则三：幸福来自于自主力</h2>
-<ul>
-<li>自主力是理想工作的万灵药
-<ul>
-<li>自主力（Control）
-<ul>
-<li>对自己的工作内容和工作方式拥有发言权，是在创建自己热爱的工作时需要靠职场资本来获取的最重要的特质之一</li>
-<li>没有成果就没有工作，通过在工作内容和工作方式上赋予人更多的自主力会提高人们的幸福感、投入程度以及满足感</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>自主力两个陷阱
-<ul>
-<li>第一自主力陷阱（The first control trap）
-<ul>
-<li>自主力若不以职场资本而取得则不具备可持续性</li>
-<li>热情本身不是稀缺而宝贵的东西因此并不能换来多少职场资本</li>
-</ul>
-</li>
-<li>第二自主力陷阱（The second control trap）
-<ul>
-<li>当你拥有足够的职场资本来获取对职业生涯的合理控制时当前雇主会想方设法防止你做出改变</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>做有人愿意埋单的事
-<ul>
-<li>Derek Sivers 事例
-<ul>
-<li>金钱方面的一条原则凌驾于其他人生原则之上：要做有人愿意埋单的事，钱是中性的价值指标，赚钱的目的是让自己有价值。</li>
-</ul>
-</li>
-<li>财务可行性法则（The law of financial viability）
-<ul>
-<li>在决定是否追求某项有吸引力的活动从而给自己的职业生涯增加自主力时，应该问问自己别人是否愿意为之埋单。如果愿意，那就继续追求；如果不愿意，那就维持现状。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="规则四使命感带来意义">规则四：使命感带来意义</h2>
-<ul>
-<li>有意义的使命与有价值的人生
-<ul>
-<li>进化生物学家 Pardis Sabeti
-<ul>
-<li>生物学容易把一个年轻教授变成一个脾气暴躁的工作受虐狂，会把休息视为失败、把同行的成就视为自己的悲剧。</li>
-<li>职业动力来源于明确的使命：利用新技术对抗古老的疾病</li>
-</ul>
-</li>
-<li>使命的重要性
-<ul>
-<li>拥有使命是在事业上拥有一个起到统领作用的重心，使命比某种具体的工作更为笼统且可以贯穿多个职位</li>
-<li>感受到自己事业的重要会对自己的职业生涯感到更加满足且更能承受住辛苦工作所带来的压力</li>
-<li>让人将精力都集中到某个有用的目标之上，反过来在自己所处的领域里影响力最大化，影响力是热爱自己工作的关键因素之一</li>
-</ul>
-</li>
-<li>使命（Mission）
-<ul>
-<li>使命是在创建自己热爱的工作时需要靠职场资本获取的另一个重要特质，它比某种具体的工作更笼统，而且可以贯穿多个职位。它回答了“我的人生应当怎样度过”这个问题，能够使你将精力都集中到某个有用的目标之上。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>在前沿地带找到使命感
-<ul>
-<li>几个人作出同样发现的原因
-<ul>
-<li>相邻可能（The adjacent possible）
-<ul>
-<li>在任何领域，下一个伟大的创意通常就出现在当前发展前沿之外的相邻区间，而这个区间包含了对现有想法的各种可能的新组合。</li>
-<li>关键是必须达到某一领域的前沿，然后这种相邻可能以及它所包含的创新才会显现。</li>
-</ul>
-</li>
-<li>创新其实更具系统性
-<ul>
-<li>科学家们一点一点将科技前沿向外扩展，在相邻可能中发现新问题</li>
-<li>新问题的解决又会将前沿再向外扩展一些，产生更多的新问题，这样周而复始</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>使命达成需要资本
-<ul>
-<li>想要拥有使命，你需要首先获取资本</li>
-<li>好的职业使命也是一种创新，而这种创新存在于你所在工作领域的相邻可能之中</li>
-<li>想在自己职业生涯中找到某种使命必须首先达到前沿</li>
-</ul>
-</li>
-<li>用正确的顺序做事
-<ul>
-<li>往小处想：在相当长一段时间内专注于很少的几个课题，达到某一领域的前沿水平是往「小处」想</li>
-<li>往大处做：一旦达到了前沿并且在相邻可能中找到了一项使命必须以极大的热情去追求，即往「大处」做</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>使命需要「小赌」
-<ul>
-<li>小赌（Little bets）
-<ul>
-<li>不一定要以一项伟大的创意开始，或者事先做好全盘规划，而是通过一系列有条不紊的“小赌”探索出一个可能不错的方向，并且从大量的小失误以及那些意义重大的小成功中汲取关键信息。</li>
-</ul>
-</li>
-<li>小赌策略使命的成功实现成为可能</li>
-</ul>
-</li>
-<li>需要引人注目
-<ul>
-<li>事例 鲍凯特
-<ul>
-<li>想要打造一份可以持续发展的事业必须生产引人注目而且能够迫使人们传播的项目</li>
-<li>致力于达成“将艺术世界与 Ruby 编程世界结合起来”使命</li>
-<li>发布了「始祖鸟」（Archaeopteryx）的开源人工智能程序</li>
-<li>把自己作为程序员推销出去的最佳方法：开发引人注目的开源软件</li>
-</ul>
-</li>
-<li>引人注目法则（The law of remarkability）
-<ul>
-<li>使命驱动型项目想获得成功必须在两个方面引人注目
-<ul>
-<li>必须迫使接触过它的人向他人进行评论</li>
-<li>必须在一个利于这种评论发生的场合启动</li>
-</ul>
-</li>
-<li>博客是一个引人注目的场所同时内容要有话题点</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="五个补充">五个补充</h2>
-<ul>
-<li>以效率为中心变成以技能为中心
-<ul>
-<li>以效率为中心：「完成工作」是优先考虑的事情。如果以这种效率思维来考虑问题往往就会回避刻意练习导向的工作，因为此类工作的完成方式不明确，而且还需要忍受精神紧张而带来的不适感。</li>
-<li>以技能为中心：「让自己越来越优秀」成了最重要的事情，想要变得优秀就需要经受刻意练习所带来的精神紧张。一旦接受了这种方式职业轨迹就会发生深刻的变化。</li>
-</ul>
-</li>
-<li>作者刻意练习的三个习惯
-<ul>
-<li>研究圣经
-<ul>
-<li>要求自己每周写一篇论文总结，而且这篇论文是认为可能与自己研究有关的</li>
-<li>总结必须包括对论文结果的描述、与前人工作的比较，以及取得这一结果所运用的策略</li>
-</ul>
-</li>
-<li>时数记录表
-<ul>
-<li>每行是一个月，记当月处于刻意练习状态的总时数</li>
-</ul>
-</li>
-<li>理论笔记本
-<ul>
-<li>极贵的笔记本的高成本表明了我所要写下的内容的重要性</li>
-<li>来迫使自己进入精神紧张的状态，从而总结、整理自己的思路</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>使命培育金字塔体系
-<ul>
-<li>顶层：探索性研究使命</li>
-<li>中间层：试探性研究
-<ul>
-<li>一个小赌项目</li>
-<li>规模要足够小能够在一个月以内完成</li>
-<li>迫使你去创造新价值即掌握某项新技能并且产生前所未有的新结果</li>
-<li>可以产生实实在在的结果从而收到实实在在的反馈</li>
-</ul>
-</li>
-<li>底层：背景研究</li>
-<li>操作方法
-<ul>
-<li>底层描述的过程中会产生一些想法，通过“小赌”来对其中最有前景的想法进行探索</li>
-<li>一次只进行两三个“小赌”从而集中投入精力</li>
-<li>采用期限管理并在计划中用黄色标明，以示完成项目的紧迫性</li>
-<li>通过时数记录表来追踪花在“小赌”上的时间</li>
-<li>在一项“小赌”完成后用它带来的实际反馈指导下一步工作</li>
-<li>为完成“小赌”所付出的努力增加了刻意练习的次数</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>遇到抗拒心理如何解决
-<ul>
-<li>培养技能的过程非常艰难
-<ul>
-<li>遇到困难心里立即产生抗拒，信号先是隐约可以察觉，但随着坚持越久强度也越大且不断注意力造成冲击。</li>
-</ul>
-</li>
-<li>时间结构
-<ul>
-<li>我要在这上花一小时，不管我会晕在这上面，还是一无所获，都无所谓。在下一个小时里，这就是我的整个世界。</li>
-</ul>
-</li>
-<li>信息结构
-<ul>
-<li>以有用的形式来体现自己通过艰苦努力所取得的成果</li>
-<li>首先构建一张论证图，展示了论文各个不同的论证过程之间的从属关系</li>
-<li>做一些简短的自我测验，强迫自己对论证所用到的关键定义进行记忆</li>
-<li>获得一些理解，对解析后面复杂的数学计算至关重要</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>正确地工作胜过正确的工作
-<ul>
-<li>「追随自己的激情」是个糟糕的建议，对于大多数人而言并没有一个事先存在的激情等待被发掘，然后去和某个工作相匹配。要想找到职业幸福感需要的不是什么完美的工作，而是以一个更好的方式来对待现有的工作。只要继续坚持在探求过程中发现的那些想法，这份热爱只会加深不会减弱。</li>
-<li>那些从事着有吸引力的职业的人是通过让自己在某些稀缺而宝贵的方面有所擅长，即建立“职场资本”然后将其“兑现”为成就大事的特质，从而开创了一番事业。与「正确地工作」相比「找到正确的工作」显得无足轻重。</li>
-<li>一旦你积累到了这些技能所产生的职场资本，就要明智地运用好它。你可以用它来获取在工作内容和工作方式上的自主力，以及用来找到并实践某项改变人生的使命。</li>
-<li>想要找到真正的使命，首先要有职场资本，而职场资本的积累则需要耐心；其次要不断关注自己所在领域的相邻可能区间（而这个区间始终都在变化），从而找到下一项伟大的创意。</li>
-</ul>
 </li>
 </ul>
 <hr>
