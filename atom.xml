@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaopubear.top/blog</id>
     <title>思考问题的熊</title>
-    <updated>2021-06-11T08:51:55.644Z</updated>
+    <updated>2021-06-17T13:08:50.641Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaopubear.top/blog"/>
     <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
@@ -392,8 +392,8 @@ https://doi.org/10.1371/journal.pbio.3000918</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[关于个人的认知不确定性]]></title>
-        <id>https://kaopubear.top/blog/20210117-uncertaintyandwriting/</id>
-        <link href="https://kaopubear.top/blog/20210117-uncertaintyandwriting/">
+        <id>https://kaopubear.top/blog/2021-01-17-uncertaintyandwriting/</id>
+        <link href="https://kaopubear.top/blog/2021-01-17-uncertaintyandwriting/">
         </link>
         <updated>2021-01-17T15:10:56.000Z</updated>
         <summary type="html"><![CDATA[<p>这篇文章是熊言熊语会员通讯 4321X 的刊首语和部分内容，主要谈了谈关于不确定性和写作的问题。完整内容可以通过<a href="https://mailchi.mp/ada96dd56be8/4321x-4">会员通讯邮件</a>进行查看。</p>
