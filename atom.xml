@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaopubear.top/blog</id>
     <title>思考问题的熊</title>
-    <updated>2021-06-28T09:15:47.186Z</updated>
+    <updated>2021-07-06T15:19:12.778Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaopubear.top/blog"/>
     <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
@@ -10,6 +10,80 @@
     <logo>https://kaopubear.top/blog/images/avatar.png</logo>
     <icon>https://kaopubear.top/blog/favicon.ico</icon>
     <rights>All rights reserved 2021, 思考问题的熊</rights>
+    <entry>
+        <title type="html"><![CDATA[从 macOS M1 安装编译 R 踩坑聊开来]]></title>
+        <id>https://kaopubear.top/blog/2021-07-06-macos-arm64-R-tips/</id>
+        <link href="https://kaopubear.top/blog/2021-07-06-macos-arm64-R-tips/">
+        </link>
+        <updated>2021-07-06T15:15:49.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>关键时刻要稳住，以及软件之间的不兼容和人与人之间很类似。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>关键时刻要稳住，以及软件之间的不兼容和人与人之间很类似。</p>
+</blockquote>
+<!-- more -->
+<p>之前写过两篇 macOS 升级系统后安装升级 R 的博客，现在回看虽然解决了当时的问题但还是蛮混乱的。最近工作主力机切换到了 MBP M1 版本（感谢东家），再整理一点踩坑实录和引申出来的想法。</p>
+<h2 id="新-mac-必备">新 Mac 必备</h2>
+<p>新 Mac 上手，装好 Xcode command-line tools 和 homebrew 其实就已经解决了大部分后续软件安装问题，如果还需要在笔记本跑跑数据就装 miniconda。写这篇文章的时候 homebrew 在 M1 上基本不会碰到什么问题，可以放心安装。</p>
+<p>想起来研二开始日常管理实验室服务器的时候，必学技能还是如何在几个不同的 Linux 版本环境中安装编译好大家需要的各种软件，如今 conda 和 docker 的成熟让软件安装早就不再是什么问题，管理员的最大作用似乎就是<strong>做好数据备份的同时提醒大家做好数据备份</strong>。</p>
+<h2 id="arm64-架构-r-的坑好多">arm64 架构 R 的坑好多</h2>
+<p>我是一个忍受不了手机软件有更新而不升级的人，甚至经常通过 TestFlight 去找各种应用的测试版本（这种人被成为 TF boys）。拿到 M1 Mac 自然也是先找最新适配版本的软件。</p>
+<p>以数据分析写代码常用的 VSCode 和 R 为例，目前很多软件已经有了专门针对 macOS arm64 的版本。你可以通过 <a href="https://mac.r-project.org/">R 官方的 mac 页面</a> 找到下载链接。如图所示 4.1 版本 arm64 的安装包新鲜出炉。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20210706210534.png" alt="" loading="lazy"></figure>
+<p>下载安装一切顺利，往下翻翻就能看到针对 arm64 版本的说明。简单说为了防止不同架构的 R 打架，最新版本的 R 相关内容都保存在 <code>/opt/R/arm64</code>目录，包括进行 R 包编译必备的 GUN Fortran ，嗯你没有看错截图显示他们页面的这个单词拼错了。除了 gfortran 以外， XQuartz 则需要版本 2.8.0_rc1。gfortran 也有了 arm64 版本，可以通过 <a href="https://github.com/fxcoudert/gfortran-for-macOS/releases/tag/11-arm-alpha2">这个链接</a> 下载安装。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20210706211018.png" alt="" loading="lazy"></figure>
+<p>正常情况下装好这几个就可以装 R 包了，但在安装几十个常用 R 的过程中发现了好几处 bug，其中最根源的问题是在 arm64 版本下（几乎）所有 R 包都需要通过编译才能使用。只要涉及到编译，各种不兼容和依赖问题就都来了。</p>
+<h3 id="edger-编译报错">edgeR 编译报错</h3>
+<p>这个 bug 最早是同事提出的，因为忙着搬砖所以我没有回答到点子上就甩了之前的文章链接。报错信息是<code>library not found for -lgfortran</code>，其实就是<code>gfortran</code>的位置找不到。这个问题如果仔细读了上面提到的官方页面应该有所准备。</p>
+<blockquote>
+<p>It is assumed that /usr/local is unsafe as it may contain Intel binaries which don't mix, therefore R will not try to use /usr/local unless a manual flags override is issued. However, it also means that it is safe to use our arm binaries without affecting your legacy Intel ecosystem.</p>
+</blockquote>
+<p>解决方案是需要正确安装最新版本的 gfortran，然后手动修改<code>~/.R/Makevars</code>编译用到的 FLIBS 信息</p>
+<pre><code>FLIBS = -L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0 -L/usr/local/gfortran/lib -lgfortran -lm
+</code></pre>
+<p>另外，网上其它软件也有提到把<code>export PATH=/opt/R/arm64/bin:$PATH</code> 写入系统配置文件，我并没有测试。</p>
+<h3 id="rgl-安装包错">rgl 安装包错</h3>
+<p>rgl 是一个在 Mac 中有很多 R 包依赖的常用包，在安装报错的时候开发者良心地直接给出了讨论链接。<a href="https://stackoverflow.com/questions/66011929/package-rgl-in-r-not-loading-in-mac-os/66127391">macos catalina - Package rgl in R not loading in Mac OS - Stack Overflow</a></p>
+<pre><code>Warning messages:
+1: 	Loading rgl's DLL failed. 
+	This build of rgl depends on XQuartz, which failed to load.
+ See the discussion in https://stackoverflow.com/a/66127391/2554330 
+2: Trying without OpenGL... 
+
+</code></pre>
+<p>概括一下就是 rgl 和目前支持 M1 芯片的 Xquartz 版本不兼容，如果不想像链接中反复修改依赖软件的话，可以直接从 github 下载进行编译。</p>
+<pre><code class="language-R">remotes::install_github(&quot;dmurdoch/rgl&quot;)
+</code></pre>
+<h3 id="maftools-编译报错">maftools 编译报错</h3>
+<p>安装 maftools 需要提前安装 Rhtslib，而 Rhtslib 在编译时有如下问题。</p>
+<pre><code># 'lzma.h' file not found
+</code></pre>
+<p>因为 Rhtslib 也是一个频繁被依赖的软件，所以我猜测这个问题应该有人已经在 issue 里问了，一搜 <a href="https://github.com/Bioconductor/Rhtslib/issues/23">确实如此</a>。结果翻着翻着看到这样一条回答。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/20210706222801.png" alt="" loading="lazy"></figure>
+<h2 id="intel-架构的-r-真香">Intel 架构的 R 真香</h2>
+<p>通过上面的截图可以看到最中肯的建议就是：别乱用什么 arm64 架构的 R……</p>
+<p>这是因为虽然 R 和 Rsutido 最新版本都已经支持 m1 芯片，但是 bioconductor 还没有支持，这样一来就无法直接安装编译好的 R 包版本。</p>
+<p>不过，这个事情其实一开始苹果已经通过 Rosetta 2 解决了。为了在过渡阶段让 M1 同时兼容两种架构的软件，当使用 Intel 架构的软件时，macOS 可以直接通过 Rosetta2 去做转换。之前苹果官方介绍在大多数情况下需要使用 Rosetta 的 App 性能不会出现差异。</p>
+<p>因此目前只需要使用 Intel 版本的 R，就可以避免编译以及随之而来的各种问题。所以，在果断重新安装这个版本的 R 之后，我只能说一句真香。</p>
+<h2 id="从-macos-m1-安装编译-r-想到的">从 macOS M1 安装编译 R 想到的</h2>
+<p>在一开始读到 R 官网说明时，我就看到了下面这句话。</p>
+<blockquote>
+<p><strong>That said, our current Intel releases work just fine on the new Macs as well using Rosetta 2.</strong></p>
+</blockquote>
+<p>但追求走在更新前线的人怎么能如此委曲求全，结果就是浪费了不少因为编译 debug 的时间。所以生产环境求稳还是真理，只要没出错就不要乱改动，修改一下奥卡姆剃刀法则就是「<strong>如无必要，请勿升级</strong>」。</p>
+<p>以及，使用 arm64 架构的 R 配合 Bioconductor 出现各种各样问题，原因在于它们没有保持住一致的节奏。软件如此，人和人之间也差不多。三五个人一起，要想成些事，彼此就不能出现太明显的「不兼容」。</p>
+<p>一方面，如果有人走的太快但还要依赖他人的时候，这种自我升级本身没有太大价值，多数还是需要主动调低自己的版本。</p>
+<p>另一方面，如果多数人都升级了，为了运行速度和后续更新，版本太低的人也不会被一直兼容。就像手机系统升级一样，手机公司总得逐渐放弃一些久远的型号，至于支持几代就要看不同公司的策略。</p>
+<p>除了关键时刻果断决策，更重要的还是大家一起进步一起升级。想起来那句话：<strong>你就是你身边最常接触五个人的平均值。</strong></p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>熊言熊语会员通讯「4321X」是一个免费的订阅服务。<br>
+每期会为你推荐 4 篇生物信息或者医学相关文献，分享 3 个我过去一周的思考，介绍 2 个我喜欢的工具，同时提出 1 个问题供我们交流，而 X 则代表不固定的 one more thing。可以<a href="http://eepurl.com/hjYAaj">点击这里</a>进行订阅。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[6年硕博生活的6条心得-生活成长篇]]></title>
         <id>https://kaopubear.top/blog/2021-06-26-6tipsforphdlife/</id>
@@ -11520,83 +11594,6 @@ write.table(data, file = &quot;data.txt&quot;, sep = &quot;\t&quot;,
 <p>readr 包的<code>write_tsv()</code>函数也可以完成同样的工作。如果想要保存为 Excel 文件，调用前面提到 xlsx 包，使用<code>write.xlsx()</code>即可。</p>
 <p>如果在保存数据的同时还需要保存数据类型和结构，可以使用<code>saveRDS(object, file = &quot;my_data.rds&quot;)</code>将当个项目保存为 R 特有的数据格式。如果想要重新调用，使用<code>readRDS(file = &quot;my_data.rds&quot;)</code>。</p>
 <p>如果想要保存完整的工作区，可以使用<code>save.image(file = “my_work_space.RData”)</code>，加载时使用<code>load()</code>。如果使用 Rstudio，关闭时会提醒你是否保存。</p>
-<hr>
-<p><strong>本文作者</strong>：思考问题的熊</p>
-<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
-<p>熊言熊语会员通讯「4321X」是一个免费的订阅服务。<br>
-每期会为你推荐 4 篇生物信息或者医学相关文献，分享 3 个我过去一周的思考，介绍 2 个我喜欢的工具，同时提出 1 个问题供我们交流，而 X 则代表不固定的 one more thing。可以<a href="http://eepurl.com/hjYAaj">点击这里</a>进行订阅。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[每周文献-181208-DNA 甲基化和几个工具]]></title>
-        <id>https://kaopubear.top/blog/2018-12-08-weeklypaper/</id>
-        <link href="https://kaopubear.top/blog/2018-12-08-weeklypaper/">
-        </link>
-        <updated>2018-12-08T12:13:37.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="文献信息">文献信息</h2>
-<p><strong>标题：</strong> A DNA methylation reader complex that enhances gene transcription</p>
-]]></summary>
-        <content type="html"><![CDATA[<h2 id="文献信息">文献信息</h2>
-<p><strong>标题：</strong> A DNA methylation reader complex that enhances gene transcription</p>
-<!--more-->
-<p><strong>DOI(url):</strong> 10.1126/science.aar7854</p>
-<p><strong>发表日期：</strong> 07 Dec 2018</p>
-<p><strong>关键词：</strong> DNA methylation; reader complex; SUVH1 and SUVH3; activate</p>
-<h2 id="文献概述">文献概述</h2>
-<p>emmm , 挺长时间没有植物甲基化的文章发表在 science 上了，文章的通讯作者是美国科学院院士。</p>
-<p>DNA 甲基化（DNA methylation）是最早发现的表观修饰遗传标记。DNA 甲基化在调控基因表达、维持染色质结构、基因印记以及胚胎发育等生物学过程中发挥着重大的作用。在真核生物中，DNA 甲基化通常标记转座元件。在植物中，RNA 介导的 DNA 甲基化（RNA-directed DNA methylation, RdDM）是一种重要的甲基化途径，植物中有三种甲基化形式 CG、CHG、CHH。CG 由 DNA 甲基化转移酶 MET1 维持，在植物中 DNMT1 的同源蛋白；植物特异的 CMT3 结合 H3k9me2 促进 CHG 甲基化；CHH 由 DRM2 及 CMT2 维持。转座子的插入可以对邻近的基因在转录水平产生影响，启动子的甲基化通常来说会抑制这些基因的表达，但也存在 DNA 甲基化促进基因表达的例外情况。</p>
-<p>文章鉴定了拟南芥中的蛋白质复合物 SUVH1 和 SUVH3，其通过 DNA 甲基化被募集到染色质中，SUVH 蛋白与甲基化 DNA 结合并募集 DNAJ 蛋白以增强近端基因表达。SUVH1 和 SUVH3 在体外结合甲基化 DNA，与体内常染色质甲基化有关，并与含有两个含 DNAJ 结构域的同源物 DNAJ1 和 DNAJ2 形成复合物。 DNAJ1 的异位募集增强了植物，酵母和哺乳动物的基因转录。 因此，SUVH 蛋白结合甲基化 DNA 并募集 DNAJ 蛋白以增强近端基因表达，从而抵消转座子插入基因附近的抑制作用。通过平衡抑制和激活转录效应，DNA 甲基化可以起到微调基因表达的作用。</p>
-<h2 id="笔记">笔记</h2>
-<h3 id="在拟南芥中分离出与-dna-甲基化结合的蛋白质">在拟南芥中分离出与 DNA 甲基化结合的蛋白质</h3>
-<p>首先挑选了 10 个和不同种类甲基化位点结合紧密的蛋白。其中 SUVH1 SUVH3 以及 DNAJ 蛋白的研究较少。</p>
-<h3 id="suvh1-由-rddm-相关的-mchh-募集">SUVH1 由 RdDM 相关的 mCHH 募集</h3>
-<p>ChIP-seq 数据显示，SUVH1 和 SUVH3 在基因组上的定位基本相同。且这两个蛋白的位置与通过 RdDM 途径相关的 CHH 甲基化共定位。从下图中的 drm1/2 突变体可以观察到。同时 SUVH1 也富集在 NRPE1 (RNA polymerase V 的最大亚基） 的 peak 区域，且在短 TE 和长 TE 的边缘处显示出更强的富集，这些位置也是 RdDM 定位的标志。使用随机森林回归 (random forest regression) 发现 mCHH 是体内 SUVH1 结合的最强预测因子。同时在 RdDM 相关的突变体中 SUVH1 的富集基本消失。</p>
-<figure data-type="image" tabindex="1"><img src="http://science.sciencemag.org/content/sci/362/6419/1182/F2.large.jpg" alt="" loading="lazy"></figure>
-<h3 id="suvh1suvh3dnaj1-和-dnaj2-相互作用-共定位且是临近基因表达必需的">SUVH1，SUVH3，DNAJ1 和 DNAJ2 相互作用、共定位且是临近基因表达必需的</h3>
-<p>通过 IP 实验和 ChiP-seq 发现这四个蛋白可以相互作用和共定位，而且突变体中，离他们越近的基因表达受影响越明显。表明 DNAJ1 和 DNAJ2 与 SUVH1 和 SUVH3 相互作用，被募集到 RdDM 的位点，并促进近端基因的表达。然后使用 DNAJ1 的过表达突变体发现上调的基因和 DNAJ1 的结合位点有显著的富集。</p>
-<h3 id="方法">方法</h3>
-<p>文章正文比较短，图也很紧凑，但是附件有很多的数据和结果，一共有 55 页。从方法部分来看，能做的高通量分析基本都做了。比如质谱，ChIP-seq, ATAC-seq，Whole Genome Bisulfite Sequencing (WGBS) 和 RNAseq。</p>
-<p>不出意外的是，RNA-seq 的 mapping 还是用的 TopHat2，差异表达用的还是 DEseq 第一版，WGBS 用的是 BSMAP。因为不同重复中甲基化差距不同，在下游分析中作者将重复合并在一起进行后续分析。画热图用的包是 ComplexHeatmap。ATAC-seq mapping 用的是 bowtie , ChIP-seq 用 bowtie2, call peak 使用 MACS 而不是第二版。可视化的几个图用了 NGS.plot DeepTools 这两个包。</p>
-<p>对 SUVH1 的结合位点进行预测使用了随机森林回归算法。相关方法来自于 https://www.nature.com/articles/ncomms11025 这篇文章。</p>
-<h3 id="相关文献">相关文献</h3>
-<p>https://www.nature.com/articles/s41556-018-0089-0<br>
-https://www.nature.com/articles/nature12931<br>
-https://www.ncbi.nlm.nih.gov/pubmed/27903897?dopt=Abstract<br>
-https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1005998<br>
-https://www.nature.com/articles/nsmb.2354</p>
-<h2 id="其它几篇方法文章">其它几篇方法文章</h2>
-<h3 id="植物-mirna-分析流程">植物 miRNA 分析流程</h3>
-<p><strong>文献题目</strong>：miRDeep-P2: accurate and fast analysis of the microRNA transcriptome in plants</p>
-<p><strong>DOI(url):</strong> https://doi.org/10.1093/bioinformatics/bty972</p>
-<p><strong>发表日期：</strong> 2018 Dec 6</p>
-<p><strong>关键点</strong></p>
-<p>Two major challenges to identify microRNAs (miRNAs) in plants</p>
-<ul>
-<li>how to minimize the false-positive inheritable to computational predictions;</li>
-<li>how to minimize the computational time required for analyzing the miRNA transcriptome in plants with complex and large genomes.</li>
-</ul>
-<p><strong>miRDP2</strong>: Based on ultra-deep sampling of small RNA libraries by next generation sequencing, miRDP2 is able to identify miRNA genes in plant species, even for those without detailed annotation, with extremely high speed and reliable performance.</p>
-<p>http://sourceforge.net/projects/mirdp2/.</p>
-<p><strong>参考意义</strong></p>
-<p>流程有待测试，作者来自北京农科院。我对这个地方的印象就是虽然在北京，但是感觉已经快到我老家了。</p>
-<h3 id="bam-文件过滤信息统计及注释工具">BAM 文件过滤信息统计及注释工具</h3>
-<p><strong>文献题目：</strong> Alfred: Interactive multi-sample BAM alignment statistics, feature counting and feature annotation for long- and short-read sequencing</p>
-<p><strong>DOI(url):</strong> 10.1093/bioinformatics/bty1007</p>
-<p><strong>发表日期：</strong> 2018 Dec 6</p>
-<p><strong>关键点</strong></p>
-<p>主要功能：Alfred uses subcommands for quality control (qc), feature counting (count_dna, count_rna, count_jct), feature annotation (annotate, tracks), alignment (pwalign, consensus) and haplotype-resolved analysis (split, ase).</p>
-<p>网址：https://gear.embl.de/docs/alfred/</p>
-<p><strong>参考意义</strong></p>
-<p>看起来功能挺多，与 samtools 相比更注重一些下游的分析。</p>
-<h3 id="cnv-预测工具">CNV 预测工具</h3>
-<p><strong>文献题目：</strong> CODEX2: full-spectrum copy number variation detection by high-throughput DNA sequencing.</p>
-<p><strong>DOI(url):</strong> 10.1186/s13059-018-1578-y</p>
-<p><strong>发表日期：</strong> 2018 Nov 26</p>
-<p><strong>关键点</strong></p>
-<p>CODEX2, as a statistical framework for full-spectrum CNV profiling that is sensitive for variants with both common and rare population frequencies and that is applicable to study designs with and without negative control samples.</p>
-<p>We demonstrate and evaluate CODEX2 on whole-exome and targeted sequencing data, where biases are the most prominent.</p>
-<p>CODEX2 outperforms existing methods and, in particular, significantly improves sensitivity for common CNVs.</p>
-<p>https://github.com/yuchaojiang/CODEX2</p>
 <hr>
 <p><strong>本文作者</strong>：思考问题的熊</p>
 <p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
