@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaopubear.top/blog</id>
     <title>思考问题的熊</title>
-    <updated>2021-07-06T15:19:12.778Z</updated>
+    <updated>2021-07-07T14:22:19.865Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaopubear.top/blog"/>
     <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://kaopubear.top/blog/favicon.ico</icon>
     <rights>All rights reserved 2021, 思考问题的熊</rights>
     <entry>
-        <title type="html"><![CDATA[从 macOS M1 安装编译 R 踩坑聊开来]]></title>
+        <title type="html"><![CDATA[从 MacBook Pro M1 安装编译 R 踩坑想到的]]></title>
         <id>https://kaopubear.top/blog/2021-07-06-macos-arm64-R-tips/</id>
         <link href="https://kaopubear.top/blog/2021-07-06-macos-arm64-R-tips/">
         </link>
