@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>使用 Zotero 在 Markdown 中优雅地处理参考文献 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="需求
+兵马未动粮草先行，写毕业论文需要做很多思想建设，有一个顺手的写作工具和一个方便的文献管理工具可以给人一些动力和勇气。
+
+我目前的需求很明确，就是用自己中意的 Markdwon 编辑器来写论文初稿，使用 Zotero 来管理大量参考文献..." />
+  <meta name="keywords" content="工具,文献" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  使用 Zotero 在 Markdown 中优雅地处理参考文献</a>
+              </h2>
+              <span class="article-info">2020-06-04, 2062 words, 8 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <h2 id="需求">需求</h2>
+<p>兵马未动粮草先行，写毕业论文需要做很多思想建设，有一个顺手的写作工具和一个方便的文献管理工具可以给人一些动力和勇气。</p>
+<!-- more -->
+<p>我目前的需求很明确，就是用自己中意的 Markdwon 编辑器来写论文初稿，使用 Zotero 来管理大量参考文献，然后论文转换成 office Word 文档让老师们查看。</p>
+<p>如果选择 office Word 来写，直接用 Zotero 插件处理参考文献没有任何问题，但作为 Markdown 的重度用户，用 Word 写上百页的文档实在是太难受。</p>
+<p>于是，这篇文章就分享一下如何尽量优雅地借助 Zotero 用纯文本方式完成论文中参考文献的引用和管理。所谓优雅是指当 Markdown 内容并转换成 Word 格式后，所有引用都需要被 Zotero 插件正确识别且可以随时在 Word 中进行修改更新，而常用的 Bibtex 加 Pandoc 方法并不能实现这个需求。</p>
+<h2 id="准备">准备</h2>
+<h3 id="工具">工具</h3>
+<p><strong>Markdown 编辑器：Ulysses</strong></p>
+<p>奔着 Ulysses 在高价位上了 setAPP 的车，如果能用它把论文写完，这车费就没有白花。当然，用 Markdown 写论文最自由的就是对写作工具的选择，这里使用任何一个你顺手的编辑器都可以，比如 Typora, MWeb 甚至是 <a href="https://kaopubear.top/blog/2020-04-21-usevscodepart2/">VSCode</a> 都么得问题。</p>
+<p><strong>文献管理工具：Zotero</strong></p>
+<p>硕博这几年时间，我先后使用了目前国内使用率最高的三款文献管理工具，从 Endnote 转向 Mendeley 是因为当时觉得 Mendeley 没有 Endnote 那么「重」；从 Mendeley 转到 Zotero 是因为后者的免费和插件。关于<a href="https://kaopubear.top/blog/2019-09-11-howtolearnzotero/">如何上手 Zotero </a>之前也有写过详细的介绍。</p>
+<h3 id="辅助">辅助</h3>
+<p>使用 Zotero 又不借助 Word 来管理参考文献，安装 <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> 插件是必选项，它为参考文献的引用和管理提供了一站式解决方案。</p>
+<p>同时，把 Markdown 格式的文本用高度可定制的方法转换为 PDF 或者 Word 格式文档，绕不开 <a href="https://pandoc.org/index.html">Pandoc</a> 这个工具。我们熟悉的大量文本编辑器在生成其他格式文档时往往调用的都是 Pandoc。</p>
+<h2 id="概念">概念</h2>
+<h3 id="citation-keys">CITATION KEYS</h3>
+<p>所谓 Citation Keys(Citekey)，可以理解为 Better BibTeX 给文献生成的一个 ID，当我们在文档中需要插入文献的位置按照一定格式输入 Citekey 后就等于告诉 Zotero 要在这里引用对应的文献了。</p>
+<p>由于 Citekey 是纯文本格式，不同编辑器对文章本身的影响可以降到最低。在 Endnote 中同样有类似的引用方式，这个概念被称作 Temporary citation。</p>
+<p>通用的 Citekey 格式为 <code>[auth:lower][year]</code>，前半部分表示文章第一作者的小写姓氏，后半部分为文献年份，如果出现了重复，就会在后面添加 <code>a b c</code> 或者数字进行区分。<br>
+下图是 Zotero 中关于 Citekey 的展示。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230109.jpg" alt="-w416" loading="lazy"></figure>
+<h3 id="cite-as-you-write">CITE AS YOU WRITE</h3>
+<p>在写作过程中，如果仅将 Zotero 对应的文献 Citekey 复制到文本并没有什么难度，无非就是方便和效率的问题，即随写随引。</p>
+<p>在 Word 插件中的 Zotero 的引用效果如下图所示。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230110.jpg" alt="-w560" loading="lazy"></figure>
+<p>类似的效果只有同时在我们使用的编辑器中实现，才能做到 CITE AS YOU WRITE。</p>
+<h3 id="自动操作">自动操作</h3>
+<p>如果你在使用 macOS，或许还不知道它也有类似于 iOS 中快捷指令的功能，叫做 Automator（自动操作）。这个应用可以设定在什么情况下进行何种操作，本文将会涉及到一个脚本自动执行的问题，就会用到 Automator。</p>
+<p>如果对它感兴趣，具体使用介绍可以查看苹果 <a href="https://support.apple.com/zh-cn/guide/automator/welcome/mac">官方说明</a>。</p>
+<h2 id="设置">设置</h2>
+<h3 id="zotero-citation-keys">Zotero CITATION KEYS</h3>
+<p>我目前的配置如下图，所示。这里主要是修改了引用格式。<br>
+<img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230111.jpg" alt="-w835" loading="lazy"></p>
+<h3 id="pandoc-filter">Pandoc filter</h3>
+<p>Better BibTeX 的作者写了一个 <a href="https://retorque.re/zotero-better-bibtex/exporting/zotero.lua">lua 脚本</a><code>zotero.lua</code>，用来实现从 Markdown 到 Word 实时引用的格式转换。我们可以在 Markdown 文本中写入相关元数据，或者在 pandoc 命令行中进行相关参数设置。</p>
+<pre><code class="language-md">---
+# all the regular stuff you have here
+
+Zotero:
+library: &lt;group name&gt; # omitted to use your personal library
+scannable-cite: false # only relevant when your compiling to scannable-cite .odt
+client: &lt;Zotero or jurism&gt; # defaults to Zotero
+author-in-text: false # when true, enabled fake author-name-only cites by replacing it with the text of the last names of the authors
+...
+</code></pre>
+<p>如果是 Zotero 个人 library , 没有什么特殊情况使用默认参数即可，直接运行如下命令：</p>
+<pre><code class="language-bash">pandoc input.md -s --lua-filter=zotero.lua -o output.docx
+</code></pre>
+<h3 id="zotpick-applescript">zotpick-applescript</h3>
+<p>Better BibTeX 在实现随写随引的问题上给出了多种实现方法。如果你是把 Atom 或者 VSCode 作为编辑器可以直接安装它们相关的扩展插件，具体可以查看 <a href="https://retorque.re/zotero-better-bibtex/citing/cayw/">官方说明</a>。</p>
+<p>除此以外，还可以利用插件的提供的 URL 自行设置在其他编辑器内的调用。例如 <code>http://127.0.0.1:23119/better-bibtex/cayw?format=mmd&amp;clipboard=yes</code> 这个地址就表示会把选择的 Citekey 按照 MultiMarkdown 的格式 <code>[#adams2001][]</code> 进行引用，同时把内容保存在粘贴板中。<br>
+当然，无需我们自己写，已经有前人造好的轮子 <a href="https://github.com/davepwsmith/zotpick-applescript">zotpick-applescript</a>。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230112.jpg" alt="-w464" loading="lazy"></figure>
+<p>这里我们只需要下载 <code>zotpick-pandoc.applescript</code>。</p>
+<p>为了快速调用这个脚本，我们可以设置一个自动操作的 workflow，配置如下图所示。选择「没有输入」和位于「任何应用程序」，然后在左侧选择「运行 AppleScript」，在右侧弹出的编辑器中复制 <code>zotpick-pandoc.applescript</code> 的代码即可。随后保存命名并保存该 workflow。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230113.jpg" alt="-w1738" loading="lazy"></figure>
+<h3 id="快捷键">快捷键</h3>
+<p>为了快速调用这个 workflow，我们还可以在快捷键的设置中为它指定一个快捷键。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230114.jpg" alt="-w780" loading="lazy"></figure>
+<p>此外，因为 workflow 插入的格式为 <code>@adams2001</code> 而 Pandoc 转化时在 Markdown 中识别的格式为 <code>[@adams2001]</code>，所以有了另一个小需求：快速输入 <code>[]</code> 并且把光标置于两个括号间。</p>
+<p>这个需求可以利用 TextExpander 和 Keyboard Maestro 等工具实现，为了让 setAPP 只会票价，在这里我选择了和 TextExpander 同类型的应用 Rocket Typist。设置方式如下：</p>
+<figure data-type="image" tabindex="6"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230115.jpg" alt="-w389" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230116.jpg" alt="-w392" loading="lazy"></figure>
+<p>同时我给这个动作也自定义了缩写，方便快速输入。最终的实现效果如下：</p>
+<figure data-type="image" tabindex="8"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230117.jpg" alt="-w1198" loading="lazy"></figure>
+<p>如果使用 VSCode 来编辑，插件用起来非常方便，就无需上面这些设置了。</p>
+<h2 id="效果">效果</h2>
+<p>接下来展示一下 Markdown 源文档示例，和转换成 word 文档之后的样子。</p>
+<figure data-type="image" tabindex="9"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230118.jpg" alt="-w514" loading="lazy"></figure>
+<figure data-type="image" tabindex="10"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230119.jpg" alt="-w665" loading="lazy"></figure>
+<p>最后一步，就是在 Zotero 的 Word 插件中选择引用格式，点击「OK」，然后再点击「Refresh」就可以展示正常的引用格式了。如果想插入参考文献的详细信息，点击「Add Bibliography」即可。</p>
+<figure data-type="image" tabindex="11"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230120.jpg" alt="-w645" loading="lazy"></figure>
+<figure data-type="image" tabindex="12"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200604230121.gif" alt="-w1020" loading="lazy"></figure>
+<h2 id="扩展阅读">扩展阅读</h2>
+<p>Better BibTeX 的官方文档是非常好的学习材料，可以了解更多的相关知识，推荐阅读。</p>
+<ul>
+<li><a href="https://retorque.re/zotero-better-bibtex/exporting/pandoc/#from-markdown-to-live-citations">From Markdown to live citations</a></li>
+<li><a href="https://retorque.re/zotero-better-bibtex/citing/cayw/">CITE AS YOU WRITE</a></li>
+</ul>
+<p>此外，如果你感觉这些配置过于繁琐，可以尝试 Zettlr 这款直接支持文献管理的开源 Mardown 编辑器。我曾经使用过一小段时间，不过还是因为没有 MWeb 和 Ulysess 用起来顺手而放弃了。<br>
+如果你是 Windows 用户，则非常推荐使用 Zotero + VSCode + VSCode Zotero 插件的组合。</p>
+<hr>
+<p><strong>2009021117 更新</strong></p>
+<p>文章发表在少数派之后有不少有价值的评论。其中有朋友提到了 markdown 文本可以使用 docdown 来直接进行转换。关于 docdown 可以直接参考学习它的<a href="https://github.com/lowercasename/docdown/wiki/Initial-setup">GitHub 主页</a>。后面有空了可以就 docdown 做一个详细的补充。</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2020-06-04-markdownzotero/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/tg-VHYKad/" class="article-info">
+                        工具</a>
+                      
+                      <a href="https://kaopubear.top/blog/EqrCpMmApu/" class="article-info">
+                        文献</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2020-05-30-linuxfile3tips/">
+                    <h3 class="post-title">
+                      三个 Linux 文件高频小操作
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

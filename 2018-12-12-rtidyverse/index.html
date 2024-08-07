@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>多快好省用 R 处理数据 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="
+很早之前我一直都是使用命令行来处理软，cut,sed 再 grep 再加上终极 awk 基本上就可以随意的按照需求处理各种软件跑出来的文本文件了，再后来就要开始学习 python，python 学的怎么样了呢？呵呵。
+
+
+
+虽然做过统计学..." />
+  <meta name="keywords" content="R,数据科学" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  多快好省用 R 处理数据</a>
+              </h2>
+              <span class="article-info">2018-12-12, 2407 words, 11 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <blockquote>
+<p>很早之前我一直都是使用命令行来处理软，cut,sed 再 grep 再加上终极 awk 基本上就可以随意的按照需求处理各种软件跑出来的文本文件了，再后来就要开始学习 python，python 学的怎么样了呢？呵呵。</p>
+</blockquote>
+<!--more-->
+<blockquote>
+<p>虽然做过统计学课的助教，上课的时候用的也是 R 语言，但是博客里并没有几篇 R 相关的文章。印象中一篇是 <a href="https://kaopubear.top/blog/2017-03-06-rintro2sibs/">给初学者的 R 语言介绍</a>（写这篇文章当时是为了激发一点学生学习 R 语言的热情），另一篇是 <a href="https://kaopubear.top/blog/2018-12-11-rbasic/">R 必备基础知识</a>（写这篇文章当时是因为在写 R 与统计学基础系列文章，就不得不总结一些 R 语言的基础知识）。</p>
+</blockquote>
+<blockquote>
+<p>说实话，我本身对 R 还是非常喜欢和欣赏的，但是日常的使用需求并不高。就拿最基本的文本处理来说，基本上都可以在 shell 中进行随心所欲地增删改成，处理成很多 R 相关软件需要的文本格式，用需要的 R 包跑一两个命令就可以了。但是目前已经有点厌倦了这样的生活，我后期打算有机会的话用 R shiny 写一点网页工具给大家娱乐，也打算精进一下 R 的画图技能。这里就 have to 用 R 去做一些数据处理，于是就有了这样一系列文章。这篇是关于如何用 R 多快好省的进行数据处理。另外，说句题外话，从我这几天的实际处理数据情况来看，R 有些工作做起来，还是太慢了，也可能是我的业务不够娴熟吧。</p>
+</blockquote>
+<h2 id="tidyverse">Tidyverse</h2>
+<p>Tidyverse 是一系列大名鼎鼎的 data science R 包合集，学会了 Tidyverse 就可以说学会了用 R 进行数据分析，因为它包括的包有 readr, tidyr, dplyr, ggplot2 和 purrr。可以说从读文件到编辑文件再到可视化展示再到编写函数都涉及到了。</p>
+<p>数据分析工作主要涉及的内容就是如下几方面的工作。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/177622-99eeb69d4355ea16.png" alt="" loading="lazy"></figure>
+<p>这篇文章主要涉及输入 (import), 整理 (tidy) 和转换 (transform) 三个部分，这三步合起来也可以称作** data wrangling** 或者 <strong>data munging</strong>，而正在做这项工作的我们则被称为** data wrangler**。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/177622-f593ea2c21e7d086.png" alt="" loading="lazy"></figure>
+<h2 id="优雅地读取数据">优雅地读取数据</h2>
+<p>在 R 中，最基本的文件读取命令是 read.table 和 read.csv。我们这里使用的是更加牛 X 的 readr 包。</p>
+<p>readr 解决的关键问题是把 flat file 解析为 tibble。</p>
+<p><strong>主要包括如下三个步骤</strong></p>
+<ol>
+<li>The flat file is parsed into a rectangular matrix of strings.</li>
+<li>The type of each column is determined.</li>
+<li>Each column of strings is parsed into a vector of a more specific type.</li>
+</ol>
+<p><strong>主要优点</strong></p>
+<ul>
+<li>是 R 基础命令速度的 10 倍左右。</li>
+<li>直接用行名生成 tibbles 格式，不会把 character vectors 转换为 factors（R 基础命令最坑的一点）</li>
+<li>比 R 基础命令有更高的稳定性和可重复性，不会收到不同配置环境的影响。</li>
+</ul>
+<p>安装及加载命令</p>
+<pre><code class="language-R">install.packages(&quot;tidyverse&quot;)
+library(tidyverse)
+</code></pre>
+<p>reader 支持 7 中文本格式，但是常用的读取命令主要有如下三个</p>
+<ul>
+<li><code>read_csv()</code>: <strong>comma separated (CSV) files</strong></li>
+<li><code>read_tsv()</code>: <strong>tab separated files</strong></li>
+<li><code>read_delim()</code>: general delimited files</li>
+<li><code>read_table()</code>: tabular files where colums are separated by white-space.</li>
+</ul>
+<pre><code class="language-r">read_*(file, col_names = TRUE, col_types = NULL,
+  locale = default_locale(), na = c(&quot;&quot;, &quot;NA&quot;), quoted_na = TRUE,
+  quote = &quot;\&quot;&quot;, comment = &quot;&quot;, trim_ws = TRUE, skip = 0, n_max = Inf,
+  guess_max = min(1000, n_max), progress = show_progress())
+</code></pre>
+<p><strong>使用实例和方法</strong></p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/177622-a37db42761ada5af.png" alt="" loading="lazy"></figure>
+<p>多数情况下，如果数据是正规的格式，只需要加入文件路径和名字即可，会根据前 1000 行数据判断数据类型。读取完成后可以使用<code>calss()</code>查看一下数据类型，已经是 tbl 格式。</p>
+<pre><code class="language-R">data_h3k4 &lt;- read_tsv(&quot;46_AB_h3k4_raw.matrix&quot;)
+
+# 结果如下
+
+#Parsed with column specification:
+#cols(
+#  peak = col_character(),
+#  `TAA10-H3K4me3-1-2` = col_integer(),
+#  `TD265-H3K4me3-1` = col_integer(),
+#  `Tetra-H3K4me3-1` = col_integer(),
+#  `TTR13-H3K4me3-1-2` = col_integer(),
+#  `XX329-H3K4me3-1` = col_integer()
+#)
+
+class(data_h3k4)
+#结果如下
+#[1] &quot;tbl_df&quot;     &quot;tbl&quot;        &quot;data.frame&quot;
+
+</code></pre>
+<h2 id="自信地整理数据">自信地整理数据</h2>
+<p>为什么要 tidy，因为数据按照一个规矩统后，我们就不用再为数据的各种格式困扰。正所谓，做事之前先立规矩，就是这个道理。</p>
+<blockquote>
+<p>“Happy families are all alike; every unhappy family is unhappy in its own way.” –– Leo Tolstoy</p>
+</blockquote>
+<blockquote>
+<p>“Tidy datasets are all alike, but every messy dataset is messy in its own way.” –– Hadley Wickham</p>
+</blockquote>
+<p>所谓 <strong>tidy</strong> 的含义其实就是**每一列是一个变量 (variable)，每一行是一个观测结果 (observation)。**这个数据格式是后续使用 ggplot 等工具需要的默认格式。</p>
+<ol>
+<li>Each variable must have its own column.</li>
+<li>Each observation must have its own row.</li>
+<li>Each value must have its own cell.</li>
+</ol>
+<p>如下图所示：</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/177622-1d54dec3ed58cbe4.png" alt="" loading="lazy"></figure>
+<p>这里我们要使用的工具是** tidyr**, 是 tidyverse 的几个牛包之一。</p>
+<pre><code class="language-r">library(tidyverse)
+</code></pre>
+<p>用脚想一下，tidy 的数据要求是一个变量在一列，一个观测值在一行，如果我们的数据不满足 tidy 条件，会有什么情况。通常情况下无非是以下两种情况之一。</p>
+<ul>
+<li>一个变量分布在不同的几列</li>
+<li>一个观测值分布在不同的几行</li>
+</ul>
+<h3 id="数据由宽变长gather">数据由宽变长：gather()</h3>
+<p>通常我们会把多个样本的基因表达值构造成为一个矩阵，这时存在的问题就是一个变量分布在不同的几列，每一列是不同的样本名，而并非变量名（变量名应该是基因表达量和样本）。类似于下图有图的问题。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/177622-f9d7d7b8bd20d7b4.png" alt="" loading="lazy"></figure>
+<p>这个时候我们可以使用** gather** 命令进行数据格式转换（<strong>数据由宽转长</strong>）。</p>
+<p>原始数据</p>
+<figure data-type="image" tabindex="6"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/177622-13dbf600fd70e01f.png" alt="" loading="lazy"></figure>
+<pre><code class="language-r">gather(data, key, value, ..., na.rm = FALSE, convert = FALSE, factor_key = FALSE)
+
+#data：需要被转换的宽形表
+#key：将原数据框中的所有列赋给一个新变量 key
+#value：将原数据框中的所有值赋给一个新变量 value
+#…：指定对哪些列进行操作
+#na.rm：是否删除缺失值
+
+# 下面的两种写法等效
+tmp_tbl &lt;- gather(tmp_data,key = &quot;sample&quot;, value = &quot;expression&quot;, -peak)
+tmp_tbl &lt;- gather(tmp_data,key = &quot;sample&quot;, value = &quot;expression&quot;, c(2:6))
+</code></pre>
+<figure data-type="image" tabindex="7"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/177622-1e7fe7ed47370d2b.png" alt="" loading="lazy"></figure>
+<h3 id="数据由长变宽-spread">数据由长变宽 spread()</h3>
+<p>spread() 和 gather() 方法类似</p>
+<p>原理如下图所示</p>
+<figure data-type="image" tabindex="8"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/177622-fc4d6e051305c15b.png" alt="" loading="lazy"></figure>
+<pre><code class="language-r">spread(data, key, value, fill = NA, convert = FALSE, drop = TRUE, sep = NULL)
+
+&gt; spread(tmp_tbl,key = &quot;sample&quot;, value = &quot;expression&quot;)
+
+#结果如下所示
+
+#                peak TAA10-H3K4me3-1-2 TD265-H3K4me3-1 Tetra-H3K4me3-1 TTR13-H3K4me3-1-2 XX329-H3K4me3-1
+#1 TraesCS1A01G000100                 0               0               0                 0               0
+#2 TraesCS1A01G000200                 4               0              13                 7               9
+#3 TraesCS1A01G000300                 2               0               0                 3               0
+#4 TraesCS1A01G000400                 2               0               2                 0               0
+#5 TraesCS1A01G000500                10               0              12                18              10
+#6 TraesCS1A01G000600                14              12              46                51              20
+</code></pre>
+<h3 id="分列separate">分列：separate</h3>
+<p>有些时候我们需要将某一列数据分为两列，</p>
+<pre><code class="language-r">separate(data, col, into, sep = “[^[:alnum:]]+”, remove = TRUE,
+convert = FALSE, extra = “warn”, fill = “warn”, …)
+#data：为数据框
+#col：需要被拆分的列
+#into：新建的列名，为字符串向量
+#sep：被拆分列的分隔符
+#remove：是否删除被分割的列
+
+separate(tmp_tbl, peak, into = c(&quot;species&quot;,&quot;geneid&quot;), sep = &quot;CS&quot;)
+#   species      geneid            sample expression
+#1    Traes 1A01G000100 TAA10-H3K4me3-1-2          0
+#2    Traes 1A01G000200 TAA10-H3K4me3-1-2          4
+#3    Traes 1A01G000300 TAA10-H3K4me3-1-2          2
+#4    Traes 1A01G000400 TAA10-H3K4me3-1-2          2
+#5    Traes 1A01G000500 TAA10-H3K4me3-1-2         10
+#6    Traes 1A01G000600 TAA10-H3K4me3-1-2         14
+#7    Traes 1A01G000100   TD265-H3K4me3-1          0
+#8    Traes 1A01G000200   TD265-H3K4me3-1          0
+#9    Traes 1A01G000300   TD265-H3K4me3-1          0
+</code></pre>
+<h3 id="列合并unite">列合并：unite</h3>
+<pre><code class="language-R">unite(data, col, ..., sep = “_”, remove = TRUE)
+#data：为数据框
+#col：被组合的新列名称
+#...：指定哪些列需要被合并
+#sep：组合列之间的连接符（默认下划线）
+#remove：是否删除被组合的列
+
+separate(tmp_tbl, peak, into = c(&quot;species&quot;,&quot;geneid&quot;), sep = &quot;CS&quot;) %&gt;% unite(peak, c(1:2))
+#                peak            sample expression
+#1  Traes_1A01G000100 TAA10-H3K4me3-1-2          0
+#2  Traes_1A01G000200 TAA10-H3K4me3-1-2          4
+#3  Traes_1A01G000300 TAA10-H3K4me3-1-2          2
+#4  Traes_1A01G000400 TAA10-H3K4me3-1-2          2
+#5  Traes_1A01G000500 TAA10-H3K4me3-1-2         10
+#6  Traes_1A01G000600 TAA10-H3K4me3-1-2         14
+</code></pre>
+<h3 id="tidyr-其它简单命令">tidyr 其它简单命令</h3>
+<figure data-type="image" tabindex="9"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/177622-a6ba4f268db71010.png" alt="" loading="lazy"></figure>
+<h2 id="从容地进行数据筛选">从容地进行数据筛选</h2>
+<p>在进行数据分析时，我们通常会对原始的输入数据进行一些处理后再进行下游分析，比如会根据基因的表达量或者基因在不同组间的变异系数对矩阵进行筛选后再进行分析，也可能想要提出某一些有共同特征（同一条染色体的基因）进行后续分析。这些操作都可以通过** dplyr** 方便地完成。</p>
+<p>dplyr 主要有以下几个函数，默认情况以下函数会针对整个数据集进行操作，如果使用了<code>group_by()</code> 则会<strong>分组分别</strong>进行操作。</p>
+<ul>
+<li>Pick observations by their values (<code>filter()</code>). 筛选行</li>
+<li>Reorder the rows (<code>arrange()</code>). 排序行</li>
+<li>Pick variables by their names (<code>select()</code>). 筛选列</li>
+<li>Create new variables with functions of existing variables (<code>mutate()</code>). 增加列</li>
+<li>Collapse many values down to a single summary (<code>summarise()</code>). 汇总计算</li>
+</ul>
+<blockquote>
+<p>当我打算展开写这部分内容的时候我发现自己实在无法下笔，因为 <strong>Rstudio</strong> 的 Cheat Sheets 写的实在是太精炼太好，我再整理一遍就是浪费时间了。</p>
+</blockquote>
+<figure data-type="image" tabindex="10"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/177622-6e1565c0449b7ff4.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="11"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/177622-00632ae6b0e37250.png" alt="" loading="lazy"></figure>
+<p><strong>dplyr Cheat sheets 下载地址</strong></p>
+<p>https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf</p>
+<p><strong>其他参考资料</strong></p>
+<p>http://readr.tidyverse.org/articles/readr.html</p>
+<p>http://r4ds.had.co.nz/data-import.html#data-import</p>
+<p>https://github.com/tidyverse/readr</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2018-12-12-rtidyverse/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/UrqlObNL0t/" class="article-info">
+                        R</a>
+                      
+                      <a href="https://kaopubear.top/blog/bPxOfgU9YC/" class="article-info">
+                        数据科学</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2018-12-11-rbasic/">
+                    <h3 class="post-title">
+                      R 语言必备基础知识
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>vim 操作应知应会 10 点 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="
+vim 包括 normal 和 insert 两种模式
+
+normal 模式下所有按键都是功能键
+在 insert 模式下可以正常的输入内容
+
+
+
+
+
+进入 vim 后直接定位在某一行或者末尾
+
+vim + test.txt 直接进入文本..." />
+  <meta name="keywords" content="linux" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  vim 操作应知应会 10 点</a>
+              </h2>
+              <span class="article-info">2018-04-20, 676 words, 3 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <ul>
+<li>vim 包括 normal 和 insert 两种模式
+<ul>
+<li>normal 模式下所有按键都是功能键</li>
+<li>在 insert 模式下可以正常的输入内容</li>
+</ul>
+</li>
+</ul>
+<!--more-->
+<ul>
+<li>进入 vim 后直接定位在某一行或者末尾
+<ul>
+<li>vim + test.txt 直接进入文本末尾</li>
+<li>vim +5 test.txt 直接进入文本的第五行</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>显示和取消行号</p>
+<ul>
+<li>显示行号 set nu</li>
+<li>取消行号 set nonu</li>
+</ul>
+</li>
+<li>
+<p>行内和行间瞬间移动（normal 模式）</p>
+<ul>
+<li>行内
+<ul>
+<li>0 行头</li>
+<li>$ 行尾</li>
+<li>t. 到'.'符号前的第一个字符</li>
+<li>f1 到下一个'1'的位置</li>
+<li>w 到下一个单词开头</li>
+<li>e 到下一个单词结尾</li>
+</ul>
+</li>
+<li>行间
+<ul>
+<li>:66 到第 66 行</li>
+<li>gg 到第一行</li>
+<li>G 到最后一行</li>
+<li>5G 到第 5 行</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>屏幕瞬间移动</p>
+<ul>
+<li>后滚一屏 ctrl+f</li>
+<li>前滚半屏 ctrl+b</li>
+<li>定位屏幕中间 zz</li>
+<li>zt 屏幕顶端</li>
+<li>zb 屏幕底部</li>
+</ul>
+</li>
+<li>
+<p>插入删除</p>
+<ul>
+<li>另外起新行编辑 o</li>
+<li>删除字符 x（光标所在处）</li>
+<li>6x 删除 6 个字符</li>
+<li>删除所在行 dd</li>
+<li>删除到行首 d^; 行尾 d$</li>
+</ul>
+</li>
+<li>
+<p>复制与粘贴</p>
+<ul>
+<li>复制所在行 yy</li>
+<li>多行复制：
+<ul>
+<li>第一步：V</li>
+<li>第二步： 移动光标自由选择</li>
+<li>第三步：y 复制选择部分（d 为剪切）</li>
+</ul>
+</li>
+<li>粘贴：移动到想复制的位置，按 p 粘贴在光标后，P 为光标前</li>
+</ul>
+</li>
+<li>
+<p>注释与取消注释</p>
+<ul>
+<li>注释
+<ul>
+<li>按 Ctrl+v 切换可视模式</li>
+<li>移动光标选中注释行开头</li>
+<li>按大写 I</li>
+<li>输入 #</li>
+<li>按 Esc</li>
+</ul>
+</li>
+<li>取消
+<ul>
+<li>按 Ctrl+v 切换可视模式</li>
+<li>选择要删除的注释符</li>
+<li>按 d 或 x 删除 #</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>搜索</p>
+<ul>
+<li>/whatyouneed</li>
+<li>按 n 切换到下一个</li>
+</ul>
+</li>
+<li>
+<p>替换</p>
+<ul>
+<li>😒/a/b/g 替换当前行所有 a 为 b</li>
+<li>:%s/a/b/ 替换每行第一个 a 为 b</li>
+<li>:%s/a/b/g 替换每行所有 a 为 b</li>
+<li>反悔模式 :%s/a/b/gc vim 匹配文字高亮并询问
+<ul>
+<li>y 表示替换当前</li>
+<li>n 表示不替换当前</li>
+<li>a 表示全部替换</li>
+<li>q 表示退出不玩儿了</li>
+<li>l 表示把当前替换后就不玩儿了。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>重复与撤销</p>
+<ul>
+<li>. 重复此前的操作</li>
+<li>u 撤销此前的操作</li>
+<li>5u 撤销此前的 5 个操作</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2018-04-20-vim10tips/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/v0Xcy0jQaT/" class="article-info">
+                        linux</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2018-04-11-rescueyouslide/">
+                    <h3 class="post-title">
+                      如何拯救你，我的 PPT
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

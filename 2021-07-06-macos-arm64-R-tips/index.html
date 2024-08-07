@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>从 MacBook Pro M1 安装编译 R 踩坑想到的 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="
+关键时刻要稳住，以及软件之间的不兼容和人与人之间很类似。
+
+
+之前写过两篇 macOS 升级系统后安装升级 R 的博客，现在回看虽然解决了当时的问题但还是蛮混乱的。最近工作主力机切换到了 MBP M1 版本（感谢东家），再整理一点踩坑实录..." />
+  <meta name="keywords" content="R,macOS,思考" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  从 MacBook Pro M1 安装编译 R 踩坑想到的</a>
+              </h2>
+              <span class="article-info">2021-07-06, 1881 words, 8 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <blockquote>
+<p>关键时刻要稳住，以及软件之间的不兼容和人与人之间很类似。</p>
+</blockquote>
+<!-- more -->
+<p>之前写过两篇 macOS 升级系统后安装升级 R 的博客，现在回看虽然解决了当时的问题但还是蛮混乱的。最近工作主力机切换到了 MBP M1 版本（感谢东家），再整理一点踩坑实录和引申出来的想法。</p>
+<h2 id="新-mac-必备">新 Mac 必备</h2>
+<p>新 Mac 上手，装好 Xcode command-line tools 和 homebrew 其实就已经解决了大部分后续软件安装问题，如果还需要在笔记本跑跑数据就装 miniconda。写这篇文章的时候 homebrew 在 M1 上基本不会碰到什么问题，可以放心安装。</p>
+<p>想起来研二开始日常管理实验室服务器的时候，必学技能还是如何在几个不同的 Linux 版本环境中安装编译好大家需要的各种软件，如今 conda 和 docker 的成熟让软件安装早就不再是什么问题，管理员的最大作用似乎就是<strong>做好数据备份的同时提醒大家做好数据备份</strong>。</p>
+<h2 id="arm64-架构-r-的坑好多">arm64 架构 R 的坑好多</h2>
+<p>我是一个忍受不了手机软件有更新而不升级的人，甚至经常通过 TestFlight 去找各种应用的测试版本（这种人被成为 TF boys）。拿到 M1 Mac 自然也是先找最新适配版本的软件。</p>
+<p>以数据分析写代码常用的 VSCode 和 R 为例，目前很多软件已经有了专门针对 macOS arm64 的版本。你可以通过 <a href="https://mac.r-project.org/">R 官方的 mac 页面</a> 找到下载链接。如图所示 4.1 版本 arm64 的安装包新鲜出炉。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20210706210534.png" alt="" loading="lazy"></figure>
+<p>下载安装一切顺利，往下翻翻就能看到针对 arm64 版本的说明。简单说为了防止不同架构的 R 打架，最新版本的 R 相关内容都保存在 <code>/opt/R/arm64</code>目录，包括进行 R 包编译必备的 GUN Fortran ，嗯你没有看错截图显示他们页面的这个单词拼错了。除了 gfortran 以外， XQuartz 则需要版本 2.8.0_rc1。gfortran 也有了 arm64 版本，可以通过 <a href="https://github.com/fxcoudert/gfortran-for-macOS/releases/tag/11-arm-alpha2">这个链接</a> 下载安装。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20210706211018.png" alt="" loading="lazy"></figure>
+<p>正常情况下装好这几个就可以装 R 包了，但在安装几十个常用 R 的过程中发现了好几处 bug，其中最根源的问题是在 arm64 版本下（几乎）所有 R 包都需要通过编译才能使用。只要涉及到编译，各种不兼容和依赖问题就都来了。</p>
+<h3 id="edger-编译报错">edgeR 编译报错</h3>
+<p>这个 bug 最早是同事提出的，因为忙着搬砖所以我没有回答到点子上就甩了之前的文章链接。报错信息是<code>library not found for -lgfortran</code>，其实就是<code>gfortran</code>的位置找不到。这个问题如果仔细读了上面提到的官方页面应该有所准备。</p>
+<blockquote>
+<p>It is assumed that /usr/local is unsafe as it may contain Intel binaries which don't mix, therefore R will not try to use /usr/local unless a manual flags override is issued. However, it also means that it is safe to use our arm binaries without affecting your legacy Intel ecosystem.</p>
+</blockquote>
+<p>解决方案是需要正确安装最新版本的 gfortran，然后手动修改<code>~/.R/Makevars</code>编译用到的 FLIBS 信息</p>
+<pre><code>FLIBS = -L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0 -L/usr/local/gfortran/lib -lgfortran -lm
+</code></pre>
+<p>另外，网上其它软件也有提到把<code>export PATH=/opt/R/arm64/bin:$PATH</code> 写入系统配置文件，我并没有测试。</p>
+<h3 id="rgl-安装包错">rgl 安装包错</h3>
+<p>rgl 是一个在 Mac 中有很多 R 包依赖的常用包，在安装报错的时候开发者良心地直接给出了讨论链接。<a href="https://stackoverflow.com/questions/66011929/package-rgl-in-r-not-loading-in-mac-os/66127391">macos catalina - Package rgl in R not loading in Mac OS - Stack Overflow</a></p>
+<pre><code>Warning messages:
+1: 	Loading rgl's DLL failed.
+	This build of rgl depends on XQuartz, which failed to load.
+ See the discussion in https://stackoverflow.com/a/66127391/2554330
+2: Trying without OpenGL...
+
+</code></pre>
+<p>概括一下就是 rgl 和目前支持 M1 芯片的 Xquartz 版本不兼容，如果不想像链接中反复修改依赖软件的话，可以直接从 github 下载进行编译。</p>
+<pre><code class="language-R">remotes::install_github(&quot;dmurdoch/rgl&quot;)
+</code></pre>
+<h3 id="maftools-编译报错">maftools 编译报错</h3>
+<p>安装 maftools 需要提前安装 Rhtslib，而 Rhtslib 在编译时有如下问题。</p>
+<pre><code># 'lzma.h' file not found
+</code></pre>
+<p>因为 Rhtslib 也是一个频繁被依赖的软件，所以我猜测这个问题应该有人已经在 issue 里问了，一搜 <a href="https://github.com/Bioconductor/Rhtslib/issues/23">确实如此</a>。结果翻着翻着看到这样一条回答。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20210706222801.png" alt="" loading="lazy"></figure>
+<h2 id="intel-架构的-r-真香">Intel 架构的 R 真香</h2>
+<p>通过上面的截图可以看到最中肯的建议就是：别乱用什么 arm64 架构的 R……</p>
+<p>这是因为虽然 R 和 Rsutido 最新版本都已经支持 m1 芯片，但是 bioconductor 还没有支持，这样一来就无法直接安装编译好的 R 包版本。</p>
+<p>不过，这个事情其实一开始苹果已经通过 Rosetta 2 解决了。为了在过渡阶段让 M1 同时兼容两种架构的软件，当使用 Intel 架构的软件时，macOS 可以直接通过 Rosetta2 去做转换。之前苹果官方介绍在大多数情况下需要使用 Rosetta 的 App 性能不会出现差异。</p>
+<p>因此目前只需要使用 Intel 版本的 R，就可以避免编译以及随之而来的各种问题。所以，在果断重新安装这个版本的 R 之后，我只能说一句真香。</p>
+<h2 id="从-macos-m1-安装编译-r-想到的">从 macOS M1 安装编译 R 想到的</h2>
+<p>在一开始读到 R 官网说明时，我就看到了下面这句话。</p>
+<blockquote>
+<p><strong>That said, our current Intel releases work just fine on the new Macs as well using Rosetta 2.</strong></p>
+</blockquote>
+<p>但追求走在更新前线的人怎么能如此委曲求全，结果就是浪费了不少因为编译 debug 的时间。所以生产环境求稳还是真理，只要没出错就不要乱改动，修改一下奥卡姆剃刀法则就是「<strong>如无必要，请勿升级</strong>」。</p>
+<p>以及，使用 arm64 架构的 R 配合 Bioconductor 出现各种各样问题，原因在于它们没有保持住一致的节奏。软件如此，人和人之间也差不多。三五个人一起，要想成些事，彼此就不能出现太明显的「不兼容」。</p>
+<p>一方面，如果有人走的太快但还要依赖他人的时候，这种自我升级本身没有太大价值，多数还是需要主动调低自己的版本。</p>
+<p>另一方面，如果多数人都升级了，为了运行速度和后续更新，版本太低的人也不会被一直兼容。就像手机系统升级一样，手机公司总得逐渐放弃一些久远的型号，至于支持几代就要看不同公司的策略。</p>
+<p>除了关键时刻果断决策，更重要的还是大家一起进步一起升级。想起来那句话：<strong>你就是你身边最常接触五个人的平均值。</strong></p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2021-07-06-macos-arm64-R-tips/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/UrqlObNL0t/" class="article-info">
+                        R</a>
+                      
+                      <a href="https://kaopubear.top/blog/OLsY4LEszq/" class="article-info">
+                        macOS</a>
+                      
+                      <a href="https://kaopubear.top/blog/Rn3TD5Cpatn/" class="article-info">
+                        思考</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2021-06-26-6tipsforphdlife/">
+                    <h3 class="post-title">
+                      6年硕博生活的6条心得-生活成长篇
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>VS Code 代码编辑器入门指南下篇-场景化应用介绍 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="
+本文首发于「少数派」
+
+
+写在前面
+如果当电脑只能装一个软件还需要尽量不影响日常学习工作时，不知道你的选择会是什么。我把这个看似「荒诞」的问题理解为「All-in-One」的升级版拷问。
+这个问题陪伴了我很久，每用一个软件我都会想想它对我..." />
+  <meta name="keywords" content="工具,VScode" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  VS Code 代码编辑器入门指南下篇-场景化应用介绍</a>
+              </h2>
+              <span class="article-info">2020-04-21, 6508 words, 24 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/60117">少数派</a>」</p>
+</blockquote>
+<!-- more -->
+<h2 id="写在前面">写在前面</h2>
+<p>如果当电脑只能装一个软件还需要尽量不影响日常学习工作时，不知道你的选择会是什么。我把这个看似「荒诞」的问题理解为「All-in-One」的升级版拷问。</p>
+<p>这个问题陪伴了我很久，每用一个软件我都会想想它对我究竟有多不可代替，然后决定是否继续用下去；当决定深度使用后，我就会问自己它能在多大程度上帮助我完成日常的学习和工作。截至这篇文章完稿，如果我的电脑只能装一个软件还要做到基本不影响日常学习工作，我的选择是 <a href="https://code.visualstudio.com/">VS Code</a>。</p>
+<p>参考之前写过的 <a href="https://kaopubear.top/blog/2019-09-11-howtolearnzotero/">文献管理工具 Zotero 入门指南</a>，本入门指南将从 VS Code 特点出发，介绍入门 VS Code 必须了解的核心概念和组件（上篇）以及 5 个 VS Code 实际使用场景（下篇）。希望对想了解和学习 VS Code 的读者能有一点帮助和启发。</p>
+<p>在 <a href="https://kaopubear.top/blog/2020-04-21-usevscodepart2">VS Code 编辑器入门指南上篇</a>，我们了解了什么是代码编辑器、为什么选择 VS Code 、从 0 到 1 开始使用 VS Code 以及上手 VS Code 需要了解的核心概念与组件。提到的组件包括资源管理器、跨文件搜索、源代码管理、启动调试和扩展管理，涉及到的核心概念包括插件、命令面板、工作区和语言支持。</p>
+<p>有了这些基础的知识储备再打开 VS Code 就不会恐惧和陌生，不过，学习一个工具更好的方式是找到具体应用场景。VS Code 编辑器入门指南下篇将从五个可能会用到的实际场景出发介绍一些 VS Code 特性和好用的插件。因为文章篇幅所限很难详细展开，如果有需要可以后续再分别介绍，不过我会为每个插件附上链接和尽可能多的官方相关介绍方便大家进一步了解。</p>
+<h2 id="码字工具">码字工具</h2>
+<p>如果你是一个重度的 Markdown 写作者，VS Code 经过简单配置后作为文本编辑器其体验不会逊于市面上大部分文本编辑器。</p>
+<h3 id="图片">图片</h3>
+<p>首先通过两个插件来解决图片处理这个老大难问题，如果经常使用截图功能且喜欢直接把图片存放在本地可以使用 <a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image&amp;ssr=false#overview">Paste Image</a> 插件，如果喜欢把图片直接上传至图床则推荐使用优秀的 <a href="https://marketplace.visualstudio.com/items?itemName=Spades.vs-picgo&amp;ssr=false#overview">PicGo VS Code</a> 插件。</p>
+<p>因为我日常会把所有图都放在腾讯云中保存，这里以此为例简单介绍 PicGo 在 VS Code 的配置和使用。</p>
+<p>在设置面板中搜索 picgo 就可以看到相关的配置选项，需要的配置参数和 PicGo 客户端一致，例如使用腾讯云时需要填写 APPID、存储空间名和自定义域名等信息。因为平时使用的目录和文件名都可能包括中文，我设置为仅按照时间命名。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195649.png" alt="" loading="lazy"></figure>
+<p>在使用时，picgo 利用快捷键可以方便的将剪贴板图片（option+command+u) 或者本地图片 (option+command+e) 上传至图床，并直接在光标处插入图片链接。</p>
+<h3 id="目录功能">目录功能</h3>
+<p>打开一个 Markdown 文本后在资源管理器组件中可以通过 outline 查看文档目录，点击对应章节标题直接跳转至相应位置。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195650.png" alt="" loading="lazy"></figure>
+<p>如果你没有忘记上文提到的命令面板，我们还可以利用命令面板的<strong>符号跳转</strong>功能实现章节定位。符号跳转本身是针对代码设计的，可以快速跳转到一些函数定义和类定义，其实在 markdown 中也十分好用，只需要按下 <code>Command+shift+o</code> 或者按下<code>command+p</code>后输入<code>@</code>, 就可以看到各级标题了。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195651.png" alt="" loading="lazy"></figure>
+<p>这个操作在什么时候最有用呢？或许是按下 <code>ctrl+k z</code> 开启<strong>禅模式</strong>的时候。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195652.png" alt="" loading="lazy"></figure>
+<h3 id="编辑体验">编辑体验</h3>
+<p>如果需要获得更好的 Markdown 编辑体验可以考虑安装如下几个插件</p>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a>：基本支持了 Markdown 所需的各种操作，例如快捷键、生成 TOC 和导出 HTML 等，如果没有特殊需求无需安装下面三个插件。</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-footnotes">Markdown Footnotes</a>：让系统默认的 Markdown 支持脚注。</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=koehlma.markdown-math">Markdown+Math</a>：非常完善的数学公式支持。</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=xlthu.Pangu-Markdown">Pangu-Markdown</a>：盘古之白，在需要的时候给中文和英语数字之间增加空格。你懂的，关键时刻这个功能非常重要。</li>
+</ul>
+<h3 id="笔记模板">笔记模板</h3>
+<p>模板是所有笔记类工具的标准配置，在 VS Code 中可以通过代码片段（Snippets）针对不同类型的文档设置模板。</p>
+<p>如果想配置自己的代码片段，在命令面板中输入 <code>Configure User Snippets</code> 后会看到语言选项，这里我们以 Markdown 为例，配置内容本身为 json 格式。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195653.png" alt="" loading="lazy"></figure>
+<p>一个典型的代码片段如下所示：</p>
+<pre><code class="language-text">&quot;Print to console&quot;: {
+    &quot;prefix&quot;: &quot;log&quot;,
+    &quot;body&quot;: [
+        &quot;console.log('$1');&quot;,
+        &quot;$2&quot;
+    ],
+    &quot;description&quot;: &quot;Log output to console&quot;
+</code></pre>
+<p><code>Print to console</code> 为片段名，对象的值包含：prefix、body 和 description 三个属性。分别表示调用名、插入内容和代码描述。</p>
+<p>我把自己一些常用的 Markdown 模板做成代码片段并打包成了一个 <a href="https://marketplace.visualstudio.com/items?itemName=biotrainee-zhaofei.betternotesnippets">插件</a>。例如当我输入<code>debug</code>的时候就可以方便的调用 debug 记录模板。</p>
+<figure data-type="image" tabindex="6"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195654.gif" alt="" loading="lazy"></figure>
+<h3 id="查找替换与精确定位">查找替换与精确定位</h3>
+<p>如果你是一个每天需要处理很多稿件的编辑往往会有一些重复性工作，比如需要把十几篇投稿中的「ios」修改为「iOS」。这类涉及到搜索替换的问题，使用 VS Code 强大的搜索组件都可以轻松搞定。</p>
+<figure data-type="image" tabindex="7"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195655.png" alt="" loading="lazy"></figure>
+<p>VS Code 支持单文件和多文件的搜索替换，这里以多文件常见的需求作为介绍。</p>
+<p>搜索支持三种模式，分别是区分大小写、全字匹配和正则表达式，例如 iOS 这类大小写的替换需要选择「区分大小写」。进行多文件搜索替换时，有时只希望限制所在目录的部分文件，这时就可以设置在哪些子文件夹进行搜索或者过 <code>2020-04*</code> 会匹配所有以它开头的文件。</p>
+<p>除了使用搜索功能进行替换以外，它还可以实现「精确定位」。</p>
+<p>很多人在使用一些笔记工具时都有精确定位的需求得不到满足，即快速找到某个 tag 或者关键词所在的具体位置。VS Code 则可以帮你在所有需要的文档中进行精确定位和跳转。</p>
+<p>如下图所示，我在一个文件夹内搜索「模板」，它会在结果中显示每个文档中的搜索结果，鼠标放在某一行时会用浮窗形式展示详细内容，点击后会直接打开对应文档并定位在所在行。</p>
+<figure data-type="image" tabindex="8"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195656.png" alt="" loading="lazy"></figure>
+<h3 id="预览导出">预览导出</h3>
+<p>Markdown 文档的预览在不借助第三方插件的情况下基本可以满足需求，我们可以在配置中设置引用自己中意的 CSS 样式以达到更好的效果。如果需要非常强大的导出功能，可以借助插件 <a href="https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced">Markdown Preview Enhanced</a>。</p>
+<figure data-type="image" tabindex="9"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195657.png" alt="" loading="lazy"></figure>
+<p>该插件应该可以满足所有的 Markdown 文档的预览和导出需求，官方有详细 <a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/">中文文档</a> 可以查看了解。</p>
+<h3 id="项目管理">项目管理</h3>
+<p>如果你有很多个笔记本（文件夹）在码字的过程中需要经常切换，这里推荐的插件是 <a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager">Project Manage</a>。</p>
+<p>它支持将目录和工作区 <a href="https://code.visualstudio.com/docs/editor/multi-root-workspaces">Workspaces</a> 保存为项目并进行快速切换，很好地弥补了 VS Code 自身项目切换的不足。如果你对工作区这个概念很陌生，可以阅读<a href="https://kaopubear.top/blog/2020-04-21-usevscodepart2"> VS Code 编辑器入门指南上篇-核心概念与组件</a>。</p>
+<h2 id="管理协作">管理协作</h2>
+<p>如果你的项目需要协作，VS Code 也可以成为你不错的项目管理和协作工具。</p>
+<h3 id="从需要的地方即刻开始">从需要的地方即刻开始</h3>
+<p>从 VS Code 的搜索功能角度出发，如果我们在文档内部做一些固定的埋点并赋予特殊含义，那么就可以在需要的时候直接找到这些特殊内容。todo 类型插件就是这样的思路，我们可以设定一些特殊的标记，然后在工作目录下自动搜索匹配这些标记再以形象的方式展示在组件中。</p>
+<p>以比较常用的 TODO 插件 <a href="https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree">Todo Tree</a> 为例，在设置中我们可以指定哪些内容作为标记以及这些标记如何被展示。</p>
+<p><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195658.png" alt="2020-04-17-19-43-55" loading="lazy">2020-04-17-19-43-55</p>
+<pre><code class="language-javascript">&quot;todo-tree.highlights.customHighlight&quot;: {
+        &quot;TODO&quot;: {
+            &quot;icon&quot;: &quot;tasklist&quot;,
+            &quot;iconColour&quot;: &quot;red&quot;
+        },
+        &quot;REVIEW&quot;: {
+            &quot;icon&quot;: &quot;eye&quot;,
+            &quot;iconColour&quot;: &quot;green&quot;,
+        },
+        &quot;FIXME&quot;: {
+            &quot;icon&quot;: &quot;thumbsdown&quot;,
+            &quot;iconColour&quot;: &quot;yellow&quot;
+        }
+    }
+</code></pre>
+<p>随后当我们在任意文档的任意位置插入相关标签后，它们就会在组件中展示出来，点击标签即可直接跳转到对应位置。</p>
+<figure data-type="image" tabindex="10"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195659.gif" alt="" loading="lazy"></figure>
+<h3 id="用-kanban-管理素材">用 KanBan 管理素材</h3>
+<p>只有 TODO 功能或许不够过瘾，如果能做成看板的形式就更好了。嗯，一个插件 <a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-kanban">Kanban</a> 基本满足需求。</p>
+<p>在自己的稿件目录下添加一个「稿不完」看板，该写什么一目了然。看板内容本身会存储在 json 格式的文本文件中。</p>
+<figure data-type="image" tabindex="11"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195700.png" alt="" loading="lazy"></figure>
+<h3 id="在-vs-code-中使用-trello">在 VS Code 中使用 Trello</h3>
+<p>如果你的团队正在使用 Trello， 那么你也可以在 VS Code 借助插件 <a href="https://marketplace.visualstudio.com/items?itemName=Ho-Wan.vscode-trello-viewer">Trello Viewer</a> 及时查看大家的 Trello 动态。</p>
+<p>完成 token 配置后，在侧边栏将会出现一个 Trello Viewer 组件，Trello boards 下会显示所有看板，你还可以把某个常用的 list 添加到 favorite list。</p>
+<p>如果仅仅是想查看卡片内容只需要点击即可，这时插件会生成一个 Markdwon 格式文件并自动打开预览模式。如果你想对卡片进行简单编辑，可以在组件中右键点击某个卡片然后选择要进行的后续操作。</p>
+<figure data-type="image" tabindex="12"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195701.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="13"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195702.png" alt="" loading="lazy"></figure>
+<h3 id="让-git-更容易一些">让 Git 更容易一些</h3>
+<p>版本管理是个人和团队项目开发中非常重要的一环，源代码管理也是仅有的几个被内置到 VS Code 中组件，无需任何插件和设置即可在 VS Code 中使用 Git。很多人在学习 Git 时都会被各种各样的命令搞晕，在提交代码时也会因为要输入各种命令而烦躁。</p>
+<p>如果想更轻松使用 Git 和 GitHub，你可能会选择 GitHub 官方客户端或第三方<sub>付费</sub>客户端，实际上借助 VS Code 自身对 Git 的支持以及 <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a>、<a href="https://marketplace.visualstudio.com/items?itemName=eamodio.remotehub">Git History</a> 和 <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.remotehub">RemoteHub</a> 这三款插件，就可以获得极佳的使用体验。</p>
+<figure data-type="image" tabindex="14"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195703.png" alt="" loading="lazy"></figure>
+<p>如果你是一个经常使用 git 的人，应该可以感受到 gitlen 提供的组件非常贴心。</p>
+<p><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195704.png" alt="2020-04-17-20-45-15" loading="lazy">2020-04-17-20-45-15</p>
+<p>前两个插件的安装数基本说明它们是绝大多数 Git 用户的必选项，而 RemoteHub 是 GitLens 开发者还处在预览版的新作品。它支持在命令面板中直接搜索 GitHub 上的项目，在不需要 clone 的情况下通过 VS Code 查看项目代码。当需要编辑操作时对应的文件才会从 GitHub 按需下载。不过该插件目前需要开启一些 VS Code 默认关闭的功能，如果想尝试可以阅读插件使用说明。</p>
+<h2 id="网站开发">网站开发</h2>
+<p>说完目前最火的轻量标记语言 Markdown ，就不得不提和它对应的超文本编辑语言 HTML 和前端开发了。</p>
+<p>可能写一个小网页或者个人博客是很多人的 todo 事项，使用 VS Code 做前端开发对于初学者来说非常友好。</p>
+<h3 id="格式化与折叠">格式化与折叠</h3>
+<p>代码格式化是指让各种不规范的代码瞬间按照要求好看起来，VS Code 借助语言插件目前对绝大多数语言都有很好的支持。在设置中我们可以选择何时对代码进行格式化，包括输入粘贴和保存。此外每种语言都可以进一步进行个性化设置。</p>
+<figure data-type="image" tabindex="15"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195705.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="16"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195706.gif" alt="" loading="lazy"></figure>
+<p>关于代码格式化的插件，你也可以尝试 <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a>。</p>
+<p>除了代码格式化以外，VS Code 还可以基于语言定义进行代码折叠，即根据语言特性来自动区分哪些部分可以折叠，因此 Markdown 文档同样可以使用代码折叠功能。当鼠标位于行号旁边时，可以被折叠的位置会自动显示向下箭头。</p>
+<figure data-type="image" tabindex="17"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195707.png" alt="" loading="lazy"></figure>
+<p>使用快捷键<code>command+shift+[</code> 进行快速折叠时，会从所在位置处可折叠的最内层代码开始折叠。展开的快捷键则是<code>command+shift+]</code>。</p>
+<figure data-type="image" tabindex="18"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195708.gif" alt="" loading="lazy"></figure>
+<p>对于较长的代码，如果不习惯使用代码折叠可以开启 minimap 功能。当前页面在小地图中会呈现为灰色，光标所在位置为白色。如果进行文件内搜索时，对应位置会以黄色高亮显示。</p>
+<figure data-type="image" tabindex="19"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195709.png" alt="" loading="lazy"></figure>
+<h3 id="多光标">多光标</h3>
+<p>多光标特性是 VS Code 高效使用的必备技能，<a href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_multi-cursor-selection">官方文档</a> 有详细介绍，这里简单提一下我常用的三种方式。</p>
+<p>有时候我们需要在一个文件内多个没有明显特征的位置添加相同的内容，此时如果配合鼠标操作，只需要按住 option 键，在需要添加光标的位置单击即可。</p>
+<figure data-type="image" tabindex="20"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195710.gif" alt="" loading="lazy"></figure>
+<p>还有些时候，我们统一需要在多行的行末添加一些内容，或者需要从行末开始删除一些内容。这时只需选中要修改的内容，按 <code>option+shift+i</code> 就可以在行末添加光标。</p>
+<figure data-type="image" tabindex="21"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195711.gif" alt="" loading="lazy"></figure>
+<p>最后一个比较高频的需求有些类似于查找替换，比如我们需要把文档中一些相同的内容统一选中进行某些修改，这时可以先选中一个内容，然后按下 <code>command+d</code> 就会自动选中下一个相同的内容。</p>
+<figure data-type="image" tabindex="22"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195712.gif" alt="" loading="lazy"></figure>
+<h3 id="颜色设置">颜色设置</h3>
+<p>在编写 CSS 时常见的一个需求就是修改元素颜色，在 VS Code 中可以直接使用取色器进行修改。</p>
+<p>当遇到颜色时，我们会在编码前看到效果色块，鼠标浮于颜色上会自动显示颜色编辑器。在这个窗口中可以调整颜色的饱和度、透明度和色相，也可以切换不同的颜色代码。同时，只要点击右上角就可以轻松退回之前的颜色值。</p>
+<figure data-type="image" tabindex="23"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195713.gif" alt="" loading="lazy"></figure>
+<h3 id="emmet">Emmet</h3>
+<p><a href="https://emmet.io/">Emmet</a> 是一个可以大幅提高前端代码编写效率的工具，可以让我们用尽量简洁的输入来实现复杂的内容。借助 Emmet 可以摆脱频繁写 <code>&lt; &gt;</code> 的尴尬，而在 VS Code 中可以非常方便的调用 Emmet。</p>
+<p>当输入任意内容后，如果有可以和输入匹配的 Emmet 缩写，相关建议就会实时展示出来供选择。</p>
+<figure data-type="image" tabindex="24"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195714.gif" alt="" loading="lazy"></figure>
+<p>如果写的语法比较复杂它也可以实时帮你展示转换后的效果，非常实用。</p>
+<figure data-type="image" tabindex="25"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195715.gif" alt="" loading="lazy"></figure>
+<p>除了在编辑时进行代码展开，借助命令面板还可以是实现 Emmet 的很多其他操作，例如缩写包围、删除和更新标签等等。你可以在官方文档中查看更多信息。</p>
+<figure data-type="image" tabindex="26"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195716.png" alt="" loading="lazy"></figure>
+<h3 id="实时预览">实时预览</h3>
+<p>VS Code 本身不支持实时预览 HTML 文件，不过已经有很多插件实现了这一功能，例如 <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a>。</p>
+<figure data-type="image" tabindex="27"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195717.gif" alt="" loading="lazy"></figure>
+<h2 id="数据分析">数据分析</h2>
+<h3 id="查看-excel-和-pdf">查看 Excel 和 PDF</h3>
+<p>在日常工作中，我有很大一部分时间都在和各种格式的数据和文档打交道，其中 Excel 和 PDF 文档是最常见的两种格式。在没有使用 VS Code 之前如果一个项目中有这些文件就需要在 office 和 PDF 阅读器中打开，但是借助 <a href="https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-preview">Data Preview</a> 和 <a href="https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf">VS Code-pdf</a> 可以轻松查看这些文件，用起来挺过瘾。</p>
+<p>VS Code 中直接查看 Excel 并进行基本操作。</p>
+<figure data-type="image" tabindex="28"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195718.gif" alt="" loading="lazy"></figure>
+<p>VS Code 中直接查看 PDF 文档。</p>
+<figure data-type="image" tabindex="29"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195719.png" alt="" loading="lazy"></figure>
+<h3 id="python-与-r-语言支持">Python 与 R 语言支持</h3>
+<p>目前数据科学相关领域有 Python 和 R 两种常用编程语言。如果你习惯使用 python ,VS Code 本身对 Python 和 juypter 都有非常完善的支持，可以查看官方文档的 <a href="https://code.visualstudio.com/docs/python/jupyter-support">详细说明</a>，使用起来比较简单。</p>
+<p>如果你习惯使用 R 语言，随着 R Language Server 后端加持以及 <a href="https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r">VS Code-R</a> 插件在前端的重大迭代，现在使用 VS Code 愉快地进行 R 语言编程不仅成为了一种可能，而且还挺香。使用体验上基本不输 Rstudio，而且很多小细节上更贴心。</p>
+<p>因为 R 语言配置相对复杂，所以稍加介绍。</p>
+<ol>
+<li>安装 R，建议使用默认路径即可。</li>
+<li>安装 R 包 languageserver ，命令如下<code>install.packages(&quot;languageserver&quot;)</code></li>
+<li>在 VS Code 中安装两个和 R 相关的插件</li>
+</ol>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r">R support for Visual Studio Code</a> 这个插件是 VS Code 中 R 的核心插件，具有语法高亮，基础代码片段和代码执行等功能。例如你可以在编辑器中选择某几行内容，然后使用 <code>ctrl+enter</code> 将代码发送到终端执行。</p>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=REditorSupport.r-lsp">R LSP Client</a> 有了它就可以进行代码补全、查看函数定义以及参数预览等功能。</p>
+<p>安装插件后需要在配置文件中进行两个对应设置。通过 <code>ctrl+,</code> 进入设置页面，在搜索页面首先搜索 rterm，在对应操作系统位置处输入你的 R 路径，然后找到 rlsp path 对应设置处也输入 R 安装路径。</p>
+<p>打开一个包含 R 脚本的文件夹（单独打开一个 R 脚本无效）就可以正常使用了。</p>
+<p>一些基本特性如鼠标悬停显示函数定义和帮助文档（无论包是否加载）、鼠标悬停在变量直接展示类型信息、自动高亮文档内所有同一变量和函数自动补全等都非常好用。</p>
+<figure data-type="image" tabindex="30"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195720.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="31"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195721.png" alt="" loading="lazy"></figure>
+<h3 id="r-session-watcher">R session watcher</h3>
+<p>VS Code-R 插件近期更新中新增了 Session Watcher 功能，即便还在测试阶段这个功能也足以让人激动。它实现了在 VS Code 中实时展示各种变量图表等需求，不会再有单独弹窗。</p>
+<figure data-type="image" tabindex="32"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195722.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="33"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195723.png" alt="" loading="lazy"></figure>
+<p>如果要正确使用 session watcher 功能，首先需要在设置中开启 session watcher 选项，然后需要在 R 的 <code>.Rprofile</code> 配置文件中添加一行代码：</p>
+<pre><code class="language-text">source(file.path(Sys.getenv(if (.Platform$OS.type == &quot;windows&quot;) &quot;HOMEPATH&quot; else &quot;HOME&quot;), &quot;.VS Code-R&quot;, &quot;init.R&quot;))
+</code></pre>
+<h2 id="开发利器">开发利器</h2>
+<p>对于程序员来说，终端和服务器的使用频率极高，如果代码编辑器可以和这两者非常好的结合将会大大提高工作效率。</p>
+<h3 id="配置终端">配置终端</h3>
+<p>VS Code 的设计理念之一就是让 VS Code 和终端紧密联系在一起。</p>
+<p>例如，我们可以在终端某个目录中通过 <code>code</code> 命令以命令行的形式打开 VS Code，也可以在资源管理器中通过右键直接通过终端打开一个目录。</p>
+<figure data-type="image" tabindex="34"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195724.png" alt="" loading="lazy"></figure>
+<p>VS Code 终端放进了工作台从而避免在编辑器和终端间切换，集成终端支持同时打开多个终端操作并以多种方式排列。</p>
+<figure data-type="image" tabindex="35"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195725.png" alt="" loading="lazy"></figure>
+<p>由于把终端做到了工作台当中，所以我们能把终端的输入输出与快捷键、资源管理器和搜索等各个功能组合到一起。例如无需多次 <code>cd</code> 到某一个目录直接在资源管理器打开；在终端中点击文件直接在 VS Code 中编辑；当终端输出内容（例如报错信息）包括链接或者文档路径时，VS Code 会自动识别并可以直接点击打开链接和文件。</p>
+<figure data-type="image" tabindex="36"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195726.png" alt="" loading="lazy"></figure>
+<h3 id="远程模式">远程模式</h3>
+<p>一些小型的计算和开发可以在本机完成，如果涉及到大型计算或者部署就需要在服务器上操作。VS Code 提供的远程模式可以让我们在本机轻松连接其它开发环境，目前官方的远程模式支持包括容器、SSH 和 WSL 在内的三种方式。</p>
+<figure data-type="image" tabindex="37"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195727.png" alt="" loading="lazy"></figure>
+<p>本部分内容以 SSH 为例进行简要介绍，我们默认需要远程连接的服务器已经开通了 ssh 服务，使用 Windows 时需要首先在 PC 正确安装 Windows OpenSSH Client。</p>
+<p>安装 <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh">Remote-SSH</a> 插件后，打开命令面板搜索<code>remote ssh</code>。然后找到 Remote-SSH 相关命令，即可以直接选择链接服务器，也可以选择打开配置文件。这里，我们选择打开配置文件进行简单的配置。</p>
+<figure data-type="image" tabindex="38"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195728.png" alt="" loading="lazy"></figure>
+<p>在配置文件中可以输入相应服务器名称、 IP 地址、用户名以及端口等信息。写法如下图所示，写好保存即可。</p>
+<figure data-type="image" tabindex="39"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195729.png" alt="" loading="lazy"></figure>
+<p>需要连接终端可以在命令面板中执行命令，也可以点击状态栏左下角的连接标志。连接成功后左下角将会显示此前设置的服务器名称。</p>
+<figure data-type="image" tabindex="40"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195730.png" alt="" loading="lazy"></figure>
+<p>需要注意的是，插件组件会分别显示在本地和远程中安装的插件，两者是独立的。如果需要在服务端使用 VS Code 要重新安装需要的插件。资源管理器展示的则是服务器中的目录结构，得益于 VS Code 全平台特性，使用起来基本感受不到差异。</p>
+<h3 id="代码调试">代码调试</h3>
+<p>VS Code 内置支持 node.js ，可以对 JavaScript, TypeScript 进行调试，其它语言则通过第三方插件实现。目前对 PHP, Ruby, Go, C#, Python, C++, PowerShell 等都有很好的支持。</p>
+<p>如果想进入调试模式，首先需要点击侧边栏的调制组件打开调试视图，会看到提示打开一个需要被调试的文件。我们以简单的 Python 脚本举例，打开脚本后会自动生成一个名为 launch.json 的调试配置文件。这个文件可以随时修改，定义不同的内容应该如何加载调试。典型的配置如下图所示。</p>
+<figure data-type="image" tabindex="41"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195731.png" alt="" loading="lazy"></figure>
+<p>下图为调试界面的主要内容，其中包括当前变量、堆栈和断点等，顶部为执行控制工具栏。</p>
+<figure data-type="image" tabindex="42"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195732.png" alt="" loading="lazy"></figure>
+<p>和 IDE 相比，复杂项目的调试是 VS Code 的弱点。由于调试本身由其它插件完成，不同调试器在调试代码时需要的信息各不相同，要自行使用配置文件进行配置。如果你真的对代码调试有更高的需求，可以查阅官方更加详细的<a href="https://code.visualstudio.com/Docs/editor/debugging">说明文档</a>。</p>
+<h2 id="或许有用">或许有用</h2>
+<p>最后，列举几个可能会让 VS Code 更加顺手的设置。</p>
+<p><strong>渲染空格符制表符</strong></p>
+<p>通过设置 <code>editor.renderWhitespace: all</code> 可以将所有的空格符、制表符等全部显示出来。有时候空白的地方就是坑。</p>
+<p><strong>修改新建文件默认格式</strong></p>
+<p>默认配置时，<code>command+n</code> 快捷键可以在编辑器里创建一个新的普通文本文件。如果你是一个把 VS Code 当做文本编辑器用的人，不妨通过 <code>files.defaultLanguage</code> 把新建文档格式设置成 Markdown。</p>
+<p><strong>前后光标处跳转</strong></p>
+<p>这个功能有些向在 Linux 中快速回到之前目录的操作。<code>ctrl+-</code> 跳转回上一次光标所在位置，<code>ctrl+shift+-</code> 则相反。</p>
+<p><strong>自定义快捷键</strong></p>
+<p>如果你是从其它 IDE 迁移过来，可能会面临快捷键冲突和缺失的问题。这时可以通过自定义快捷键解决。</p>
+<p>例如 R 语言用户在 RStudio 中可以使用 <code>alt+-</code> 一气呵成输入赋值符号 <code>&lt;-</code>，在 VS Code 中必须也可以。</p>
+<p>打开 Keyboard Shortcuts 会看到这个快捷键已经被绑定，可以在 json 文件中设置不同情境下新的含义。</p>
+<p>点开快捷键配置文件之后不要管左边的内容，直接去右边设置就好，配置方法如图。以后在 R 或者 Rmd 文件里 <code>alt+-</code> 就变成了和 RStudio 一样的快捷键。</p>
+<figure data-type="image" tabindex="43"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200421195733.png" alt="" loading="lazy"></figure>
+<p>关于快捷键自定义的语法，可以查看对应<a href="https://code.visualstudio.com/docs/getstarted/keybindings">官方文档</a>。</p>
+<h2 id="写在最后">写在最后</h2>
+<p>以上，结合 <a href="https://kaopubear.top/blog/2020-04-21-usevscodepart2">VS Code 编辑器入门指南上篇-核心概念与组件</a> 就是对 VS Code 这款代码编辑器的入门介绍。</p>
+<p>当我借助这篇两文章再一次梳理了 VS Code 使用场景后突然多了点感慨。在热衷于讨论和标榜 All-in-One 工具的今天，VS Code 轻量快速的软件本体加上开放丰富的插件生态代表了另一种思路，似乎正从某个层面朝着这个方向大步前进。</p>
+<p>如果本文没有涉及到你的领域，不妨去<a href="https://marketplace.visualstudio.com/">插件市场</a>探索一番，万一找到什么有趣的摸鱼神器呢？</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2020-04-21-usevscodepart2/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/tg-VHYKad/" class="article-info">
+                        工具</a>
+                      
+                      <a href="https://kaopubear.top/blog/fMLJ4BbHmo/" class="article-info">
+                        VScode</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2020-04-21-usevscodepart1/">
+                    <h3 class="post-title">
+                      VS Code 编辑器入门指南上篇-核心概念与组件
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

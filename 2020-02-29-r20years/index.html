@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>R 的 20 年 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="最近有一篇文章从三个纬度介绍了 R 这 20 年的发展。
+
+
+R 在这些年里发展速度有多快
+2000 年以来发布了多少个 R 包
+包的下载量如何增长
+
+我提取一些结果和大家分享。
+测试 R 的运行速度
+作者使用了一段测试代码：
+col_le..." />
+  <meta name="keywords" content="编程,R" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  R 的 20 年</a>
+              </h2>
+              <span class="article-info">2020-02-29, 589 words, 3 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <p>最近有<a href="https://jozef.io/r921-happy-birthday-r/">一篇文章</a>从三个纬度介绍了 R 这 20 年的发展。</p>
+<!-- more -->
+<ul>
+<li>R 在这些年里发展速度有多快</li>
+<li>2000 年以来发布了多少个 R 包</li>
+<li>包的下载量如何增长</li>
+</ul>
+<p>我提取一些结果和大家分享。</p>
+<h2 id="测试-r-的运行速度">测试 R 的运行速度</h2>
+<p>作者使用了一段测试代码：</p>
+<pre><code class="language-r">col_len &lt;- function(n) {
+  len &lt;- 0
+  while (n &gt; 1) {
+    len &lt;- len + 1
+    if ((n %% 2) == 0)
+      n &lt;- n / 2
+    else {
+      n &lt;- (n * 3 + 1) / 2
+      len &lt;- len + 1
+    }
+  }
+  len
+}
+
+res &lt;- lapply(
+  1:10,
+  function(i) {
+    gc()
+    system.time(
+      max(sapply(seq(from = 1, to = 999999), col_len))
+    )
+  }
+)
+</code></pre>
+<p>运行时间如下图所示<br>
+<img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200301005929.png" alt="" loading="lazy"></p>
+<ul>
+<li>2000 年 2 月: 第一个 R 版本超过 17 分钟，1.0.0</li>
+<li>2002 年 1 月: 1.4.1 版本带来了巨大的性能提升约为 4.5 分钟</li>
+<li>2004 年 10 月: 在版本 2.0.0 只有 168 秒，不到 3 分钟。</li>
+<li>2014 年 4 月 -- 10 年后，3.1 版将时间缩短到大约 145 秒</li>
+<li>2017 年 4 月-最后，3.4 版本已经看到了另一个显著的性能提升，从这个版本上执行这个计算所需的时间不到 30 秒。</li>
+</ul>
+<h2 id="r-包数量的增长速度">R 包数量的增长速度</h2>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200301005938.png" alt="" loading="lazy"></figure>
+<ul>
+<li>在 2000-2004，新发布的包数量不到 100 个</li>
+<li>在 2010 中，CRAN 已经看到了 400 多个</li>
+<li>2014 年，超过 1000 个包首次发布</li>
+<li>在 2017 中，超过 2000 个新包被添加到 CRAN</li>
+<li>在 2018 和 2019 中，总 CRAN 释放量超过 10000</li>
+</ul>
+<h2 id="r-包的下载量">R 包的下载量</h2>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200301005954.png" alt="" loading="lazy"></figure>
+<p>上面的数字仅代表了许多 CRAN 镜像中的一个，因此包下载的真实数量要高得多，图表的信息价值主要在增长:</p>
+<ul>
+<li>2013 年 1 月有大约 110 万个</li>
+<li>2015 年 1 月 770 万</li>
+<li>2017 年 1 月 2690 万</li>
+<li>2020 年 1 月超过 1.28 亿次下载</li>
+</ul>
+<p>原文地址：<a href="https://jozef.io/r921-happy-birthday-r/">https://jozef.io/r921-happy-birthday-r/</a></p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2020-02-29-r20years/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/1BY38A9TE/" class="article-info">
+                        编程</a>
+                      
+                      <a href="https://kaopubear.top/blog/UrqlObNL0t/" class="article-info">
+                        R</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2020-02-28-weeklyshare1/">
+                    <h3 class="post-title">
+                      靠谱熊的每周分享 第1期
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

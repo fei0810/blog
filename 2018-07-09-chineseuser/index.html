@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>R 安装升级后的若干规定动作 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="两个地址
+R cran 镜像地址  https://cran.r-project.org/mirrors.html
+bioconductor  mirror 地址  https://www.bioconductor.org/about/mi..." />
+  <meta name="keywords" content="R" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  R 安装升级后的若干规定动作</a>
+              </h2>
+              <span class="article-info">2018-07-09, 833 words, 4 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <h2 id="两个地址">两个地址</h2>
+<p>R cran 镜像地址  <a href="https://cran.r-project.org/mirrors.html">https://cran.r-project.org/mirrors.html</a></p>
+<p>bioconductor  mirror 地址  <a href="https://www.bioconductor.org/about/mirrors/">https://www.bioconductor.org/about/mirrors/</a></p>
+<!--more-->
+<h2 id="第一步给-r-包一个家">第一步：给 R 包一个家</h2>
+<p>通过 Renviron 文件为 R 自身设置一些环境变量，仅对 R 有效。</p>
+<p>file.edit('~/.Renviron') 打开文件</p>
+<pre><code class="language-R">R_LIBS_USER=&quot;E:/Rlib&quot;
+# 指定 R 的附加包安装目录
+</code></pre>
+<h2 id="第二步给-r-包指两条路">第二步：给 R 包指两条路</h2>
+<p>.Rprofile 文件在 R 启动时会被首先执行。</p>
+<p>file.edit('~/.Rprofile') 打开文件</p>
+<p>在文件末尾添加两行</p>
+<pre><code class="language-R">options(BioC_mirror=&quot;https://mirrors.ustc.edu.cn/bioc/&quot;)
+#bioconductor
+
+options(&quot;repos&quot; = c(CRAN=&quot;https://mirrors.tuna.tsinghua.edu.cn/CRAN/&quot;,
+	CRANextra = &quot;http://www.stats.ox.ac.uk/pub/RWin&quot;))
+#cran
+</code></pre>
+<p>如果上面两步设置好后在安装 bioconductor 还有问题，可以再用第三步。</p>
+<h2 id="第三步安装-biocinstaller">第三步：安装 BiocInstaller</h2>
+<p>把 <a href="https://bioconductor.org/biocLite.R">https://bioconductor.org/biocLite.R</a>  下载到本地并打开，在文件开头加入如下两行命令并保存。</p>
+<pre><code class="language-R">optionsoptions(BioC_mirror=&quot;https://mirrors.ustc.edu.cn/bioc/&quot;)
+#bioconductor
+
+options(&quot;repos&quot; = c(CRAN=&quot;https://mirrors.tuna.tsinghua.edu.cn/CRAN/&quot;,
+	CRANextra = &quot;http://www.stats.ox.ac.uk/pub/RWin&quot;))
+#cran
+</code></pre>
+<p>然后使用 source 调用本地 biocLite.R 文件安装 bioclnstaller，再进行安装</p>
+<pre><code class="language-R">source(/your/path/biocLite.R)
+BiocInstaller::biocLite()
+</code></pre>
+<h2 id="第四步windows-的中文坑">第四步：Windows 的中文坑</h2>
+<p>Windows 配置文件 Rconsole，通过 R 代码查找路径：<code>file.path(R.home('etc'), 'Rconsole')</code>，把文件里的 languange 改为 en <code>language = en</code> 。</p>
+<h2 id="第五步-windows-的-unicode-坑">第五步： Windows 的 Unicode 坑</h2>
+<p>windows 安装 EBSeq 会发现一个神奇的报错</p>
+<pre><code class="language-R">unexpected INCOMPLETE_STRING
+</code></pre>
+<p>修方式参考 <a href="https://github.com/rstudio/shiny/pull/968">https://github.com/rstudio/shiny/pull/968</a></p>
+<p>依次输入命令</p>
+<pre><code class="language-R">Sys.setlocale(,'English')
+&quot;\u2264&quot;
+iconv(&quot;\u2264&quot;, &quot;UTF-8&quot;)
+</code></pre>
+<h2 id="第六步给自己一个-rlib-权限">第六步：给自己一个 Rlib 权限</h2>
+<p>在 windows 里经常会看到关于权限的报错或者警告，可以通过设置给自己一个权限。</p>
+<p>打开 R 的安装文件夹，右击鼠标选择属性然后选择安全设置，给 Users 添加三个之前没有的权限。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20190608124908.png" alt="" loading="lazy"></figure>
+<h2 id="针对-linux-系统">针对 Linux 系统</h2>
+<p>针对 linux 服务器，R 的升级需要你首先得有 Linux sudo 权限。根据谢神的忍者指南，R 的本身升级只需要下面几个命令。</p>
+<pre><code class="language-sh">sudo apt-add-repository -y &quot;deb http://cran.rstudio.com/bin/linux/ubuntu`lsb_release -cs`/&quot;sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+sudo apt-get update
+sudo apt-get install r-base-dev
+sudo apt-get build-dep r-base-dev
+</code></pre>
+<p>升级 R 之后依旧最好是设置 Renviron 和 Rprofile，需要更改为国内的两个镜像。</p>
+<p>在对 R 包进行升级的时候，有时候会提示部分 R 包无法升级，是因为所在的 path 你本身没有权限修改，比如<code>&quot;/usr/local/lib/R/site-library&quot;</code>。这个时候可能就需要通过<code>sudo R --vanilla</code>登陆，然后把你没有权限的包先卸载掉，然后再正常登陆安装到自己有权限的默认路径里去。</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2018-07-09-chineseuser/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/UrqlObNL0t/" class="article-info">
+                        R</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2018-06-06-readingnotexdjix/">
+                    <h3 class="post-title">
+                      《小岛经济学》告诉我们的
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

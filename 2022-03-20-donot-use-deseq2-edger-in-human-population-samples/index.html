@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>别再用DEseq2和edgeR进行大样本差异表达基因分析了 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="
+如无必要，勿增实体。样本够多，无需预设。
+
+
+读博那几年，闲着没事就喜欢做各种软件的测试对比。有时候几个转录组样本非得用两三个差异分析方法都做一遍。严谨起来就给它们之间求一个交集，狡猾起来就谁的结果「更好」用谁（想必你也是这么做的）。
+2..." />
+  <meta name="keywords" content="熊说肿瘤,RNA-seq,生物信息,文献" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  别再用DEseq2和edgeR进行大样本差异表达基因分析了</a>
+              </h2>
+              <span class="article-info">2022-03-20, 3298 words, 13 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <blockquote>
+<p>如无必要，勿增实体。样本够多，无需预设。</p>
+</blockquote>
+<!-- more -->
+<p>读博那几年，闲着没事就喜欢做各种软件的测试对比。有时候几个转录组样本非得用两三个差异分析方法都做一遍。严谨起来就给它们之间求一个交集，狡猾起来就谁的结果「更好」用谁（想必你也是这么做的）。</p>
+<p>2021年，从植物研究转到肿瘤领域后，对于处理TCGA这类大样本队列，我其实不少次也是通过对tumor和normal组直接进行Wilcoxon秩和检验来找差异基因，原因无它，唯快不破。当然，更多时候是两种方法混用，好处是样本量多了跑上DESeq2可以离开座位溜达两圈活动活动。</p>
+<p>2022年，前几天发表在 Genome Biology 的一篇论文，算是比较严谨地论证了<strong>在大样本量RNA-seq差异分析时，今后即便不考虑速度因素，也应该抛弃DEseq2和edgeR转而使用朴实无华的Wilcoxon秩和检验</strong>。</p>
+<p>先贴上paper链接，你可以直接读原文或者继续看完这篇文章。</p>
+<p>Li, Yumei, Xinzhou Ge, Fanglue Peng, Wei Li, and Jingyi Jessica Li. “Exaggerated False Positives by Popular Differential Expression Methods When Analyzing Human Population Samples.” <em>Genome Biology</em> 23, no. 1 (March 15, 2022): 79. <a href="https://doi.org/10.1186/s13059-022-02648-4">https://doi.org/10.1186/s13059-022-02648-4</a>.</p>
+<h2 id="rna-seq实验应该有几个重复">RNA-seq实验应该有几个重复</h2>
+<p>RNA-seq问世以来，最基本也是最关键的应用一直是在2组（有时候也有多组）情况下识别差异表达基因(DEG)，比如肿瘤和正常组织样本，不同处理条件下的细胞系等等。</p>
+<p>实际使用时，高通量的转录组数据我们通常只会测三个重复，这里的重复是指生物学重复而非技术重复。有的时候2个重复也能应付，甚至如果没有重复也有相关的软件可以处理。</p>
+<p>为什么是3次重复呢？因为事不过三，以及材料有限和可以省钱。实际上，在不少早期专门研究应该有几次重复的论文中，大家的说法也不一，有说至少要6次才准的，也有说4次就够了，还有的说如果想把差异表达基因都找到至少需要12次个重复。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202203192227874.png" alt="" loading="lazy"></figure>
+<p>2016年，同样发表在Genome Biology的经典高引用<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0881-8">RNA-seq分析综述</a>则给出了如下表格和建议，简而言之，至少3次。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202203192215159.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202203192221517.png" alt="" loading="lazy"></figure>
+<p>咱就是说，其实前期这些关于样本重复数量的分析，绝大多数都是在用DEseq和edgeR这些软件的基础上展开的。而今天却建议大样本量的分析不要再使用它们了，也蛮有趣。</p>
+<h2 id="deseq2和edger不适用大样本">DEseq2和edgeR不适用大样本</h2>
+<p>从以上关于样本量的讨论可以看出，转录组差异分析最大的挑战一直是希望三生万物（三次重复得到普适结论），检测的样本量太少。</p>
+<p>为了解决这个问题，通过对RNA-seq数据进行各种参数分布假设的统计方法和软件应运而生。其中最流行的两种方法是DEseq2和edgeR，他们的核心假设都是测序数据符合负二项分布，再根据自己的一套逻辑对原始读数进行标准化。如果样本没有重复，负二项分布可能有噪声，可以考虑基于柏松分布的DEGseq。</p>
+<p>另一个重要的问题是，对于DEseq2和edgeR这样的软件，为了让各种后续处理成立，一个需要接受的假设是两组样本之间没有绝对意义上的差别，或者说绝大多数基因在两组之间的表达都是一样的。</p>
+<p>于是就带来了第一个疑问，一旦上升到大样本量的人群队列RNA-seq研究，样本规模已经是大几十或者几百上千个，绝大多数基因的表达水平没有差别的这个假设是否还成立呢？</p>
+<p>为了评估DESeq2和edgeR识别差异基因上的能力，这篇paper的作者测试了13个群体水平的RNA-seq数据集，总样本量从100到1376不等。分析后发现，DESeq2和edgeR在这些数据集上识别的DEG有很大的差异。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202203192314136.png" alt="" loading="lazy"></figure>
+<p>通过上图这个结果可以看出来在免疫治疗队列里，DESeq2和edgeR识别的DEG中只有8%一致。而在大多数大人群样本中，DESeq2都要相比edgeR找到的多不少。</p>
+<p>事出反常必有妖，想看究竟问题出在哪里，就需要从FDR的角度进行深入的探索。测试FDR，在大样本的优势就体现出来了，它可以采取随机生成置换数据集的方法进行测试。</p>
+<p>于是作者把队列中的两组样本进行混合，新的分组中每个都含有原来的两组样本。通过随机组合1000次置换，原始数据集就生成了1000次置换数据集。</p>
+<p>结果很刺激。</p>
+<p>首先，DESeq2和edgeR分别有84.88%和78.89%的概率从置换数据集识别出比原始数据集更多的DEG。</p>
+<p>其次，DEseq2和edgeR分别从原始数据集中识别出的144个和319个DEG中，有22个（15.3%）和194个（60.8%）是从至少50%的置换数据集中识别出来的，而这些DEG其实都是假的。这个假阳性的结果实在是太高了。</p>
+<p>最重要的是，它们还发现 fold change 越大的基因，越有可能从置换数据集中被鉴定出来。但在实际分析时，我们都会认为FC越大那基因的差异越大，它就越重要。而真实情况可能是这些基因本身并非差异表达基因。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202203192330115.png" alt="" loading="lazy"></figure>
+<p>这里多说一句，如果你好奇那些其实是假阳性的基因究竟是什么富集在什么功能呢？嗯……免疫相关。</p>
+<h2 id="deseq2和edger为什么不灵了">DEseq2和edgeR为什么不灵了</h2>
+<p>为什么DESeq2和edgeR从这个免疫治疗数据集中发现了这么多假阳性？最直接的想法就是这些数据不再符合DESeq2和edgeR所假设的负二项分布。</p>
+<p>为了验证这一假设，研究者选择了两组基因。其中一组是从≥20%的置换数据集中确定为DEG的基因；第二组是从≤0.1%的置换数据集中确定为DEG的基因。评估负二项式模型对每组基因的适应程度后可以发现确实第一组基因的模型拟合效果更差，这与这些基因是假阳性事实也一致。</p>
+<p>进一步，为什么模型不适用了？作者检查了所有在至少10%的置换数据集中被误认为是DEG的基因，相对于假定的负二项模型，所有这些基因的实际测量值都存在异常值。</p>
+<figure data-type="image" tabindex="6"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202203201142273.png" alt="" loading="lazy"></figure>
+<p>edgeR和DESeq2这样的参数检验中，假设是一个基因在两种条件下具有相同的平均表达量。所以分析结果会受到异常值存在的严重影响。相比之下，Wilcoxon秩和检验在有离群值存在时会表现的更好，因为它的假设是基因在一个条件下的表达量比它在另一个条件下的表达量高或低的可能相等。也就是Wilcoxon秩和检验更关注的是排序而非实际高低。</p>
+<p>不止是DESeq2和edgeR，从上面的图可以看出作者还比较了其它几种代表性的分析方法，其中limma-voom和DESeq2、edgeR一样是参数估计；NOISeq和dearseq（最近发表的专门针对大样本量差异分析的工具）则和Wilcoxon秩和检验一样是非参数检验。</p>
+<p>在比较谁能找到更少的假阳性差异基因时，DESeq2和edgeR明显败了，其它几个表现都还不错。如果比较它们找到更多真实的差异基因能力呢？</p>
+<p>研究者从12个GTEx和TCGA数据集中各产生了50个半合成数据集（有已知的真实DEG和假DEG）。如下图，只有Wilcoxon秩和检验能在0.001%至5%的FDR阈值范围内可以持续控制真实的FDR。此外，比较了这六种方法在实际FDR条件下的功效，Wilcoxon秩和检验要优于其他五种方法。下图蓝色线是Wilcoxon秩和检验，黄色和紫色虚线是DEseq2和edgeR。</p>
+<figure data-type="image" tabindex="7"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202203200006061.png" alt="" loading="lazy"></figure>
+<h2 id="什么时候使用wilcoxon秩和检验">什么时候使用Wilcoxon秩和检验</h2>
+<p>既然Wilcoxon秩和检验适合大样本的差异基因分析，关键问题就来到了多大样本量算大样本？</p>
+<p>为了研究样本量如何影响六种分析方法的效果，研究者对每个数据集进行了下采样，分别得到了从2到100个的样本量的不同数据集。</p>
+<p>从下图结果可以看出。在1%的FDR阈值下，当每个条件的样本量小于8时Wilcoxon秩和检验作为一个非参数检验方法你就别用了。同时，只要当每个条件的样本量超过8个以后，Wilcoxon秩和检验取得了与三种参数检验方法（DESeq2、edgeR和limma-voom）或其他非参数检验方法相当或更好的表现。</p>
+<figure data-type="image" tabindex="8"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202203200009831.png" alt="" loading="lazy"></figure>
+<p>考虑到DEG占所有基因比例也可能会对结果产生影响，他们还生成了5中差异基因比例（1%、3%、5%、9%和20%）的数据集，评估结果也显示Wilcoxon秩和检验的FDR和功效也不差。</p>
+<p>所以，<strong>从这个分析结果来看，当每个条件的样本量大于8个以后，别犹豫，直接上Wilcoxon秩和检验。</strong></p>
+<h2 id="怎么使用wilcoxon秩和检验">怎么使用Wilcoxon秩和检验</h2>
+<p>懂的都懂，DESeq2、edgeR和limma这三种参数检验方法在转录组研究中长期占主导地位。基本上所有大型研究的差异分析结果都是用它们做出来。但是这三种方法最初都是为了解决小样本量分析的问题。</p>
+<p>在群体水平的研究中具有更大样本量（至少几十个），因此往往就不再需要进行参数假设。同时，由于样本量越多越可能存在几个异常值，它们违反假设后会导致P值变得不稳定，进而导致FDR无效。</p>
+<p>最后一个问题，就是在实际分析中应该怎样合理地使用Wilcoxon秩和检验进行差异表达分析呢？</p>
+<p>不同于DESeq2, edgeR和limma，作为一种非回归的方法，Wilcoxon秩和检验无法调整各种可能存在的混杂因素（比如测序深度的差别）。要想使用Wilcoxon秩和检验，研究者也推荐RNA-seq样本先进行标准化消除批次效应后再进行计算。</p>
+<p>至于你是使用DESeq2的Relative Log Expression，还是使用edgeR的Trimmed Mean of M-values，或者是使用TPM，个人粗浅的认为问题不大（狡猾的你肯定会愿意都试试）。</p>
+<p>最后是一段使用edgeR TMM + wilcox.test 分析的<a href="https://rpubs.com/LiYumei/806213">代码示例</a>，来自于原文作者。</p>
+<pre><code class="language-R">
+# read data
+
+readCount&lt;-read.table(file=&quot;examples/examples.countMatrix.tsv&quot;, header = T, row.names = 1, stringsAsFactors = F,check.names = F)
+conditions&lt;-read.table(file=&quot;examples/examples.conditions.tsv&quot;, header = F)
+conditions&lt;-factor(t(conditions))
+
+# edger TMM normalize
+
+y &lt;- DGEList(counts=readCount,group=conditions)
+##Remove rows conssitently have zero or very low counts
+keep &lt;- filterByExpr(y)
+y &lt;- y[keep,keep.lib.sizes=FALSE]
+##Perform TMM normalization and transfer to CPM (Counts Per Million)
+y &lt;- calcNormFactors(y,method=&quot;TMM&quot;)
+count_norm=cpm(y)
+count_norm&lt;-as.data.frame(count_norm)
+
+# Run the Wilcoxon rank-sum test for each gene
+
+pvalues &lt;- sapply(1:nrow(count_norm),function(i){
+     data&lt;-cbind.data.frame(gene=as.numeric(t(count_norm[i,])),conditions)
+     p=wilcox.test(gene~conditions, data)$p.value
+     return(p)
+   })
+fdr=p.adjust(pvalues,method = &quot;fdr&quot;)
+
+# Calculate fold-change for each gene
+
+conditionsLevel&lt;-levels(conditions)
+dataCon1=count_norm[,c(which(conditions==conditionsLevel[1]))]
+dataCon2=count_norm[,c(which(conditions==conditionsLevel[2]))]
+foldChanges=log2(rowMeans(dataCon2)/rowMeans(dataCon1))
+
+# Output results based on FDR threshold
+
+outRst&lt;-data.frame(log2foldChange=foldChanges, pValues=pvalues, FDR=fdr)
+rownames(outRst)=rownames(count_norm)
+outRst=na.omit(outRst)
+fdrThres=0.05
+write.table(outRst[outRst$FDR&lt;fdrThres,], file=&quot;examples/examples.WilcoxonTest.rst.tsv&quot;,sep=&quot;\t&quot;, quote=F,row.names = T,col.names = T)
+</code></pre>
+<h2 id="写在最后">写在最后</h2>
+<p>看到这里，个人感觉也没有必要对自己以前做过的事情产生太大自我怀疑，只是以后在做超过每组8个样本的差异分析时，别忘了也捎带试试Wilcoxon秩和检验。如果有人问你为啥有专门的DESseq2和edgeR不用，就把这篇paper丢过去。</p>
+<p>当然，还有这个图。</p>
+<figure data-type="image" tabindex="9"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202203201246793.jpg" alt="" loading="lazy"></figure>
+<p>reference</p>
+<ul>
+<li>https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02648-4</li>
+<li>https://rpubs.com/LiYumei/806213</li>
+</ul>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2022-03-20-donot-use-deseq2-edger-in-human-population-samples/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/HBkTdk_qp/" class="article-info">
+                        熊说肿瘤</a>
+                      
+                      <a href="https://kaopubear.top/blog/p7M9e5leM/" class="article-info">
+                        RNA-seq</a>
+                      
+                      <a href="https://kaopubear.top/blog/DvI6ypPftI/" class="article-info">
+                        生物信息</a>
+                      
+                      <a href="https://kaopubear.top/blog/EqrCpMmApu/" class="article-info">
+                        文献</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2022-03-11-getting-through-the-winter/">
+                    <h3 class="post-title">
+                      春天来了，但你得准备好继续过冬
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

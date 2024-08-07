@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>SRA 数据下载自救指南 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="
+还在羡慕海峡那边的朋友下载 SRA 快到飞起？还在难过用 wget 下载数据经常下载不完整？用了官方的下载工具还是慢的不行？这里有一个 SRA 下载自救尝试指南供你参考。
+
+
+需要用到两个工具
+
+SRA Toolkit
+IBM asper..." />
+  <meta name="keywords" content="RNA-seq" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  SRA 数据下载自救指南</a>
+              </h2>
+              <span class="article-info">2018-09-19, 1167 words, 6 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <blockquote>
+<p>还在羡慕海峡那边的朋友下载 SRA 快到飞起？还在难过用 wget 下载数据经常下载不完整？用了官方的下载工具还是慢的不行？这里有一个 SRA 下载自救尝试指南供你参考。</p>
+</blockquote>
+<!--more-->
+<h2 id="需要用到两个工具">需要用到两个工具</h2>
+<ul>
+<li>SRA Toolkit</li>
+<li>IBM aspera 高速文件传输工具</li>
+</ul>
+<p><strong>因为这是一篇极简自救指南，所以一切都不解释，直接给出链接，不明白的自行学习（爱学不学）。</strong></p>
+<p>SRA Toolkit 网址：https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc</p>
+<p>aspera 网址：https://support.asperasoft.com/hc/en-us</p>
+<p>aspera 官方对于下载 NCBI 数据的说明</p>
+<p><a href="https://support.asperasoft.com/hc/en-us/articles/216125898-Downloading-data-from-NCBI-via-the-command-line">https://support.asperasoft.com/hc/en-us/articles/216125898-Downloading-data-from-NCBI-via-the-command-line</a></p>
+<p>SRA Toolkit 官方对于使用 aspera 的说明：</p>
+<p>https://www.ncbi.nlm.nih.gov/books/NBK242625/</p>
+<p><a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc&amp;f=prefetch">https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc&amp;f=prefetch</a></p>
+<h2 id="快速自救前奏">快速自救前奏</h2>
+<ul>
+<li>下载 aspera （选择 linux 版本）</li>
+</ul>
+<p><a href="https://downloads.asperasoft.com/en/downloads/8?list">https://downloads.asperasoft.com/en/downloads/8?list</a></p>
+<ul>
+<li>安装 aspera</li>
+</ul>
+<pre><code class="language-sh">wget https://download.asperasoft.com/download/sw/connect/3.8.1/ibm-aspera-connect-3.8.1.161274-linux-g2.12-64.tar.gz
+# 小心版本号有变动，不要直接复制上面的命令
+tar zxvf ibm-aspera-connect-3.8.1.161274-linux-g2.12-64.tar.gz
+bash ibm-aspera-connect-3.8.1.161274-linux-g2.12-64.sh
+# 默认安装路径 /home/user/.aspera
+</code></pre>
+<ul>
+<li>安装 sra toolkit 具体命令省略，注意一定要安装最新版本：）</li>
+</ul>
+<h2 id="正式开始自救">正式开始自救</h2>
+<blockquote>
+<p>目前中文关于使用 aspera 下载 sra 数据的几篇教程都写的婆婆妈妈乱七八糟，<strong>千万不要再看了</strong>！</p>
+</blockquote>
+<p>记住，正式的自救只需要两步，其它写一大串的文章都是“耍流氓”。</p>
+<ol>
+<li>
+<p>把要下载的数据 SRR 号写入一个文件 srr.txt，每行是一个 SRR id</p>
+</li>
+<li>
+<p>利用 SRA toolkit 的 <code>prefetch</code> 下载，并指定下载方式为 <code>ascp</code>，命令如下，各种参数的含义自行查看文档（爱看不看）</p>
+</li>
+</ol>
+<pre><code class="language-sh">prefetch -t ascp -a &quot;/home/user/.aspera/connect/bin/ascp|/home/user/.aspera/connect/etc/asperaweb_id_dsa.openssh&quot; --option-file srr.txt -O /opt/user/ncbi
+</code></pre>
+<p>其中-a 参数中必须要用<strong>绝对路径</strong>写上 ascp 所在的位置和 previte KEY 的位置，如果是正常安装只需要把 user 替换为自己的用户名。</p>
+<h2 id="自救效果测试">自救效果测试</h2>
+<p>下载了八个 SRR 文件，平均一个大小 5G 左右，使用时间如下：</p>
+<pre><code class="language-sh">2018-09-05T14:14:33 prefetch.2.9.2: 1) Downloading 'SRR******'...
+2018-09-05T14:14:33 prefetch.2.9.2:  Downloading via fasp...
+SRR******
+2018-09-05T14:16:58 prefetch.2.9.2:  fasp download succeed
+2018-09-05T14:16:58 prefetch.2.9.2: 1) 'SRR******' was downloaded successfully
+
+2018-09-05T14:17:01 prefetch.2.9.2: 2) Downloading 'SRR******'...
+2018-09-05T14:17:01 prefetch.2.9.2:  Downloading via fasp...
+SRR******
+2018-09-05T14:19:25 prefetch.2.9.2:  fasp download succeed
+2018-09-05T14:19:25 prefetch.2.9.2: 2) 'SRR******' was downloaded successfully
+
+2018-09-05T14:19:28 prefetch.2.9.2: 3) Downloading 'SRR******'...
+2018-09-05T14:19:28 prefetch.2.9.2:  Downloading via fasp...
+SRR******
+2018-09-05T14:22:31 prefetch.2.9.2:  fasp download succeed
+2018-09-05T14:22:31 prefetch.2.9.2: 3) 'SRR******' was downloaded successfully
+
+2018-09-05T14:22:35 prefetch.2.9.2: 4) Downloading 'SRR******'...
+2018-09-05T14:22:35 prefetch.2.9.2:  Downloading via fasp...
+SRR******
+2018-09-05T14:25:14 prefetch.2.9.2:  fasp download succeed
+2018-09-05T14:25:14 prefetch.2.9.2: 4) 'SRR******' was downloaded successfully
+
+2018-09-05T14:25:17 prefetch.2.9.2: 5) Downloading 'SRR******'...
+2018-09-05T14:25:17 prefetch.2.9.2:  Downloading via fasp...
+SRR******
+2018-09-05T14:26:46 prefetch.2.9.2:  fasp download succeed
+2018-09-05T14:26:46 prefetch.2.9.2: 5) 'SRR******' was downloaded successfully
+
+2018-09-05T14:26:49 prefetch.2.9.2: 6) Downloading 'SRR******'...
+2018-09-05T14:26:49 prefetch.2.9.2:  Downloading via fasp...
+SRR******
+2018-09-05T14:28:13 prefetch.2.9.2:  fasp download succeed
+2018-09-05T14:28:13 prefetch.2.9.2: 6) 'SRR******' was downloaded successfully
+
+2018-09-05T14:28:16 prefetch.2.9.2: 7) Downloading 'SRR******'...
+2018-09-05T14:28:16 prefetch.2.9.2:  Downloading via fasp...
+SRR******
+2018-09-05T14:29:56 prefetch.2.9.2:  fasp download succeed
+2018-09-05T14:29:56 prefetch.2.9.2: 7) 'SRR******' was downloaded successfully
+
+2018-09-05T14:30:00 prefetch.2.9.2: 8) Downloading 'SRR******'...
+2018-09-05T14:30:00 prefetch.2.9.2:  Downloading via fasp...
+SRR******
+2018-09-05T14:31:58 prefetch.2.9.2:  fasp download succeed
+2018-09-05T14:31:58 prefetch.2.9.2: 8) 'SRR******' was downloaded successfully
+</code></pre>
+<p>喏，5G 的文件，即便是在（你懂的）这种网络状况下，<strong>一个也只需要不到 2 分钟</strong>。<br>
+自救成功，祝好！</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2018-09-19-downloadsrafast/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/p7M9e5leM/" class="article-info">
+                        RNA-seq</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2018-08-25-rnaseqtimedata/">
+                    <h3 class="post-title">
+                      转录组时间序列数据小结
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

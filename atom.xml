@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://kaopubear.top/blog</id>
+    <title>思考问题的熊</title>
+    <updated>2024-08-07T14:16:19.404Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://kaopubear.top/blog"/>
+    <link rel="self" href="https://kaopubear.top/blog/atom.xml"/>
+    <subtitle>很高兴和你相遇&lt;br&gt;这里正在记录我的所思所学&lt;br&gt;订阅&lt;a href=&quot;https://kaopubear.zhubai.love/&quot; target=&quot;_blank&quot;&gt;免费邮件通讯&lt;/a&gt;接收最新内容</subtitle>
+    <logo>https://kaopubear.top/blog/images/avatar.png</logo>
+    <icon>https://kaopubear.top/blog/favicon.ico</icon>
+    <rights>All rights reserved 2024, 思考问题的熊</rights>
+    <entry>
+        <title type="html"><![CDATA[Guardant Shield 获批：详谈这5年你该了解的按部就班、跌跌撞撞 、布局和野望]]></title>
+        <id>https://kaopubear.top/blog/2024-08-03-guardant-shield-fda-5-year/</id>
+        <link href="https://kaopubear.top/blog/2024-08-03-guardant-shield-fda-5-year/">
+        </link>
+        <updated>2024-08-03T04:13:32.000Z</updated>
+        <summary type="html"><![CDATA[<p>本文是熊言熊语邮件通讯的会员内容，限时同步首发于熊言熊语微信公众号。文章较长，引用较多。</p>
+<h2 id="写在前面">写在前面</h2>
+<p>Guardant health Shield 近日官宣获批，从我2021年入行关注至今终于等来了这一天。作为熊言熊语邮件通讯产品系列的早就定下的选题之一，趁热打铁，把零散记录了很久的draft详细整理成文与你分享。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo_new/202407301516809.png" alt="" loading="lazy"></figure>
+<p>在本次通讯中，你将会：</p>
+<ul>
+<li>从 Shield 按部就班的获批之路中看到立场如何决定性能、嘴硬如何与谨慎并行；</li>
+<li>在 Shield 稳定产出的产品进化过程中看到 Guardant health 清晰的学术发声节奏；</li>
+<li>在 Shield 跌跌撞撞的性能提升之路中看到研发和产品的反复横跳和究极取舍；</li>
+<li>也别忘了一起了解 Shield 在多癌早筛上的布局和野望。</li>
+</ul>
+]]></summary>
+        <content type="html"><![CDATA[<p>本文是熊言熊语邮件通讯的会员内容，限时同步首发于熊言熊语微信公众号。文章较长，引用较多。</p>
+<h2 id="写在前面">写在前面</h2>
+<p>Guardant health Shield 近日官宣获批，从我2021年入行关注至今终于等来了这一天。作为熊言熊语邮件通讯产品系列的早就定下的选题之一，趁热打铁，把零散记录了很久的draft详细整理成文与你分享。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo_new/202407301516809.png" alt="" loading="lazy"></figure>
+<p>在本次通讯中，你将会：</p>
+<ul>
+<li>从 Shield 按部就班的获批之路中看到立场如何决定性能、嘴硬如何与谨慎并行；</li>
+<li>在 Shield 稳定产出的产品进化过程中看到 Guardant health 清晰的学术发声节奏；</li>
+<li>在 Shield 跌跌撞撞的性能提升之路中看到研发和产品的反复横跳和究极取舍；</li>
+<li>也别忘了一起了解 Shield 在多癌早筛上的布局和野望。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[除了E人变I，断网半年后我的3个感悟和1个项目]]></title>
+        <id>https://kaopubear.top/blog/2024-07-21-insightpaper-intro/</id>
+        <link href="https://kaopubear.top/blog/2024-07-21-insightpaper-intro/">
+        </link>
+        <updated>2024-07-21T13:24:27.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>你好，我是思考问题的熊，熊言熊语公众号/播客的主理人。一个超过半年没有和你通过邮件通讯相见的拖更作者。诚惶诚恐，不知道你这半年可好。</p>
+<p>不只是没有和你交流，2024 年过去半年多时间里自己基本处于断网状态，变成了一个只有线下模式的 NPC。</p>
+<p>此刻，当我打开电脑准备写点什么，感觉熟悉又有些陌生。就像准备要和很久没联系的朋友见一面，难免会觉得忐忑。纠结许久，还是只能先说一句：好久不见。</p>
+<p>在本期通讯内容中，<strong>我将和你分享过去一段时间我的经历感受和反思，也会为你推荐一个我在进行的秘密项目，邀请你参与体验。</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>你好，我是思考问题的熊，熊言熊语公众号/播客的主理人。一个超过半年没有和你通过邮件通讯相见的拖更作者。诚惶诚恐，不知道你这半年可好。</p>
+<p>不只是没有和你交流，2024 年过去半年多时间里自己基本处于断网状态，变成了一个只有线下模式的 NPC。</p>
+<p>此刻，当我打开电脑准备写点什么，感觉熟悉又有些陌生。就像准备要和很久没联系的朋友见一面，难免会觉得忐忑。纠结许久，还是只能先说一句：好久不见。</p>
+<p>在本期通讯内容中，<strong>我将和你分享过去一段时间我的经历感受和反思，也会为你推荐一个我在进行的秘密项目，邀请你参与体验。</strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[同源重组修复缺陷HRD ：产品总览]]></title>
+        <id>https://kaopubear.top/blog/2023-05-03-cancer-homologous-recombination-deficiency-part3/</id>
+        <link href="https://kaopubear.top/blog/2023-05-03-cancer-homologous-recombination-deficiency-part3/">
+        </link>
+        <updated>2023-05-03T11:52:38.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[同源重组修复缺陷HRD：临床验证]]></title>
+        <id>https://kaopubear.top/blog/2023-05-03-cancer-homologous-recombination-deficiency-part2/</id>
+        <link href="https://kaopubear.top/blog/2023-05-03-cancer-homologous-recombination-deficiency-part2/">
+        </link>
+        <updated>2023-05-03T11:50:18.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[同源重组修复缺陷HRD：从无到有]]></title>
+        <id>https://kaopubear.top/blog/2023-05-03-cancer-homologous-recombination-deficiency-part1/</id>
+        <link href="https://kaopubear.top/blog/2023-05-03-cancer-homologous-recombination-deficiency-part1/">
+        </link>
+        <updated>2023-05-03T11:45:27.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[聊肿瘤生物标志物时我们在聊什么]]></title>
+        <id>https://kaopubear.top/blog/2025-05-03-how-to-learn-biomarker/</id>
+        <link href="https://kaopubear.top/blog/2025-05-03-how-to-learn-biomarker/">
+        </link>
+        <updated>2023-05-03T11:40:41.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[肿瘤组织和液体活检结果不一致，好事还是坏事]]></title>
+        <id>https://kaopubear.top/blog/2023-03-27-tissue-vs-ctdna/</id>
+        <link href="https://kaopubear.top/blog/2023-03-27-tissue-vs-ctdna/">
+        </link>
+        <updated>2023-03-27T11:30:53.000Z</updated>
+        <summary type="html"><![CDATA[<p>组织和血检的一致性比较发了很多文章，不过当组织和血检结果不一致的时候，对患者的预后有什么研究价值呢？</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>组织和血检的一致性比较发了很多文章，不过当组织和血检结果不一致的时候，对患者的预后有什么研究价值呢？</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[肿瘤精准治疗究竟多难 看这7个临床实践障碍]]></title>
+        <id>https://kaopubear.top/blog/2022-03-14-clinical-practice-gaps/</id>
+        <link href="https://kaopubear.top/blog/2022-03-14-clinical-practice-gaps/">
+        </link>
+        <updated>2023-03-14T14:18:27.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>换句话，除了「贵」，还有哪些因素影响了癌症精准治疗在临床实践中的应用呢？</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>换句话，除了「贵」，还有哪些因素影响了癌症精准治疗在临床实践中的应用呢？</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于wolai被钉钉收购：多研究些问题少谈些逻辑]]></title>
+        <id>https://kaopubear.top/blog/2023-03-08-about-wolai-dingding/</id>
+        <link href="https://kaopubear.top/blog/2023-03-08-about-wolai-dingding/">
+        </link>
+        <updated>2023-03-08T13:40:25.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>说明：本文写在听闻钉钉收购在线笔记工具wolai，并看到两篇相关评论文章之后。</strong></p>
+<p>不在效率工具圈子很久，刚刚刷少数派看到老麦发了一篇「<a href="https://sspai.com/post/78711">钉钉收购我来 wolai 的背后逻辑</a>」才知道这个软件被钉钉收了，紧接着又看到一篇发表在MacTalk上池老师团队成员写的文章「<a href="https://mp.weixin.qq.com/s/ppXbmPbTNV0OD4GMJ2b3Rg">钉钉居然收购了我来wolai</a>」。</p>
+<p>还是忍不住说几句自己的观感：<strong>如果你和我一样是个普通用户，还是多研究些问题，少谈些逻辑。</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>说明：本文写在听闻钉钉收购在线笔记工具wolai，并看到两篇相关评论文章之后。</strong></p>
+<p>不在效率工具圈子很久，刚刚刷少数派看到老麦发了一篇「<a href="https://sspai.com/post/78711">钉钉收购我来 wolai 的背后逻辑</a>」才知道这个软件被钉钉收了，紧接着又看到一篇发表在MacTalk上池老师团队成员写的文章「<a href="https://mp.weixin.qq.com/s/ppXbmPbTNV0OD4GMJ2b3Rg">钉钉居然收购了我来wolai</a>」。</p>
+<p>还是忍不住说几句自己的观感：<strong>如果你和我一样是个普通用户，还是多研究些问题，少谈些逻辑。</strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MSKCC 尚待解决的肿瘤基因组检测临床应用问题]]></title>
+        <id>https://kaopubear.top/blog/2023-02-04-mskcc-cmo-tumor-ngs-test/</id>
+        <link href="https://kaopubear.top/blog/2023-02-04-mskcc-cmo-tumor-ngs-test/">
+        </link>
+        <updated>2023-02-04T15:25:53.000Z</updated>
+        <summary type="html"><![CDATA[<p>MSK前瞻性临床队列 MSK-IMPACT和MSK-ACCESS样本量突破10万之后，MSKCC的分子肿瘤中心 (Center for Molecular Oncology, CMO)主任 David Solit 最近在个人社交媒体上晒了这样一个截图，并补充到：</p>
+<blockquote>
+<p>随着数十种tumor-agnostic和肿瘤特异性的基因组生物标记得到FDA批准，肿瘤以及胚系基因组检测应该被考虑用于<strong>所有需要系统治疗</strong>的癌症患者。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<p>MSK前瞻性临床队列 MSK-IMPACT和MSK-ACCESS样本量突破10万之后，MSKCC的分子肿瘤中心 (Center for Molecular Oncology, CMO)主任 David Solit 最近在个人社交媒体上晒了这样一个截图，并补充到：</p>
+<blockquote>
+<p>随着数十种tumor-agnostic和肿瘤特异性的基因组生物标记得到FDA批准，肿瘤以及胚系基因组检测应该被考虑用于<strong>所有需要系统治疗</strong>的癌症患者。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[不要错过的14档肿瘤研究专业相关播客]]></title>
+        <id>https://kaopubear.top/blog/2023-02-03-cancer-research-podcast/</id>
+        <link href="https://kaopubear.top/blog/2023-02-03-cancer-research-podcast/">
+        </link>
+        <updated>2023-02-02T15:46:33.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天是2023年2月2号正月十二，俗话说的好啊朋友：<strong>没过十五就是年儿</strong>。还算赶趟，熊言熊语在这里先给你拜年。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天是2023年2月2号正月十二，俗话说的好啊朋友：<strong>没过十五就是年儿</strong>。还算赶趟，熊言熊语在这里先给你拜年。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从靶向治疗耐药机制到联合用药策略（下篇）]]></title>
+        <id>https://kaopubear.top/blog/2023-01-18-mechanisms-of-resistance-2/</id>
+        <link href="https://kaopubear.top/blog/2023-01-18-mechanisms-of-resistance-2/">
+        </link>
+        <updated>2023-01-18T07:57:22.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[那些获得FDA突破性设备认证的多癌种早筛公司]]></title>
+        <id>https://kaopubear.top/blog/2022-01-08-fda-bdd-multi-cancer-early-detection/</id>
+        <link href="https://kaopubear.top/blog/2022-01-08-fda-bdd-multi-cancer-early-detection/">
+        </link>
+        <updated>2023-01-08T09:29:13.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的完整试读版，更多内容欢迎点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的完整试读版，更多内容欢迎点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022的混乱和坚持 2023的困难和勇敢]]></title>
+        <id>https://kaopubear.top/blog/2023-01-04-my2022/</id>
+        <link href="https://kaopubear.top/blog/2023-01-04-my2022/">
+        </link>
+        <updated>2023-01-04T02:02:07.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从靶向治疗耐药机制到联合用药策略（上篇）]]></title>
+        <id>https://kaopubear.top/blog/2022-12-31-mechanisms-of-resistance/</id>
+        <link href="https://kaopubear.top/blog/2022-12-31-mechanisms-of-resistance/">
+        </link>
+        <updated>2022-12-30T16:27:49.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[和头部肿瘤早筛公司 GRAIL CEO 学写年终工作总结]]></title>
+        <id>https://kaopubear.top/blog/2022-12-27-grail-2022-look-back/</id>
+        <link href="https://kaopubear.top/blog/2022-12-27-grail-2022-look-back/">
+        </link>
+        <updated>2022-12-27T15:06:57.000Z</updated>
+        <summary type="html"><![CDATA[<p>到了年底每一位打工人都少不了做工作年终总结，即便是一家公司的CEO也不例外。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>到了年底每一位打工人都少不了做工作年终总结，即便是一家公司的CEO也不例外。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022年肿瘤精准治疗进展回顾 看OncoKB和FDA审批就够了]]></title>
+        <id>https://kaopubear.top/blog/2022-12-17-newsletter-pro-2022-precision-oncology/</id>
+        <link href="https://kaopubear.top/blog/2022-12-17-newsletter-pro-2022-precision-oncology/">
+        </link>
+        <updated>2022-12-16T17:00:52.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Foundation Medicine 42万例样本库分析KRAS泛癌种突变特征得出了这些结论]]></title>
+        <id>https://kaopubear.top/blog/2022-12-16-fmi-kars-pancancer-landscape/</id>
+        <link href="https://kaopubear.top/blog/2022-12-16-fmi-kars-pancancer-landscape/">
+        </link>
+        <updated>2022-12-16T12:22:50.000Z</updated>
+        <summary type="html"><![CDATA[<p>KRAS和HRAS以及NRAS都属于RAS家族，这些基因一旦发生突变便可以启动或促进肿瘤生长。尽管KRAS是很多肿瘤中常见的突变致癌基因，但是KRAS基因所编码的蛋白像一个表面光滑的圆球，很难找到能可以抓住它的小分子化合物。过去几十年的时间里，一直认为其「不可成药」。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>KRAS和HRAS以及NRAS都属于RAS家族，这些基因一旦发生突变便可以启动或促进肿瘤生长。尽管KRAS是很多肿瘤中常见的突变致癌基因，但是KRAS基因所编码的蛋白像一个表面光滑的圆球，很难找到能可以抓住它的小分子化合物。过去几十年的时间里，一直认为其「不可成药」。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从2002年的Nature论文到2022年的亿元营收 ]]></title>
+        <id>https://kaopubear.top/blog/2022-12-15-mammaprint-intro-from-nature-to-product/</id>
+        <link href="https://kaopubear.top/blog/2022-12-15-mammaprint-intro-from-nature-to-product/">
+        </link>
+        <updated>2022-12-15T08:30:32.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>读文献的乐趣通常在于文献之外。通过文献里的线索和场外信息把看起来无关的内容联系在一起。如果赶巧又解答了头脑里萦绕很久的问题，那便是难得的「Paper Aha Moment」。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>读文献的乐趣通常在于文献之外。通过文献里的线索和场外信息把看起来无关的内容联系在一起。如果赶巧又解答了头脑里萦绕很久的问题，那便是难得的「Paper Aha Moment」。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[肿瘤NGS行业新人如何构建自己的知识体系]]></title>
+        <id>https://kaopubear.top/blog/2022-12-10-cancerngs-newbie-guide/</id>
+        <link href="https://kaopubear.top/blog/2022-12-10-cancerngs-newbie-guide/">
+        </link>
+        <updated>2022-12-09T16:09:40.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文为<strong>熊言熊语邮件通讯会员计划</strong>内容精选。如果你也是一个行业新人，或许会有一点点启发；如果不是，不妨分享给你身边的行业新人～</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文为<strong>熊言熊语邮件通讯会员计划</strong>内容精选。如果你也是一个行业新人，或许会有一点点启发；如果不是，不妨分享给你身边的行业新人～</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[熊言熊语邮件通讯来了 和1800+读者一起订阅吧]]></title>
+        <id>https://kaopubear.top/blog/2022-12-04-kaopubear-newsletter-intro/</id>
+        <link href="https://kaopubear.top/blog/2022-12-04-kaopubear-newsletter-intro/">
+        </link>
+        <updated>2022-12-03T15:16:13.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>经过一段时间（其实是很长时间）的准备和调整，熊言熊语会员通讯下周恢复继续更新啦。以下是最新一期的邮件内容和你分享～</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>经过一段时间（其实是很长时间）的准备和调整，熊言熊语会员通讯下周恢复继续更新啦。以下是最新一期的邮件内容和你分享～</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nature Genetics：低TMB患者福音 肿瘤非整倍体可预测泛癌免疫治疗疗效]]></title>
+        <id>https://kaopubear.top/blog/2022-12-02-tumor-aneuploidy-predicts-ici-survival/</id>
+        <link href="https://kaopubear.top/blog/2022-12-02-tumor-aneuploidy-predicts-ici-survival/">
+        </link>
+        <updated>2022-12-01T16:02:30.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>书接上回，在昨天的文章里，我们从一天连发两篇Nature大子刊是什么体验出发，提到了芝加哥大学的Liam Flinn Spurr 在11月28日，作为第一作者在 Nature Cancer 发文，通过一项临床研究发现<strong>高度非整倍体的非小细胞肺癌对放疗联合免疫治疗更敏感</strong>。同时在Nature Genetics online 的文章则介绍了<strong>在低TMB患者中可以通过肿瘤非整倍体程度预测泛癌的免疫治疗疗效</strong>。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>书接上回，在昨天的文章里，我们从一天连发两篇Nature大子刊是什么体验出发，提到了芝加哥大学的Liam Flinn Spurr 在11月28日，作为第一作者在 Nature Cancer 发文，通过一项临床研究发现<strong>高度非整倍体的非小细胞肺癌对放疗联合免疫治疗更敏感</strong>。同时在Nature Genetics online 的文章则介绍了<strong>在低TMB患者中可以通过肿瘤非整倍体程度预测泛癌的免疫治疗疗效</strong>。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nature Cancer：高度非整倍体非小细胞肺癌 放疗同步免疫治疗更敏感]]></title>
+        <id>https://kaopubear.top/blog/2022-12-01-highly-aneuploid-nsclc-rt-icb/</id>
+        <link href="https://kaopubear.top/blog/2022-12-01-highly-aneuploid-nsclc-rt-icb/">
+        </link>
+        <updated>2022-11-30T16:21:32.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>同一天在 Nature Cancer 和 Nature Genetics 发表两篇文章是一种什么体验？今天我们用一天发表两篇文献解读从侧面体会下 😃</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>同一天在 Nature Cancer 和 Nature Genetics 发表两篇文章是一种什么体验？今天我们用一天发表两篇文献解读从侧面体会下 😃</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nature Reviews Cancer：未来10年肿瘤精准治疗的6个未解之谜]]></title>
+        <id>https://kaopubear.top/blog/2022-11-28-the-coming-decade-in-precision-oncology-six-riddles/</id>
+        <link href="https://kaopubear.top/blog/2022-11-28-the-coming-decade-in-precision-oncology-six-riddles/">
+        </link>
+        <updated>2022-11-28T14:05:14.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>「熊言熊语」这个名字来自于我2020年初开始做的一档音频播客节目。那段时间是我读博即将进入尾声。不难想到「熊言熊语」自然是借了「自言自语」这个词再加上「思考问题的熊」这个ID。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>「熊言熊语」这个名字来自于我2020年初开始做的一档音频播客节目。那段时间是我读博即将进入尾声。不难想到「熊言熊语」自然是借了「自言自语」这个词再加上「思考问题的熊」这个ID。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[通过一份会议日程多了解点液体活检]]></title>
+        <id>https://kaopubear.top/blog/2022-11-24-learn-from-schedule/</id>
+        <link href="https://kaopubear.top/blog/2022-11-24-learn-from-schedule/">
+        </link>
+        <updated>2022-11-24T15:26:51.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>通过参加自己领域内会议来了解行业动态和现状是非常好的途径。</p>
+<p>如果你也在从事肿瘤领域相关的工作和研究，每年召开的 ASCO 和 ESMO 这类世界级大会和国内的 CSCO 自不必多说。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>通过参加自己领域内会议来了解行业动态和现状是非常好的途径。</p>
+<p>如果你也在从事肿瘤领域相关的工作和研究，每年召开的 ASCO 和 ESMO 这类世界级大会和国内的 CSCO 自不必多说。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[找到一种和这个世界沟通的方式]]></title>
+        <id>https://kaopubear.top/blog/2022-11-24-find-yourself/</id>
+        <link href="https://kaopubear.top/blog/2022-11-24-find-yourself/">
+        </link>
+        <updated>2022-11-24T13:57:58.000Z</updated>
+        <summary type="html"><![CDATA[<p>因为 9 月初写了 <a href="https://kaopubear.top/blog/2022-09-01-tumor-ngs-2022q2-financial-results/">行业几家公司 2022 Q2 财报简读</a>，最近又有小伙伴后台留言问 Q3 这几家财报陆续出来之后是不是更新一下近况，我瞅了瞅感觉不大有必要。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>因为 9 月初写了 <a href="https://kaopubear.top/blog/2022-09-01-tumor-ngs-2022q2-financial-results/">行业几家公司 2022 Q2 财报简读</a>，最近又有小伙伴后台留言问 Q3 这几家财报陆续出来之后是不是更新一下近况，我瞅了瞅感觉不大有必要。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[跨越60年的癌症靶向治疗里程碑]]></title>
+        <id>https://kaopubear.top/blog/2022-09-17-cancer-progress-timeline/</id>
+        <link href="https://kaopubear.top/blog/2022-09-17-cancer-progress-timeline/">
+        </link>
+        <updated>2022-09-16T16:20:16.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>在一年前，我曾经写过一篇 NGS 肿瘤研究可以学什么的文章，展示了一下<a href="https://kaopubear.top/blog/2021-08-14-learn-lung-cancer/">规划的学习路径</a>。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>在一年前，我曾经写过一篇 NGS 肿瘤研究可以学什么的文章，展示了一下<a href="https://kaopubear.top/blog/2021-08-14-learn-lung-cancer/">规划的学习路径</a>。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[同样做肿瘤NGS检测，美股上市的9家公司近况如何]]></title>
+        <id>https://kaopubear.top/blog/2022-09-01-tumor-ngs-2022q2-financial-results/</id>
+        <link href="https://kaopubear.top/blog/2022-09-01-tumor-ngs-2022q2-financial-results/">
+        </link>
+        <updated>2022-09-01T09:54:19.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>声明：本博客所有文章的专业/行业相关信息全部来源于公开资料，且所有内容和观点仅代表个人。</p>
+</blockquote>
+<h2 id="写在前面">写在前面</h2>
+<p>很多东西，单独看一个点看不出什么，但相似的东西摆在一起还能耐住性子看过去，往往就比较有意思，比如文献，比如财报。</p>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>声明：本博客所有文章的专业/行业相关信息全部来源于公开资料，且所有内容和观点仅代表个人。</p>
+</blockquote>
+<h2 id="写在前面">写在前面</h2>
+<p>很多东西，单独看一个点看不出什么，但相似的东西摆在一起还能耐住性子看过去，往往就比较有意思，比如文献，比如财报。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[30 岁，让我们成熟和改变的不是生日而是生活]]></title>
+        <id>https://kaopubear.top/blog/2022-08-13-thirty-years-old-what-i-know/</id>
+        <link href="https://kaopubear.top/blog/2022-08-13-thirty-years-old-what-i-know/">
+        </link>
+        <updated>2022-08-13T12:32:11.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>30 岁，有人开始发现自己不再年轻，有人开始焦虑自己的目标、成功和失败，30 岁在 20 岁看来也许觉得好笑，在 40 岁看来也许又觉得矫情。不管怎么说，我的 30 岁还是来了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>30 岁，有人开始发现自己不再年轻，有人开始焦虑自己的目标、成功和失败，30 岁在 20 岁看来也许觉得好笑，在 40 岁看来也许又觉得矫情。不管怎么说，我的 30 岁还是来了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ctDNA系列之一：ctDNA的生物学特征、检测技术问题和临床应用方向]]></title>
+        <id>https://kaopubear.top/blog/2022-08-02-ctdna-esmo-caca-recommendation/</id>
+        <link href="https://kaopubear.top/blog/2022-08-02-ctdna-esmo-caca-recommendation/">
+        </link>
+        <updated>2022-08-02T13:17:15.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在《Google软件工程》里了解如何在团队内进行学习和分享]]></title>
+        <id>https://kaopubear.top/blog/2022-07-16-book-software-engineering-at-google/</id>
+        <link href="https://kaopubear.top/blog/2022-07-16-book-software-engineering-at-google/">
+        </link>
+        <updated>2022-07-16T05:24:26.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何衡量个人在团队项目中的贡献]]></title>
+        <id>https://kaopubear.top/blog/2022-07-16-credit-a-team-member/</id>
+        <link href="https://kaopubear.top/blog/2022-07-16-credit-a-team-member/">
+        </link>
+        <updated>2022-07-16T05:19:12.000Z</updated>
+        <summary type="html"><![CDATA[<p>身处一个团队（部门）中，合作是每一个项目顺利推进开展都必不可少的工作方式。但如何合理展示和评价每一个人的贡献，让每个人都能看到自己的价值，却不是一件容易的事。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>身处一个团队（部门）中，合作是每一个项目顺利推进开展都必不可少的工作方式。但如何合理展示和评价每一个人的贡献，让每个人都能看到自己的价值，却不是一件容易的事。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[万字长文｜染色体不稳定性，凭什么2022年还能用TCGA数据发Nature]]></title>
+        <id>https://kaopubear.top/blog/2022-06-26-tcga-pancan-cin-signature/</id>
+        <link href="https://kaopubear.top/blog/2022-06-26-tcga-pancan-cin-signature/">
+        </link>
+        <updated>2022-06-26T10:20:51.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>2022 年 6 月 15 日，Nature 在线发表了两篇染色体不稳定性泛癌研究。一篇题为：<strong>A pan-cancer compendium of chromosomal instability</strong>；另一篇题为：<strong>Signatures of copy number alterations in human cancer</strong>。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>2022 年 6 月 15 日，Nature 在线发表了两篇染色体不稳定性泛癌研究。一篇题为：<strong>A pan-cancer compendium of chromosomal instability</strong>；另一篇题为：<strong>Signatures of copy number alterations in human cancer</strong>。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[FDA发布ctDNA应用于早期实体瘤药物开发的指导意见]]></title>
+        <id>https://kaopubear.top/blog/2022-05-16-fda-ctDNA-for-early-stage-solid-tumor-drug-development/</id>
+        <link href="https://kaopubear.top/blog/2022-05-16-fda-ctDNA-for-early-stage-solid-tumor-drug-development/">
+        </link>
+        <updated>2022-05-16T14:37:44.000Z</updated>
+        <summary type="html"><![CDATA[<p>这个月初，FDA发布了将<a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/use-circulating-tumor-deoxyribonucleic-acid-early-stage-solid-tumor-drug-development-draft-guidance">ctDNA应用于早期实体瘤药物开发的指导意见稿</a>。</p>
+<p>对于相关公司而言，意见中的注意事项确实具有「指导」意义。对于相关从业者，等于得到了一份「ctDNA在早期实体瘤临床研究应用方向」的参考答案。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这个月初，FDA发布了将<a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/use-circulating-tumor-deoxyribonucleic-acid-early-stage-solid-tumor-drug-development-draft-guidance">ctDNA应用于早期实体瘤药物开发的指导意见稿</a>。</p>
+<p>对于相关公司而言，意见中的注意事项确实具有「指导」意义。对于相关从业者，等于得到了一份「ctDNA在早期实体瘤临床研究应用方向」的参考答案。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[单平台文章阅读量超过100万，我可能做对了三件事。]]></title>
+        <id>https://kaopubear.top/blog/2022-04-10-about-writing/</id>
+        <link href="https://kaopubear.top/blog/2022-04-10-about-writing/">
+        </link>
+        <updated>2022-04-09T17:25:35.000Z</updated>
+        <summary type="html"><![CDATA[<p>把写作当作方法。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>把写作当作方法。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gitee图床被禁？云对象存储配合CDN方案以及图片批量迁移方法]]></title>
+        <id>https://kaopubear.top/blog/2022-03-26-tencent-cloud-cdn-setting/</id>
+        <link href="https://kaopubear.top/blog/2022-03-26-tencent-cloud-cdn-setting/">
+        </link>
+        <updated>2022-03-26T11:38:17.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天好几个小伙伴反馈Gitee不能再当作图床使用了，问有没有更好的markdown图床替代方案。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天好几个小伙伴反馈Gitee不能再当作图床使用了，问有没有更好的markdown图床替代方案。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[别再用DEseq2和edgeR进行大样本差异表达基因分析了]]></title>
+        <id>https://kaopubear.top/blog/2022-03-20-donot-use-deseq2-edger-in-human-population-samples/</id>
+        <link href="https://kaopubear.top/blog/2022-03-20-donot-use-deseq2-edger-in-human-population-samples/">
+        </link>
+        <updated>2022-03-20T03:58:28.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>如无必要，勿增实体。样本够多，无需预设。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>如无必要，勿增实体。样本够多，无需预设。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[春天来了，但你得准备好继续过冬]]></title>
+        <id>https://kaopubear.top/blog/2022-03-11-getting-through-the-winter/</id>
+        <link href="https://kaopubear.top/blog/2022-03-11-getting-through-the-winter/">
+        </link>
+        <updated>2022-03-11T10:31:07.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>面临行业的冬天，公司应该如何过冬，个人又能怎样过冬。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>面临行业的冬天，公司应该如何过冬，个人又能怎样过冬。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[任务如何才能按时完成]]></title>
+        <id>https://kaopubear.top/blog/2022-03-06-finished-on-time/</id>
+        <link href="https://kaopubear.top/blog/2022-03-06-finished-on-time/">
+        </link>
+        <updated>2022-03-06T16:09:53.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>工作不需要提前完成，但需要提前动手。小学时的寒假作业没有人会每天写点，要么是第一周写完，要么是最后一周写完。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>工作不需要提前完成，但需要提前动手。小学时的寒假作业没有人会每天写点，要么是第一周写完，要么是最后一周写完。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从肿瘤突变列表到辅助临床决策]]></title>
+        <id>https://kaopubear.top/blog/2022-02-27-do-clinical-decisions/</id>
+        <link href="https://kaopubear.top/blog/2022-02-27-do-clinical-decisions/">
+        </link>
+        <updated>2022-02-27T14:22:57.000Z</updated>
+        <summary type="html"><![CDATA[<p>如果你做了一份科研样本的 NGS 检测，绝大多数测序公司都会附上一份标准化的分析报告，当然，这份报告的实际可用性懂得都懂。但如果一位肿瘤患者进行了 NGS 检测，那出具的检测报告就需要慎之又慎，靠谱的公司往往会想尽办法提高报告的准确和严谨，每份报告也都需要进行人工审核和解读。医生们则会在拿到这份报告之后再结合病人的实际病情进行临床决策。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>如果你做了一份科研样本的 NGS 检测，绝大多数测序公司都会附上一份标准化的分析报告，当然，这份报告的实际可用性懂得都懂。但如果一位肿瘤患者进行了 NGS 检测，那出具的检测报告就需要慎之又慎，靠谱的公司往往会想尽办法提高报告的准确和严谨，每份报告也都需要进行人工审核和解读。医生们则会在拿到这份报告之后再结合病人的实际病情进行临床决策。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[半年毕业 半年工作 我的2021年度总结]]></title>
+        <id>https://kaopubear.top/blog/2022-02-02-2021review/</id>
+        <link href="https://kaopubear.top/blog/2022-02-02-2021review/">
+        </link>
+        <updated>2022-02-01T17:34:04.000Z</updated>
+        <summary type="html"><![CDATA[<p>掐指一算，又到了每年向各位朋友进行年终汇报的时间，不过「年终」硬生生地让我从 1 月 1 号元旦拖到农历春节前夕（发出这篇文章的时候应该已是初二了）。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>掐指一算，又到了每年向各位朋友进行年终汇报的时间，不过「年终」硬生生地让我从 1 月 1 号元旦拖到农历春节前夕（发出这篇文章的时候应该已是初二了）。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你也可以在学术报告中讲好一个引人入胜的故事]]></title>
+        <id>https://kaopubear.top/blog/2021-12-06-how-to-tell-a-story-in-presentation/</id>
+        <link href="https://kaopubear.top/blog/2021-12-06-how-to-tell-a-story-in-presentation/">
+        </link>
+        <updated>2021-12-06T14:48:33.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>科学是叙事过程，而叙事就是讲故事，所以科学需要讲故事。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>科学是叙事过程，而叙事就是讲故事，所以科学需要讲故事。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OncoSearch 肿瘤研究必备（自用）聚合搜索工具]]></title>
+        <id>https://kaopubear.top/blog/2021-11-21-oncosearch/</id>
+        <link href="https://kaopubear.top/blog/2021-11-21-oncosearch/">
+        </link>
+        <updated>2021-11-21T14:44:46.000Z</updated>
+        <summary type="html"><![CDATA[<p>如果你目前的学习或者工作和「肿瘤研究」相关，面对日新月异的研究进展，想必总会在实际工作开会或者看文献的时候发现各种奇奇怪怪的基因和名次。问同事，有点不好意思，鼓起勇气问了很可能就也记不住。（好吧以上都是我目前的现状）。</p>
+<p>基于以上原因，借助 Google CSE 的羊毛，我就整了这么一个叫做 <a href="https://kaopubear.top/oncosearch/">OncoSearch</a> 的小工具。开发成本可以说是没有，但着实解决了自己现在非常棘手的问题，于是也推荐给可能需要的你。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>如果你目前的学习或者工作和「肿瘤研究」相关，面对日新月异的研究进展，想必总会在实际工作开会或者看文献的时候发现各种奇奇怪怪的基因和名次。问同事，有点不好意思，鼓起勇气问了很可能就也记不住。（好吧以上都是我目前的现状）。</p>
+<p>基于以上原因，借助 Google CSE 的羊毛，我就整了这么一个叫做 <a href="https://kaopubear.top/oncosearch/">OncoSearch</a> 的小工具。开发成本可以说是没有，但着实解决了自己现在非常棘手的问题，于是也推荐给可能需要的你。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[读陌生领域文献，我劝你别读正文]]></title>
+        <id>https://kaopubear.top/blog/2021-09-26-dont-read-full-text/</id>
+        <link href="https://kaopubear.top/blog/2021-09-26-dont-read-full-text/">
+        </link>
+        <updated>2021-09-24T15:29:03.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>防杠声明：</strong> 如果以下内容你认为哪里不对，那一定是你的问题。emmm，说明你已经不是这个领域的新人啦，大佬喝橙汁，恭喜恭喜！</p>
+<p><strong>迷途知返：</strong> 如果你想长期在某一个领域深耕，关注相关的研究文献进展。我推荐你<a href="https://podcast.kaopubear.top/episodes/s1e11">像追剧一样读文献</a>，关于这个话题我曾经录过一期单人播客，当时发布以后得到了不少反馈。如今的我依旧非常推荐你听一听这期播客，找一些追踪文献的思路喝灵感。</p>
+<p>今天这篇小文则想与你讨论如何在一个陌生领域里开始读文献。进入新领域，最难的事情是什么？没有人脉没有资源还听不懂黑话。因此，以下21字箴言送给你。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>防杠声明：</strong> 如果以下内容你认为哪里不对，那一定是你的问题。emmm，说明你已经不是这个领域的新人啦，大佬喝橙汁，恭喜恭喜！</p>
+<p><strong>迷途知返：</strong> 如果你想长期在某一个领域深耕，关注相关的研究文献进展。我推荐你<a href="https://podcast.kaopubear.top/episodes/s1e11">像追剧一样读文献</a>，关于这个话题我曾经录过一期单人播客，当时发布以后得到了不少反馈。如今的我依旧非常推荐你听一听这期播客，找一些追踪文献的思路喝灵感。</p>
+<p>今天这篇小文则想与你讨论如何在一个陌生领域里开始读文献。进入新领域，最难的事情是什么？没有人脉没有资源还听不懂黑话。因此，以下21字箴言送给你。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[准备两个版本的PPT]]></title>
+        <id>https://kaopubear.top/blog/2021-09-23-two-version-ppt/</id>
+        <link href="https://kaopubear.top/blog/2021-09-23-two-version-ppt/">
+        </link>
+        <updated>2021-09-23T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>昨天发了一张图出来，配文是：不论你今天做什么，都祝你好远，顺祝自己。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>昨天发了一张图出来，配文是：不论你今天做什么，都祝你好远，顺祝自己。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[通往更好的决定]]></title>
+        <id>https://kaopubear.top/blog/2021-09-21-make-better-decision/</id>
+        <link href="https://kaopubear.top/blog/2021-09-21-make-better-decision/">
+        </link>
+        <updated>2021-09-21T09:55:36.000Z</updated>
+        <summary type="html"><![CDATA[<p>休息两天读完了这本一百页出头的小书，有感触也有收获。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>休息两天读完了这本一百页出头的小书，有感触也有收获。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[更多地写 但是写的更短]]></title>
+        <id>https://kaopubear.top/blog/2021-09-19-write-more-but-shorter/</id>
+        <link href="https://kaopubear.top/blog/2021-09-19-write-more-but-shorter/">
+        </link>
+        <updated>2021-09-19T15:44:03.000Z</updated>
+        <summary type="html"><![CDATA[<p>前几天读到了一篇文章 <a href="https://critter.blog/2020/10/02/write-5x-more-but-write-5x-less/">Write 5x more but write 5x less</a>，作者Mike Crittenden是一位Engineering Manager，也是一个日更博客的作者。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>前几天读到了一篇文章 <a href="https://critter.blog/2020/10/02/write-5x-more-but-write-5x-less/">Write 5x more but write 5x less</a>，作者Mike Crittenden是一位Engineering Manager，也是一个日更博客的作者。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[问题出现我再告诉大家]]></title>
+        <id>https://kaopubear.top/blog/2021-09-01-my-shortcoming/</id>
+        <link href="https://kaopubear.top/blog/2021-09-01-my-shortcoming/">
+        </link>
+        <updated>2021-09-01T01:19:11.000Z</updated>
+        <summary type="html"><![CDATA[<p>过去两三个月有好有坏有不少事情，如果只能用一个词来形容就是「痛苦」。发现自己是一个能够熟练<strong>反向</strong>应用二八法则的人，用80%的时间做20%不重要的事情。</p>
+<p>自己的问题，需要自己解决。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>过去两三个月有好有坏有不少事情，如果只能用一个词来形容就是「痛苦」。发现自己是一个能够熟练<strong>反向</strong>应用二八法则的人，用80%的时间做20%不重要的事情。</p>
+<p>自己的问题，需要自己解决。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[重做新人 NGS肿瘤领域可以学些什么]]></title>
+        <id>https://kaopubear.top/blog/2021-08-14-learn-lung-cancer/</id>
+        <link href="https://kaopubear.top/blog/2021-08-14-learn-lung-cancer/">
+        </link>
+        <updated>2021-08-13T16:15:41.000Z</updated>
+        <summary type="html"><![CDATA[<p>不出意外，很可能你将「重做新人」看成了「重新做人」，然后一脸问号的点进来。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>不出意外，很可能你将「重做新人」看成了「重新做人」，然后一脸问号的点进来。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[新手和专家的区别以及如何看待学习]]></title>
+        <id>https://kaopubear.top/blog/2021-08-12-pragmatic-thinking-and-learning/</id>
+        <link href="https://kaopubear.top/blog/2021-08-12-pragmatic-thinking-and-learning/">
+        </link>
+        <updated>2021-08-11T16:22:12.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="又一次知识焦虑和学习焦虑">又一次知识焦虑和学习焦虑</h2>
+<p>最近又一次出现了比较严重的信息焦虑、知识焦虑和学习焦虑。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="又一次知识焦虑和学习焦虑">又一次知识焦虑和学习焦虑</h2>
+<p>最近又一次出现了比较严重的信息焦虑、知识焦虑和学习焦虑。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[完成这个需要多长时间]]></title>
+        <id>https://kaopubear.top/blog/2021-08-04-howlong/</id>
+        <link href="https://kaopubear.top/blog/2021-08-04-howlong/">
+        </link>
+        <updated>2021-08-04T15:24:55.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天读到了一篇关于如何回答「完成这个需要多长时间」的blog，作者给出了4个分析步骤，简单记录和评论一下。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天读到了一篇关于如何回答「完成这个需要多长时间」的blog，作者给出了4个分析步骤，简单记录和评论一下。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从 MacBook Pro M1 安装编译 R 踩坑想到的]]></title>
+        <id>https://kaopubear.top/blog/2021-07-06-macos-arm64-R-tips/</id>
+        <link href="https://kaopubear.top/blog/2021-07-06-macos-arm64-R-tips/">
+        </link>
+        <updated>2021-07-06T15:15:49.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>关键时刻要稳住，以及软件之间的不兼容和人与人之间很类似。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>关键时刻要稳住，以及软件之间的不兼容和人与人之间很类似。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[6年硕博生活的6条心得-生活成长篇]]></title>
+        <id>https://kaopubear.top/blog/2021-06-26-6tipsforphdlife/</id>
+        <link href="https://kaopubear.top/blog/2021-06-26-6tipsforphdlife/">
+        </link>
+        <updated>2021-06-25T16:25:20.000Z</updated>
+        <summary type="html"><![CDATA[<p>本科毕业时因为准备考研，我曾用前前后后一多年的时间整理了一本 30 多万字的<a href="https://book.kaopubear.top/">文集</a>，5 年多时间这个小册子如今还会被一些学弟学妹读到。随着进入 6 月下旬，自己 6 年的硕博生活也即将走入尾声，过去 6 年我能分享的东西并不多，但终究还是要写些东西作为总结和纪念。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本科毕业时因为准备考研，我曾用前前后后一多年的时间整理了一本 30 多万字的<a href="https://book.kaopubear.top/">文集</a>，5 年多时间这个小册子如今还会被一些学弟学妹读到。随着进入 6 月下旬，自己 6 年的硕博生活也即将走入尾声，过去 6 年我能分享的东西并不多，但终究还是要写些东西作为总结和纪念。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[面对职业教育缺失，在科研行业的我们能做什么]]></title>
+        <id>https://kaopubear.top/blog/2021-06-11-researcher-career/</id>
+        <link href="https://kaopubear.top/blog/2021-06-11-researcher-career/">
+        </link>
+        <updated>2021-06-11T07:10:34.000Z</updated>
+        <summary type="html"><![CDATA[<p>最近有两件事让我感触比较深，一件发生在自己身上，是之前找工作初期的迷茫与局促；另一件是公共事件，最近发生在复旦大学的教师杀人案件。关于公共事件，目前官方披露的实际细节并不全面，当事人双方我也完全不了解，这里无意讨论。但这两件事让我联想到了一个国内长久以来存在的问题：针对高校学生和科研工作者的职业教育缺失。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>最近有两件事让我感触比较深，一件发生在自己身上，是之前找工作初期的迷茫与局促；另一件是公共事件，最近发生在复旦大学的教师杀人案件。关于公共事件，目前官方披露的实际细节并不全面，当事人双方我也完全不了解，这里无意讨论。但这两件事让我联想到了一个国内长久以来存在的问题：针对高校学生和科研工作者的职业教育缺失。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[全球顶尖科学家榜单]]></title>
+        <id>https://kaopubear.top/blog/2021-06-05-topauthor/</id>
+        <link href="https://kaopubear.top/blog/2021-06-05-topauthor/">
+        </link>
+        <updated>2021-06-05T15:50:51.000Z</updated>
+        <summary type="html"><![CDATA[<p>全球前 2%顶尖科学家榜单是由斯坦福大学 John P. A. Ioannidis 教授团队与 Elsevier 旗下 Mendeley Data 发布的一个科研人员「内卷」清单。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>全球前 2%顶尖科学家榜单是由斯坦福大学 John P. A. Ioannidis 教授团队与 Elsevier 旗下 Mendeley Data 发布的一个科研人员「内卷」清单。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[构建自己的数字花园-工具篇]]></title>
+        <id>https://kaopubear.top/blog/2021-04-14-digital-garden-tools/</id>
+        <link href="https://kaopubear.top/blog/2021-04-14-digital-garden-tools/">
+        </link>
+        <updated>2021-04-13T16:31:49.000Z</updated>
+        <summary type="html"><![CDATA[<p>逐渐感觉博客并不是一个很好的分享方式……</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>逐渐感觉博客并不是一个很好的分享方式……</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用R语言分析上海地铁好位置周边的二手房价格]]></title>
+        <id>https://kaopubear.top/blog/2021-02-19-shanghai-subway/</id>
+        <link href="https://kaopubear.top/blog/2021-02-19-shanghai-subway/">
+        </link>
+        <updated>2021-02-19T12:44:05.000Z</updated>
+        <summary type="html"><![CDATA[<p>昨天看到有朋友分享了一篇关于<a href="https://bjt.name/2021/02/13/subway.html">北京地铁和二手房市场价格相关内容分析</a>的文章。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>昨天看到有朋友分享了一篇关于<a href="https://bjt.name/2021/02/13/subway.html">北京地铁和二手房市场价格相关内容分析</a>的文章。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[熊言熊语会员通讯 4321X 第5期]]></title>
+        <id>https://kaopubear.top/blog/2021-02-02-4321x-5/</id>
+        <link href="https://kaopubear.top/blog/2021-02-02-4321x-5/">
+        </link>
+        <updated>2021-02-02T12:04:21.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>你现在看到的是熊言熊语会员通讯 4321X 的第 5 期试读版本，今后我们会不定期的将部分会员通讯内容发布到公开平台，如果想稳定的阅读每期内容欢迎通过邮件订阅这份免费的会员通讯服务。</p>
+</blockquote>
+<p>Hi, 见信好：</p>
+<p>我是思考问题的熊，你现在正在阅读的是熊言熊语会员通讯「4321X」第 5 期。</p>
+<p>截至本期通讯，「4321X」订阅人数为：529。</p>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>你现在看到的是熊言熊语会员通讯 4321X 的第 5 期试读版本，今后我们会不定期的将部分会员通讯内容发布到公开平台，如果想稳定的阅读每期内容欢迎通过邮件订阅这份免费的会员通讯服务。</p>
+</blockquote>
+<p>Hi, 见信好：</p>
+<p>我是思考问题的熊，你现在正在阅读的是熊言熊语会员通讯「4321X」第 5 期。</p>
+<p>截至本期通讯，「4321X」订阅人数为：529。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于 wolai 这款工具的观察与困惑]]></title>
+        <id>https://kaopubear.top/blog/2021-01-23-aboutwolai/</id>
+        <link href="https://kaopubear.top/blog/2021-01-23-aboutwolai/">
+        </link>
+        <updated>2021-01-23T14:19:39.000Z</updated>
+        <summary type="html"><![CDATA[<p>本文首发于<a href="https://sspai.com/post/64698">少数派</a></p>
+<p>我不是产品经理也没有什么关于产品的深刻研究，但是我用过的笔记类工具时长和数量还算不少。这次说说对一个国内笔记类工具新秀的观察和思考。嗯，也不用藏着掖着，就是 wolai。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本文首发于<a href="https://sspai.com/post/64698">少数派</a></p>
+<p>我不是产品经理也没有什么关于产品的深刻研究，但是我用过的笔记类工具时长和数量还算不少。这次说说对一个国内笔记类工具新秀的观察和思考。嗯，也不用藏着掖着，就是 wolai。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于个人的认知不确定性]]></title>
+        <id>https://kaopubear.top/blog/2021-01-17-uncertaintyandwriting/</id>
+        <link href="https://kaopubear.top/blog/2021-01-17-uncertaintyandwriting/">
+        </link>
+        <updated>2021-01-17T15:10:56.000Z</updated>
+        <summary type="html"><![CDATA[<p>这篇文章是熊言熊语会员通讯 4321X 的刊首语和部分内容，主要谈了谈关于不确定性和写作的问题。完整内容可以通过<a href="https://mailchi.mp/ada96dd56be8/4321x-4">会员通讯邮件</a>进行查看。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这篇文章是熊言熊语会员通讯 4321X 的刊首语和部分内容，主要谈了谈关于不确定性和写作的问题。完整内容可以通过<a href="https://mailchi.mp/ada96dd56be8/4321x-4">会员通讯邮件</a>进行查看。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[需要时刻留心的24个生物信息学提示]]></title>
+        <id>https://kaopubear.top/blog/2020-01-12-bioinformatics-tips/</id>
+        <link href="https://kaopubear.top/blog/2020-01-12-bioinformatics-tips/">
+        </link>
+        <updated>2021-01-12T07:30:39.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>前几天读到一篇英文博客深以为然，所以翻译一下和大家分享。以下 24 个提示不仅适用于生物信息而是适用于所有科学研究，看似简单但需要我们时刻留心。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>前几天读到一篇英文博客深以为然，所以翻译一下和大家分享。以下 24 个提示不仅适用于生物信息而是适用于所有科学研究，看似简单但需要我们时刻留心。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[要不要读博（答读者信）]]></title>
+        <id>https://kaopubear.top/blog/2021-01-07-phdornot/</id>
+        <link href="https://kaopubear.top/blog/2021-01-07-phdornot/">
+        </link>
+        <updated>2021-01-07T03:13:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>最近收到了一个朋友的来信。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>最近收到了一个朋友的来信。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[熊言熊语会员通讯 4321X 第3期]]></title>
+        <id>https://kaopubear.top/blog/2021-01-02-4321x-3/</id>
+        <link href="https://kaopubear.top/blog/2021-01-02-4321x-3/">
+        </link>
+        <updated>2021-01-02T02:57:40.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>你现在看到的是熊言熊语会员通讯 4321X 的第 3 期试读版本，今后我们会不定期的将部分会员通讯内容发布到公开平台，如果想稳定的阅读每期内容欢迎通过邮件订阅这份免费的会员通讯服务。</p>
+</blockquote>
+<p>Hi, 见信好：<br>
+我是思考问题的熊，你现在正在阅读的是熊言熊语会员通讯「4321X」第 3 期。<br>
+截至本期通讯，「4321X」订阅人数为：451。</p>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>你现在看到的是熊言熊语会员通讯 4321X 的第 3 期试读版本，今后我们会不定期的将部分会员通讯内容发布到公开平台，如果想稳定的阅读每期内容欢迎通过邮件订阅这份免费的会员通讯服务。</p>
+</blockquote>
+<p>Hi, 见信好：<br>
+我是思考问题的熊，你现在正在阅读的是熊言熊语会员通讯「4321X」第 3 期。<br>
+截至本期通讯，「4321X」订阅人数为：451。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[用三个问题回顾 2020（全员协作版）]]></title>
+        <id>https://kaopubear.top/blog/2020-12-30-our2020/</id>
+        <link href="https://kaopubear.top/blog/2020-12-30-our2020/">
+        </link>
+        <updated>2020-12-30T07:27:27.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>2020 年 12 月我在会员通讯发布了第一次「<strong>熊言熊语全员协作</strong>」活动。大家一起通过三个问题回顾自己的 2020 年。三个问题分别是：<strong>今年我最大的收获是；今年我最大的遗憾是；我想对去年此时的自己说什么。</strong></p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>2020 年 12 月我在会员通讯发布了第一次「<strong>熊言熊语全员协作</strong>」活动。大家一起通过三个问题回顾自己的 2020 年。三个问题分别是：<strong>今年我最大的收获是；今年我最大的遗憾是；我想对去年此时的自己说什么。</strong></p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[熊言熊语会员通讯 4321X 第2期 ]]></title>
+        <id>https://kaopubear.top/blog/2020-12-20-4321x-2/</id>
+        <link href="https://kaopubear.top/blog/2020-12-20-4321x-2/">
+        </link>
+        <updated>2020-12-20T07:23:42.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>你现在看到的是熊言熊语会员通讯 4321X 的第 2 期试读版本，今后我们会不定期的将部分会员通讯内容发布到公开平台，如果想稳定的阅读每期内容欢迎通过邮件订阅这份免费的会员通讯服务。</p>
+</blockquote>
+<p>Hi, 见信好<br>
+我是思考问题的熊，你现在正在阅读的是熊言熊语会员通讯「4321X」<br>
+截至本期通讯「4321X」订阅人数为：323</p>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>你现在看到的是熊言熊语会员通讯 4321X 的第 2 期试读版本，今后我们会不定期的将部分会员通讯内容发布到公开平台，如果想稳定的阅读每期内容欢迎通过邮件订阅这份免费的会员通讯服务。</p>
+</blockquote>
+<p>Hi, 见信好<br>
+我是思考问题的熊，你现在正在阅读的是熊言熊语会员通讯「4321X」<br>
+截至本期通讯「4321X」订阅人数为：323</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[熊言熊语会员通讯 4321X 第1期]]></title>
+        <id>https://kaopubear.top/blog/2020-12-13-4321x-1/</id>
+        <link href="https://kaopubear.top/blog/2020-12-13-4321x-1/">
+        </link>
+        <updated>2020-12-13T14:33:46.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>你现在看到的是熊言熊语会员通讯 4321X 的第 1 期试读版本，今后我们会不定期的将部分会员通讯内容发布到公开平台，如果想稳定的阅读每期内容欢迎通过邮件订阅这份免费的会员通讯服务。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>你现在看到的是熊言熊语会员通讯 4321X 的第 1 期试读版本，今后我们会不定期的将部分会员通讯内容发布到公开平台，如果想稳定的阅读每期内容欢迎通过邮件订阅这份免费的会员通讯服务。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[熊言熊语会员通讯 4321X 第0期 阅读与分享]]></title>
+        <id>https://kaopubear.top/blog/2020-12-06-4321x-0/</id>
+        <link href="https://kaopubear.top/blog/2020-12-06-4321x-0/">
+        </link>
+        <updated>2020-12-06T10:50:12.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>你现在看到的是熊言熊语会员通讯 4321X 的第 0 期试读版本，今后我们会不定期的将部分会员通讯内容发布到公开平台，如果想稳定的阅读每期内容欢迎通过邮件订阅这份免费的会员通讯服务。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>你现在看到的是熊言熊语会员通讯 4321X 的第 0 期试读版本，今后我们会不定期的将部分会员通讯内容发布到公开平台，如果想稳定的阅读每期内容欢迎通过邮件订阅这份免费的会员通讯服务。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有备而来的 4321X]]></title>
+        <id>https://kaopubear.top/blog/2020-11-26-newsletter/</id>
+        <link href="https://kaopubear.top/blog/2020-11-26-newsletter/">
+        </link>
+        <updated>2020-11-26T14:50:41.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[macOS big sur 升级后编译 R 的问题]]></title>
+        <id>https://kaopubear.top/blog/2020-11-25-bigsurupdater/</id>
+        <link href="https://kaopubear.top/blog/2020-11-25-bigsurupdater/">
+        </link>
+        <updated>2020-11-24T09:41:59.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你的实验伴侣摸鱼首选和通勤第一品牌]]></title>
+        <id>https://kaopubear.top/blog/2020-09-18-kaopubeartalk/</id>
+        <link href="https://kaopubear.top/blog/2020-09-18-kaopubeartalk/">
+        </link>
+        <updated>2020-09-18T11:38:12.000Z</updated>
+        <summary type="html"><![CDATA[<p>如果你有听点东西的习惯，欢迎订阅这档播客，如果没有也可以用这档播客来培养一下。订阅方式可以查看本文的结尾部分。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>如果你有听点东西的习惯，欢迎订阅这档播客，如果没有也可以用这档播客来培养一下。订阅方式可以查看本文的结尾部分。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何帮助别人]]></title>
+        <id>https://kaopubear.top/blog/2020-09-16-howtobehelpful/</id>
+        <link href="https://kaopubear.top/blog/2020-09-16-howtobehelpful/">
+        </link>
+        <updated>2020-09-16T08:03:05.000Z</updated>
+        <summary type="html"><![CDATA[<p>会提问也要会回答啊。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>会提问也要会回答啊。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[21天日记挑战-5分钟日记法]]></title>
+        <id>https://kaopubear.top/blog/2020-08-06-21day5minjournal/</id>
+        <link href="https://kaopubear.top/blog/2020-08-06-21day5minjournal/">
+        </link>
+        <updated>2020-08-06T13:46:06.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>很久没有记过日记了，打算来个 21 天日记挑战，然后录制一期播客。好吧，是不是看出来了播客选题荒。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>很久没有记过日记了，打算来个 21 天日记挑战，然后录制一期播客。好吧，是不是看出来了播客选题荒。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用 Zotero 在 Markdown 中优雅地处理参考文献]]></title>
+        <id>https://kaopubear.top/blog/2020-06-04-markdownzotero/</id>
+        <link href="https://kaopubear.top/blog/2020-06-04-markdownzotero/">
+        </link>
+        <updated>2020-06-04T15:01:57.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="需求">需求</h2>
+<p>兵马未动粮草先行，写毕业论文需要做很多思想建设，有一个顺手的写作工具和一个方便的文献管理工具可以给人一些动力和勇气。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="需求">需求</h2>
+<p>兵马未动粮草先行，写毕业论文需要做很多思想建设，有一个顺手的写作工具和一个方便的文献管理工具可以给人一些动力和勇气。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[三个 Linux 文件高频小操作]]></title>
+        <id>https://kaopubear.top/blog/2020-05-30-linuxfile3tips/</id>
+        <link href="https://kaopubear.top/blog/2020-05-30-linuxfile3tips/">
+        </link>
+        <updated>2020-05-30T04:16:51.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="去除文件名后缀">去除文件名后缀</h2>
+<p>在 Linux 中跑各种任务或者循环命令的时候，有一个高频的需求是截取一部分文件名。例如有文件 XXX_aaa.bb 和 YYY_aaa.bb ，很可能我们需要提取出 XXX 和 YYY 来给后续的文件进行命名。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="去除文件名后缀">去除文件名后缀</h2>
+<p>在 Linux 中跑各种任务或者循环命令的时候，有一个高频的需求是截取一部分文件名。例如有文件 XXX_aaa.bb 和 YYY_aaa.bb ，很可能我们需要提取出 XXX 和 YYY 来给后续的文件进行命名。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[VS Code 代码编辑器入门指南下篇-场景化应用介绍]]></title>
+        <id>https://kaopubear.top/blog/2020-04-21-usevscodepart2/</id>
+        <link href="https://kaopubear.top/blog/2020-04-21-usevscodepart2/">
+        </link>
+        <updated>2020-04-21T11:58:00.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/60117">少数派</a>」</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/60117">少数派</a>」</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[VS Code 编辑器入门指南上篇-核心概念与组件]]></title>
+        <id>https://kaopubear.top/blog/2020-04-21-usevscodepart1/</id>
+        <link href="https://kaopubear.top/blog/2020-04-21-usevscodepart1/">
+        </link>
+        <updated>2020-04-21T11:30:19.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文收发于「<a href="https://sspai.com/post/60116">少数派</a>」</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文收发于「<a href="https://sspai.com/post/60116">少数派</a>」</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[把 Markdown 模板做成 VSCode 插件]]></title>
+        <id>https://kaopubear.top/blog/2020-04-18-markdownnotesnippet/</id>
+        <link href="https://kaopubear.top/blog/2020-04-18-markdownnotesnippet/">
+        </link>
+        <updated>2020-04-18T07:35:20.000Z</updated>
+        <summary type="html"><![CDATA[<p>希望它能让你写笔记更方便些</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>希望它能让你写笔记更方便些</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[简书这些年]]></title>
+        <id>https://kaopubear.top/blog/2020-04-08-jianshu/</id>
+        <link href="https://kaopubear.top/blog/2020-04-08-jianshu/">
+        </link>
+        <updated>2020-04-08T11:08:58.000Z</updated>
+        <summary type="html"><![CDATA[<p>我对简书这个平台的感情很复杂。我 2015 年开始把当时自己的考研复习笔记放到网络上，那个时候意外发现了简书，当时的首页还完全是编辑推荐，需要自己给专题投稿然后如果入了编辑的法眼才有可能会被推荐到首页上。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我对简书这个平台的感情很复杂。我 2015 年开始把当时自己的考研复习笔记放到网络上，那个时候意外发现了简书，当时的首页还完全是编辑推荐，需要自己给专题投稿然后如果入了编辑的法眼才有可能会被推荐到首页上。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[靠谱熊的每周分享 第4期]]></title>
+        <id>https://kaopubear.top/blog/2020-03-22-weeklyshare4/</id>
+        <link href="https://kaopubear.top/blog/2020-03-22-weeklyshare4/">
+        </link>
+        <updated>2020-03-22T08:59:57.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>这周的刊首语随便聊聊几个工具。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>这周的刊首语随便聊聊几个工具。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[靠谱熊的每周分享 第3期]]></title>
+        <id>https://kaopubear.top/blog/2020-03-15-weeklyshare3/</id>
+        <link href="https://kaopubear.top/blog/2020-03-15-weeklyshare3/">
+        </link>
+        <updated>2020-03-15T10:22:45.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>本周想分享一个「汉隆剃刀」经验法则：<strong>能解释为愚蠢的，就不要解释为恶意。</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>本周想分享一个「汉隆剃刀」经验法则：<strong>能解释为愚蠢的，就不要解释为恶意。</strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[非蠢既坏 别这么想]]></title>
+        <id>https://kaopubear.top/blog/2020-03-07-HanlonRazor/</id>
+        <link href="https://kaopubear.top/blog/2020-03-07-HanlonRazor/">
+        </link>
+        <updated>2020-03-07T15:43:20.000Z</updated>
+        <summary type="html"><![CDATA[<p>「能解释为愚蠢的，就不要解释为恶意」</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>「能解释为愚蠢的，就不要解释为恶意」</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[靠谱熊的每周分享 第2期]]></title>
+        <id>https://kaopubear.top/blog/2020-03-06-weeklyshare2/</id>
+        <link href="https://kaopubear.top/blog/2020-03-06-weeklyshare2/">
+        </link>
+        <updated>2020-03-06T10:14:10.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>本周把自己一年多没更新的个人公众号(思考问题的熊)更新了一次，结果很快就有了五十多条留言。<br>
+很多人都在反馈自己过去三四年发生和经历的事情，很神奇的感受，看似没有交集但是却也没有断了联系。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>本周把自己一年多没更新的个人公众号(思考问题的熊)更新了一次，结果很快就有了五十多条留言。<br>
+很多人都在反馈自己过去三四年发生和经历的事情，很神奇的感受，看似没有交集但是却也没有断了联系。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[R 的 20 年]]></title>
+        <id>https://kaopubear.top/blog/2020-02-29-r20years/</id>
+        <link href="https://kaopubear.top/blog/2020-02-29-r20years/">
+        </link>
+        <updated>2020-02-28T17:02:16.000Z</updated>
+        <summary type="html"><![CDATA[<p>最近有<a href="https://jozef.io/r921-happy-birthday-r/">一篇文章</a>从三个纬度介绍了 R 这 20 年的发展。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>最近有<a href="https://jozef.io/r921-happy-birthday-r/">一篇文章</a>从三个纬度介绍了 R 这 20 年的发展。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[靠谱熊的每周分享 第1期]]></title>
+        <id>https://kaopubear.top/blog/2020-02-28-weeklyshare1/</id>
+        <link href="https://kaopubear.top/blog/2020-02-28-weeklyshare1/">
+        </link>
+        <updated>2020-02-28T14:04:29.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>在「素材学习分享小组」进行的第二个年头，为了让它能再向前走一小步，我们决定以电子杂志的形式发布「素材学习分享周刊」。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="刊首语">刊首语</h2>
+<p>在「素材学习分享小组」进行的第二个年头，为了让它能再向前走一小步，我们决定以电子杂志的形式发布「素材学习分享周刊」。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[停课不停学 推荐 7 门有趣实用的线上课程]]></title>
+        <id>https://kaopubear.top/blog/2020-01-06-7mooc/</id>
+        <link href="https://kaopubear.top/blog/2020-01-06-7mooc/">
+        </link>
+        <updated>2020-02-06T05:13:01.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/58754">少数派</a>」</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/58754">少数派</a>」</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在家复工，学生党如何使用学术资源]]></title>
+        <id>https://kaopubear.top/blog/2020-02-05-searchpaper/</id>
+        <link href="https://kaopubear.top/blog/2020-02-05-searchpaper/">
+        </link>
+        <updated>2020-02-05T05:10:07.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/58708">少数派</a>」</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/58708">少数派</a>」</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[跨平台协作，让飞书实时接收语雀更新提醒]]></title>
+        <id>https://kaopubear.top/blog/2020-02-01-larkandyuque/</id>
+        <link href="https://kaopubear.top/blog/2020-02-01-larkandyuque/">
+        </link>
+        <updated>2020-02-01T05:59:33.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/58650">少数派</a>」</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/58650">少数派</a>」</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[特殊时期假期返程实录]]></title>
+        <id>https://kaopubear.top/blog/2020-01-31-returnschool/</id>
+        <link href="https://kaopubear.top/blog/2020-01-31-returnschool/">
+        </link>
+        <updated>2020-01-31T10:01:24.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>这些天虽然发生了很多事情，全国不少地方都封城或者各种停运，但我今天还是按照原计划返回了上海，接下来将是按照规定的两周居家自行观察。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>这些天虽然发生了很多事情，全国不少地方都封城或者各种停运，但我今天还是按照原计划返回了上海，接下来将是按照规定的两周居家自行观察。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[需要远程办公，不妨用 Trello 进行组织和协作]]></title>
+        <id>https://kaopubear.top/blog/2020-01-29-trellowithothers/</id>
+        <link href="https://kaopubear.top/blog/2020-01-29-trellowithothers/">
+        </link>
+        <updated>2020-01-29T05:05:45.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/58609">少数派</a>」</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/58609">少数派</a>」</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[学习素材共享小组V2.0（已停止招募）]]></title>
+        <id>https://kaopubear.top/blog/2020-01-19-refgroup2020/</id>
+        <link href="https://kaopubear.top/blog/2020-01-19-refgroup2020/">
+        </link>
+        <updated>2020-01-19T01:52:32.000Z</updated>
+        <summary type="html"><![CDATA[<p>是的，你可能会好奇什么是学习素材共享小组，以及 1.0 版本去哪里了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>是的，你可能会好奇什么是学习素材共享小组，以及 1.0 版本去哪里了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Trello 看板内容太多，飞书表格帮你自动整理]]></title>
+        <id>https://kaopubear.top/blog/2020-01-16-trelloandlark/</id>
+        <link href="https://kaopubear.top/blog/2020-01-16-trelloandlark/">
+        </link>
+        <updated>2020-01-16T05:01:26.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/58489">少数派</a>」</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/58489">少数派</a>」</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[把飞书融入日常学习流程：一个人的飞书也挺好]]></title>
+        <id>https://kaopubear.top/blog/2020-01-15-oneselflark/</id>
+        <link href="https://kaopubear.top/blog/2020-01-15-oneselflark/">
+        </link>
+        <updated>2020-01-15T04:47:04.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/58446">少数派</a>」</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文首发于「<a href="https://sspai.com/post/58446">少数派</a>」</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[人究竟怎样才算来过又怎样才算离开]]></title>
+        <id>https://kaopubear.top/blog/2020-01-11-rememberyouzjl/</id>
+        <link href="https://kaopubear.top/blog/2020-01-11-rememberyouzjl/">
+        </link>
+        <updated>2020-01-10T16:24:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>一个人，究竟怎样才算来过，究竟怎样才算离开？</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一个人，究竟怎样才算来过，究竟怎样才算离开？</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用 VSCode 愉快地进行远程 R 开发]]></title>
+        <id>https://kaopubear.top/blog/2020-01-08-remotevscoder/</id>
+        <link href="https://kaopubear.top/blog/2020-01-08-remotevscoder/">
+        </link>
+        <updated>2020-01-08T01:45:36.000Z</updated>
+        <summary type="html"><![CDATA[<p>2019 年底（其实也就是半个多月之前）听了 renkun 大神在上海 R 会议的一个分享，分享主题是「Rstudio vs VSCode」，然后他紧接着又写了两篇使用 VSCode 进行 R 开发的博客。仔细了解之后，感觉自己有救了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>2019 年底（其实也就是半个多月之前）听了 renkun 大神在上海 R 会议的一个分享，分享主题是「Rstudio vs VSCode」，然后他紧接着又写了两篇使用 VSCode 进行 R 开发的博客。仔细了解之后，感觉自己有救了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[给一年前自己的一封信-2019]]></title>
+        <id>https://kaopubear.top/blog/2020-01-02-201-summary/</id>
+        <link href="https://kaopubear.top/blog/2020-01-02-201-summary/">
+        </link>
+        <updated>2020-01-02T10:55:09.000Z</updated>
+        <summary type="html"><![CDATA[<p>思考问题的熊，你好。</p>
+<p>见字如面。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>思考问题的熊，你好。</p>
+<p>见字如面。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[眼见不为实：为什么29不等于29]]></title>
+        <id>https://kaopubear.top/blog/2019-12-19-rfloat/</id>
+        <link href="https://kaopubear.top/blog/2019-12-19-rfloat/">
+        </link>
+        <updated>2019-12-19T11:06:04.000Z</updated>
+        <summary type="html"><![CDATA[<p>浮点数计算和比较的坑</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>浮点数计算和比较的坑</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何简快好省的使用图床]]></title>
+        <id>https://kaopubear.top/blog/2019-12-14-haotouseimagehosting/</id>
+        <link href="https://kaopubear.top/blog/2019-12-14-haotouseimagehosting/">
+        </link>
+        <updated>2019-12-14T06:03:11.000Z</updated>
+        <summary type="html"><![CDATA[<p>首先说明一点，因为本文的读者中可能单独使用 macOS 的为少数，所以下文介绍的所有工具尽量满足双平台通用（Windows 和 macOS）。</p>
+<p>它们不一定是在 macOS 的最佳选择，如果你仅使用 macOS，文章中提到的思路和工具仅供参考。如果你同时在使用 PC 和 Mac，那么这是我目前摸索出来的比较满意的双平台通用方案，希望对你有所帮助。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>首先说明一点，因为本文的读者中可能单独使用 macOS 的为少数，所以下文介绍的所有工具尽量满足双平台通用（Windows 和 macOS）。</p>
+<p>它们不一定是在 macOS 的最佳选择，如果你仅使用 macOS，文章中提到的思路和工具仅供参考。如果你同时在使用 PC 和 Mac，那么这是我目前摸索出来的比较满意的双平台通用方案，希望对你有所帮助。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这三个网站让我摸鱼都从容了]]></title>
+        <id>https://kaopubear.top/blog/2019-12-12-3goodweb/</id>
+        <link href="https://kaopubear.top/blog/2019-12-12-3goodweb/">
+        </link>
+        <updated>2019-12-12T06:23:23.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>如果你问我每天什么时候效率最高，我想可能是摸鱼的时候。高效摸鱼有很多技巧，关键之一就是不能在浑水里摸鱼。一定要去正确的地方，清楚的看到鱼在哪里，一摸一个准。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>如果你问我每天什么时候效率最高，我想可能是摸鱼的时候。高效摸鱼有很多技巧，关键之一就是不能在浑水里摸鱼。一定要去正确的地方，清楚的看到鱼在哪里，一摸一个准。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我目前的云存储方法]]></title>
+        <id>https://kaopubear.top/blog/2019-12-02-mycloud/</id>
+        <link href="https://kaopubear.top/blog/2019-12-02-mycloud/">
+        </link>
+        <updated>2019-12-02T06:33:18.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="云存储选择及我的使用感受">云存储选择及我的使用感受</h2>
+<ul>
+<li>国内大厂
+<ul>
+<li>百度云盘：国内使用度最高，适合保存各种盗版资源，不充会员约等于没法用</li>
+<li>腾讯微云：不冲会员下载速度略好于百度云，但是可用空间只用 10G</li>
+</ul>
+</li>
+</ul>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="云存储选择及我的使用感受">云存储选择及我的使用感受</h2>
+<ul>
+<li>国内大厂
+<ul>
+<li>百度云盘：国内使用度最高，适合保存各种盗版资源，不充会员约等于没法用</li>
+<li>腾讯微云：不冲会员下载速度略好于百度云，但是可用空间只用 10G</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bioconductor 3.10正式发布]]></title>
+        <id>https://kaopubear.top/blog/2019-10-31-bioconductor310iscoming/</id>
+        <link href="https://kaopubear.top/blog/2019-10-31-bioconductor310iscoming/">
+        </link>
+        <updated>2019-10-31T06:46:22.000Z</updated>
+        <summary type="html"><![CDATA[<p>10 月 30 日，Bioconductor 3.10 正式发布，该版本的 bioc 共包括了 1822 个软件包，384 个实验数据包，952 个注释包和 27 个工作流程，基于 R 3.6.1。</p>
+<p>其中，新的软件包有 93 个，新的数据包 15 个，新的注释包 2 个，大量的旧包都进行了一波更新。</p>
+<p>接下来推荐几个值得关注的最新软件包，以及一些经典包的重要更新。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>10 月 30 日，Bioconductor 3.10 正式发布，该版本的 bioc 共包括了 1822 个软件包，384 个实验数据包，952 个注释包和 27 个工作流程，基于 R 3.6.1。</p>
+<p>其中，新的软件包有 93 个，新的数据包 15 个，新的注释包 2 个，大量的旧包都进行了一波更新。</p>
+<p>接下来推荐几个值得关注的最新软件包，以及一些经典包的重要更新。</p>
+]]></content>
+    </entry>
+</feed>

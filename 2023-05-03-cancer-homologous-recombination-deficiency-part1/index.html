@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>同源重组修复缺陷HRD：从无到有 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="
+本文为熊言熊语邮件通讯会员计划内容的试读版，完整内容请点击通讯主页订阅并查看。
+
+
+写在前面
+你好，我是思考问题的熊，本内容是参加会员计划读者的专属内容，感谢你通过会员计划支持我持续创作。展信佳～
+本期内容：
+今天这一期内容（part1）..." />
+  <meta name="keywords" content="会员计划,熊说肿瘤,熊言熊语" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  同源重组修复缺陷HRD：从无到有</a>
+              </h2>
+              <span class="article-info">2023-05-03, 1900 words, 7 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <blockquote>
+<p>本文为<a href="https://kaopubear.zhubai.love/">熊言熊语邮件通讯会员计划</a>内容的试读版，完整内容请点击<a href="https://kaopubear.zhubai.love/">通讯主页</a>订阅并查看。</p>
+</blockquote>
+<!-- more -->
+<h2 id="写在前面">写在前面</h2>
+<p>你好，我是思考问题的熊，本内容是参加会员计划读者的专属内容，感谢你通过会员计划支持我持续创作。展信佳～</p>
+<p><strong>本期内容</strong>：</p>
+<p>今天这一期内容（part1），你将会阅读到 <strong>HRD/DDR 生物学背景、临床应用场景和临床验证历程的前半部分内容（2010-2016年）</strong>，全文接近5000字。</p>
+<p><strong>下期预告</strong>：</p>
+<p>Part2中，你会阅读到HRD临床验证历程的后半部分内容（2016-2020年）</p>
+<hr>
+<h2 id="生物学背景">生物学背景</h2>
+<p>同源重组修复缺陷（homologous recombination deficiency, HRD）我们在 <a href="https://kaopubear.zhubai.love/posts/2220645717918375936">V012plus.熊言熊语：从靶向治疗耐药机制到联合用药策略</a> 介绍靶向治疗核心原理中合成致死的时候就埋下了一个引子。</p>
+<p>了解同源重组修复缺陷的前提是明白何为同源重组修复（homologous recombination repair, HRR），而明白 HRR 需要从其更上游的概念 DNA 损伤修复（DNA damage repair, DDR）开始。</p>
+<p>只要用 DNA damage repair/response + cancer 去检索，你就可以看到不少综述，以下是部分综述的 DDR 通路图供你赏析。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202302212318127.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202302212318125.png" alt="" loading="lazy"></figure>
+<p>如果你想了解相对全面的通路，不妨参考 <a href="https://www.cellsignal.com/pathways/dna-damage-response-pathway">cellsignal 网站</a>的整理版本。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202302212318128.png" alt="" loading="lazy"></figure>
+<p>如果你想参考相对清晰简洁的示意图，可以理解下面这个示意图。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202302232024144.png" alt="" loading="lazy"></figure>
+<p>简单说，<strong>不同的 DNA 损伤类型可以通过不同的方式进行修复</strong>。</p>
+<p>比如，含有错配核苷酸的 DNA 复制错误可以通过错配修复(DNA mismatch repair, MMR)途径进行修复（在 TMB 对应的文章中我们会进一步展开）；针对 DNA 损伤常见的单链断裂（single-strand break, SSB）或者对双螺旋结构影响较小的损伤等，可以通过碱基切除修复（base excision repair, BER）；针对双链损伤（DSB），则有多种不同的修复方法。</p>
+<p>其中，HRR 是负责修复 DSB 与 DNA 链间交联（interstrand crosslinks）最为准确且高保真的 DNA 损伤修复系统（依赖 DNA 模板）；而非同源末端连接（non-homologous end joining，NHEJ）、微同源末端连接（microhomology mediated end joining，MMEJ）和单链退火途径 （single-strand annealing，SSA）这些属于低保真高易错的损伤修复途径（可以理解为稀里糊涂先把断了的接上，不管原先是什么样子）。</p>
+<p>如果细胞的 HRR 功能出现问题（HRD），细胞就不得不调用那些低保真的修复方案，产生各种大片段的缺失插入，拷贝数异常等现象，进而造成细胞染色体和基因组的极度不稳定。</p>
+<p>造成 HRD 的原因很复杂而且目前也没有完全研究清楚。一方面 HR 过程中主要涉及到 BRCA1/2，RAD51，以及 BRCA2 定位基因 (PALB2) 等基因突变；另一方面，研究人员还发现像 BRCA 基因的表观遗传甲基化失活也可以导致 HRD。</p>
+<h2 id="临床应用场景">临床应用场景</h2>
+<p>在上一部分我们提到 HRD 的出现会使得细胞依赖低保真的方案进行 DNA 修复，而基于此出现的基因组不稳定则又是癌症的 Hallmarks 之一。（HRD 是造成基因组不稳定性的重要原因之一）</p>
+<p><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202302232013351.png" alt="" loading="lazy"><br>
+尤其是包括乳腺癌、卵巢癌、胰腺癌和前列腺癌在内的这四个癌种中，研究发现 HRD（BRCA 等基因突变）发生的频率很高，这四个癌种也因此被称作 BRCA assocatied cancer。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202302242010585.png" alt="" loading="lazy"></figure>
+<p>因为 HRR 在 DNA 双链修复上的重要功能，如果一个细胞发生了 HRD 同时人为让其单链修复出现问题，就会触发「合成致死」效应，让癌细胞的 DNA 修复系统就会被破坏进而死亡；另外一方面，HRD 会让肿瘤细胞对能诱发 DNA 交联的含铂化疗药物更加敏感。</p>
+<p>基于以上基础原理，HRD 自然就有可能作为一个生物标志物，在<strong>铂化疗</strong>和抑制单链修复的<strong>PARP 抑制剂</strong>治疗中发挥临床作用。</p>
+<p>虽然原理如此，HRD 究竟能在什么癌种的什么条件下指导治疗，直到目前都还存在很多疑问，而已经获批的临床场景验证也经历了非常漫长的过程。</p>
+<h2 id="临床验证历程">临床验证历程</h2>
+<p><strong>HRD 作为生物标志物的验证史可以说就是 PARPi 适应症的发展史。</strong></p>
+<p>需要说明的是，因为 PARPi 目前在包括卵巢癌、乳腺癌和胰腺癌等多个癌种中均有临床应用，为了更好的梳<strong>理 HRD 作为生物标志物的提出和临床验证历程</strong>，这一部分我们<strong>仅选取一种 HRD 计算方法（GIS）在卵巢癌单一癌种的应用</strong>进行展开。</p>
+<p>关于 HRD 的更多评价计算方法和 HRD 在非卵巢癌中的应用场景，我们会在后续的「方法和产品」以及「前景和思考」部分有所涉及。</p>
+<h3 id="parp-抑制剂效果初现">PARP 抑制剂效果初现</h3>
+<p>PARP 全称是 Poly (ADP-ribose) polymerase，PARP 蛋白家族涉及包括 DNA 修复、基因组稳定性和细胞程序性死亡在内的诸多细胞生物学过程。</p>
+<p>2009 年的 ASCO 大会，研究人员分享了一类新型靶向药物令人鼓舞的研究发现，代号为 AZD2281 的药物适用于那些涉及到 BRCA 基因突变的卵巢癌。这类药物就是如今我们所知的 PARPi，而 AZD2281 的中文名字就是如今应用很广泛的奥拉帕利（Olaparib）。</p>
+<figure data-type="image" tabindex="6"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202302232328111.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202302232137195.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="8"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202302232137196.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="9"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202302232137198.png" alt="" loading="lazy"></figure>
+<p>PARP 抑制剂旨在使癌细胞用于修复 DNA 损伤的关键酶失效并促使癌细胞死亡，还可能使癌细胞对其他治疗如化疗药物更加敏感。</p>
+<p>当然，彼时还需要进一步长期随机临床试验来确定 PARP 抑制剂是否真正有益于卵巢癌患者，如果是的话，哪些特定类型的卵巢癌最有可能对该药物产生反应？其它癌种效果如何？</p>
+<p>这些都是以后的故事。</p>
+<p>陆陆续续，三种 PARPis：<strong>奥拉帕利（Olaparib），鲁卡帕利（Rucaparib），尼拉帕利（Niraparib）</strong> 早期相继被 FDA 批准用于具有胚系 BRCA 突变的卵巢癌患者。</p>
+<p>然而，后续越来越多的研究发现仅仅检测胚系或体细 BRCA 突变会低估甚至错误地鉴别可能受益于 PARPi 治疗患者，于是又把对铂类药物的敏感性也用作 HRD 的提示用来选择预期对 PARPi 敏感的患者。但是铂类药物的耐药机制也超出了 BRCA1/2 状态还是可能低估 PARPi 获益患者。</p>
+<p>那是否有什么更好用的指标来提示HRD进而指导 PARPi的用药呢？说来话长，接下来我们需要回到2010年，从一篇方法学文章开始聊起。</p>
+<hr>
+<p><strong>🍺🍺试读结束🍺🍺</strong></p>
+<p><strong>剩余内容是参加会员计划读者的专属内容</strong></p>
+<p><strong>欢迎你通过会员计划支持我持续创作</strong></p>
+<hr>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2023-05-03-cancer-homologous-recombination-deficiency-part1/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/fVe1S7Okl/" class="article-info">
+                        会员计划</a>
+                      
+                      <a href="https://kaopubear.top/blog/HBkTdk_qp/" class="article-info">
+                        熊说肿瘤</a>
+                      
+                      <a href="https://kaopubear.top/blog/hSReBZiry/" class="article-info">
+                        熊言熊语</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2025-05-03-how-to-learn-biomarker/">
+                    <h3 class="post-title">
+                      聊肿瘤生物标志物时我们在聊什么
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

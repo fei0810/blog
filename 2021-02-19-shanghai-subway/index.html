@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>使用R语言分析上海地铁好位置周边的二手房价格 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="昨天看到有朋友分享了一篇关于北京地铁和二手房市场价格相关内容分析的文章。
+
+打开一看作者是刘思喆大神，如今他是 51Talk 的首席数据科学家。那我的第一步操作当然是订阅好大神的博客，第二步就是用文章里提供的 R 语言脚本稍加修改，顺手看看..." />
+  <meta name="keywords" content="R" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  使用R语言分析上海地铁好位置周边的二手房价格</a>
+              </h2>
+              <span class="article-info">2021-02-19, 915 words, 4 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <p>昨天看到有朋友分享了一篇关于<a href="https://bjt.name/2021/02/13/subway.html">北京地铁和二手房市场价格相关内容分析</a>的文章。</p>
+<!-- more -->
+<p>打开一看作者是刘思喆大神，如今他是 51Talk 的首席数据科学家。那我的第一步操作当然是订阅好大神的博客，第二步就是用文章里提供的 R 语言脚本稍加修改，顺手看看上海是个什么情况。</p>
+<p>关于具体分析内容不再赘述，主要提炼下知识点和注意事项。</p>
+<p>关于地铁站评级的分析在思喆更早（2013 年）的<a href="https://bjt.name/2013/01/05/Beijing-subway.html">博客</a>中有所提及，他引入了三个 Closeness、<a href="https://en.wikipedia.org/wiki/Betweenness_centrality">Betweenness</a>和 PageRank 指标分别表示一个地铁站和其它地铁站之间的距离关系、被经过次数和该节点的重要性。</p>
+<p>使用高德地图上海地铁图网页版调取 json 文件的时候，可以在网页点击 F12 打开调试模式，切换到 network 面板后刷新一下后就可以看到 json 文件的地址 <code>https://map.amap.com/service/subway?_1613660591830&amp;srhdata=3100_drw_shanghai.json</code>。</p>
+<p>使用贝壳网的二手房数据查询上海价格时，API 中对应的 CityID 是 310000。在实际分析过程中，原文按照步行十分钟到达地铁站设置的经纬度范围，我把这个范围稍微扩大了一点，不然有些地铁站附近会因为没有房源而报错。至于哪一站不行 10 分钟没有地铁呢？答案是虹桥二号航站楼。</p>
+<p>整体分析下来，上海的所有地铁站被我聚成了 7 类，按照 Closeness、<a href="https://en.wikipedia.org/wiki/Betweenness_centrality">Betweenness</a>和 PageRank 三个指标筛选后，分出来的第 3 类和第 6 类是比较不错的地段，尤其是第 3 类中的 14 个地铁站可以说是指定指标下的最优选择。直接看地铁站名很多也是肉眼可见的厉害。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20210219202308.png" alt="" loading="lazy"></figure>
+<p>结合二手房价格平均值，可以得到下面的二手房数量和价格关系图。不过这个平均价格和从各种 app 上看到的多少有些出入，似乎比实际情况整体要偏低一些，可能和选择的经纬度范围有关，关注的还还需仔细了解。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20210219202402.png" alt="" loading="lazy"></figure>
+<p>这个图比较说明问题，比如像长清路，东明路，成山路和耀华路都是 7 号线和 13 号线相对集中的一片区域，这里离浦东和浦江很远的几个工业园区和徐汇长宁几个区域也相对位置居中，到哪个地方上班无论是地铁还是自驾都不会耗时过长。</p>
+<p>如果想了解更多关于城市地铁其它的分析指标，可以参考下面几篇文献进行深入了解。</p>
+<ul>
+<li>Oldham S, Fulcher B, Parkes L, et al. Consistency and differences between centrality measures across distinct classes of networks[J]. PloS one, 2019, 14(7): e0220061.</li>
+<li>Derrible S. Network centrality of metro systems[J]. PloS one, 2012, 7(7): e40575.</li>
+<li>To W M. Centrality of an urban rail system[J]. Urban Rail Transit, 2015, 1(4): 249-256.</li>
+</ul>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2021-02-19-shanghai-subway/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/UrqlObNL0t/" class="article-info">
+                        R</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2021-02-02-4321x-5/">
+                    <h3 class="post-title">
+                      熊言熊语会员通讯 4321X 第5期
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

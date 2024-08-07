@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>ctDNA系列之一：ctDNA的生物学特征、检测技术问题和临床应用方向 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="写在前面
+2022 年 6 月，中国抗癌协会肿瘤标志专业委员会（下文简称 CACA）在 中国癌症防治杂志 上发布了 ctDNA 高通量测序临床实践专家共识（2022 年版）。
+2022 年 7 月，欧洲医学肿瘤学会（ESMO）精准医学工作组..." />
+  <meta name="keywords" content="熊说肿瘤,生物信息,文献" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  ctDNA系列之一：ctDNA的生物学特征、检测技术问题和临床应用方向</a>
+              </h2>
+              <span class="article-info">2022-08-02, 7666 words, 27 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <h2 id="写在前面">写在前面</h2>
+<p>2022 年 6 月，中国抗癌协会肿瘤标志专业委员会（下文简称 CACA）在 <em>中国癌症防治杂志</em> 上发布了 <strong>ctDNA 高通量测序临床实践专家共识（2022 年版）</strong>。</p>
+<p>2022 年 7 月，欧洲医学肿瘤学会（ESMO）精准医学工作组在 <em>Annals of Oncology</em> 发布了<strong>癌症患者 ctDNA 检测建议</strong>。</p>
+<hr>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202207122214241.png" alt="" loading="lazy"></figure>
+<p>于此同时， 2022 年 7 月 20 日，Nature 发布了一篇<strong>高深度全基因组 ctDNA 测序在前列腺癌中的相关研究</strong>，从另一个维度揭示了 ctDNA 今后潜在的应用方向。</p>
+<p>通过<strong>对 ctDNA 进行深度全基因组测序</strong>，可以揭示每个患者独有特征，帮助临床医生更有效地检测治疗耐药性，进而选择可以改善患者预后的个性化治疗。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202208022040542.png" alt="" loading="lazy"></figure>
+<p>随后，2022 年 8 月 1 日，Nature Reviews Clinical Oncology 发表了另一篇 ctDNA 综述：Circulating tumour DNA — looking beyond the blood，介绍了非血液样本类型中 ctDNA 的应用现状。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202208022040725.png" alt="" loading="lazy"></figure>
+<p><strong>考虑到篇幅问题，我们将分三次完成这几篇系列文章的学习，第一篇是 ESMO 和 CACA 专家共识建议的整理学习；第二篇和第三篇是上文提到的两篇文献解读学习。</strong></p>
+<p><strong>希望通过这三篇文章，可以对 ctDNA 目前的技术问题、应用方向和新的应用前景有一个相对综合的了解和把握。</strong></p>
+<p><strong>说明</strong>：在这篇文章中，我们会弱化共识中具体的实验和技术细节，而是关注于两份共识中涉及到 ctDNA 生物学特征、技术分析问题和临床应用方向的内容。更完整的信息需要查阅原文档。本文整体结构基于 ESMO 临床应用建议展开，配合对应的 CACA 专家共识。</p>
+<h2 id="ctdna-生物学特征">ctDNA 生物学特征</h2>
+<p>在健康人中，血浆 DNA 主要来自造血系统细胞，其浓度从可忽略的数量到高达 100ng DNA/ml，正常细胞产生的血浆 DNA 片段长度在 166bp 左右。肿瘤细胞主动分泌或在肿瘤细胞凋亡或坏死过程中释放入循环系统中的 DNA 片段（ctDNA）长度在 132~145 bp 左右，且半衰期较短（一般&lt;2 h）</p>
+<p>ctDNA 携带肿瘤细胞相关遗传特征，包括突变、甲基化、扩增重排等。ctDNA 长度、基因组位置和表观遗传标记等，可以提供信息来区分正常样本和癌症样本，并确定肿瘤的起源。ctDNA 代表了不同肿瘤亚克隆所释放的混合 DNA，可以反映特定肿瘤异质性，更好地描述肿瘤基因组特征。</p>
+<p>血浆 DNA 的清除主要发生在肝脏，ctDNA 水平动态变化影响因素主要包括如下几项：</p>
+<ul>
+<li>
+<p>肿瘤病理组织类型、部位、分期、肿瘤负荷</p>
+</li>
+<li>
+<p>其他来源的 DNA 干扰</p>
+</li>
+<li>
+<p>克隆性造血细胞产生的 cfDNA 携带的基因突变信息</p>
+</li>
+<li>
+<p>不同采样时间</p>
+</li>
+<li>
+<p>药物治疗</p>
+</li>
+</ul>
+<blockquote>
+<p>ctDNA 是由肿瘤细胞主动分泌或肿瘤细胞在凋亡或坏死过程中释放入循环系统的 DNA 片段；其丰度受多种因素影响，波动较大，在内外因素特别是治疗压力下，其携带的生物信息可能会发生演变，且受正常细胞<strong>胚系变异</strong>或<strong>克隆性造血细胞体系突变</strong>干扰，在临床检测和报告解读过程中应特别注意。（CACA 共识）</p>
+</blockquote>
+<h2 id="ctdna-检测技术问题">ctDNA 检测技术问题</h2>
+<p>在癌症患者中，ctDNA 根据肿瘤的不同特征而变化，其中包括肿瘤部位、疾病程度、增殖凋亡、坏死、炎症、肿瘤微环境等等。ctDNA 分析成功的关键是选择恰当的分析类型以解决特定的科学和临床问题。</p>
+<p>目前，没有一种单一的 ctDNA 分析方法可以适用于所有目的（早检、MRD、基因突变鉴定和评估肿瘤遗传异质性、鉴定耐药分子机制等）。</p>
+<p>在早检或 MRD 分析背景下，需要对有限数量的 ctDNA 进行超灵敏分析，而在识别与治疗耐药相关的突变和转移环境中的肿瘤遗传异质性时则需要不同的分析类型。不同的分析方法有不同的 LoD 度 LoQ，最终确定提供分析结果所需的血浆 DNA 和 ctDNA 量。</p>
+<p>关于 ctDNA 的技术问题，需要着重从如下几个方面考虑</p>
+<h3 id="分析前的影响">分析前的影响</h3>
+<p>ctDNA 的释放受到很多因素影响，比如患者特定的生理条件、炎症以及急性慢性疾病。ctDNA 的水平会受到包括化疗、靶向和免疫各种治疗方式的影响，可分为急性变化和长期变化两个阶段。</p>
+<p>其中几天到几周范围内的急性变化受到治疗对肿瘤和正常细胞的直接影响，几周到几个月的长期动态变化与治疗对肿瘤的缩小有关。</p>
+<p>此外，可供检测的血浆 DNA 数量与提取的血浆体积成正比，还要注意避免样品采集和处理过程中白细胞的裂解。</p>
+<h3 id="分析中的影响">分析中的影响</h3>
+<p>分析过程中，假阳性和假阴性是两个主要问题。</p>
+<p>即使是相对晚期的癌症患者，很多血浆中的 ctDNA 水平也可能很低。在 ctDNA 检测中无法检测到突变的原因可能是患者肿瘤中没有突变（真阴性）或 ctDNA 水平过低无法检测到突变（假阴性）。</p>
+<p>在出现假阴性检测结果的原因方面，需要考虑多种技术因素，如分析的血浆 DNA 量以及不同类型突变之间可能存在的检测灵敏度差异。血浆中的 ctDNA 浓度与肿瘤分期和体积相关，一些临床和病理因素也与 ctDNA 水平相关。对 ctDNA 检测结果的解释必须考虑到血浆样本中的 ctDNA 含量不足以检测不同类型突变的可能性。</p>
+<p>使用 CNAs、DNA 甲基化或血浆 DNA 片段分析时，需要通过确保有足够的肿瘤来源 DNA 存在增加给出真实阴性结果的可能性。下图展示了不同 ctDNA 含量可以进行的检测。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202207122252426.png" alt="" loading="lazy"></figure>
+<p>而对于假阳性结果，最大的问题来自于克隆性造血和胚系突变。</p>
+<p>在整个细胞生命周期中，由于环境、化学因素或细胞分裂过程中的复制错误等原因，体细胞改变会在正常组织中积累。如果这些体细胞改变赋予了选择性的生长优势，它可能引起克隆性扩张并增加连续驱动突变的概率。血液中的血浆 DNA 主要来源于凋亡的造血细胞，因此这些细胞的克隆性扩张有可能造成 ctDNA 的假阳性结果。</p>
+<p>在克隆性造血（CHIP）中突变的基因与实体瘤驱动基因有部分重叠。例如，对很大一部分晚期前列腺癌、肺癌和乳腺癌患者的基因突变检测中在血浆 DNA 出现克隆性造血相关基因（如 TP53、ATM）的假阳性。 这些假阳性在很大程度上可以通过白细胞（WBC）DNA 测序或者通过肿瘤组织样本的配对样本来尽可能排除。</p>
+<p>因此需要留意，许多抑癌基因（如 TP53）或与 DNA 修复有关的基因（ATM 和 CHEK2）进行仅血浆 DNA 分析具有一定的挑战性，对于克隆性造血中常见的突变基因如 DNMT3A 和 TET2 尤其要小心。</p>
+<p><strong>针对这些问题，ESMO 的专家建议中，给出如下几点需要考虑的技术建议。</strong></p>
+<ul>
+<li>
+<p>用于 ctDNA 分析的抽血时间应根据临床问题进行谨慎选择，不同的因素会影响 ctDNA 的释放（如治疗、并发炎症过程和手术等）。为了检测术后 MRD，最好在手术后至少 1 周内进行；对于愈合时间较长的大手术，可能需要 2 周或更长时间。为了进行晚期癌症基因分型，应避免在治疗响应或未进展的治疗期间进行采样，以尽量减少假阴性。</p>
+</li>
+<li>
+<p>取决于处理时间和使用的检测方法，在选择血样采集管时应谨慎。</p>
+</li>
+<li>
+<p>如在提取 DNA 前进行血样采集，应于-80℃ 下长期储存，尽可能减少连续的冻融过程。</p>
+</li>
+<li>
+<p>假阴性（实际存在于肿瘤中的相关突变未被检测到）是 ctDNA 检测的一个重要问题，可能是由于所分析的血浆 DNA 水平低、检测灵敏度不足或&quot;非脱落&quot;（non-shedding）肿瘤造成。</p>
+</li>
+<li>
+<p>当检测容易含有克隆性造血突变的基因时，克隆性造血是 ctDNA 检测中出现假阳性的常见原因。对于临床治疗可及的抑癌基因如 DNA 修复基因的检测，建议同时分析血浆 DNA 和白细胞 DNA。对于这种检测，建议从接受血浆 ctDNA 检测的患者身上常规收集富集白细胞的 Buffy coat ，以便在必要时有可用的材料排除相关影响。</p>
+</li>
+<li>
+<p>在 ctDNA 中可能检测到肿瘤易感基因的致病胚系突变（如 BRCA1、BRCA2、PALB2），检测这种变异需要用验证过的检测方法判断体细还是胚系。</p>
+</li>
+<li>
+<p>临床基因分型检测在今后应该适用于评估肿瘤纯度，以便有助于医生进行真阴性预测。</p>
+</li>
+</ul>
+<p>对于 ctDNA NGS 检测相关标准，与之相应的 CACA 共识如下。</p>
+<blockquote>
+<p>ctDNA NGS 检测实验室质量管理需贯穿全程，ctDNA 收集、样本处理和自动化过程应按照标准化和临床验证程序进行，最大程度防范因操作差异而引发的假阴性可能。样本采集建议采用含细胞稳定剂的抗凝管，尽快完成血浆分离，提取的 cfDNA 建议在 24h 内进行后续检测，否则，置于-30°C 至-15°C 下储存并避免反复冻融。（CACA 共识）</p>
+</blockquote>
+<blockquote>
+<p>ctDNA NGS 检测应根据项目需求选择技术路线，可依据检测基因数量及覆盖范围大小选择不同测序策略。在进行基于 ctDNA 的超高灵敏度突变检测时，建议使用分子标签技术和优化对应的生物信息分析设置，以降低由于测序平台随机误差导致的假阳性结果；建议通过建立测序噪音和克隆性造血背景库的方法降低克隆性造血及背景噪音带来的影响。（CACA 共识）</p>
+</blockquote>
+<h3 id="检测报告信息">检测报告信息</h3>
+<p>对于检测报告中应该包含哪些内容以及用词规范，ESMO 给出了如下建议。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202208012213140.png" alt="" loading="lazy"></figure>
+<p>CACA 共识中则提到：</p>
+<blockquote>
+<p>ctDNA NGS 临床检测报告应包含受检者基本信息、样本信息、实验室信息、检测项目、检测结果及变异解读、检测方法的实验室内部验证结果、检测局限性及不确定性以及进一步检测的建议等内容。实验室应建立报告 SOP，建议根据国内外文献、共识指南、临床试验证据和实践对检出的肿瘤基因突变进行分类或分级报告。（CACA 共识）</p>
+</blockquote>
+<p>如果想了解更全面的内容，可以参考另外一份中文共识 <a href="http://www.jebm.cn/CN/abstract/abstract2010.shtml">肿瘤二代测序临床报告解读共识</a>。</p>
+<h2 id="ctdna-检测临床应用">ctDNA 检测临床应用</h2>
+<p>针对 ctDNA 的临床应用，ESMO 给出了如下一段描述。</p>
+<p>ctDNA 具有多种<strong>潜在</strong>的临床应用，包括用于筛查、描述早期疾病的特征、检测局部治疗后的分子残留疾病（MRD）、预测复发、对晚期肿瘤进行分型、治疗效果早期评估、响应监测和耐药机制鉴定。（如下图所示）</p>
+<blockquote>
+<p>ctDNA has multiple potential clinical applications, including its use for screening, characterisation of early disease, detection of molecular residual disease (MRD) after definitive local treatment, prediction of relapses, genotyping advanced cancer, early assessment of treatment efficacy, monitoring of response and identification of mechanisms of resistance to therapy</p>
+</blockquote>
+<figure data-type="image" tabindex="6"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202207301101848.png" alt="" loading="lazy"></figure>
+<p>对于需要紧急治疗的患者，组织活检的延迟可能会限制治疗方案，而液体活检可以提供更快的结果。</p>
+<p>空间和时间异质性是恶性肿瘤的既定特征，ctDNA 的优点是更容易连续获得，并且可以获得来自患者几个转移部位的&quot;基因组库&quot;。当组织检测只能在原发肿瘤中实施时，液体活检可以为有转移的患者提供更准确的基因分型。</p>
+<p>ctDNA 的释放与肿瘤的生长成正比，而肿瘤的生长与细胞的死亡和更替有关，生长最快的肿瘤克隆脱落的 ctDNA 最多，理论上是最有临床意义的。多次液体活检可能允许检测获得性耐药突变，以便根据获得性耐药基因型最佳地选择后续治疗。</p>
+<p>与组织检测相比，ctDNA 检测也有假阴性和假阳性率较高的局限性，而且样本中肿瘤占比较低，限制了对突变等位基因比例（VAF）的准确评估，并限制了拷贝数变异的分析。</p>
+<h2 id="晚期肿瘤基因分型">晚期肿瘤基因分型</h2>
+<p>下表列出了针对液体活检的肿瘤特异性晚期肿瘤基因分型检测建议。</p>
+<p>具体的内容可以参考原文和对应的治疗指南。</p>
+<figure data-type="image" tabindex="7"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202208012311854.png" alt="" loading="lazy"></figure>
+<p>即便已经有了大量的证据表明液体活检可以用于晚期肿瘤基因分型，但是其仍然具有明显的局限性。</p>
+<p>针对于不同突变类型，ctDNA 检测性能目前还有很大差别。例如 ctDNA 样本中的体细胞拷贝数变异只有在 ctDNA 比例较高的情况下才能被准确识别，只有在无法进行组织取材时才能取代组织评估。</p>
+<p>此外，bTMB 与 ctDNA 的数量高度相关，因此需要最低数量的 ctDNA 来进行有效行评估（当肿瘤细胞含量低时这一问题同样适用于组织检测）</p>
+<h3 id="肿瘤检测部位的建议">肿瘤检测部位的建议</h3>
+<p>ctDNA 检测敏感性在仅有中枢神经系统转移性疾病和原发性脑瘤中会降低，液体活检通常不适合对此类患者进行基因分型，但如果是基因分型的唯一样本来源则可以尝试。</p>
+<p>有研究表明可从脑脊液分析中获得基因分型，但是再存在 oligometastasis 和仅有结节的疾病中，ctDNA 存在较高的假阴性，应特别考虑进行组织检测或在肿瘤体积较大时进行间隔性 ctDNA 检测。</p>
+<h3 id="晚期肿瘤基因分型应用建议">晚期肿瘤基因分型应用建议</h3>
+<ul>
+<li>
+<p>液体活检在晚期肿瘤中具有非常高的灵敏度和临床特异性，当其结果将影响标准治疗方案时可在常规实践中使用。同时也必须考虑到 ctDNA 检测的局限性。</p>
+</li>
+<li>
+<p>建议将液体活检优先作为组织基因分型的替代选择，特别是对于临床上需要快速获得结果的侵袭性肿瘤，如晚期 NSCLC。这也适用于无法或不适合进行组织活检的情况。</p>
+</li>
+<li>
+<p>用于基因分型的液体活检应在肿瘤进展时进行（不论是未接受治疗的还是后线治疗）。在肿瘤对治疗产生反应时收集样本，其敏感性会降低。</p>
+</li>
+<li>
+<p>对于晚期肿瘤的基因分型，在临床实践中，RT-PCR、dPCR 和 NGS 检测之间的选择应根据可用性、报销情况和肿瘤特定情况下的 1 级可操作性基因变异的数量来确定。</p>
+</li>
+<li>
+<p>在解释癌症易感基因（如 BRCA1、BRCA2、PALB2）的致病变异时应谨慎，需要进行有效的胚系检测以确认胚系或体细突变。</p>
+</li>
+<li>
+<p>考虑到临床敏感性和阴性预测值，当液体活检未检测到可采取治疗的突变时，应建议进行组织检测。对于专家，如果能确认样本中存在足够 ctDNA，可能不需要进行组织检测。</p>
+</li>
+<li>
+<p>ctDNA 检测对融合和拷贝数变异的敏感性较低，在有组织时应使用组织检测。</p>
+</li>
+<li>
+<p>所有的肿瘤科医生都应该有机会接触 MTB，在使用 ctDNA 检测前期进行学习，以确保检测结果的正确解读，对疑难病例则应该进行讨论以确保做出合理决策。</p>
+</li>
+</ul>
+<h2 id="晚期肿瘤动态监控">晚期肿瘤动态监控</h2>
+<h3 id="用于早期疗效评估的-ctdna-动态分析">用于早期疗效评估的 ctDNA 动态分析</h3>
+<p>因为 ctDNA 的半衰期短且有可能进行无创重复采样，所以血液 ctDNA 可以在治疗过程中对疾病进行实时监测。</p>
+<p>在治疗过程中监测肿瘤患者的研究表明，ctDNA 动态与治疗响应相关，并可能比临床/放射学检测更早发现。在多种不同的肿瘤类型和治疗类型（化疗、靶向和免疫）中，对治疗有响应的患者在开始治疗后几周内 ctDNA 水平会下降。</p>
+<p>ctDNA 的早期下降可能反映了细胞周期停滞导致的 ctDNA 释放减少，后期则反映了肿瘤体积减小。需要注意的是，在开始细胞毒性药物治疗的几天后，ctDNA 水平可能会出现短时间上升。</p>
+<p>越来越多的证据表明，对接受了免疫检查点抑制剂治疗的转移性肿瘤患者进行连续 ctDNA 水平变化的追踪，可以评估预后和治疗效果。 其中，监测 ctDNA 水平的一个临床用途就是区分真正的临床放射学进展和免疫治疗的假性进展（接受免疫治疗的患者中有 5%-10%的患者会出现这种情况）。</p>
+<h3 id="纵向监测用于发现耐药突变">纵向监测用于发现耐药突变</h3>
+<p>ctDNA 分析也可用于评估临床进展前耐药性基因组机制的出现。在接受靶向治疗的不同类型肿瘤患者队列中进行的几项研究表明，纵向 ctDNA 分析能够在临床进展前检测到早期出现的耐药突变。</p>
+<h3 id="未来研究方向">未来研究方向</h3>
+<p>今后，需要进一步研究确定 ctDNA 动态评估的最佳时机和预测反应的准确阈值。对于监测临床进展前出现的耐药突变还需要进一步研究监测的频率。</p>
+<p>需要进行随机干预研究，以评估根据 ctDNA 的动态评估改变治疗是否能改善患者治疗结局，或着可以避免不必要的副作用和尽量减少经济成本改善生活质量。</p>
+<h3 id="晚期肿瘤监测建议">晚期肿瘤监测建议</h3>
+<p>没有足够证据表明需要在治疗期间采用定期监测 ctDNA 的方法。虽然早期 ctDNA 动态监控与预后密切相关，并且在临床进展前的多个月可以发现耐药突变，但没有足够的证据表明根据这些发现采取的措施可以改善预后。需要进行随机干预的临床试验来评估 ctDNA 监测的效果。</p>
+<h2 id="早期肿瘤-mrd-和分子复发监测">早期肿瘤 MRD 和分子复发监测</h2>
+<p>大量证据表明，在可能的治愈性治疗后检测到 ctDNA 与未来的复发高风险有关，我们通常使用两个术语进行表述。MRD 是实体瘤中的一个术语，描述在用手术和/或放化疗对原发肿瘤进行治愈性治疗后不久出现的残留癌细胞的分子证据。</p>
+<p>MRD 可只能通过分子技术（如 PCR 或 NGS 或 CTC 分析）来检测，但无法通过基于血液的蛋白质肿瘤标志物或常规成像检测进行。分子复发（molecular relapse，MR）是指在辅助治疗或监测期间，在较晚时间点上对隐性疾病进行分子检测。</p>
+<p>多个病例-对照和队列研究的数据支持 ctDNA 分析用于 MRD 检测的临床有效性。早期乳腺癌、结直肠癌、肺癌和膀胱癌等许多研究中，在完成治疗后或监测期间立即检测 ctDNA 可以预测高风险复发。</p>
+<p>ctDNA 检测表明，在没有进一步治疗的情况下预测复发的特异性往往超过 90%，然而在大多数研究中，在完成治疗后不久检测 MRD 的敏感性往往小于 50%。</p>
+<p>此外，ctDNA 检测显示从 ctDNA 检测到临床复发的时间通常为 6 个月，也就是说现有的 ctDNA MRD 检测主要是检测那些注定要经历早期复发的患者（初治后第一年内复发），可能无法检测晚期复发的疾病。</p>
+<p>除了临床有效性，ctDNA MRD 的临床实用性还有待确定，需要进行前瞻性随机试验。MRD 检测最明显的潜在应用是可以指导个性化的辅助治疗，即 MRD 阳性患者可能从额外的治疗中获益。另外从理论上讲，没有 MRD 的患者可以减少辅助治疗的力度。但目前可用的 ctDNA MRD 检测灵敏度不高，假阴性率高，使用这类检测指导降阶治疗需要谨慎。</p>
+<p>基于 MRD 的降阶治疗策略，无论是在治愈性治疗后立即进行 ctDNA 检测还是在监测期间进行检测，都需要在非劣效设计的随机试验中与目前标准方法进行仔细比较，明确证明临床效用。</p>
+<h3 id="未来-mrd-临床试验的考虑内容">未来 MRD 临床试验的考虑内容</h3>
+<p>首先，证明辅助治疗中的临床效用（与不使用 ctDNA 检测相比，ctDNA 检测是否能改善临床结果并增加临床决策的价值）的证据应该是最高级别，可以通过如下实验完成。</p>
+<ul>
+<li>
+<p>前瞻性随机临床试验，主要目的是评估 ctDNA 检测结果用于指导辅助治疗或监测策略。</p>
+</li>
+<li>
+<p>前瞻性-回顾性研究，使用主要目的不是为了评估 ctDNA 指导管理（通常作为探索性终点）而进行的前瞻性试验中收集的血样。需要两个或更多的独立研究产生类似的结果来确定临床效用。</p>
+</li>
+</ul>
+<p>值得注意的是，ctDNA 的临床应用在很大程度上依赖于疾病类型、分期、可有效根除 MRD 的现有治疗方法和预期用途。目前正在进行多项基于 ctDNA 的随机临床试验，以确定 ctDNA 在早期实体肿瘤中的临床应用。大体上，ctDNA 指导的试验可以在以下临床环境中进行。</p>
+<ul>
+<li>
+<p>确定性治疗几周后：研究 ctDNA 检测是否可以用于 ctDNA 阴性患者的降阶治疗和/或 ctDNA 阳性患者的强化治疗。可以使用非劣效性（用于降阶策略）和优效性（用于升阶策略）设计。</p>
+</li>
+<li>
+<p>完成标准辅助治疗后不久：主要目的是研究额外 &quot;二线 &quot;或 &quot;辅助治疗后 &quot;的新疗法是否能提高可检测到 ctDNA 但影像学上没有疾病证据患者的治愈率。</p>
+</li>
+<li>
+<p>监测期间：确定与标准监测方案相比，ctDNA 指导的监测是否可以更早发现复发，让更多患者接受根治性转移切除或改善患者生存。</p>
+</li>
+</ul>
+<figure data-type="image" tabindex="8"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/202208021638230.png" alt="" loading="lazy"></figure>
+<h3 id="早期肿瘤-mrdmr-建议">早期肿瘤 MRD/MR 建议</h3>
+<ul>
+<li>
+<p>对早期肿瘤进行治愈性治疗后使用有效检测方法进行 ctDNA 检测可以预测复发风险，多项研究已经表明了其临床有效性。</p>
+</li>
+<li>
+<p>在常规实践中并没有足够前瞻性临床证据证明 MRD 指导下的治疗可以改善疗效或安全降阶治疗。</p>
+</li>
+</ul>
+<h2 id="早期或晚期协助肿瘤初步诊断">早期或晚期协助肿瘤初步诊断</h2>
+<p>ctDNA 检测可以作为诊断工作流程的一部分，为影像学判断疑似有肿瘤的患者提供服务。</p>
+<p>对于难以进行组织活检的肿瘤患者，可以使用 ctDNA 检测基因分型来识别突变进而确认肿瘤存在。在这种情况下，克隆性造血突变不能与致病突变混淆，因此使用专业的检测方法至关重要。</p>
+<p>对于侵袭性肿瘤患者，与组织活检相比 ctDNA 检测可能会使患者提早开始靶向治疗。对用于诊断的 ctDNA 检测，必须要考虑到假阴性问题。</p>
+<h2 id="对无症状人群进行筛查">对无症状人群进行筛查</h2>
+<p>ctDNA 在癌症治疗方面的最终应用可能是能够在无症状的人群中发现早期癌症和癌前病变，进而采取相关措施提高治愈率，甚至防止侵入性肿瘤的发展。</p>
+<p>这一概念成为现实还需要大规模的人群研究提供足够证据，而标准化筛查工具在保持临床敏感度的同时实现高特异性是必要条件。</p>
+<p>因为早期肿瘤的 ctDNA 含量很低，使用 ctDNA 在技术上仍然具有挑战性。此外，理想条件下以 ctDNA 为基础的筛查也应能提供癌症起源组织的信息，而这在现阶段也还远不成熟。</p>
+<p>目前，在这一领域已经进行了大量的工作，研究表明，高灵敏度的测序方式可以与蛋白质生物标志物、片段长度特征和甲基化检测相结合。不过在筛查人群中进行的大型研究数据证实之前，ctDNA 检测作为多种癌症的筛查工具还不能被视为 ctDNA 检测的有效用途。</p>
+<p>以上是 ESMO 提到的 ctDNA 几个应用场景，与之相对应的 CACA 给出了如下三点共识。</p>
+<blockquote>
+<p>目前已有临床证据支持 ctDNA NGS 检测可应用于肺癌、乳腺癌、前列腺癌、卵巢癌等晚期实体肿瘤的伴随诊断，但涉及的驱动基因及其变异类型与相应分析体系均有严格限定，若超适应症应用时，建议与患者就检测必要性、检测费用以及局限性等内容进行充分知情。ctDNA NGS 检测已被国内外专家共识或指南建议作为多种晚期恶性肿瘤组织基因检测的替代方式，但依据其分析结果实时制定临床治疗策略时仍需高级别循证证据支持。（CACA 共识）</p>
+</blockquote>
+<blockquote>
+<p>晚期实体肿瘤分子靶向或免疫检查点抑制剂治疗开始后，基于 NGS 检测的 ctDNA 水平定量和动态变化分析，有望成为新兴的疗效评估途径。ctDNA MRD 检测是全新的个性化技术应用领域，尚难以建立通用性技术标准，亟待通过大样本、多中心、前瞻性的临床试验验证其临床效用。ctDNA NGS 检测在临床上用于靶向或免疫治疗评估和分层时，建议就检测价值、局限性和费用等进行充分知情。（CACA 共识）</p>
+</blockquote>
+<blockquote>
+<p>在临床环境中，ctDNA NGS 检测可用于识别分子靶向治疗的耐药机制，尤其对于疑难复杂的肿瘤患者，该结果有助于后续的治疗选择决策。免疫检查点抑制剂治疗获得性耐药机制复杂，治疗选择压力下的肿瘤亚克隆演进仅为其部分原因，ctDNA 靶向测序、全外显子和（或）全基因组检测仅作为其转化研究工具之一。（CACA 共识）</p>
+</blockquote>
+<h2 id="小结">小结</h2>
+<p>液体活检，特别是 ctDNA 检测，正在越来越多地用于临床实践。</p>
+<p>目前已有足够的证据表明其在晚期癌症基因分型可以用来指导治疗，特别是在组织活检不理想或时间至关重要的情况下。</p>
+<p>在临床中使用 ctDNA 必须考虑到检测的敏感性，特别是对融合和拷贝数变异的敏感性较低。进一步开发更好的检测方法将真假阳性/阴性结果准确地区分开仍是未来基因分型检测的主要优先事项。</p>
+<p>ctDNA 检测比组织测序能更准确地捕捉患者体内空间和时间上的肿瘤异质性，具有理论上的优势。现在需要进行更多重要的临床试验来评估检测这种异质性如何能够提供临床有用的信息来改善治疗。</p>
+<p>由于缺乏有用的证据，尚不建议将 ctDNA 检测用于如早筛、MRD 评估和治疗反应早期评估的其他可能目的。基于甲基化、片段长度的测序或新型超敏感突变检测方法等目前正在开发的新技术有可能优化这些应用。正在进行中的多项临床实验，也可能为在多种临床情况下采用 ctDNA 检测进行决策提供证据基础。</p>
+<hr>
+<p>以上就是 ctDNA 学习三部曲的第一部分内容，ESMO 和 CACA 专家共识建议的整理学习。下一篇文章，我们将学习<strong>高深度全基因组 ctDNA 测序在前列腺癌中的相关研究</strong>，一起看看高深度全基因组深度 ctDNA 检测的可行性和应用优势。</p>
+<p>下次见。</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2022-08-02-ctdna-esmo-caca-recommendation/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/HBkTdk_qp/" class="article-info">
+                        熊说肿瘤</a>
+                      
+                      <a href="https://kaopubear.top/blog/DvI6ypPftI/" class="article-info">
+                        生物信息</a>
+                      
+                      <a href="https://kaopubear.top/blog/EqrCpMmApu/" class="article-info">
+                        文献</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2022-07-16-book-software-engineering-at-google/">
+                    <h3 class="post-title">
+                      在《Google软件工程》里了解如何在团队内进行学习和分享
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

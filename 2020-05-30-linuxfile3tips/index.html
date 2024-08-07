@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>三个 Linux 文件高频小操作 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="去除文件名后缀
+在 Linux 中跑各种任务或者循环命令的时候，有一个高频的需求是截取一部分文件名。例如有文件 XXX_aaa.bb 和 YYY_aaa.bb ，很可能我们需要提取出 XXX 和 YYY 来给后续的文件进行命名。
+
+实现这个..." />
+  <meta name="keywords" content="编程,linux" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  三个 Linux 文件高频小操作</a>
+              </h2>
+              <span class="article-info">2020-05-30, 1193 words, 5 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <h2 id="去除文件名后缀">去除文件名后缀</h2>
+<p>在 Linux 中跑各种任务或者循环命令的时候，有一个高频的需求是截取一部分文件名。例如有文件 XXX_aaa.bb 和 YYY_aaa.bb ，很可能我们需要提取出 XXX 和 YYY 来给后续的文件进行命名。</p>
+<!-- more -->
+<p>实现这个需求的方法有不少。</p>
+<p>利用变量中的 % 号。在 Linux 中使用百分号将变量的内容从变量的尾部删除。 一个%号可以从尾部最近位置进行匹配删除，两个%%从尾部最远位置匹配删除。同时支持使用通配符。例如<code>id=XXX_aaa.bb</code> 可以使用<code> ${id％％_*}</code></p>
+<p>第二种方式是使用 cut <code>cut -d ‘_’ -f 1</code>。使用 <code>_</code> 作为分隔符，输出第一列，也是可以得到 XXX</p>
+<p>第三种是使用 awk，和 cut 类似也是指定分隔符输出第一列 <code>ls *.bb| awk -F &quot;_&quot; '{print $1 }'</code></p>
+<p>为了让脚本使用率更高一些，我通常会使用绝对路径来指定文件位置。为了更快的获取文件名，会使用命令 basename。basename 本身就有一个非常好用的功能，可以剔除指定的文件名结尾部分。如下所示，我觉得这个应该是最优雅的方式。</p>
+<pre><code class="language-shell">basename /a/b/c/XXXX_aaa.bb _aaa.bb
+XXXX
+</code></pre>
+<h2 id="批量重命名">批量重命名</h2>
+<p>场景如下，现在有好几百个文件需要重命名。类似于 A1.txt A1.md A1.pdf B2.txt B2.md B2.pdf ...<br>
+其中 A1 要全部替换为 C3 ,B2 要全部替换为 D4 变为，即 C3.txt C3.md C3.pdf D4.txt ...<br>
+已经有一个两列的文件是对应信息。</p>
+<pre><code>A1 C3
+B2 D4
+</code></pre>
+<p>昨天在知识星球抛出这个问题之后有几个小伙伴给出了自己的建议，其中给我最大冲击的是一个小伙伴提出的 Excel 批量法，思路是用 Excel 对字符段组合出新的命令。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200530111954.png" alt="" loading="lazy"></figure>
+<p>这个需求或许可以拆解为两个问题，一个是重命名，一个是批量。</p>
+<p>重命名的方法 mv 或者 rename 都可以，批量很容易想到 for 循环，因为对应的一对变量已经在文件的一行了，所以只要把它们分别保存为两个变量就好了。这个需求更好的完成是方式是配合 while 和 read 来完成循环。<br>
+read 可以从标准输入或者管道以及文件描述符读取内容，而且非常方便的可以直接定义多个变量。</p>
+<p>因此可以写为：</p>
+<pre><code class="language-shell">while read old new
+do
+echo $old $new;
+rename &quot;s/${old}/${new}/&quot; ${old}*
+done&lt;changename.txt
+</code></pre>
+<p>如果把这个小小的命令变成一个 rename.sh 脚本，可以写成。</p>
+<pre><code class="language-shell">#!/bin/bash
+FILE=$1
+while read old new
+do
+echo $old $new;
+rename &quot;s/${old}/${new}/&quot; ${old}*
+done &lt; $FILE
+</code></pre>
+<p>多说一句，关于理解 read 的用法，有一个小的测试题。</p>
+<pre><code class="language-shell">echo '1 2 3 4 5 6' | while read a b c
+do
+  echo $c $b $a
+done
+</code></pre>
+<p>上面这个命令，请问输出的结果是什么？是 3 2 1 6 5 4 么？如果不是又会是什么呢？如果能直接说出 3 4 5 6 2 1 这个结果，应该就是理解了。</p>
+<h2 id="同文件名文件拷贝">同文件名文件拷贝</h2>
+<p>这个需求也比较常见，在 Linux 中，不能的目录下都有可能存在相同的文件名，例如有些生信分析软件跑多套数据，通常只会在目录层面进行区分，而不会在文件名层面进行区分。可能的目录结果如下：</p>
+<pre><code>a: xx.txt yy.json zz.bam
+b: xx.txt yy.json zz.bam
+</code></pre>
+<p>为了方便处理，我们通常习惯把同一个类型的文件放在一起，但是如果直接拷贝源文件，会因为文件名重复的问题带来灾难。这时就有了一个重命名再拷贝的问题。</p>
+<p>重命的一个基本思路就是把需要的目录名加到源文件名字的前面或者后面。首先拿到实际的文件名可以使用 basename 命令，如果想拿到目录名则可以使用 dirname 命令。</p>
+<pre><code class="language-shell">for i in `ls */*.bam`
+do
+cp $i ./bamfile/$(dirname $i)_$(basename $i)
+done
+</code></pre>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2020-05-30-linuxfile3tips/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/1BY38A9TE/" class="article-info">
+                        编程</a>
+                      
+                      <a href="https://kaopubear.top/blog/v0Xcy0jQaT/" class="article-info">
+                        linux</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2020-04-21-usevscodepart2/">
+                    <h3 class="post-title">
+                      VS Code 代码编辑器入门指南下篇-场景化应用介绍
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

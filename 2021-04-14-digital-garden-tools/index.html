@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>构建自己的数字花园-工具篇 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="逐渐感觉博客并不是一个很好的分享方式……
+
+什么是数字花园 Digital Gardon
+嗯，不是本文的重点，附上几个链接供阅读学习。
+
+What is a digital garden? by Chris Biscardi
+You and..." />
+  <meta name="keywords" content="工具" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  构建自己的数字花园-工具篇</a>
+              </h2>
+              <span class="article-info">2021-04-14, 1564 words, 6 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <p>逐渐感觉博客并不是一个很好的分享方式……</p>
+<!-- more -->
+<h2 id="什么是数字花园-digital-gardon">什么是数字花园 Digital Gardon</h2>
+<p>嗯，不是本文的重点，附上几个链接供阅读学习。</p>
+<ul>
+<li><a href="https://www.christopherbiscardi.com/garden">What is a digital garden?</a> by Chris Biscardi</li>
+<li><a href="https://nesslabs.com/mind-garden">You and your mind garden</a> by Anne-Laure Le Cunff</li>
+<li><a href="http://maggieappleton.com/garden-history">A Brief History &amp; Ethos of the Digital Garden</a> by Maggie Appleton</li>
+</ul>
+<h2 id="数字花园应该满足什么">数字花园应该满足什么</h2>
+<p>我头脑中的数字花园应该可以实现如下功能。</p>
+<ul>
+<li>支持双向或 wiki 链接的阅读方式：可以让自己和读者在花园中自由漫步，有尽可能好的阅读体验。</li>
+<li>良好的笔记管理方式：笔记最好是通用格式或者可以全部且自由的导出为通用格式，能够在移动端相对轻松的完成记录，有尽可能好的编辑体验。</li>
+<li>轻松地进行公开分享：可以变成公开网站进行分享也很重要。或者是工具自带分享功能或者是容易配合其它工具进行部署。</li>
+</ul>
+<h2 id="有哪些工具可以考虑">有哪些工具可以考虑</h2>
+<p>基于阅读体验，编辑体验和部署维护这三个维度，目前有如下几个主要的实现思路。</p>
+<h3 id="支持公开分享的现有笔记工具">支持公开分享的现有笔记工具</h3>
+<p><a href="https://roamresearch.com/">Roam Research</a>：从已经很长时间的使用体验来看，我愿称其为最纯粹的新一代知识管理工具，我的两篇大论文都是通过它整理的。从使用成本来看，我在内测期建了两个可以一直免费用的 graph，其中一个可以用作公开分享。从使用频率来看这也是我目前最高频的笔记工具。</p>
+<p><a href="https://www.craft.do/">Craft</a>：从不重度但时间不短的使用体验来看，我愿意称其为最新颖的新一代写作工具。从使用成本来看，内测结束后赠送了一年免费订阅，之后每年 248¥ 。从使用体验来看它是几个工具里移动端使用体验最好的，而且公开分享呈现的形式天然适合做数字花园。以及更重要的是，作为一个靠原生应用赢得一大波好感的工具，Craft 马上就要推出正式的网页版了。</p>
+<p><a href="https://www.notion.so/">Notion</a>：Notion 的用法类似于几年前的印象笔记，是我的核心资料库。虽然不像 RoamR，并没有太多笔记在里面，但是使用频率也非常高。日常使用定位里我没有把它定义为笔记工具也没有打算用它 All in One，我愿意称其为最强大的新一代个人建站工具。从使用成本来看，目前自己是教育账号也无需付费。</p>
+<p><a href="https://obsidian.md/">Obsidian</a>：我之前基于 VScode 管理的所有本地 markdown 笔记已经全部迁移到了 Obsidian，配合上丰富的插件系统，我愿称其为最好用的新一代本地笔记管理工具。不过因为 RoamR 和 Notion 的存在，我的 Obsidian 使用频率略低。从使用成本来看，如果想直接使用 Obisidian 自带的发布服务需要每月支付 8$。</p>
+<h3 id="静态网站框架本地笔记管理工具">静态网站框架+本地笔记管理工具</h3>
+<p>静态网站的开发工具简直不要太多，目前有数字花园现成可用模板的是主要是 Jekyll 和 Gatsby。基本思路就是本地开发管理+GitHub 同步+<a href="https://netlify.com/">Netlify</a> 或者 <a href="https://vercel.com/docs">Vercel</a> 进行部署发布。本地的文本管理可以借助 Obsidian 或者 VScode 完成。这种方法的缺点就和自建博客一样，还是需要稍微折腾一下环境和部署。</p>
+<p>Gatsby 相关模板</p>
+<ul>
+<li><a href="https://github.com/aengusmcmillin/gatsby-theme-brain">gatsby-theme-brain</a>:</li>
+<li><a href="https://github.com/aravindballa/gatsby-theme-andy">gatsby-theme-andy: A Gatsby theme to build Andy style websites</a></li>
+<li><a href="https://github.com/mathieudutour/gatsby-digital-garden/">gatsby-digital-garden: Create a digital garden with Gatsby</a></li>
+</ul>
+<p>Jekyll 相关模板</p>
+<ul>
+<li><a href="https://simply-jekyll.netlify.app/posts/introduction-to-simply-jekyll">Simply Jekyll</a></li>
+<li><a href="https://github.com/maximevaillancourt/digital-garden-jekyll-template">digital-garden-jekyll-template</a></li>
+</ul>
+<h3 id="现有笔记工具第三方部署服务">现有笔记工具+第三方部署服务</h3>
+<p>这种思路介于前两者之间。有很多开发者会针对 RoamR 和 Notion 这样使用量很大的工具进行二次开发，方便将这些内容直接转化可以通过更好的形式呈现的公开网站。如基于 Notion 可以使用免费的 <a href="https://github.com/NotionX/react-notion-x">React Notion X</a>，基于 RoamR 有付费的 <a href="https://roam.garden/">roam garden</a>。</p>
+<h2 id="我的选择">我的选择</h2>
+<p>先上结论就是我会从 Notion 和 Craft 中选择一个作为公开呈现的数字花园。</p>
+<p>首先 RoamResearch 里记录的东西太多，各种关联和链接很难从中抽离出一部分作为公开发布的内容，以及它的移动端使用体验很差。</p>
+<p>过了折腾框架改模板的年纪，我最看重的是不折腾，最好是这边只管写其它的完全不操心。这一步排除了静态网站框架的所有方案。</p>
+<p>另外我需要一个好的移动端编辑体验，因为会大量记录随时生长的思考和想法所以很多输入都会在移动端完成。这一步 Craft 的使用体验比 Notion 占优。</p>
+<p>如果再有一点进阶要求，我希望可以通过自己域名进行发布。这个需求通过 React Notion X 加 Vercel 可以轻松实现，Craft 则还没有什么工具可以实现自定义域名。</p>
+<p>从呈现效果上来说，目前 Craft 自带的发布功能还没人做二次定制，但胜在简洁清晰；Notion 本身高度可定制，同时配合若干开源的二次开发模板可以呈现出非常丰富的样式。两者各有千秋。</p>
+<h2 id="以及">以及</h2>
+<p>至于最终用什么来呈现，再过一段时间我会直接拿出一个 beta 版本和大家分享，到时候可以详细聊聊。</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2021-04-14-digital-garden-tools/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/tg-VHYKad/" class="article-info">
+                        工具</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2021-02-19-shanghai-subway/">
+                    <h3 class="post-title">
+                      使用R语言分析上海地铁好位置周边的二手房价格
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

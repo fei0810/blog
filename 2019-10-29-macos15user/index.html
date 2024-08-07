@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>macOS 10.15 安装R包 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="早先升级 macOS10.15 电脑 SMC 出了一些问题，试了一些方法都没有解决，无奈只能继续升级到 public beta 版本。
+
+2020/6/15 更新
+目前 R macOS 官方安装说明已经更新，地址为 https://mac...." />
+  <meta name="keywords" content="R" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  macOS 10.15 安装R包</a>
+              </h2>
+              <span class="article-info">2019-10-29, 944 words, 5 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <p>早先升级 macOS10.15 电脑 SMC 出了一些问题，试了一些方法都没有解决，无奈只能继续升级到 public beta 版本。</p>
+<!-- more -->
+<p>2020/6/15 更新</p>
+<p>目前 R macOS 官方安装说明已经更新，地址为 https://mac.r-project.org/tools/</p>
+<hr>
+<p>原文</p>
+<p>目前的版本信息如下 10.15.1 beta 版本</p>
+<pre><code>        &lt;key&gt;ProductBuildVersion&lt;/key&gt;
+        &lt;string&gt;19B86a&lt;/string&gt;
+        &lt;key&gt;ProductCopyright&lt;/key&gt;
+        &lt;string&gt;1983-2019 Apple Inc.&lt;/string&gt;
+        &lt;key&gt;ProductName&lt;/key&gt;
+        &lt;string&gt;Mac OS X&lt;/string&gt;
+        &lt;key&gt;ProductUserVisibleVersion&lt;/key&gt;
+        &lt;string&gt;10.15.1&lt;/string&gt;
+        &lt;key&gt;ProductVersion&lt;/key&gt;
+        &lt;string&gt;10.15.1&lt;/string&gt;
+        &lt;key&gt;iOSSupportVersion&lt;/key&gt;
+        &lt;string&gt;13.2&lt;/string&gt;
+</code></pre>
+<p>升级了之后 R 下的很多需要编译的软件都用不了了。</p>
+<p>原因之一是系统自带的 clang 不支持 -fopenmp，这个需要在 R 官网下载安装 LLVM 预先编译好的 clang 7 。我也尝试过跳过这个 R 官网提供的 clang7，直接通过安装 LLVM 来安装最新版的 clang7.1，但是在 10.15 的系统里直接通过 <code>brew install llvm </code>也会有不少问题，于是放弃。</p>
+<p>除此之外还需要安装 gfortran , 如果去官方安装最新的版本在编译过程中会报 warning。因为 R 提供的 clang7 用的是 gfortran 6.1。这个还是需要去 R 官网提供的链接进行下载。</p>
+<p>首先确认自己装了 Xcode command line tools (XCode CLI)</p>
+<pre><code class="language-sh">$ xcode-select -p
+/Library/Developer/CommandLineTools
+</code></pre>
+<p>如果你之前有旧版本的 gfortran 和 clang 最新好先删除一些文件</p>
+<pre><code class="language-sh"># Delete the clang6 binary
+sudo rm -rf /usr/local/clang6
+
+# Delete the prior version of gfortran installed
+sudo rm -rf /usr/local/gfortran
+sudo rm -rf /usr/local/bin/gfortran
+
+# Remove the gfortran install receipts (run after the above commands)
+sudo rm -rf /private/var/db/receipts/com.gnu.gfortran.bom
+sudo rm -rf /private/var/db/receipts/com.gnu.gfortran.plist
+</code></pre>
+<p>然后安装 clang7 和 gfortran6.1。下载地址：https://cran.r-project.org/bin/macosx/tools/</p>
+<p>如果在 10.14 里，这两个装好了后指定 clang7 的路径基本就解决问题。</p>
+<p>但是 macOS 10.15 之后 usr 目录下无法新建 include 文件，这就导致 clang 在运行的时候可能使用默认的位置找不到 sdk 目录。</p>
+<p>这个坑还需要再进行一些配置。首先要找到实际的 sdk 目录：</p>
+<pre><code class="language-sh">$ xcrun --show-sdk-path
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+</code></pre>
+<p>然后在 R 的<code>~/.R/Makevars</code>配置文件中指定一些 compilation flags，通过 <code>-isysroot</code> 定义 sdk。如果你发现自己没有这个文件，就新建一个即可。</p>
+<pre><code>CFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+CCFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+CXXFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+CPPFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include
+</code></pre>
+<p>最后在 ~/.Renviron 里写好 clang7 的路径。按道理这个路径写在 zshrc 里也是可以的，但这边测试的时候 Rstudio 启动 R 还是识别的系统默认 clang。</p>
+<pre><code class="language-sh">PATH=&quot;/usr/local/clang7/bin:${PATH}&quot;
+</code></pre>
+<p>这些配置写好之后，可以在 R 里通过从 source 装两个软件测试一下。</p>
+<pre><code class="language-R">install.packages(c(&quot;Rcpp&quot;, &quot;RcppArmadillo&quot;, &quot;data.table&quot;), type = &quot;source&quot;)
+</code></pre>
+<p>最后的最后，一般情况下或者新手建议不要从 source 去安装软件，就没有任何烦恼了。</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2019-10-29-macos15user/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/UrqlObNL0t/" class="article-info">
+                        R</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2019-10-26-apibasic/">
+                    <h3 class="post-title">
+                      数据库网站 API 知多少
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>关于 wolai 这款工具的观察与困惑 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="本文首发于少数派
+我不是产品经理也没有什么关于产品的深刻研究，但是我用过的笔记类工具时长和数量还算不少。这次说说对一个国内笔记类工具新秀的观察和思考。嗯，也不用藏着掖着，就是 wolai。
+
+首先说明这个短文的出发点不吹也不黑。一方面我从去..." />
+  <meta name="keywords" content="工具,思考" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  关于 wolai 这款工具的观察与困惑</a>
+              </h2>
+              <span class="article-info">2021-01-23, 3104 words, 11 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <p>本文首发于<a href="https://sspai.com/post/64698">少数派</a></p>
+<p>我不是产品经理也没有什么关于产品的深刻研究，但是我用过的笔记类工具时长和数量还算不少。这次说说对一个国内笔记类工具新秀的观察和思考。嗯，也不用藏着掖着，就是 wolai。</p>
+<!-- more -->
+<p>首先说明这个短文的出发点不吹也不黑。一方面我从去年 6 月 wolai 刚上线开始就参加内测，邀请获得的积分也接近上限，且现在依旧持续观察和轻度使用；另一方面，重度用 Notion 一年多和 Roam Research 近半年后，再看 wolai 的更新日志，反而对于它的后续有很大困惑。因此，本文仅仅是表达一些个人的观察思考和困惑。</p>
+<p>我理解的工具类产品大致有两类，一类在诞生之初就带着一个方法论，比如 Anki，比如基于 GTD 的待办清单。这类产品无论后续怎么迭代，只要不严重跑偏就能给用户一种确定感，也会降低上手学习的恐惧，即便不使用了可能还时不时有些怀念。像我用了多年的 workflowy，它始于一个单页面大纲笔记，更新到现在即便丰富了很多功能依旧还是一个单页面大纲笔记。转向 Roam Research 之后我对它依依不舍，因为移动客户端和网页端对于各种时间节点输入的极度友好，又因为整体设计的极度简洁且支持了图片上传功能，如今被我用来美滋滋地写 Daily Log。更优秀的付费订阅制日记软件能省则省吧。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20210123222256.png" alt="" loading="lazy"></figure>
+<p>另一类产品是诞生之初就参考着一个或几个产品的模子来，采取跟随策略力求在某些体验上更优秀。wolai 应该是属于第二种，其实国内绝大多数工具都属于第二种。wolai 一直表达出来的开发思路是想做一个中文友好高颜值完美支持双链的类似于 Notion 的工具。我对它的更新和迭代速度非常惊喜，但这半年观察下来逐渐觉得很多地方不太对。wolai 似乎做的每一个功能都有一个明确的比较对象，比如 Roam Research 的界面有些丑，Roam Research 的网络图在节点多了之后很难用，Notion 竟然一直没有悬浮大纲，Notion 对于多文件导入的处理非常缓慢，Notion 竟然不官方支持动态图标……</p>
+<p>为什么工具类产品自身可以溯源的方法论或者设计思路尤其重要呢，因为工具在创造之初被赋予的属性很大程度上决定了以后用户的使用习惯，而且反过来会塑造用户对于某类方法或理念的认知。</p>
+<p>看 wolai 最近的更新日志，我突然感觉一个工具类产品如果不带着明确的方法论去开发，要么很容易陷入跟随，要么就会容易纠结于细碎（这里对是否有核心理念的判断仅基于个人对产品的观察）。比如对中文友好的一个重要体现是用拼音首字母进行快速调取，这个思路当然是好的且也有类似案例。但是，最近更新里类似用<code>/tb</code>来调用 Font Awesome 图标，用<code>/wyyyy</code>来插入网易云音乐音频的功能，让我在实际使用中有些困惑。此外，图标更新在日志里强调「独家」，这样的独家对于工具类应用的核心竞争力是否有很大意义我还是画一个问号。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20210121161227.png" alt="" loading="lazy"></figure>
+<p>与我而言，想插入页面第一反映是<code>/page</code>，很难会先想到<code>/ym </code> 。更大的问题是，这样的中文拼音首字母输入习惯一旦养成就很危险，因为中文在翻译层面具有很多可替代的词汇。比如我想插入一首歌的时候，我是输入<code>yy</code>(音乐)还是输入<code>gq</code>（歌曲）呢？调用 Font Awesome 图标使用的缩写是<code>tb</code>，我一开始理解为淘宝的缩写，之后被提示是图标的缩写，那如果一个用户想插入表格时他的第一反映词汇是<strong>图表</strong>，又该用什么缩写呢？所以这究竟是中文友好还是会增加用户的负担。这个观点只是我一家之言，或许我并不是这种中文友好的目标用户，换个角度如果开发团队愿意把这件事情做到极致，那想同义词也是不小的工作量吧。</p>
+<p>再说说核心功能的开发。因为给很多用户的印象是 wolai 要做一个带有双链功能的类 Notion 工具，用户在文档双链之后就催块双链，在块双链出来之后现在催 database。对于用户而言，有多少人是真的重度使用过 Notion 和 Roam Research 之后发出的催促，亦或者只是因为 wolai 给他们的感觉如此，用户永不满足；对于开发团队而言，是有强大的理论或者调研在背后支撑，是有明确开发计划或对最终呈现形式的设想，还是隐约想摆脱掉那些关于「模仿」的质疑，不得而知。Notion 没有的双链有了，Roam Research 没有的 database 有了，然后呢，1+1 有没有可能小于 1。</p>
+<p>把 Notion 所谓的 database 和基于块的双向链接放在一起真的是好选择或者有必要么？先不提 Notion 前一段时间更新的姿态远大于实际作用的「反向链接」，也不提什么可溯源的方法论。单单就从我自己过去一年的 Notion 加 Roam Research 使用情况和侧重来看，自己完全不在乎 Notion 要不要跟进基于块的双链功能，也不在乎 Roam Research 要不要加一个 database 或者类似于 Notion 的若干视图。</p>
+<p>话说到这里，如果 wolai 兢兢业业打磨 database 也没问题（当然这句话的意思并不是臆测团队没有同步开发 database 功能），但是我今天看到更新计划又要上线「脑图」，所以忍不住想写文章表达这些困惑。</p>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20210121170647.png" alt="" loading="lazy"></figure>
+<p>一个基于文档的双链笔记工具，快马加鞭做脑图功能究竟是为了什么？是因为用户呼声、难度较低还是早有安排，或者是认为脑图是这个工具的重要功能。</p>
+<p>也许是一种偏见（没有影射任何其它工具），我一直不认为思维导图和大纲笔记之间的切换除了让部分人看到哇一声以外还有什么重要价值，也不理解为什么还有人做主打 markdown 笔记切换成思维导图的文本编辑器。看似只是不同的呈现形式，但文章、大纲和思维导图本就是不一样的思维方式。</p>
+<p>双链的魅力在于无需明确目标而带来的漫游和随机，大纲的魅力在于思路有基本框架后的逻辑和层级扩展，脑图的魅力在于仅有核心出发点后没有束缚的发散思维。那么，wolai 想给用户呈现的究竟是什么，想培养的用户认知和习惯又是什么呢。</p>
+<p>最后，希望不要让用户的呼声去塑造一个产品，也希望不要用看似独家的功能去堆砌一个产品。这之间有没有可以平衡的方案呢？开发团队专注核心功能，高阶用户开发各类插件，带动普通用户构建方法社区，这条路 Roam Research 和 Obsidian 目前似乎都走得不错。</p>
+<p>以及，疯狂添加功能的笔记工具不是没有先例，如今面临的境况也无需多言，作为多年的重度用户我还是时常会感到可惜。wolai，作为一个新产品才刚刚开始，希望越来越好。</p>
+<hr>
+<p>更新：本文发布三小时后，wolai 更新日志页面已经去掉了关于脑图和 database 的更新计划说明，也去掉了关于 Font Awesome 图标更新的「独家」字样。作者浏览时间为 2020 年 1 月 21 日 20:59</p>
+<hr>
+<p>再更新：今天在少数派看到了<a href="https://sspai.com/post/64701">另一篇介绍 wolai</a>的文章，因为看起来和我的这篇文章意见相左利益相关，我还是想在自己再补充一点想法。</p>
+<p>这篇文章详细的介绍了 wolai 的中文优化，我想说的是这些中文优化大部分都是我喜欢的。但是文章最后引述了创始人的一段化。这段话是否为原话我没有考证，那就以这篇文章说的为准，如果是真的，我自己感觉更加加深了在上文里我提到的困惑。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20210123222350.png" alt="" loading="lazy"></figure>
+<p>1.「这个产品融合了自己使用过的同类产品的所有优点」。</p>
+<p>即便真的可以融合使用过的同类产品的所有优点，又是好的么？如果这样的开发逻辑成立，所有新软件就多数都是之前同类产品的优点加和，但显然并不是这样。Notion、RoamResearch 和 Wordpress 在我有限的认识里也不认为他们是同类工具。</p>
+<p>2.「充分研究中文用户的使用习惯，即便 Notion 进入中国，Notion 也很难达到这样的程度」。</p>
+<p>考虑中文用户使用习惯一定是好的。但是不论 Notion 有没有意愿研究中文用户的使用习惯，按照这个逻辑，国际化产品都应该使劲研究每个市场的用户习惯，这对于很多快消产品是有道理的，比如快餐和化妆品，出针对国内市场的味道和色号。但是生产力工具，很大程度上并不需要做太多国际化适配（多语言支持通常就够了）。一个生产力工具，尤其是 to C 的生产力工具，只要有扎实且被认证过的理论基础或者底层逻辑，那对于哪个国家的人都应该是有效的，人和人的认知没有什么本质区别。换个角度，wolai 有一天在国内做到最大最强，它用什么出海开疆扩土呢，核心一定不是中文优化。飞书先是用 lark 在国外上线了很久，Xmind 一直被很多人认为由国外团队开发。</p>
+<p>如果最大的优势在于中文优化和写作体验优化，再加上国内访问速度稳定的先天优势，我想也很好。我更愿意把它当作一个很不错的中文写作工具继续使用。但是优化可以是一个亮点，但不是一个生产力工具的核心。</p>
+<p>回看 wolai 官网，第一个介绍是让「信息通过层级和链接方式关联」，本质其实就是大纲+双向链接。在关于 wolai 的知乎回答中，有写到「但可能只有我自己知道，我们未来绝不会是 Notion + Roam，我们也不会亦步亦趋做一个没有灵魂的 copycat」。这当然是包括我在内的每一个喜欢折腾工具的爱好者愿意看到的。只是，相比于不会是什么，每一个和这个工具一起成长的使用者，都很想知道它会是什么。</p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2021-01-23-aboutwolai/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/tg-VHYKad/" class="article-info">
+                        工具</a>
+                      
+                      <a href="https://kaopubear.top/blog/Rn3TD5Cpatn/" class="article-info">
+                        思考</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2021-01-17-uncertaintyandwriting/">
+                    <h3 class="post-title">
+                      关于个人的认知不确定性
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>把 Markdown 模板做成 VSCode 插件 | 思考问题的熊</title>
+<link rel="shortcut icon" href="https://kaopubear.top/blog/favicon.ico">
+<link href="https://kaopubear.top/blog/styles/main.css?v=1723040174420" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_1678829_1mxi55l93a3.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="思考问题的熊 » Feed"
+  href="https://kaopubear.top/blog/atom.xml">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91022805-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91022805-1');
+</script>
+
+
+  <meta name="description" content="希望它能让你写笔记更方便些
+
+关于
+VS code 目前是我的主力代码编辑器，在大多数时候也是我的主力文本编辑器。为了在用 VS code 写文献阅读笔记和读书笔记时更加顺手，我根据自己的阅读和记录习惯整理了一些 markdwon 模板，所..." />
+  <meta name="keywords" content="工具,VScode,markdown" />
+</head>
+
+<body>
+  <div class="main animated">
+    <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <a href="https://kaopubear.top/blog">
+        思考问题的熊
+      </a>
+    </div>
+    <div class="description">
+      很高兴和你相遇<br>这里正在记录我的所思所学<br>订阅<a href="https://kaopubear.zhubai.love/" target="_blank">免费邮件通讯</a>接收最新内容
+    </div>
+  </div>
+  <div class="my_socials">
+    
+    
+    <a href="https://github.com/fei0810" target="_blank">
+      <i class="iconfont icon-github"></i></a>
+    
+          
+    
+    <a href="https://twitter.com/kaopubear" target="_blank">
+      <i class="iconfont icon-twitter"></i></a>
+    
+          
+    
+          
+    
+          
+    
+    <a href="https://t.me/kaopubear" target="_blank">
+      <i class="iconfont icon-telegram"></i></a>
+    
+          
+    <a href="https://kaopubear.top/blog/atom.xml" target="_blank">
+      <i class="iconfont icon-rss"></i></a>
+  </div>
+</div>
+
+<div class="header_menu">
+  
+  
+  <a href="https://kaopubear.top/blog" class="menu">首页</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/archives" class="menu">归档</a>
+  
+
+  
+  <a href="https://talk.kaopubear.top/" class="menu" target="_blank">
+    想法</a>
+  
+
+  
+  <a href="https://kaopubear.top/blog/sharelink" class="menu">工具</a>
+  
+
+  
+  <a href="https://kaopubear.zhubai.love/" class="menu" target="_blank">
+    通讯</a>
+  
+
+  
+  <a href="https://kaopubear.podcast.xyz/" class="menu" target="_blank">
+    播客</a>
+  
+
+  
+  <a href="https://kaopubear.top/resume/" class="menu" target="_blank">
+    简历</a>
+  
+
+  
+  <a href="https://kaopubear.top" class="menu" target="_blank">
+    主页</a>
+  
+
+  <div class="gridea-search-div">
+    <form id="gridea-search-form" data-update="1723040174420" action="https://kaopubear.top/blog/search/">
+      <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q" />
+    </form>
+  </div>
+</div>
+
+    <div class="autopagerize_page_element">
+      <div class="content">
+        <div class="post_page">
+          <div class="post animated fadeInDown">
+            <div class="post_title post_detail_title">
+              <h2>
+                <a>
+                  把 Markdown 模板做成 VSCode 插件</a>
+              </h2>
+              <span class="article-info">2020-04-18, 1194 words, 5 min read</span>
+            </div>
+            <div class="post_content markdown">
+              <p class="md_block">
+                <span class="md_line md_line_start md_line_end">
+                  <p>希望它能让你写笔记更方便些</p>
+<!-- more -->
+<h2 id="关于">关于</h2>
+<p>VS code 目前是我的主力代码编辑器，在大多数时候也是我的主力文本编辑器。为了在用 VS code 写文献阅读笔记和读书笔记时更加顺手，我根据自己的阅读和记录习惯整理了一些 markdwon 模板，所谓模板其实就是若干适用于 markdown 的 snippets。为了让有需要的朋友也能用上这些 snippets，我把它们打包成了现在的插件，方便安装与使用。</p>
+<p>目前这个插件非常简单，只引入了少数 snippet，但后期会一直升级迭代。主要目的是为了熟悉 VS code 插件的开发及发布流程。</p>
+<h2 id="使用方法">使用方法</h2>
+<p>本插件在 markdown 文本中会自动触发，目前仅有 5 个模板可以使用。</p>
+<p><strong>说明</strong>：有部分用户反馈在在 Markdown 文档中 snippet 无法触发，原因可能是 Markdown 文本在默认设置中并没有开启<code>editor.quickSuggestions</code>选项，可以尝试在配置文件中写入如下设置：</p>
+<pre><code>&quot;[markdown]&quot;: {
+  &quot;editor.quickSuggestions&quot;: {
+    &quot;other&quot;: true,
+    &quot;comments&quot;: false,
+    &quot;strings&quot;: true
+  },
+},
+</code></pre>
+<h3 id="文献精读模板">文献精读模板</h3>
+<p>在编辑器内输入 <code>intensive_reading</code> 会自动出现精读模板提示，摁下 <code>Enter</code> 即可插入模板。因为精读笔记通常一次只读一篇，所以在模板中引入了一级标题，标题为<code>文献精读+当前日期</code>，例如<code>文献精读2019-09-09</code>。</p>
+<p>随后的内容包括包括文献信息、文献概述、好词好句、文献笔记和相关文献等内容。且光标首先会定位在<code>标题</code>行后面，输入标题之后直接按下 <code>Tab</code> 键会自动定位在 DOI 处，然后依次定位在发表日期、发表杂志和关键词后，方便输入。</p>
+<figure data-type="image" tabindex="1"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200417101653.gif" alt="" loading="lazy"></figure>
+<h3 id="文献泛读模板">文献泛读模板</h3>
+<p>在编辑器内输入 <code>extensive_reading</code> 会自动出现泛读模板提示，摁下 <code>Enter</code> 即可插入模板。因为泛读笔记通常一次会读两到三篇，所以在模板中并未引入一级标题，而是使用了二级标题。包括文献信息、关键点、参考意义和相关内容。光标首先会定位在<code>标题</code>行位置，输入标题之后直接按下 <code>Tab</code> 键会自动定位在 DOI 和发表日期对应位置。</p>
+<figure data-type="image" tabindex="2"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200417101651.gif" alt="" loading="lazy"></figure>
+<h3 id="kpt-每日工作记录模板">KPT 每日工作记录模板</h3>
+<p>在编辑器内输入 <code>kpt_daily</code> 会自动出现 KPT 每日工作记录模板提示，摁下 <code>Enter</code> 即可插入模板。KPT 三个字母分别代表 Keep、Problem 和 Try。具体含义如下：</p>
+<ul>
+<li>Keep: 当前你正在做的事，不要过于宽泛</li>
+<li>Problem：今日所遇到的问题</li>
+<li>Try：你准备明天要尝试的解决方案</li>
+</ul>
+<figure data-type="image" tabindex="3"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200417101652.gif" alt="" loading="lazy"></figure>
+<h3 id="debug-过程记录模板">Debug 过程记录模板</h3>
+<p>在编辑器内输入 <code>debug_note</code> 会自动出现 Debug 过程记录模板提示，摁下 <code>Enter</code> 即可插入模板。该模板包括：报错信息、猜猜原因、我的常识、参考资料和解决方案五部分。可以比较好的记录整个 Debug 过程。</p>
+<p>建议使用方法为首先复制好报错信息，然后再插入模板，此时光标会自动定位在报错信息下的代码框内，直接复制即可保存报错信息。</p>
+<figure data-type="image" tabindex="4"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200417101649.gif" alt="" loading="lazy"></figure>
+<h3 id="闪念胶囊写作素材记录模板">闪念胶囊写作素材记录模板</h3>
+<p>在编辑器内输入 <code>idea_pills</code> 会自动出现闪念胶囊写作素材记录模板提示，摁下 <code>Enter</code> 即可插入模板。该模板包括：话题、灵感来源和写作思路三部分。其中灵感来源是那些让你产生表达冲动的内容，可能是看到一篇好的文章或者和朋友的偶然闲聊。</p>
+<figure data-type="image" tabindex="5"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200417101650.gif" alt="" loading="lazy"></figure>
+<h3 id="5-分钟日记模板">5 分钟日记模板</h3>
+<blockquote>
+<p>0.0.5 版本更新</p>
+</blockquote>
+<p>关于 5 分钟日记模板相关介绍可以查看文章<a href="https://kaopubear.top/blog/2020-08-06-21day5minjournal/">21 天日记挑战-5 分钟日记法</a>。</p>
+<p>在编辑器内输入 <code>5min</code> 会自动出现闪念胶囊写作素材记录模板提示，摁下 <code>Enter</code> 即可插入模板。该模版包括 5 分钟日记中涉及到的 5 个问题。</p>
+<figure data-type="image" tabindex="6"><img src="https://kaopubear-1254299507.file.myqcloud.com/picgo/20200825092305.gif" alt="" loading="lazy"></figure>
+<h2 id="下载地址">下载地址</h2>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=biotrainee-zhaofei.betternotesnippets">Markdown Note Snippets</a></p>
+<hr>
+<p><strong>本文作者</strong>：思考问题的熊</p>
+<p><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。</p>
+<p>如果你对这篇文章感兴趣，欢迎通过邮箱或者微信订阅我的 <strong>「熊言熊语」会员通讯</strong>，我将第一时间与你分享<strong>肿瘤生物医药领域最新行业研究进展</strong>和我的<strong>所思所学所想</strong>，<a href="https://kaopubear.zhubai.love/">点此链接</a>即可进行免费订阅。<img src="https://kaopubear-1254299507.cos.ap-shanghai.myqcloud.com/picgo/202212100024561.webp" alt="" loading="lazy"></p>
+<br />
+                  
+                  <span class="copyright">· 分享链接 https://kaopubear.top/blog/2020-04-18-markdownnotesnippet/ </span>
+                </span>
+                
+              </p>
+            </div>
+            <div class="post_footer">
+              
+                <div class="meta">
+                  <div class="info">
+                    <span class="field tags">
+                      <i class="iconfont icon-tag-sm"></i>
+                      
+                      <a href="https://kaopubear.top/blog/tg-VHYKad/" class="article-info">
+                        工具</a>
+                      
+                      <a href="https://kaopubear.top/blog/fMLJ4BbHmo/" class="article-info">
+                        VScode</a>
+                      
+                      <a href="https://kaopubear.top/blog/JFowL4_oEpM/" class="article-info">
+                        markdown</a>
+                      </span>
+                  </div>
+                </div>
+                
+              
+                <div class="next-post" style="margin-top: 20px;">
+                  <div class="next">下一篇</div>
+                  <a href="https://kaopubear.top/blog/2020-04-08-jianshu/">
+                    <h3 class="post-title">
+                      简书这些年
+                    </h3>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+          
+          
+                      
+          <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var options = {
+    shortname: 'kaopubear',
+    apikey: 'S3aqfVwpSDyKQ2A8Zpg9bXlFmZue0eFVbb3JWkNZtefxqCH39Fd2cLkwP7X0MPDi',
+  }
+  if ('') {
+    options.api = ''
+  }
+  var dsqjs = new DisqusJS(options)
+</script>
+          
+                            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  <div class="powered">
+    Powered by<a href="https://gridea.dev/" target="_blank">Gridea</a>&<a
+    href="https://github.com/fei0810/gridea-theme-oneplus" target="_blank">Theme OnePlus</a>
+ </div>
+<div class="footer_slogan">
+  
+</div>
+<div id="back_to_top" class="back_to_top">
+  <span>△</span>
+</div>
+<script src="https://kaopubear.top/blog/media/scripts/util.js"></script>
+
+</div>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>
